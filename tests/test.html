@@ -283,7 +283,14 @@ try {
     qa('.seclist h4').length === EXAM_CONFIG.testGroups.length);
   t('pace info mentions boost', /boost/i.test(q('#paceinfo').textContent));
   const paceBefore = q('#paceinfo').textContent;
-  const tog = qa('input[data-test]').find(cb => cb.dataset.test === TESTS.at(-1).key);
+  // Toggle a test that contributes a section no other test covers, so the
+  // section union (and with it the pace) actually changes. A test whose
+  // sections are a subset of another's would leave the pace untouched.
+  const uniqueTest = TESTS.find(tst => {
+    const rest = new Set(TESTS.filter(o => o !== tst).flatMap(o => o.sections));
+    return tst.sections.some(s => !rest.has(s));
+  });
+  const tog = qa('input[data-test]').find(cb => cb.dataset.test === uniqueTest.key);
   tog.checked = false;
   tog.dispatchEvent(new Event('change'));
   t('pace info updates on section toggle', q('#paceinfo').textContent !== paceBefore);
