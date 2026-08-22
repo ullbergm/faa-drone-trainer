@@ -1,8 +1,8 @@
 # FAA Drone Trainer
 
-[![CI](https://github.com/ullbergm/faa-drone-test-training/actions/workflows/ci.yml/badge.svg)](https://github.com/ullbergm/faa-drone-test-training/actions/workflows/ci.yml)
-[![Latest release](https://img.shields.io/github/v/release/ullbergm/faa-drone-test-training)](https://github.com/ullbergm/faa-drone-test-training/releases)
-[![License: MIT](https://img.shields.io/github/license/ullbergm/faa-drone-test-training)](LICENSE)
+[![CI](https://github.com/ullbergm/faa-drone-trainer/actions/workflows/ci.yml/badge.svg)](https://github.com/ullbergm/faa-drone-trainer/actions/workflows/ci.yml)
+[![Latest release](https://img.shields.io/github/v/release/ullbergm/faa-drone-trainer)](https://github.com/ullbergm/faa-drone-trainer/releases)
+[![License: MIT](https://img.shields.io/github/license/ullbergm/faa-drone-trainer)](LICENSE)
 [![Live site](https://img.shields.io/website?url=https%3A%2F%2Ffaa-drone.ullberg.io&label=faa-drone.ullberg.io)](https://faa-drone.ullberg.io)
 
 [![Questions](https://img.shields.io/badge/questions-279-blue)](data/questions.js)

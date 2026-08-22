@@ -10,7 +10,7 @@ const EXAM_CONFIG = {
   storageKey: 'faa-drone-trainer-v1',      // localStorage; changing it orphans saved progress
   sessionKey: 'faa-drone-trainer-session', // sessionStorage mirror of the active session
   exportPrefix: 'faa-drone-progress',      // backup filename: <prefix>-YYYY-MM-DD.json
-  repo: 'https://github.com/ullbergm/faa-drone-test-training',
+  repo: 'https://github.com/ullbergm/faa-drone-trainer',
   passMark: 0.7, // the FAA passes the UAG knowledge test at 70% (42 of 60)
 
   // Section numbers are exam topics, not chapters of one book: a section can

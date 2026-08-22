@@ -1,5 +1,5 @@
 {
-  "name": "faa-drone-test-training",
+  "name": "faa-drone-trainer",
   "private": true,
   "description": "Practice questions with spaced repetition for the FAA Part 107 remote pilot knowledge test",
   "license": "MIT",
