@@ -10,10 +10,10 @@ By participating you agree to the [Code of Conduct](CODE_OF_CONDUCT.md).
 - **Fix a question.** The bank was authored from the manual section by section,
   and some of it is certainly wrong. If an answer or explanation does not match
   the cited manual page, open a
-  [question correction](https://github.com/ullbergm/nc-cdl-test-training/issues/new?template=question-correction.yml)
+  [question correction](https://github.com/ullbergm/faa-drone-test-training/issues/new?template=question-correction.yml)
   or send the edit directly as a pull request.
 - **Report a bug.** Use the
-  [bug report template](https://github.com/ullbergm/nc-cdl-test-training/issues/new?template=bug-report.yml).
+  [bug report template](https://github.com/ullbergm/faa-drone-test-training/issues/new?template=bug-report.yml).
   Browser and device help a lot, since most of the tricky bugs are touch or
   layout related.
 - **Report a vulnerability.** Do not open a public issue. Follow
@@ -25,10 +25,10 @@ By participating you agree to the [Code of Conduct](CODE_OF_CONDUCT.md).
 ## Getting set up
 
 ```
-git clone https://github.com/ullbergm/nc-cdl-test-training.git
-cd nc-cdl-test-training
+git clone https://github.com/ullbergm/faa-drone-test-training.git
+cd faa-drone-test-training
 npm install          # dev tooling only; the app itself has no dependencies
-npm run serve        # http://localhost:8080
+npm run serve        # http://localhost:8082
 ```
 
 Opening `index.html` directly works too, though the service worker and a few
@@ -84,7 +84,7 @@ like this:
   "choices": ["...", "...", "...", "..."],
   "answer": 1,
   "explanation": "...",
-  "page": "5-3"
+  "page": "17"
 }
 ```
 
@@ -92,7 +92,7 @@ like this:
 distinct choices, `answer` as a 0-based index into them, and, because this
 exam's config sets `requireCitations`, a `page` on every question that resolves
 through `data/manual-pages.js` (or an explicit `pdfPage`). The explanation
-should say what the cited page says rather than general trucking knowledge. If
+should say what the cited page says rather than general aviation knowledge. If
 you add or remove questions, update the count in the README, which the
 validator also checks.
 
@@ -163,10 +163,13 @@ deploys to GitHub Pages after re-running the tests.
 Plain, direct prose. No emoji, no marketing voice, and no em dashes. Match the
 tone of the README.
 
-## A note on the manual
+## A note on the source documents
 
-The NC Commercial Driver Manual is copyright AAMVA and is not included in this
-repository. Download it from
-[NCDMV](https://www.ncdot.gov/dmv/license-id/driver-licenses/new-drivers/Documents/commercial-driver-manual.pdf)
-if you are working on the question bank. Do not paste long verbatim passages
-into questions or explanations; write them in your own words and cite the page.
+The questions cite two FAA publications, the
+[Remote Pilot Study Guide (FAA-G-8082-22)](https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/remote_pilot_study_guide.pdf)
+and [AC 107-2A](https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_107-2A.pdf).
+Both are US government works and free to download; the PDFs are still not kept
+in this repository, so download them if you are working on the question bank.
+Questions citing the study guide use its plain printed page numbers; questions
+citing the AC carry "manual": "ac" and its chapter-relative labels like 5-14.
+Write questions in your own words and cite the page.
