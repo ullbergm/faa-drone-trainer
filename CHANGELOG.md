@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.0.1](https://github.com/ullbergm/faa-drone-test-training/compare/v2.0.0...v2.0.1) (2026-08-22)
+
+
+### Bug Fixes
+
+* **engine:** give the engine its own dependency install ([9bb827c](https://github.com/ullbergm/faa-drone-test-training/commit/9bb827c176cef09ca420f8c315cacaffce544f52))
+* **engine:** move workflows off the deprecated node 20 action runtimes ([9bb827c](https://github.com/ullbergm/faa-drone-test-training/commit/9bb827c176cef09ca420f8c315cacaffce544f52))
+* sync trainer-engine v2.0.1 ([9bb827c](https://github.com/ullbergm/faa-drone-test-training/commit/9bb827c176cef09ca420f8c315cacaffce544f52))
+
 ## [2.0.0](https://github.com/ullbergm/faa-drone-test-training/compare/v1.0.0...v2.0.0) (2026-08-22)
 
 
