@@ -1,6339 +1,4273 @@
-/* Question bank generated from the NC Commercial Driver Manual (2005 CDL Testing System, July 2014 rev).
-   Each question cites the manual page it was drawn from. That printed label is
-   turned into a PDF deep link through data/manual-pages.js; the few questions
-   whose label is printed on more than one PDF page carry a pdfPage of their
-   own to point at the right one. */
+/* Question bank written from the FAA Remote Pilot Study Guide (FAA-G-8082-22,
+   August 2016) and AC 107-2A (February 2021), which covers the rules added
+   after the study guide: night operations, operations over people, and remote
+   identification. Each question cites the page it was drawn from; the printed
+   label is turned into a PDF deep link through data/manual-pages.js. Questions
+   citing the AC carry "manual": "ac". */
 const QUESTION_BANK = [
  {
   "id": "s1-001",
   "section": 1,
-  "sectionName": "Introduction",
-  "question": "A combination of vehicles falls into Class A when it has a gross combination weight rating (GCWR) of 26,001 or more pounds, provided the vehicle(s) being towed have a GVWR of:",
+  "sectionName": "Regulations",
+  "question": "Which regulations must a remote pilot flying under Part 107 be familiar with?",
   "choices": [
-   "More than 5,000 pounds",
-   "More than 10,000 pounds",
-   "More than 15,000 pounds",
-   "More than 26,000 pounds"
+   "14 CFR part 107, every part it references, and AC 107-2",
+   "Only 14 CFR part 107 itself, since it is a self-contained rule",
+   "14 CFR part 91 and the general operating rules for manned aircraft",
+   "Only the advisory circulars the FAA publishes for small UAS"
   ],
-  "answer": 1,
-  "explanation": "Class A covers combination vehicles with a GCWR of 26,001 or more pounds when the GVWR of the vehicle(s) being towed is more than 10,000 pounds.",
-  "page": "1-1"
+  "answer": 0,
+  "explanation": "A remote pilot must know 14 CFR part 107, all of the regulations that part 107 references, and the guidance in AC 107-2. Part 107 alone is not enough because it points to other parts, and advisory circulars supplement the regulations rather than replace them.",
+  "page": "3"
  },
  {
   "id": "s1-002",
   "section": 1,
-  "sectionName": "Introduction",
-  "question": "Which vehicle falls into Class B?",
+  "sectionName": "Regulations",
+  "question": "Which regulation contains the registration and marking requirements for small unmanned aircraft?",
   "choices": [
-   "Any single vehicle with a GVWR of 26,001 or more pounds, or such a vehicle towing another vehicle not in excess of 10,000 pounds GVWR",
-   "Any combination of vehicles with a GCWR of 26,001 or more pounds, provided the vehicle being towed has a GVWR of more than 10,000 pounds",
-   "Any single vehicle with a GVWR of less than 26,001 pounds",
-   "Any vehicle designed to carry 16 or more passengers regardless of weight"
+   "14 CFR part 48",
+   "14 CFR part 43",
+   "14 CFR part 61",
+   "14 CFR part 71"
   ],
   "answer": 0,
-  "explanation": "Class B (heavy straight vehicles) is any single vehicle with a GVWR of 26,001 or more pounds, or any such vehicle towing another vehicle not in excess of 10,000 pounds GVWR. It includes straight trucks and large buses.",
-  "page": "1-1"
+  "explanation": "14 CFR part 48 is the regulation for registration and marking of small unmanned aircraft. It covers the requirement to register, who is eligible, who may apply, the application itself, and where the unique identifier must be displayed.",
+  "page": "76"
  },
  {
   "id": "s1-003",
   "section": 1,
-  "sectionName": "Introduction",
-  "question": "A single vehicle with a GVWR of less than 26,001 pounds (Class C) requires a CDL only if it is:",
+  "sectionName": "Regulations",
+  "question": "Who has the final authority for the safe operation of a small unmanned aircraft during a Part 107 flight?",
   "choices": [
-   "Towing any trailer of any size, even when the combined weight of the truck and trailer stays well under the 26,001 pound commercial threshold",
-   "Equipped with air brakes or any other braking system that requires special training to operate",
-   "Designed to carry 16 or more passengers (including the driver) or used to transport hazardous materials requiring placards",
-   "Used in interstate commerce, no matter what the vehicle weighs or carries"
+   "The remote pilot in command of the flight",
+   "The visual observer watching the aircraft",
+   "The person manipulating the flight controls",
+   "The nearest air traffic control facility"
   ],
-  "answer": 2,
-  "explanation": "Class C vehicles are in the CDL program only if they are designed to carry 16 or more passengers including the driver, or transport hazardous materials in quantities requiring placarding (or select agents/toxins in 42 CFR part 73).",
-  "page": "1-1"
+  "answer": 0,
+  "explanation": "Just like the pilot in command of a manned aircraft, the remote PIC is directly responsible for, and is the final authority for, the safe operation of the small unmanned aircraft. Observers and persons on the controls work under the remote PIC's authority.",
+  "page": "5-1",
+  "manual": "ac"
  },
  {
   "id": "s1-004",
   "section": 1,
-  "sectionName": "Introduction",
-  "question": "Which endorsements may be added to a Commercial Learner's Permit (CLP)?",
+  "sectionName": "Regulations",
+  "question": "How many small unmanned aircraft may one person operate as remote PIC at the same time?",
   "choices": [
-   "Hazardous Materials (H), Tank (N), and Doubles/Triples (T)",
-   "Any of the six CDL endorsements",
-   "Doubles/Triples (T) and Passenger (P) only",
-   "Passenger (P), School Bus (S), and Tank Vehicle (N)"
+   "Only one, even when automation is used",
+   "Up to two if a visual observer assists with each",
+   "Up to three if all remain within visual line of sight",
+   "As many as the control station is designed to manage"
   ],
-  "answer": 3,
-  "explanation": "The only endorsements that may be added to a CLP are Passenger (P), School Bus (S), and Tank Vehicle (N).",
-  "page": "1-2"
+  "answer": 0,
+  "explanation": "A person may not act as remote PIC or visual observer for more than one small unmanned aircraft at the same time. Using automation does not change this; the one-aircraft limit still applies.",
+  "page": "5-1",
+  "manual": "ac"
  },
  {
   "id": "s1-005",
   "section": 1,
-  "sectionName": "Introduction",
-  "question": "The tank vehicle (N) endorsement is required for drivers hauling liquid or gaseous materials in a tank or tanks having an individual rated capacity of more than 119 gallons and an aggregate rated capacity of:",
+  "sectionName": "Regulations",
+  "question": "Which documents must a remote PIC have in physical possession and readily accessible during flight operations?",
   "choices": [
-   "500 gallons or more",
-   "1,000 gallons or more",
-   "5,000 gallons or more",
-   "119 gallons or more"
+   "The remote pilot certificate and personal identification",
+   "The aircraft maintenance log and preflight checklist",
+   "A current aviation weather briefing for the flight area",
+   "The manufacturer's operating handbook for the aircraft"
   ],
-  "answer": 1,
-  "explanation": "The N endorsement applies to tanks with an individual rated capacity of more than 119 gallons and an aggregate rated capacity of 1,000 gallons or more, whether permanently or temporarily attached to the vehicle or chassis.",
-  "page": "1-2"
+  "answer": 0,
+  "explanation": "During flight operations the remote PIC must physically possess, and keep readily accessible, the remote pilot certificate and personal identification. Other paperwork can be useful, but these two items are what the rule requires the pilot to carry.",
+  "page": "5-1",
+  "manual": "ac"
  },
  {
   "id": "s1-006",
   "section": 1,
-  "sectionName": "Introduction",
-  "question": "What does the X endorsement on a CDL indicate?",
+  "sectionName": "Regulations",
+  "question": "Under what condition may two certificated remote pilots transfer remote PIC duties to each other during an operation?",
   "choices": [
-   "The driver may pull double or triple trailers",
-   "The driver is restricted to intrastate driving only",
-   "The driver has passed the knowledge examinations for both tank vehicles and hazardous materials",
-   "The driver may operate both a school bus and any other passenger bus without further knowledge testing"
+   "Both pilots can keep the aircraft in visual line of sight during the handoff",
+   "The aircraft is landed before operational control passes to the other pilot",
+   "Air traffic control approves the transfer before it takes place",
+   "The outgoing pilot files a written transfer report with the FAA"
   ],
-  "answer": 2,
-  "explanation": "The X endorsement is for drivers of tank vehicles hauling hazardous materials or waste in amounts requiring placards; it shows the driver passed the special knowledge examinations for both tank vehicles and hazardous materials.",
-  "page": "1-2"
+  "answer": 0,
+  "explanation": "Certificated remote pilots may hand off the remote PIC role only if both are capable of maintaining visual line of sight of the aircraft without losing control, and the transfer is positively communicated. The pilot assuming control takes on responsibility for the safe operation.",
+  "page": "5-1",
+  "manual": "ac"
  },
  {
   "id": "s1-007",
   "section": 1,
-  "sectionName": "Introduction",
-  "question": "A passenger (P) endorsement is required for drivers who wish to drive a vehicle designed to carry how many people?",
+  "sectionName": "Regulations",
+  "question": "May a person who holds no remote pilot certificate fly a small unmanned aircraft under Part 107?",
   "choices": [
-   "16 or more, including the driver",
-   "16 or more, not counting the driver",
-   "10 or more, including the driver",
-   "24 or more, including the driver"
+   "Yes, if directly supervised by a remote PIC who can take immediate direct control",
+   "Yes, as long as a certificated remote pilot approved the flight plan beforehand",
+   "No, every person who touches the controls must hold a remote pilot certificate",
+   "Yes, but only when the flight stays below 200 feet above ground level"
   ],
   "answer": 0,
-  "explanation": "Drivers who wish to drive a vehicle with a design capacity to carry 16 or more people, including the driver, must add a passenger endorsement and pass a special knowledge exam and skills tests in a passenger vehicle.",
-  "page": "1-2"
+  "explanation": "An uncertificated person may manipulate the controls only under the direct supervision of a remote PIC, and the remote PIC must be able to take immediate, direct control of the aircraft, for example through a buddy-box setup, by standing close enough to grab the controls, or by triggering an automated safe mode.",
+  "page": "5-1",
+  "manual": "ac"
  },
  {
   "id": "s1-008",
   "section": 1,
-  "sectionName": "Introduction",
-  "question": "If an applicant performs the skills test in a vehicle equipped with an automatic transmission, which restriction will be placed on the CDL?",
+  "sectionName": "Regulations",
+  "question": "When must a small unmanned aircraft be registered for operations under Part 107?",
   "choices": [
-   "(K) - Intrastate only",
-   "(L) - No air brake equipped CMV",
-   "(O) - No tractor trailer CMV",
-   "(E) - No manual transmission"
+   "Before it is operated, under either part 47 or part 48",
+   "Within 30 days after its first commercial flight",
+   "Only if it will be flown inside controlled airspace",
+   "After it passes an FAA airworthiness inspection"
   ],
-  "answer": 3,
-  "explanation": "Taking the skills test in an automatic-transmission vehicle results in an E restriction, prohibiting operation of a CMV equipped with a manual transmission.",
-  "page": "1-2"
+  "answer": 0,
+  "explanation": "A small unmanned aircraft must be registered under part 47 or part 48 before it is operated under Part 107. Part 48 provides the streamlined online registration option for aircraft that will be operated only within the territorial limits of the United States.",
+  "page": "5-2",
+  "manual": "ac"
  },
  {
   "id": "s1-009",
   "section": 1,
-  "sectionName": "Introduction",
-  "question": "A driver who does not take or fails the air brake component of the knowledge test, or takes the skills test in a vehicle without air brakes, will receive which restriction?",
+  "sectionName": "Regulations",
+  "question": "The remote PIC glances down at the controller to check battery life and briefly loses sight of the aircraft. What does the visual line of sight rule require?",
   "choices": [
-   "(Z) - No full air brake equipped CMV",
-   "(L) - No air brake equipped CMV",
-   "(E) - No manual transmission",
-   "(V) - Medical variance"
+   "Regain sight of the aircraft as soon as practicable",
+   "Land the aircraft immediately at the nearest clear area",
+   "Notify air traffic control that visual contact was lost",
+   "Climb the aircraft higher so that it is easier to spot"
   ],
-  "answer": 1,
-  "explanation": "The L restriction prohibits operating a CMV equipped with any type of air brakes when the applicant did not take or failed the air brake knowledge test, or tested in a vehicle not equipped with air brakes.",
-  "page": "1-3"
+  "answer": 0,
+  "explanation": "Brief moments without direct sight, such as checking the controller, are acceptable as long as the pilot retains the capability to see the aircraft or quickly bring it back into view. If sight is lost, it must be regained as soon as practicable; no specific time interval of interruption is permitted by rule.",
+  "page": "5-5",
+  "manual": "ac"
  },
  {
   "id": "s1-010",
   "section": 1,
-  "sectionName": "Introduction",
-  "question": "The K restriction on a CDL means the driver:",
+  "sectionName": "Regulations",
+  "question": "Which type of vision satisfies the visual line of sight requirement of Part 107?",
   "choices": [
-   "May not carry passengers in a CMV bus",
-   "May not operate any CMV that is equipped with a manual transmission of any kind",
-   "Is restricted from operating a CMV in interstate commerce (intrastate only)",
-   "May only operate an empty tank vehicle"
+   "Unaided vision, or vision corrected by eyeglasses or contact lenses",
+   "A first person view camera feed displayed at the control station",
+   "Binoculars used continuously by the remote pilot in command",
+   "Control station telemetry showing the aircraft's position and altitude"
   ],
-  "answer": 2,
-  "explanation": "The K restriction (Intrastate only) is placed on the CDL when an applicant certifies status as Non-Excepted Intrastate or Excepted Intrastate, restricting the driver from operating a CMV in interstate commerce.",
-  "page": "1-3"
+  "answer": 0,
+  "explanation": "Visual line of sight must be maintained with unaided vision, except for ordinary eyeglasses or contact lenses. Vision aids like binoculars may be used only momentarily to enhance situational awareness, and first person view devices never satisfy the requirement.",
+  "page": "5-6",
+  "manual": "ac"
  },
  {
   "id": "s1-011",
   "section": 1,
-  "sectionName": "Introduction",
-  "question": "Which three types of general skills are tested on the CDL skills tests?",
+  "sectionName": "Regulations",
+  "question": "What is the role of a visual observer in a Part 107 operation?",
   "choices": [
-   "Vehicle inspection, basic vehicle control, and on-road driving",
-   "Parallel parking, backing, and highway driving",
-   "General knowledge, air brakes, and combination vehicles",
-   "Vehicle inspection, coupling/uncoupling, and night driving"
+   "An optional crewmember who supplements situational awareness",
+   "A required crewmember on any flight beyond 400 feet from the pilot",
+   "A certificated pilot ready to take control if the remote PIC cannot",
+   "An FAA designee who confirms the preflight inspection was completed"
   ],
   "answer": 0,
-  "explanation": "The CDL skills tests cover three types of general skills: vehicle inspection, basic vehicle control, and on-road driving, taken in the type of vehicle for which you wish to be licensed.",
-  "page": "1-5"
+  "explanation": "Using a visual observer is optional. A VO supplements situational awareness and visual line of sight, freeing the remote PIC and the person on the controls for other mission-critical duties. The VO must be able to communicate the aircraft's location, attitude, altitude, and direction, the position of other aircraft or hazards, and whether the aircraft endangers life or property.",
+  "page": "5-6",
+  "manual": "ac"
  },
  {
   "id": "s1-012",
   "section": 1,
-  "sectionName": "Introduction",
-  "question": "How many attempts at each CDL knowledge test are allowed per day, and what happens after three failed attempts at the general knowledge test?",
+  "sectionName": "Regulations",
+  "question": "What must a remote pilot obtain before operating in Class B, Class C, or Class D airspace, or within the lateral boundaries of surface-area Class E airspace designated for an airport?",
   "choices": [
-   "Two attempts per day; you must wait 30 days to retest",
-   "One attempt per day; you must complete a training course before retesting",
-   "Unlimited attempts per day; no additional fee is ever required",
-   "One attempt per day; another application fee is required for three more attempts"
+   "Prior authorization from air traffic control",
+   "A logged two-way radio check with the control tower",
+   "A waiver of the visual line of sight requirement",
+   "A NOTAM filed at least 24 hours before the launch"
   ],
-  "answer": 3,
-  "explanation": "Only one attempt at each knowledge test is allowed per day, and if you have not passed the general knowledge test after three attempts, another application fee is required for three more attempts.",
-  "page": "1-5"
+  "answer": 0,
+  "explanation": "Operations in Class B, C, or D airspace, or in the surface area of Class E airspace designated for an airport, are not permitted without prior authorization from air traffic control. The FAA may approve or deny requests based on traffic density, controller workload, communication issues, and similar factors.",
+  "page": "5-7",
+  "manual": "ac"
  },
  {
   "id": "s1-013",
   "section": 1,
-  "sectionName": "Introduction",
-  "question": "How long are CDL test scores valid in NCDMV computer files?",
+  "sectionName": "Regulations",
+  "question": "What is required to operate a small unmanned aircraft near an airport that lies in uncontrolled airspace?",
   "choices": [
-   "30 days from the test date",
-   "60 days from the test date",
-   "90 days from the test date",
-   "1 year from the test date"
+   "No authorization, but the pilot must avoid interfering with airport traffic and yield right-of-way",
+   "Prior notification to the airport manager and the control tower at least one day before the flight",
+   "An air traffic control authorization obtained through the FAA website before every launch",
+   "A visual observer stationed on the airport property to watch the traffic pattern for conflicts"
   ],
-  "answer": 2,
-  "explanation": "All test scores are valid for 90 days from the test date in NCDMV computer files.",
-  "page": "1-5"
+  "answer": 0,
+  "explanation": "Unless the flight is in controlled airspace, no notification or authorization is needed to operate at or near an airport. The remote PIC must still avoid traffic patterns, approach corridors, runways, taxiways, and helipads, and must yield right-of-way to all other aircraft, including aircraft on the airport surface.",
+  "page": "5-7",
+  "manual": "ac"
  },
  {
   "id": "s1-014",
   "section": 1,
-  "sectionName": "Introduction",
-  "question": "Which of the following describes interstate commerce?",
+  "sectionName": "Regulations",
+  "question": "During the preflight check a flight control surface does not respond correctly to control station inputs. What must the remote PIC do?",
   "choices": [
-   "Driving a CMV only within North Carolina with cargo that was picked up in the state and will be delivered without ever leaving the state",
-   "Driving a CMV between two places within a state, but the cargo is part of a trip that began or will end in another state or foreign country",
-   "Driving any CMV that is registered under the IRP",
-   "Driving a CMV more than 150 air-miles from your home terminal"
+   "Not conduct flight operations until every control surface moves correctly",
+   "Fly a short low test hover to confirm whether the fault repeats in the air",
+   "Continue the flight if the autopilot is able to compensate for the surface",
+   "Log the discrepancy and restrict the flight to half the planned altitude"
   ],
-  "answer": 1,
-  "explanation": "Interstate commerce includes driving from one state to another or a foreign country, crossing into another state during part of a trip, or driving between two places within a state when the cargo or passengers are part of a trip that began or will end in another state or foreign country.",
-  "page": "1-6"
+  "answer": 0,
+  "explanation": "Before each flight the remote PIC must verify through the control station that the control surfaces needed for safe flight move correctly. If any surface does not respond correctly, flight operations may not be conducted until correct movement of all flight control surfaces is established.",
+  "page": "5-10",
+  "manual": "ac"
  },
  {
   "id": "s1-015",
   "section": 1,
-  "sectionName": "Introduction",
-  "question": "Drivers who operate in non-excepted interstate commerce are required to provide what document to their State Driver Licensing Agency?",
+  "sectionName": "Regulations",
+  "question": "What is the maximum allowable groundspeed for a small unmanned aircraft under Part 107?",
   "choices": [
-   "A current medical examiner's certificate (DOT card)",
-   "A TSA background check clearance letter",
-   "An Individual Vehicle Distance Record (IVDR)",
-   "A skills performance evaluation certificate"
+   "87 knots (100 miles per hour)",
+   "80 knots (92 miles per hour)",
+   "95 knots (109 miles per hour)",
+   "100 knots (115 miles per hour)"
   ],
   "answer": 0,
-  "explanation": "Non-excepted interstate drivers must provide a current medical examiner's certificate (49 CFR 391.45), commonly called a medical certificate or DOT card, to their SDLA. Most CDL holders in interstate commerce are non-excepted interstate drivers.",
-  "page": "1-7"
+  "explanation": "A small unmanned aircraft may not be flown faster than a groundspeed of 87 knots, which is 100 miles per hour. The pilot can verify compliance with a GPS groundspeed readout, by timing the aircraft between fixed points, or by relying on a manufacturer's installed speed limiter.",
+  "page": "5-11",
+  "manual": "ac"
  },
  {
   "id": "s1-016",
   "section": 1,
-  "sectionName": "Introduction",
-  "question": "Original Individual Vehicle Distance Records (IVDRs) used to calculate IRP fees and IFTA taxes must be maintained for a minimum of:",
+  "sectionName": "Regulations",
+  "question": "How high may a small unmanned aircraft be flown when it is not operating near any structure?",
   "choices": [
-   "One year",
-   "Two years",
-   "Ten years",
-   "Four years"
+   "400 feet above ground level",
+   "400 feet above mean sea level",
+   "500 feet above ground level",
+   "200 feet above ground level"
   ],
-  "answer": 3,
-  "explanation": "The IVDR serves as the source document for calculating fees and taxes payable to the jurisdictions where the vehicle operates, so these original records must be maintained for a minimum of four years.",
-  "page": "1-12"
+  "answer": 0,
+  "explanation": "The ceiling is 400 feet above ground level. The exception is flight within a 400-foot radius of a structure, where the aircraft may climb up to 400 feet above the structure's immediate uppermost limit.",
+  "page": "5-11",
+  "manual": "ac"
  },
  {
   "id": "s1-017",
   "section": 1,
-  "sectionName": "Introduction",
-  "question": "It is illegal to operate a CMV if your blood alcohol concentration (BAC) is:",
+  "sectionName": "Regulations",
+  "question": "What is the minimum flight visibility, as observed from the control station, for a Part 107 operation?",
   "choices": [
-   ".08% or more",
-   ".04% or more",
-   ".02% or more",
-   ".01% or more"
+   "3 statute miles",
+   "1 statute mile",
+   "2 statute miles",
+   "5 statute miles"
   ],
-  "answer": 1,
-  "explanation": "It is illegal to operate a CMV if your blood alcohol concentration is .04% or more, and by operating a CMV you are deemed to have given consent to alcohol testing.",
-  "page": "1-8"
+  "answer": 0,
+  "explanation": "Visibility observed from the location of the control station may not be less than 3 statute miles. Local aviation weather reports are one way to establish this; without a reliable means of determining visibility, the flight cannot be conducted.",
+  "page": "5-11",
+  "manual": "ac"
  },
  {
   "id": "s1-018",
   "section": 1,
-  "sectionName": "Introduction",
-  "question": "If you have any detectable amount of alcohol under .04%, you will be:",
+  "sectionName": "Regulations",
+  "question": "How far must a small unmanned aircraft remain from clouds?",
   "choices": [
-   "Fined up to $5,000",
-   "Disqualified for at least 60 days",
-   "Put out-of-service for 24 hours",
-   "Required to retake the knowledge test"
+   "At least 500 feet below and 2,000 feet horizontally",
+   "At least 1,000 feet below and 1 statute mile horizontally",
+   "At least 500 feet above and 1,000 feet horizontally",
+   "Clear of clouds, with no specific distance required"
   ],
-  "answer": 2,
-  "explanation": "The manual states you will be put out-of-service for 24 hours if you have any detectable amount of alcohol under .04%.",
-  "page": "1-8"
+  "answer": 0,
+  "explanation": "The aircraft must stay no less than 500 feet below a cloud and no less than 2,000 feet horizontally from it. It also may not be operated above any cloud, and there can be no obstruction to visibility, such as smoke or a cloud, between the aircraft and the remote PIC.",
+  "page": "5-11",
+  "manual": "ac"
  },
  {
   "id": "s1-019",
   "section": 1,
-  "sectionName": "Introduction",
-  "question": "For which first offense will you lose your CDL for at least one year?",
+  "sectionName": "Regulations",
+  "question": "From which kind of moving platform does Part 107 permit operating a small unmanned aircraft?",
   "choices": [
-   "Driving a CMV with a BAC of .04% or higher",
-   "Refusing to undergo blood alcohol testing",
-   "Leaving the scene of an accident involving a CMV",
-   "All of the above"
+   "A land or water-borne vehicle over a sparsely populated area",
+   "A moving aircraft flying over a sparsely populated area",
+   "Any moving vehicle, provided a visual observer is driving",
+   "A land vehicle in a congested area moving at low speed"
   ],
-  "answer": 3,
-  "explanation": "A first offense of driving a CMV with a BAC of .04% or higher, driving under the influence, refusing blood alcohol testing, leaving the scene of an accident involving a CMV, or committing a felony involving a CMV all result in losing the CDL for at least one year.",
-  "page": "1-8"
+  "answer": 0,
+  "explanation": "Operation from a moving land or water-borne vehicle is allowed over a sparsely populated area, and the sparsely-populated limit can be waived. Operation from a moving aircraft is prohibited outright, and no moving vehicle may be used when the aircraft is transporting another person's property for compensation or hire.",
+  "page": "5-12",
+  "manual": "ac"
  },
  {
   "id": "s1-020",
   "section": 1,
-  "sectionName": "Introduction",
-  "question": "If a first major offense (such as driving under the influence) occurs while you are operating a CMV placarded for hazardous materials, you will lose your CDL for at least:",
+  "sectionName": "Regulations",
+  "question": "Which geographic limit applies when property is transported for compensation or hire under Part 107?",
   "choices": [
-   "Three years",
-   "One year",
-   "Five years",
-   "Six months"
+   "The transport must occur wholly within the bounds of a single state",
+   "The transport may cross state lines if the flight stays below 400 feet",
+   "The property may be carried only between FAA-designated landing sites",
+   "The delivery distance is capped at 25 statute miles from the launch point"
   ],
   "answer": 0,
-  "explanation": "You will lose your CDL for at least three years if the offense occurs while operating a CMV that is placarded for hazardous materials.",
-  "page": "1-8"
+  "explanation": "Part 107 permits transporting property for compensation or hire, but the operation must be conducted within a confined area and the transport must occur wholly within the boundaries of a single state, in compliance with all Part 107 operating restrictions.",
+  "page": "5-13",
+  "manual": "ac"
  },
  {
   "id": "s1-021",
   "section": 1,
-  "sectionName": "Introduction",
-  "question": "For a second offense of driving a CMV under the influence of alcohol, you will lose your CDL for:",
+  "sectionName": "Regulations",
+  "question": "What weight limit applies when a small unmanned aircraft transports property for compensation or hire?",
   "choices": [
-   "Three years",
-   "Ten years",
-   "Life",
-   "Five years"
+   "The aircraft and the property together must total under 55 pounds",
+   "The property alone must weigh less than 55 pounds at takeoff",
+   "The aircraft and the property together may total up to 100 pounds",
+   "The property may not exceed one half of the aircraft's empty weight"
   ],
-  "answer": 2,
-  "explanation": "You will lose your CDL for life for a second offense. You will also lose it for life if you use a CMV to commit a felony involving controlled substances.",
-  "page": "1-8"
+  "answer": 0,
+  "explanation": "The maximum total weight of the small unmanned aircraft, including any property being transported, is limited to under 55 pounds. The flight must also remain within visual line of sight, and that limitation cannot be waived for the transportation of property.",
+  "page": "5-13",
+  "manual": "ac"
  },
  {
   "id": "s1-022",
   "section": 1,
-  "sectionName": "Introduction",
-  "question": "As a serious traffic violation, excessive speeding is defined as driving:",
+  "sectionName": "Regulations",
+  "question": "How long after consuming any alcoholic beverage must a person wait before serving as a crewmember on a small UAS operation?",
   "choices": [
-   "15 mph or more above the posted limit",
-   "10 mph or more above the posted limit",
-   "20 mph or more above the posted limit",
-   "5 mph or more above the posted limit"
+   "8 hours",
+   "4 hours",
+   "12 hours",
+   "24 hours"
   ],
   "answer": 0,
-  "explanation": "Serious traffic violations include excessive speeding, defined as 15 mph or more above the posted speed limit, along with reckless driving, improper lane changes, following too closely, and others.",
-  "page": "1-8"
+  "explanation": "A person may not serve as a remote PIC, visual observer, or other crewmember, or manipulate the controls, within 8 hours of consuming any alcoholic beverage. Being under the influence of alcohol or using a drug that affects mental or physical capability is prohibited regardless of the time elapsed.",
+  "page": "5-13",
+  "manual": "ac"
  },
  {
   "id": "s1-023",
   "section": 1,
-  "sectionName": "Introduction",
-  "question": "You will lose your CDL for at least 60 days if you commit how many serious traffic violations within a three-year period involving a CMV?",
+  "sectionName": "Regulations",
+  "question": "At what blood alcohol concentration is a person prohibited from participating in a small UAS operation?",
   "choices": [
-   "One",
-   "Two",
-   "Three",
-   "Four"
+   ".04 percent or greater",
+   ".02 percent or greater",
+   ".08 percent or greater",
+   ".10 percent or greater"
   ],
-  "answer": 1,
-  "explanation": "Two serious traffic violations within a three-year period involving a CMV result in losing the CDL for at least 60 days; three or more result in at least 120 days.",
-  "page": "1-8"
+  "answer": 0,
+  "explanation": "A blood alcohol concentration of .04 percent or greater disqualifies a person from acting as remote PIC, visual observer, or other crewmember or from manipulating the controls. This is a stricter standard than the .08 limit commonly used for driving.",
+  "page": "5-13",
+  "manual": "ac"
  },
  {
   "id": "s1-024",
   "section": 1,
-  "sectionName": "Introduction",
-  "question": "For your first violation of an out-of-service order, you will lose your CDL for at least:",
+  "sectionName": "Regulations",
+  "question": "What may a remote PIC do when an in-flight emergency occurs?",
   "choices": [
-   "30 days",
-   "60 days",
-   "One year",
-   "90 days"
+   "Deviate from any rule of Part 107 to the extent the emergency requires",
+   "Deviate only from the altitude and groundspeed operating limitations",
+   "Nothing beyond landing immediately at the nearest safe open area",
+   "Deviate from the rules only after obtaining air traffic control approval"
   ],
-  "answer": 3,
-  "explanation": "A first violation of an out-of-service order results in losing the CDL for at least 90 days; two violations in a ten-year period bring at least one year, and three or more bring at least three years.",
-  "page": "1-8"
+  "answer": 0,
+  "explanation": "In an in-flight emergency, an unexpected serious situation demanding urgent action, the remote PIC may deviate from any Part 107 rule to the extent necessary to respond. If the FAA requests it, the pilot must send a written report explaining the deviation, and emergency action should minimize injury and property damage.",
+  "page": "5-15",
+  "manual": "ac"
  },
  {
   "id": "s1-025",
   "section": 1,
-  "sectionName": "Introduction",
-  "question": "For your first railroad-highway grade crossing violation, you will lose your CDL for at least:",
+  "sectionName": "Regulations",
+  "question": "Which situation could the FAA treat as careless or reckless operation of a small unmanned aircraft?",
   "choices": [
-   "60 days",
-   "90 days",
-   "120 days",
-   "One year"
+   "Disregarding weather conditions near structures or rolling terrain in a densely populated area",
+   "Operating from a parked vehicle beside a rural road while coordinating with a visual observer",
+   "Flying at 300 feet above ground level in uncontrolled airspace a few miles from an airport",
+   "Briefly glancing down at the control station display to check battery levels during a flight"
   ],
   "answer": 0,
-  "explanation": "Railroad-highway grade crossing violations result in losing the CDL for at least 60 days for the first violation, at least 120 days for the second within three years, and at least one year for the third within three years.",
-  "page": "1-8"
+  "explanation": "Careless or reckless operation is prohibited, and small UAS introduce hazards manned aviation does not have. Failing to consider weather conditions near structures, trees, or rolling terrain while flying in a densely populated area is the kind of conduct that can qualify.",
+  "page": "5-15",
+  "manual": "ac"
  },
  {
   "id": "s1-026",
   "section": 1,
-  "sectionName": "Introduction",
-  "question": "You must notify your employer within what time period if your license is suspended, revoked, or canceled, or if you are disqualified from driving?",
+  "sectionName": "Regulations",
+  "question": "What does a certificate of waiver issued under Part 107 permit?",
   "choices": [
-   "30 days",
-   "24 hours",
-   "Two business days",
-   "One week"
+   "Deviation from certain Part 107 provisions when the operation can be conducted safely",
+   "Exemption from small unmanned aircraft registration for government-sponsored operations",
+   "Operation of a small unmanned aircraft by a pilot whose certificate has been suspended",
+   "Carriage of another person's property for hire beyond the pilot's visual line of sight"
   ],
-  "answer": 2,
-  "explanation": "You must notify your employer within two business days if your license is suspended, revoked, or canceled, or if you are disqualified from driving. Traffic violation convictions (except parking) must be reported to your employer within 30 days.",
-  "page": "1-9"
+  "answer": 0,
+  "explanation": "A certificate of waiver lets an operation deviate from certain provisions of Part 107 when the Administrator finds it can be conducted safely under the waiver's terms. Waivable sections include operation from moving vehicles, visual line of sight, visual observer, multiple aircraft, right-of-way, certain airspace, and the operating limitations, but no visual line of sight waiver is issued for carrying another person's property for compensation or hire.",
+  "page": "5-15",
+  "manual": "ac"
  },
  {
   "id": "s1-027",
   "section": 1,
-  "sectionName": "Introduction",
-  "question": "If you break the rule against having more than one driver license, a court may fine you up to:",
+  "sectionName": "Regulations",
+  "question": "What is the minimum age to apply for a remote pilot certificate with a small UAS rating?",
   "choices": [
-   "$1,000",
-   "$5,000",
-   "$2,500",
-   "$10,000"
+   "16 years old",
+   "13 years old",
+   "18 years old",
+   "21 years old"
   ],
-  "answer": 1,
-  "explanation": "You cannot have more than one license; a court may fine you up to $5,000 or put you in jail, and your home state license will be kept while any others are returned.",
-  "page": "1-9"
+  "answer": 0,
+  "explanation": "An applicant for a remote pilot certificate with a small UAS rating must be at least 16 years of age. The other eligibility requirements cover English language ability, physical and mental condition, and passing the initial aeronautical knowledge test or completing the qualifying training.",
+  "page": "6-1",
+  "manual": "ac"
  },
  {
   "id": "s1-028",
   "section": 1,
-  "sectionName": "Introduction",
-  "question": "If you receive a prohibited status in the Drug and Alcohol Clearinghouse, you will lose your commercial driving privileges for a minimum of:",
+  "sectionName": "Regulations",
+  "question": "Which English language standard must a remote pilot certificate applicant meet?",
   "choices": [
-   "90 days and until you pay a reinstatement fee",
-   "One year",
-   "60 days",
-   "30 days and until you complete the return-to-duty (RTD) process"
+   "Be able to read, speak, write, and understand English",
+   "Speak and understand English at a conversational level",
+   "Read and write English, with spoken fluency being optional",
+   "Demonstrate English proficiency only during the knowledge test"
   ],
-  "answer": 3,
-  "explanation": "A prohibited status in the Clearinghouse results in losing commercial driving privileges for a minimum of 30 days and until you complete the return-to-duty (RTD) process.",
-  "page": "1-10"
+  "answer": 0,
+  "explanation": "Eligibility requires the ability to read, speak, write, and understand the English language. All four skills are named in the requirement; it is not limited to the test setting or to spoken conversation.",
+  "page": "6-1",
+  "manual": "ac"
  },
  {
   "id": "s1-029",
   "section": 1,
-  "sectionName": "Introduction",
-  "question": "In North Carolina, an 18-year-old who obtains a CDL will be:",
+  "sectionName": "Regulations",
+  "question": "Which medical standard applies to an applicant for a remote pilot certificate?",
   "choices": [
-   "Restricted to driving inside North Carolina only and not eligible for the Hazardous Materials endorsement",
-   "Allowed to drive in any state, but never allowed to carry passengers for hire in a commercial vehicle of any size",
-   "Eligible for all endorsements after six months of experience",
-   "Restricted to Class C vehicles only"
+   "No physical or mental condition that would interfere with safe operation",
+   "A third-class medical certificate issued by an aviation medical examiner",
+   "An FAA medical questionnaire renewed every 24 calendar-months",
+   "A vision screening showing eyesight correctable to 20/20 in both eyes"
   ],
   "answer": 0,
-  "explanation": "A driver must be 21, but at age 18 a client may obtain a CDL; they are not eligible for the Hazardous Materials endorsement and are restricted to driving inside North Carolina only (Restriction K, Intrastate Only).",
-  "page": "1-9",
-  "pdfPage": 20
+  "explanation": "No airman medical certificate is required. The applicant must instead be in a physical and mental condition that would not interfere with the safe operation of a small UAS, and the operating rules bar anyone who knows of such a condition from participating in an operation.",
+  "page": "6-1",
+  "manual": "ac"
  },
  {
   "id": "s1-030",
   "section": 1,
-  "sectionName": "Introduction",
-  "question": "To be physically qualified to drive a CMV, a driver must have distant visual acuity of at least what level in each eye, with or without corrective lenses?",
+  "sectionName": "Regulations",
+  "question": "A pilot holds a part 61 certificate, other than a student pilot certificate, and meets the part 61 flight review requirement. How may this pilot qualify for a remote pilot certificate?",
   "choices": [
-   "20/20 (Snellen)",
-   "20/60 (Snellen)",
-   "20/40 (Snellen)",
-   "20/70 (Snellen)"
+   "By successfully completing the FAA's online Part 107 training instead of the knowledge test",
+   "By passing a practical flight demonstration with an FAA designated pilot examiner",
+   "By logging at least 10 hours of supervised small UAS flight time with an instructor",
+   "By mailing a copy of the part 61 pilot certificate to the FAA registry with an application"
   ],
-  "answer": 2,
-  "explanation": "A driver must have distant visual acuity of at least 20/40 (Snellen) in each eye with or without corrective lenses, a field of vision of at least 70 degrees in the horizontal meridian in each eye, and the ability to recognize standard red, green, and amber traffic signal colors.",
-  "page": "1-9",
-  "pdfPage": 20
+  "answer": 0,
+  "explanation": "A part 61 certificate holder, other than a student pilot, who meets the flight review requirements of section 61.56 may complete the online Part 107 small UAS training at faasafety.gov instead of taking the initial aeronautical knowledge test. Everyone else must pass the knowledge test at an FAA-approved testing center.",
+  "page": "6-1",
+  "manual": "ac"
+ },
+ {
+  "id": "s1-031",
+  "section": 1,
+  "sectionName": "Regulations",
+  "question": "What happens when a remote pilot certificate applicant fails the TSA security vetting?",
+  "choices": [
+   "No temporary or permanent certificate is issued, and the applicant may appeal to the TSA",
+   "A temporary certificate is issued while the FAA completes a further investigation",
+   "The applicant may retake the aeronautical knowledge test after 30 calendar days",
+   "The FAA issues the certificate but attaches airspace-related operating restrictions"
+  ],
+  "answer": 0,
+  "explanation": "The TSA vets every applicant before a temporary remote pilot certificate is issued. If the vetting is unsuccessful, the applicant is disqualified and receives neither a temporary nor a permanent certificate, and someone who believes the security threat assessment was improperly failed may appeal the decision to the TSA.",
+  "page": "6-4",
+  "manual": "ac"
+ },
+ {
+  "id": "s1-032",
+  "section": 1,
+  "sectionName": "Regulations",
+  "question": "What must every applicant establish in the IACRA system before taking any FAA airman knowledge test?",
+  "choices": [
+   "An FAA Tracking Number",
+   "A student pilot certificate",
+   "A knowledge test exam identification number",
+   "A temporary airman certificate"
+  ],
+  "answer": 0,
+  "explanation": "Since January 13, 2020, all applicants must establish an FAA Tracking Number (FTN) in IACRA before taking any FAA airman knowledge test. The FTN is printed on the Airman Knowledge Test Report in place of the old applicant ID number.",
+  "page": "6-4",
+  "manual": "ac"
+ },
+ {
+  "id": "s1-033",
+  "section": 1,
+  "sectionName": "Regulations",
+  "question": "What must an applicant bring to the testing center on the day of the initial aeronautical knowledge test?",
+  "choices": [
+   "Proper government-issued photo identification",
+   "A completed FAA Form 8710-13 signed by an instructor",
+   "A logbook endorsement from a certificated flight instructor",
+   "Proof of small UAS registration in the applicant's own name"
+  ],
+  "answer": 0,
+  "explanation": "The initial aeronautical knowledge test is given at an FAA-approved knowledge testing center by appointment, and on test day the applicant must provide proper government-issued photo identification. The certificate application comes after the test, not before it.",
+  "page": "6-4",
+  "manual": "ac"
+ },
+ {
+  "id": "s1-034",
+  "section": 1,
+  "sectionName": "Regulations",
+  "question": "How often must a remote pilot complete recurrent training to keep exercising certificate privileges?",
+  "choices": [
+   "Within 24 calendar-months of the initial knowledge test or the most recent training",
+   "Within 12 calendar-months of the initial knowledge test or the most recent training",
+   "Within 36 calendar-months of the initial knowledge test or the most recent training",
+   "Only when the FAA publishes a revision to the Part 107 regulations"
+  ],
+  "answer": 0,
+  "explanation": "Recurrent training must be completed within 24 calendar-months of passing the initial knowledge test or completing the initial knowledge training, and each recurrent completion starts a new 24-calendar-month cycle. A pilot whose training lapses may not exercise the privileges of the certificate until the recurrent training is completed.",
+  "page": "6-5",
+  "manual": "ac"
+ },
+ {
+  "id": "s1-035",
+  "section": 1,
+  "sectionName": "Regulations",
+  "question": "Under Part 107, the remote PIC must report an accident to the FAA when any person involved suffers which of the following?",
+  "choices": [
+   "A serious injury or any loss of consciousness",
+   "Any injury that requires first aid at the scene",
+   "Only an injury that results in a permanent disability",
+   "Only an injury that proves fatal within 30 days"
+  ],
+  "answer": 0,
+  "explanation": "An accident must be reported when it causes at least a serious injury to any person or any loss of consciousness, even a brief one. Injuries that need only first aid do not meet the threshold, and the rule is not limited to fatalities or permanent harm.",
+  "page": "4-5",
+  "manual": "ac"
+ },
+ {
+  "id": "s1-036",
+  "section": 1,
+  "sectionName": "Regulations",
+  "question": "What standard does the FAA use to decide whether an injury from a small UAS accident counts as serious?",
+  "choices": [
+   "Level 3 or higher on the Abbreviated Injury Scale",
+   "Level 5 or higher on the Abbreviated Injury Scale",
+   "Any injury evaluated by emergency medical personnel",
+   "Any injury that requires an ambulance transport"
+  ],
+  "answer": 0,
+  "explanation": "A serious injury is one that rates Level 3 or higher on the Abbreviated Injury Scale (AIS) of the Association for the Advancement of Automotive Medicine. An AIS Level 3 example is an injury requiring hospitalization that can fully heal, such as head trauma, a broken bone, or a laceration that needs suturing.",
+  "page": "4-5",
+  "manual": "ac"
+ },
+ {
+  "id": "s1-037",
+  "section": 1,
+  "sectionName": "Regulations",
+  "question": "Which of these small UAS accident outcomes requires a damage report to the FAA?",
+  "choices": [
+   "$800 in repairs to a parked car the drone struck",
+   "$2,500 in repairs to the small unmanned aircraft itself",
+   "$450 to replace a mailbox the drone destroyed",
+   "$600 in repairs to a sign with a $300 replacement value"
+  ],
+  "answer": 0,
+  "explanation": "Property damage is reportable when the cost to repair or replace the property, whichever is lower, is greater than $500. Damage to the small unmanned aircraft itself never counts, damage at or below $500 does not qualify, and when repair cost and the property's value differ, the lower figure is what gets compared with $500.",
+  "page": "4-5",
+  "manual": "ac"
+ },
+ {
+  "id": "s1-038",
+  "section": 1,
+  "sectionName": "Regulations",
+  "question": "How long after an accident that meets a reporting threshold does the remote PIC have to report it to the FAA?",
+  "choices": [
+   "10 calendar days",
+   "30 calendar days",
+   "5 calendar days",
+   "24 hours"
+  ],
+  "answer": 0,
+  "explanation": "The accident report must be made within 10 calendar days of the operation that caused the serious injury or property damage.",
+  "page": "4-6",
+  "manual": "ac"
+ },
+ {
+  "id": "s1-039",
+  "section": 1,
+  "sectionName": "Regulations",
+  "question": "Which method may a remote PIC use to submit a required small UAS accident report?",
+  "choices": [
+   "Electronically or by phone to an FAA Regional Operations Center",
+   "Only by certified mail addressed to the nearest NTSB regional field office",
+   "Only in person at a Flight Standards District Office",
+   "By radio to the closest air traffic control facility"
+  ],
+  "answer": 0,
+  "explanation": "The report goes to the appropriate FAA Regional Operations Center, either electronically through the FAA's UAS website or by telephone, and it may also be made to the responsible Flight Standards office. Mail, radio, and in-person-only channels are not among the methods the AC gives.",
+  "page": "4-6",
+  "manual": "ac"
+ },
+ {
+  "id": "s1-040",
+  "section": 1,
+  "sectionName": "Regulations",
+  "question": "Which item does the AC list as information a small UAS accident report should include?",
+  "choices": [
+   "The FAA registration number issued to the aircraft",
+   "The serial numbers of the aircraft's flight batteries",
+   "The remote pilot's total hours of flight experience",
+   "A repair invoice for the property that was damaged"
+  ],
+  "answer": 0,
+  "explanation": "The report should include the remote PIC's name, contact information, and airman certificate number, the aircraft's FAA registration number, the location, date, and local time of the accident, whether any serious injury or fatality occurred, the property damaged and the extent of the damage, and a description of what happened.",
+  "page": "4-6",
+  "manual": "ac"
+ },
+ {
+  "id": "s1-041",
+  "section": 1,
+  "sectionName": "Regulations",
+  "question": "What action can result from knowingly providing false records or reports about a small UAS operation to the FAA?",
+  "choices": [
+   "Civil sanctions and suspension or revocation of a certificate or waiver",
+   "A mandatory retake of the aeronautical knowledge test",
+   "A written warning that stays on file for two years",
+   "Permanent forfeiture of the small unmanned aircraft to the Department of Transportation"
+  ],
+  "answer": 0,
+  "explanation": "Because the FAA relies on the information owners and remote pilots provide when it authorizes operations, anyone who fraudulently or knowingly gives false records or reports, or alters records for fraudulent purposes, faces civil sanctions and the suspension or revocation of a certificate or waiver under section 107.5.",
+  "page": "4-5",
+  "manual": "ac"
+ },
+ {
+  "id": "s1-042",
+  "section": 1,
+  "sectionName": "Regulations",
+  "question": "Under NTSB regulations, an unmanned aircraft accident involving substantial damage must be reported when the aircraft's maximum gross takeoff weight is at least how many pounds?",
+  "choices": [
+   "300 pounds",
+   "55 pounds",
+   "150 pounds",
+   "500 pounds"
+  ],
+  "answer": 0,
+  "explanation": "NTSB rules in 49 CFR part 830 require immediate notification of an unmanned aircraft accident, which includes any death or serious injury, or substantial damage to an aircraft with a maximum gross takeoff weight of 300 pounds or greater. This notification is in addition to the report made to the FAA Regional Operations Center.",
+  "page": "4-7",
+  "manual": "ac"
  },
  {
   "id": "s2-001",
   "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "What is the most important reason for inspecting your vehicle?",
+  "sectionName": "Airspace",
+  "question": "The FAA divides all airspace into which two broad categories?",
   "choices": [
-   "Safety for yourself and other road users",
-   "Avoiding costly repair bills",
-   "Meeting company scheduling requirements",
-   "Keeping the vehicle's resale value high"
+   "Controlled and uncontrolled",
+   "Regulatory and nonregulatory",
+   "Terminal and en route",
+   "Domestic and international"
   ],
-  "answer": 0,
-  "explanation": "The manual states that safety is the most important reason you inspect your vehicle -- safety for yourself and for other road users. Avoiding breakdowns and costs is a benefit, but not the primary reason.",
-  "page": "2-1"
+  "answer": 1,
+  "explanation": "Airspace falls into two categories: regulatory and nonregulatory. Controlled, uncontrolled, special use, and other airspace are the four types found within those categories, not the categories themselves.",
+  "page": "5"
  },
  {
   "id": "s2-002",
   "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "What is the minimum tread depth required in every major groove on front tires?",
+  "sectionName": "Airspace",
+  "question": "Within the two broad airspace categories, what are the four types of airspace?",
   "choices": [
-   "2/32 inch",
-   "4/32 inch",
-   "6/32 inch",
-   "8/32 inch"
+   "Controlled, uncontrolled, special use, and other airspace",
+   "Class A, Class B, Class C, and Class D airspace",
+   "Terminal, en route, oceanic, and offshore military airspace",
+   "Prohibited, restricted, warning, and alert area airspace"
   ],
-  "answer": 1,
-  "explanation": "You need at least 4/32-inch tread depth in every major groove on front tires. Other tires need 2/32 inch.",
-  "page": "2-1"
+  "answer": 0,
+  "explanation": "The four types of airspace are controlled, uncontrolled, special use, and other airspace. Which type applies to a given block depends on the density and complexity of traffic, the nature of the operations conducted there, the level of safety required, and national and public interest.",
+  "page": "5"
  },
  {
   "id": "s2-003",
   "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "Which type of tires are prohibited on the front wheels of a bus?",
+  "sectionName": "Airspace",
+  "question": "Class B airspace generally extends from the surface up to what altitude?",
   "choices": [
-   "Radial tires of any load rating",
-   "Bias-ply tires with worn sidewalls",
-   "Re-grooved, recapped, or retreaded tires",
-   "Tubeless tires mounted on spoke wheels"
+   "4,000 feet MSL",
+   "14,500 feet MSL",
+   "10,000 feet MSL",
+   "18,000 feet MSL"
   ],
   "answer": 2,
-  "explanation": "The manual states that re-grooved, recapped, or retreaded tires on the front wheels of a bus are prohibited.",
-  "page": "2-1"
+  "explanation": "Class B airspace generally runs from the surface to 10,000 feet MSL. Each area is individually tailored from a surface area plus two or more layers, and it is designed to contain all published instrument procedures once an aircraft enters it.",
+  "page": "5"
  },
  {
   "id": "s2-004",
   "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "During an inspection, rust around wheel nuts may mean:",
+  "sectionName": "Airspace",
+  "question": "Class B airspace surrounds which kind of airports?",
   "choices": [
-   "The wheel needs to be replaced",
-   "The tire pressure is too high",
-   "The rim has been welded",
-   "The nuts are loose"
+   "Any airport with an operating control tower",
+   "Airports served by a radar approach control",
+   "Military airfields with instrument procedures",
+   "The nation's busiest airports"
   ],
   "answer": 3,
-  "explanation": "Rust around wheel nuts may mean the nuts are loose, so you should check their tightness. After a tire change, stop a short while later and re-check tightness.",
-  "page": "2-2"
+  "explanation": "Class B surrounds the busiest airports in the country, measured by airport operations or passenger enplanements. A control tower alone puts an airport in Class D, and a tower plus radar approach control with enough IFR traffic or enplanements puts it in Class C.",
+  "page": "5"
  },
  {
   "id": "s2-005",
   "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "Steering wheel play of more than how many degrees can make it hard to steer?",
+  "sectionName": "Airspace",
+  "question": "What must a remote pilot do before operating a small unmanned aircraft inside Class B airspace?",
   "choices": [
-   "5 degrees",
-   "10 degrees",
-   "15 degrees",
-   "20 degrees"
+   "Receive authorization from air traffic control",
+   "File a VFR flight plan with Flight Service",
+   "Broadcast intentions on the tower frequency",
+   "Notify the airport manager in writing"
   ],
-  "answer": 1,
-  "explanation": "Steering wheel play of more than 10 degrees (approximately 2 inches of movement at the rim of a 20-inch steering wheel) can make it hard to steer.",
-  "page": "2-2"
+  "answer": 0,
+  "explanation": "A remote pilot must receive ATC authorization before operating in Class B airspace, and the same requirement applies in Class C and Class D. Filing a flight plan or self-announcing on a frequency does not substitute for that authorization.",
+  "page": "5"
  },
  {
   "id": "s2-006",
   "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "A vehicle will be put \"out of service\" if what fraction or more of the leaves in any leaf spring are missing?",
+  "sectionName": "Airspace",
+  "question": "Class C airspace generally extends from the surface up to what height?",
   "choices": [
-   "One-fourth",
-   "One-half",
-   "One-third",
-   "Any single leaf"
+   "2,500 feet above the airport elevation",
+   "4,000 feet above the airport elevation",
+   "10,000 feet above the airport elevation",
+   "1,200 feet above the airport elevation"
   ],
-  "answer": 0,
-  "explanation": "If one-fourth or more of the leaves in any leaf spring are missing, it will put the vehicle out of service -- but any defect could be dangerous.",
-  "page": "2-2"
+  "answer": 1,
+  "explanation": "Class C runs from the surface to 4,000 feet above the airport elevation, charted in MSL. By comparison, Class D tops out at 2,500 feet above the airport elevation and Class B generally reaches 10,000 feet MSL.",
+  "page": "6"
  },
  {
   "id": "s2-007",
   "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "Which emergency equipment must your vehicle have?",
+  "sectionName": "Airspace",
+  "question": "An airport surrounded by Class C airspace has which combination of services?",
   "choices": [
-   "Fire extinguisher(s)",
-   "Spare electrical fuses (unless equipped with circuit breakers)",
-   "Warning devices for parked vehicles, such as three reflective warning triangles",
-   "All of the above"
+   "A control tower but no radar approach control service",
+   "Radar approach control but no operating control tower",
+   "An operating control tower plus radar approach control",
+   "A Flight Service station providing local airport advisories"
   ],
-  "answer": 3,
-  "explanation": "Vehicles must be equipped with a fire extinguisher, spare electrical fuses (unless equipped with circuit breakers), and warning devices for parked vehicles such as three reflective triangles, 6 fusees, or 3 liquid burning flares.",
-  "page": "2-3"
+  "answer": 2,
+  "explanation": "Class C surrounds airports that have an operational control tower, are serviced by a radar approach control, and meet certain thresholds for IFR operations or passenger enplanements.",
+  "page": "6"
  },
  {
   "id": "s2-008",
   "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "When you start the engine, what should the Anti-lock Braking System (ABS) indicator light on the dash do if the system is working properly?",
+  "sectionName": "Airspace",
+  "question": "In a typical Class C area, what is the radius of the inner surface area?",
   "choices": [
-   "Stay on the entire time the engine runs",
-   "Flash continuously while driving",
-   "Come on and then turn off",
-   "Stay off completely"
+   "5 nautical miles",
+   "10 nautical miles",
+   "15 nautical miles",
+   "20 nautical miles"
   ],
-  "answer": 2,
-  "explanation": "The ABS light on the dash should come on and then turn off. If it stays on, the ABS is not working properly.",
-  "page": "2-4"
+  "answer": 0,
+  "explanation": "A typical Class C area consists of a surface area with a 5 NM radius plus an outer circle with a 10 NM radius that extends from 1,200 feet to 4,000 feet above the airport elevation.",
+  "page": "6"
  },
  {
   "id": "s2-009",
   "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "How do you test hydraulic brakes for leaks?",
+  "sectionName": "Airspace",
+  "question": "Class D airspace generally extends from the surface up to what height?",
   "choices": [
-   "Hold the pedal down for one full minute with the engine off while watching the reservoir for any drop in fluid level",
-   "Pump the brake pedal three times, then apply firm pressure for five seconds; the pedal should not move",
-   "Drive at 5 mph and apply the brakes hard",
-   "Pump the pedal once and check the fluid level"
+   "4,000 feet above the airport elevation",
+   "1,200 feet above ground level",
+   "10,000 feet above mean sea level",
+   "2,500 feet above the airport elevation"
   ],
-  "answer": 1,
-  "explanation": "With hydraulic brakes, pump the brake pedal three times, then apply firm pressure to the pedal and hold for five seconds. If the pedal moves, there may be a leak or other problem -- get it fixed before driving.",
-  "page": "2-7"
+  "answer": 3,
+  "explanation": "Class D runs from the surface to 2,500 feet above the airport elevation (charted in MSL) and surrounds airports that have an operational control tower. A remote pilot needs ATC authorization before operating in it, just as in Class B and Class C.",
+  "page": "6"
  },
  {
   "id": "s2-010",
   "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "After inspecting cargo securement within the first 50 miles of a trip, how often must you re-inspect it?",
+  "sectionName": "Airspace",
+  "question": "Which statement defines Class E airspace?",
   "choices": [
-   "Every 50 miles or every hour",
-   "Every 100 miles or every two hours",
-   "Every 150 miles or every three hours, whichever comes first",
-   "Every 300 miles or every six hours, whichever comes first"
+   "All airspace where ATC provides no separation services",
+   "Controlled airspace not classified as Class A, B, C, or D",
+   "The uncontrolled airspace lying beneath the federal airway system",
+   "Airspace reserved exclusively for aircraft flying IFR"
   ],
-  "answer": 2,
-  "explanation": "Drivers transporting cargo must inspect cargo securement within the first 50 miles of a trip and then every 150 miles or every three hours, whichever comes first.",
-  "page": "2-7"
+  "answer": 1,
+  "explanation": "Class E is the controlled airspace that is not Class A, B, C, or D. A large share of the airspace over the United States is Class E, which provides room for the safe control and separation of aircraft during IFR operations.",
+  "page": "6"
  },
  {
   "id": "s2-011",
   "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "How do you test the parking brake during the inspection?",
+  "sectionName": "Airspace",
+  "question": "When a chart does not show a base for Class E airspace in an area, at what altitude does Class E begin there?",
   "choices": [
-   "Set the parking brake, place the vehicle in a low gear, and gently pull forward against it to make sure it holds",
-   "Drive at 5 mph and apply the parking brake firmly",
-   "Release the parking brake on a hill and see if the vehicle rolls",
-   "Pump the parking brake control three times, then hold it for five seconds and watch the air gauge for a pressure drop"
+   "14,500 feet MSL",
+   "10,000 feet MSL",
+   "1,200 feet AGL",
+   "700 feet AGL"
   ],
   "answer": 0,
-  "explanation": "With the parking brake set, place the vehicle into a low gear and gently pull forward against the parking brake to make sure it holds. If it doesn't hold, it is faulty and must be fixed.",
-  "page": "2-7"
+  "explanation": "Sectional and other charts depict every Class E area whose base is below 14,500 feet MSL, so wherever no base is shown, Class E begins at 14,500 feet MSL.",
+  "page": "6"
  },
  {
   "id": "s2-012",
   "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "Why should you back and turn toward the driver's side whenever possible?",
+  "sectionName": "Airspace",
+  "question": "In most areas of the United States, where does the base of Class E airspace sit?",
   "choices": [
-   "It requires less steering effort",
-   "It keeps the vehicle closer to the curb",
-   "Traffic laws in most states require driver-side backing for large vehicles",
-   "You can see better and watch the rear of your vehicle out the side window"
+   "At 700 feet above ground level",
+   "At the airport surface",
+   "At 1,200 feet above ground level",
+   "At 14,500 feet above mean sea level"
   ],
-  "answer": 3,
-  "explanation": "Backing toward the driver's side lets you see better; you can watch the rear of your vehicle by looking out the side window. Backing toward the right side is very dangerous because you can't see as well.",
-  "page": "2-8"
+  "answer": 2,
+  "explanation": "In most areas the Class E base is 1,200 feet AGL. In many other areas it is the surface or 700 feet AGL, and some Class E bases are charted at an MSL altitude instead of an AGL one.",
+  "page": "6"
  },
  {
   "id": "s2-013",
   "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "Before you begin backing with a helper, the most important hand signal you should both agree on is:",
+  "sectionName": "Airspace",
+  "question": "Class E airspace typically extends upward to what limit?",
   "choices": [
-   "\"Turn\"",
-   "\"Stop\"",
-   "\"Slow down\"",
-   "\"All clear\""
+   "Up to but not including 18,000 feet MSL",
+   "Up to and including 18,000 feet MSL",
+   "Up to but not including 14,500 feet MSL",
+   "Up to and including 10,000 feet MSL"
   ],
-  "answer": 1,
-  "explanation": "The manual says to work out a set of hand signals that you both understand and to agree on a signal for \"stop.\"",
-  "page": "2-9"
+  "answer": 0,
+  "explanation": "Class E typically extends up to, but not including, 18,000 feet MSL, which is the lower limit of Class A airspace. Above FL 600, all airspace becomes Class E again.",
+  "page": "6"
  },
  {
   "id": "s2-014",
   "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "If the drive wheels begin to spin while you are accelerating on a slippery surface, what should you do?",
+  "sectionName": "Airspace",
+  "question": "Federal Airways, drawn as blue lines on sectional charts, span which altitudes?",
   "choices": [
-   "Take your foot off the accelerator",
-   "Press the accelerator harder to power through",
-   "Apply the brakes firmly",
-   "Shift to a higher gear"
+   "From 1,200 feet AGL upward to but not including 14,500 feet MSL",
+   "From the surface up to and including 18,000 feet MSL",
+   "From 700 feet AGL up to and including flight level 600",
+   "From 1,200 feet AGL up to but not including 18,000 feet MSL"
   ],
-  "answer": 0,
-  "explanation": "If you use too much power on poor traction, the drive wheels may spin and you could lose control. If the drive wheels begin to spin, take your foot off the accelerator.",
-  "page": "2-8"
+  "answer": 3,
+  "explanation": "Federal Airways appear as blue lines on sectional charts, are usually found within Class E airspace, and run from 1,200 feet AGL up to, but not including, 18,000 feet MSL.",
+  "page": "6"
  },
  {
   "id": "s2-015",
   "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "While double clutching, if you stay too long in neutral and can't get the vehicle into the next gear, what should you do?",
+  "sectionName": "Airspace",
+  "question": "In which class of controlled airspace can a remote pilot usually operate without ATC authorization?",
   "choices": [
-   "Force the gearshift into gear",
-   "Brake to a complete stop and start over in first gear",
-   "Return to neutral, release the clutch, increase engine speed to match road speed, and try again",
-   "Coast in neutral until the vehicle slows enough for the transmission to drop into the next lower gear"
+   "Class B",
+   "Class E",
+   "Class C",
+   "Class D"
   ],
-  "answer": 2,
-  "explanation": "If you remain too long in neutral and have difficulty putting the vehicle into the next gear, don't try to force it. Return to neutral, release the clutch, increase engine speed to match road speed, and try again.",
-  "page": "2-9"
+  "answer": 1,
+  "explanation": "In most cases a remote pilot does not need ATC authorization to operate in Class E airspace. Class B, C, and D each require authorization before the flight.",
+  "page": "6"
  },
  {
   "id": "s2-016",
   "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "What are the two ways of knowing when to shift up?",
+  "sectionName": "Airspace",
+  "question": "What is Class G airspace?",
   "choices": [
-   "Engine temperature and oil pressure",
-   "Air pressure and road grade",
-   "Clutch feel and brake response",
-   "Engine speed (rpm) and road speed (mph)"
+   "Airspace that has not been designated Class A, B, C, D, or E",
+   "Controlled airspace whose base begins at 1,200 feet AGL",
+   "Special use airspace that surrounds active military airfields",
+   "Any airspace lying beneath a shelf of Class B airspace"
   ],
-  "answer": 3,
-  "explanation": "The two ways of knowing when to shift are using engine speed (rpm) on the tachometer and using road speed (mph) on the speedometer. With either method, you may also learn to use engine sounds.",
-  "page": "2-9"
+  "answer": 0,
+  "explanation": "Class G is uncontrolled airspace, the portion never designated Class A through E. It extends from the surface to the base of the overlying Class E airspace, and a remote pilot needs no ATC authorization to operate in it.",
+  "page": "6"
  },
  {
   "id": "s2-017",
   "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "What are the two special conditions where you should downshift?",
+  "sectionName": "Airspace",
+  "question": "Why are prohibited areas established?",
   "choices": [
-   "Before starting down a hill and before entering a curve",
-   "Before merging onto a highway and before passing",
-   "After starting down a hill and while in a curve",
-   "Before backing and before crossing railroad tracks"
+   "To separate military training flights from IFR traffic",
+   "To warn pilots of hazardous activity over coastal waters",
+   "For security or other reasons tied to national welfare",
+   "To contain a high volume of civilian pilot training"
   ],
-  "answer": 0,
-  "explanation": "The manual lists two special conditions where you should downshift: before starting down a hill and before entering a curve. Downshifting first lets you control speed without hard braking and keeps the vehicle stable in the curve.",
-  "page": "2-9"
+  "answer": 2,
+  "explanation": "Prohibited areas ban all flight within their boundaries for security or other reasons associated with the national welfare. They are published in the Federal Register, charted as a 'P' followed by a number such as P-40, and include places like Camp David and the National Mall in Washington, D.C.",
+  "page": "7"
  },
  {
   "id": "s2-018",
   "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "When should you turn the retarder off?",
+  "sectionName": "Airspace",
+  "question": "Which hazards are typical of a restricted area?",
   "choices": [
-   "When driving on long downgrades",
-   "Whenever the road is wet, icy, or snow covered",
-   "When the vehicle is fully loaded",
-   "When driving at highway speeds"
+   "Heavy student pilot training and glider towing operations",
+   "Artillery firing, aerial gunnery, or guided missiles",
+   "Parachute jumping and banner towing demonstrations",
+   "Low-level crop dusting and powerline patrol flights"
   ],
   "answer": 1,
-  "explanation": "When the drive wheels have poor traction, the retarder may cause them to skid. Therefore you should turn the retarder off whenever the road is wet, icy, or snow covered.",
-  "page": "2-10"
+  "explanation": "Restricted areas hold unusual, often invisible hazards to aircraft such as artillery firing, aerial gunnery, and guided missiles. Flight is not wholly prohibited, but entering without authorization from the using or controlling agency can be extremely hazardous. They are charted with an 'R' followed by a number, such as R-4401.",
+  "page": "7"
  },
  {
   "id": "s2-019",
   "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "How far ahead of the vehicle do most good drivers look while driving?",
+  "sectionName": "Airspace",
+  "question": "When a restricted area is not active and has been released to the FAA, how does ATC handle aircraft in that airspace?",
   "choices": [
-   "3 to 5 seconds",
-   "6 to 9 seconds",
-   "12 to 15 seconds",
-   "20 to 25 seconds"
+   "It allows operations there without a specific clearance",
+   "It issues a clearance that steers aircraft around the airspace",
+   "It requires a written waiver from the using agency first",
+   "It closes the airspace until the military reactivates it"
   ],
-  "answer": 2,
-  "explanation": "Most good drivers look at least 12 to 15 seconds ahead. At lower speeds that's about one block; at highway speeds it's about a quarter of a mile.",
-  "page": "2-10"
+  "answer": 0,
+  "explanation": "If a restricted area is inactive and has been released to the FAA, ATC lets aircraft operate in it without issuing a specific clearance. If the area is active and has not been released, ATC instead issues a clearance that keeps the aircraft out of it.",
+  "page": "8"
  },
  {
   "id": "s2-020",
   "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "When can mirror adjustment be checked accurately?",
+  "sectionName": "Airspace",
+  "question": "How does a warning area differ from a restricted area?",
   "choices": [
-   "While the vehicle is moving in a straight line",
-   "Only after the engine has warmed up",
-   "While turning slowly in a large open area",
-   "Only when the trailer(s) are straight"
+   "The activities inside it pose no hazard to nonparticipating aircraft",
+   "It must lie entirely over international rather than domestic waters",
+   "It is depicted only on IFR en route charts, never on sectionals",
+   "The U.S. government lacks sole jurisdiction over the airspace"
   ],
   "answer": 3,
-  "explanation": "Mirror adjustment should be checked prior to the start of any trip and can only be checked accurately when the trailer(s) are straight. Each mirror should show some part of the vehicle as a reference point.",
-  "page": "2-10"
+  "explanation": "Warning areas resemble restricted areas, but the United States does not have sole jurisdiction over the airspace. A warning area begins 3 NM outward from the coast, may lie over domestic or international waters or both, contains activity that may be hazardous to nonparticipating aircraft, and is charted with a 'W' followed by a number.",
+  "page": "8"
  },
  {
   "id": "s2-021",
   "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "How do objects appear in a curved (convex) mirror compared to looking at them directly?",
+  "sectionName": "Airspace",
+  "question": "What is the purpose of a military operations area (MOA)?",
   "choices": [
-   "Smaller and farther away than they really are",
-   "Larger and closer than they really are",
-   "The same size but distorted in color",
-   "Smaller but closer than they really are"
+   "Prohibiting all civilian flight near military installations",
+   "Warning pilots of artillery fire and guided missile tests",
+   "Separating military training activities from IFR traffic",
+   "Providing radar service to participating VFR aircraft"
   ],
-  "answer": 0,
-  "explanation": "Everything appears smaller in a convex mirror than if you were looking at it directly, and things also seem farther away than they really are. You must realize this and allow for it.",
-  "page": "2-11"
+  "answer": 2,
+  "explanation": "An MOA has defined vertical and lateral limits and exists to separate certain military training activities from IFR traffic. Nonparticipating IFR flights may be cleared through an active MOA only when ATC can provide IFR separation; otherwise ATC reroutes or restricts them. MOAs carry names, such as Camden Ridge MOA, rather than numbers.",
+  "page": "8"
  },
  {
   "id": "s2-022",
   "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "Which of the following is one of the three good rules for using turn signals?",
+  "sectionName": "Airspace",
+  "question": "What does an alert area, charted as an 'A' followed by a number, tell a pilot?",
   "choices": [
-   "Cancel your signal just before you begin the turn",
-   "Signal well before you turn",
-   "Signal only when other vehicles are nearby",
-   "Turn the signal on and off repeatedly to attract attention"
+   "It may contain heavy pilot training or unusual aerial activity",
+   "Flight in the area is prohibited for national security reasons",
+   "Artillery firing and guided missile activity occur in the area",
+   "Entry requires clearance from the controlling military agency"
   ],
-  "answer": 1,
-  "explanation": "The three rules are: signal early (well before you turn), signal continuously until the turn is complete, and cancel your signal after you've turned. Signaling early is the best way to keep others from trying to pass you.",
-  "page": "2-11"
+  "answer": 0,
+  "explanation": "Alert areas flag airspace that may contain a high volume of pilot training or an unusual type of aerial activity. All activity there must follow regulations without waiver, and participating pilots and pilots transiting the area are equally responsible for collision avoidance.",
+  "page": "9"
  },
  {
   "id": "s2-023",
   "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "How should you warn drivers behind you when you see you will need to slow down?",
+  "sectionName": "Airspace",
+  "question": "What sets a controlled firing area (CFA) apart from other special use airspace?",
   "choices": [
-   "Turn on your high beams",
-   "Sound your horn several times so the drivers behind know they should back off",
-   "Tap the brake pedal a few times lightly to flash the brake lights",
-   "Wave your arm out the window"
+   "It permanently prohibits all flight from the surface to 10,000 feet MSL",
+   "Its activities stop when a lookout spots an approaching aircraft",
+   "It is charted with a 'C' followed by an identifying number",
+   "Its boundaries appear on every sectional chart"
   ],
-  "answer": 2,
-  "explanation": "A few light taps on the brake pedal -- enough to flash the brake lights -- should warn following drivers. Use the four-way emergency flashers when driving very slowly or stopped.",
-  "page": "2-11"
+  "answer": 1,
+  "explanation": "CFA activities are suspended whenever a spotter aircraft, radar, or ground lookout position indicates an aircraft might be approaching the area. Because a nonparticipating aircraft never has to change its flight path, CFAs are not charted.",
+  "page": "9"
  },
  {
   "id": "s2-024",
   "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "If you must stop on a road or the shoulder, within how many minutes must you put out your emergency warning devices?",
+  "sectionName": "Airspace",
+  "question": "A military training route labeled with four number characters, such as IR1206, indicates what?",
   "choices": [
-   "5 minutes",
-   "15 minutes",
-   "30 minutes",
-   "10 minutes"
+   "No segment of the route is above 1,500 feet AGL",
+   "The entire route lies above 10,000 feet MSL",
+   "The route is flown only in IFR weather conditions",
+   "At least one route segment exceeds 1,500 feet AGL"
   ],
-  "answer": 3,
-  "explanation": "The manual requires that you put out your emergency warning devices within ten minutes of stopping on a road or the shoulder of any road.",
-  "page": "2-12"
+  "answer": 0,
+  "explanation": "MTRs with no segment above 1,500 feet AGL are identified by four number characters (IR1206, VR1207), while routes with one or more segments above 1,500 feet AGL use three (IR206, VR207). These routes are usually established below 10,000 feet MSL for operations at speeds in excess of 250 knots.",
+  "page": "10"
  },
  {
   "id": "s2-025",
   "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "If you must stop on or by a one-way or divided highway, where should you place your warning devices?",
+  "sectionName": "Airspace",
+  "question": "How is a temporary flight restriction (TFR) put into effect?",
   "choices": [
-   "10 feet, 100 feet, and 200 feet toward the approaching traffic",
-   "50 feet, 100 feet, and 150 feet toward the approaching traffic",
-   "10 feet, 100 feet, and 200 feet in both directions",
-   "100 feet, 200 feet, and 300 feet toward the approaching traffic"
+   "Through a change published on the next sectional chart revision",
+   "Through an entry added to the Chart Supplement U.S.",
+   "Through an FDC NOTAM that begins with 'FLIGHT RESTRICTIONS'",
+   "Through a broadcast on the local airport advisory frequency"
   ],
-  "answer": 0,
-  "explanation": "On a one-way or divided highway, place warning devices 10 feet, 100 feet, and 200 feet toward the approaching traffic.",
-  "page": "2-12"
+  "answer": 2,
+  "explanation": "A TFR is designated by a flight data center (FDC) NOTAM. The notice opens with the phrase 'FLIGHT RESTRICTIONS' and then gives the location, effective time period, the affected area in statute miles, and the altitudes involved. Checking NOTAMs for TFRs is part of flight planning.",
+  "page": "10"
  },
  {
   "id": "s2-026",
   "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "If you stop where a hill or curve keeps drivers behind you from seeing your vehicle within what distance must you move the rear-most triangle back down the road?",
+  "sectionName": "Airspace",
+  "question": "Which situation is a stated reason for establishing a TFR?",
   "choices": [
-   "300 feet",
-   "500 feet",
-   "1,000 feet",
-   "100 feet"
+   "Reserving arrival airspace for scheduled airline traffic",
+   "Reducing aircraft noise over residential neighborhoods",
+   "Marking the location of permanent obstructions near airports",
+   "Providing a safe environment for disaster relief aircraft"
   ],
-  "answer": 1,
-  "explanation": "If a hill, curve, or other obstruction prevents other drivers from seeing the vehicle within 500 feet, move the rear-most triangle back down the road so warning is provided.",
-  "page": "2-13"
+  "answer": 3,
+  "explanation": "TFRs are established to protect people and property from an existing or imminent hazard, give disaster relief aircraft a safe environment, prevent congestion of sightseeing aircraft over an incident drawing public interest, protect declared national disasters in Hawaii, protect the President and other public figures, and support space agency operations. Pilots can check for TFRs at www.tfr.faa.gov.",
+  "page": "11"
  },
  {
   "id": "s2-027",
   "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "Total stopping distance equals:",
+  "sectionName": "Airspace",
+  "question": "Where are parachute jump aircraft operations published?",
   "choices": [
-   "Reaction distance plus braking distance",
-   "Perception distance plus braking distance",
-   "Perception distance plus reaction distance plus braking distance",
-   "Braking distance plus your following distance at your current speed"
+   "In the Chart Supplement U.S.",
+   "In the Federal Register",
+   "In the Aeronautical Information Manual",
+   "In flight data center NOTAMs"
   ],
-  "answer": 2,
-  "explanation": "The manual's formula is: Perception Distance + Reaction Distance + Braking Distance = Total Stopping Distance.",
-  "page": "2-13"
+  "answer": 0,
+  "explanation": "Parachute jump aircraft operations are published in the Chart Supplement U.S., formerly known as the Airport/Facility Directory. Sites that are used frequently are also depicted on sectional charts.",
+  "page": "11"
  },
  {
   "id": "s2-028",
   "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "The average perception time for an alert driver is 1 3/4 seconds. At 55 mph, how far does the vehicle travel during that time?",
+  "sectionName": "Airspace",
+  "question": "What are published VFR routes used for?",
   "choices": [
-   "61 feet",
-   "216 feet",
-   "419 feet",
-   "142 feet"
+   "Navigating directly between VOR stations above 18,000 feet MSL",
+   "Transitioning around, under, or through complex airspace",
+   "Practicing instrument approach procedures in visual conditions",
+   "Crossing restricted areas without agency authorization"
   ],
-  "answer": 3,
-  "explanation": "At 55 mph, the average perception time of 1 3/4 seconds accounts for 142 feet traveled. Reaction distance is 61 feet and braking distance is about 216 feet.",
-  "page": "2-13"
+  "answer": 1,
+  "explanation": "Published VFR routes carry names like VFR flyway, VFR corridor, Class B airspace VFR transition route, and terminal area VFR route, and they help pilots transition around, under, or through complex airspace. They are generally found on VFR terminal area planning charts.",
+  "page": "11"
  },
  {
   "id": "s2-029",
   "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "At 55 mph in ideal conditions, what is the minimum total stopping distance for your vehicle?",
+  "sectionName": "Airspace",
+  "question": "Within a terminal radar service area (TRSA), what classification does the primary airport's airspace receive?",
   "choices": [
-   "419 feet",
-   "216 feet",
-   "142 feet",
-   "306 feet"
+   "Class B",
+   "Class C",
+   "Class D",
+   "Class G"
   ],
-  "answer": 0,
-  "explanation": "At 55 mph, with perception, reaction, and braking distance all considered, your vehicle will travel a minimum of 419 feet before coming to a complete stop.",
-  "page": "2-14"
+  "answer": 2,
+  "explanation": "The primary airport or airports within a TRSA become Class D airspace, charted with a blue segmented line, while the rest of the TRSA overlies other controlled airspace, normally Class E beginning at 700 or 1,200 feet. TRSA radar services separate IFR traffic from participating VFR aircraft, and participation is voluntary.",
+  "page": "11"
  },
  {
   "id": "s2-030",
   "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "When you double your speed from 20 to 40 mph, what happens to your braking distance?",
+  "sectionName": "Airspace",
+  "question": "What is the primary purpose of the air traffic control system?",
   "choices": [
-   "It is 2 times longer",
-   "It is 4 times longer",
-   "It is 9 times longer",
-   "It stays the same but impact doubles"
+   "Preventing collisions and expediting the flow of air traffic",
+   "Enforcing pilot certification and aircraft maintenance rules",
+   "Collecting weather observations for the National Airspace System",
+   "Assigning cruising altitudes to every aircraft in flight"
   ],
-  "answer": 1,
-  "explanation": "When you double your speed from 20 to 40 mph, the impact is 4 times greater and the braking distance is also 4 times longer. Tripling speed to 60 mph makes both 9 times greater.",
-  "page": "2-14"
+  "answer": 0,
+  "explanation": "The ATC system exists primarily to prevent collisions between aircraft operating in the system and to organize and expedite the flow of traffic. Additional services are provided as traffic volume, frequency congestion, radar quality, and controller workload permit, and controllers must provide them when the work situation allows.",
+  "page": "12"
  },
  {
   "id": "s2-031",
   "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "Why do empty trucks require greater stopping distances than fully loaded ones?",
+  "sectionName": "Airspace",
+  "question": "What kind of information do Notices to Airmen (NOTAMs) carry?",
   "choices": [
-   "Empty trucks travel at higher speeds",
-   "The brakes overheat faster when the truck is empty",
-   "An empty vehicle has less traction, and the brakes, tires, and springs work best when the vehicle is fully loaded",
-   "Empty trucks have a higher center of gravity, so drivers must brake more gently to keep the trailer from tipping forward"
+   "Permanent airspace boundary changes republished every 56 days",
+   "Routine terminal area weather forecasts issued twice daily",
+   "Long-range planning data for future airport construction",
+   "Time-critical information too new or short-lived for charts"
   ],
-  "answer": 2,
-  "explanation": "The brakes, tires, springs, and shock absorbers on heavy vehicles are designed to work best when the vehicle is fully loaded. Empty trucks require greater stopping distances because an empty vehicle has less traction.",
-  "page": "2-14"
+  "answer": 3,
+  "explanation": "NOTAMs carry time-critical aeronautical information that is either temporary or was not known far enough in advance to publish on charts or in other operational publications. Reasons for issuing them include air shows, parachute jumps, kite flying, rocket launches, flights by heads of state, inoperable lights on tall obstructions, temporary obstacles near airfields, and bird flocks (a BIRDTAM).",
+  "page": "13"
  },
  {
   "id": "s2-032",
   "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "On a wet road, by how much should you reduce your speed?",
+  "sectionName": "Airspace",
+  "question": "Where can a pilot get access to current NOTAM information online?",
   "choices": [
-   "By about one-tenth (e.g., slow from 55 to about 50 mph)",
-   "By about one-half (e.g., slow from 55 to about 25 mph)",
-   "To a crawl",
-   "By about one-third (e.g., slow from 55 to about 35 mph)"
-  ],
-  "answer": 3,
-  "explanation": "Wet roads can double stopping distance, so reduce speed by about one-third -- for example, slow from 55 to about 35 mph. On packed snow reduce speed by half or more, and on ice reduce to a crawl.",
-  "page": "2-14"
- },
- {
-  "id": "s2-033",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "Hydroplaning can occur at speeds as low as:",
-  "choices": [
-   "30 mph, if there is a lot of water",
-   "55 mph, on any wet road",
-   "45 mph, if tires are new",
-   "15 mph, on any damp surface"
-  ],
-  "answer": 0,
-  "explanation": "It does not take a lot of water to cause hydroplaning; it can occur at speeds as low as 30 mph if there is a lot of water. It is more likely if tire pressure is low or tread is worn.",
-  "page": "2-15"
- },
- {
-  "id": "s2-034",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "You are driving a 40-foot vehicle at 55 mph. How many seconds of following distance should you leave?",
-  "choices": [
-   "4 seconds",
-   "5 seconds",
-   "6 seconds",
-   "7 seconds"
+   "The Federal Register",
+   "PilotWeb",
+   "The Chart Supplement U.S.",
+   "The Aeronautical Chart User's Guide"
   ],
   "answer": 1,
-  "explanation": "The rule is at least one second for each 10 feet of vehicle length at speeds below 40 mph, plus 1 additional second at speeds over 40 mph. A 40-foot vehicle at 55 mph needs 4 + 1 = 5 seconds.",
-  "page": "2-16"
- },
- {
-  "id": "s2-035",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "If you find yourself being tailgated, you should:",
-  "choices": [
-   "Speed up to put distance between you and the tailgater",
-   "Flash your brake lights to warn the tailgater off",
-   "Increase your following distance and avoid quick changes",
-   "Turn on your taillights"
-  ],
-  "answer": 2,
-  "explanation": "When tailgated, avoid quick changes, increase your following distance, and don't speed up -- it's safer to be tailgated at a low speed than a high speed. Avoid tricks like turning on taillights or flashing brake lights.",
-  "page": "2-17"
- },
- {
-  "id": "s2-036",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "How does the weight of cargo affect the height of a cargo van?",
-  "choices": [
-   "Weight has no effect on height",
-   "A loaded van is higher than an empty one",
-   "Height only changes if the suspension is damaged",
-   "An empty van is higher than a loaded one"
-  ],
-  "answer": 3,
-  "explanation": "The weight of a cargo van changes its height: an empty van is higher than a loaded one. Clearing a bridge while loaded does not mean you can clear it when empty.",
-  "page": "2-17"
- },
- {
-  "id": "s2-037",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "If your truck or bus cannot make a right turn without swinging into another lane, you should:",
-  "choices": [
-   "Turn wide as you complete the turn, keeping the rear of your vehicle close to the curb",
-   "Turn wide to the left as you start the turn",
-   "Back up to give yourself more room whenever oncoming vehicles approach the intersection",
-   "Make the turn quickly to clear the intersection"
-  ],
-  "answer": 0,
-  "explanation": "Turn wide as you complete the turn and keep the rear of your vehicle close to the curb to stop drivers from passing on your right. Don't turn wide to the left at the start -- a following driver may think you are turning left and try to pass on the right.",
-  "page": "2-18"
- },
- {
-  "id": "s2-038",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "When making a left turn where there are two turning lanes, which lane should you use?",
-  "choices": [
-   "The inside (left) lane",
-   "The right turn lane",
-   "Either lane, whichever is open",
-   "Straddle both lanes to block traffic"
-  ],
-  "answer": 1,
-  "explanation": "Always take the right turn lane. Don't start in the inside lane because you may have to swing right to make the turn, and drivers on your left can be more readily seen.",
-  "page": "2-18"
- },
- {
-  "id": "s2-039",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "What does the \"slow moving vehicle\" symbol look like?",
-  "choices": [
-   "An orange circle with a red border",
-   "A yellow diamond with a black center",
-   "A red triangle with an orange center",
-   "A red square with a white center"
-  ],
-  "answer": 2,
-  "explanation": "Some slow vehicles like farm machinery and construction equipment carry the slow moving vehicle symbol, which is a red triangle with an orange center.",
-  "page": "2-20"
- },
- {
-  "id": "s2-040",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "Your CDL will be disqualified for how long after a second conviction within 3 years for using a hand-held mobile telephone while operating a CMV?",
-  "choices": [
-   "30 days",
-   "90 days",
-   "120 days",
-   "60 days"
-  ],
-  "answer": 3,
-  "explanation": "Disqualification is 60 days for the second offense within 3 years and 120 days for three or more offenses within 3 years. Each violation is also subject to civil penalties up to $2,750.",
-  "page": "2-22"
- },
- {
-  "id": "s2-041",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "Sending or receiving a text takes your eyes off the road for an average of 4.6 seconds. At 55 mph, how far would you travel in that time without looking at the roadway?",
-  "choices": [
-   "100 feet",
-   "250 feet",
-   "371 feet",
-   "500 feet"
-  ],
-  "answer": 2,
-  "explanation": "The manual states that at 55 mph you would travel 371 feet, the length of an entire football field, during the average 4.6 seconds that texting takes your eyes off the road.",
-  "page": "2-23"
- },
- {
-  "id": "s2-042",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "According to the manual, what happens if drivers react a half-second slower because of distractions?",
-  "choices": [
-   "Crashes increase by 10 percent",
-   "Crashes double",
-   "Crashes triple",
-   "Following distance doubles"
-  ],
-  "answer": 1,
-  "explanation": "The manual states that if drivers react a half-second slower because of distractions, crashes double.",
-  "page": "2-23"
- },
- {
-  "id": "s2-043",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "How does the manual define road rage?",
-  "choices": [
-   "Driving in a selfish, bold, or pushy manner without regard for the rights or safety of the other road users around you",
-   "Exceeding the speed limit in heavy traffic",
-   "Honking repeatedly at slow-moving vehicles",
-   "Operating a motor vehicle with the intent of doing harm to others or physically assaulting a driver or their vehicle"
-  ],
-  "answer": 3,
-  "explanation": "Road rage is operating a motor vehicle with the intent of doing harm to others or physically assaulting a driver or their vehicle. Driving in a selfish, bold, or pushy manner is the definition of aggressive driving.",
-  "page": "2-23"
- },
- {
-  "id": "s2-044",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "Even two seconds of glare blindness can be dangerous. How far will a vehicle going 55 mph travel during that time?",
-  "choices": [
-   "More than half the distance of a football field",
-   "About 100 feet",
-   "About one mile",
-   "The full length of two football fields"
-  ],
-  "answer": 0,
-  "explanation": "The manual states that a vehicle going 55 mph will travel more than half the distance of a football field during two seconds of glare blindness, and it can take several seconds to recover from glare.",
-  "page": "2-24"
- },
- {
-  "id": "s2-045",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "What should you do first and foremost when confronted by an aggressive driver?",
-  "choices": [
-   "Speed up to hold your own in your travel lane",
-   "Make every attempt to get out of their way",
-   "Make eye contact to show you are not intimidated",
-   "Brake suddenly to warn them off"
-  ],
-  "answer": 1,
-  "explanation": "First and foremost, make every attempt to get out of the aggressive driver's way. You should also avoid eye contact, ignore gestures, and not challenge them by speeding up.",
-  "page": "2-24"
- },
- {
-  "id": "s2-046",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "If you notice signs of fatigue while driving, you should stop driving and either sleep for the night or take a nap of about:",
-  "choices": [
-   "5 minutes",
-   "45 - 60 minutes",
-   "15 - 20 minutes",
-   "2 - 3 hours"
-  ],
-  "answer": 2,
-  "explanation": "The manual says that if you notice any signs of fatigue, stop driving and go to sleep for the night or take a 15 - 20 minute nap. Trying to push on while tired is a major cause of fatal accidents.",
-  "page": "2-25"
- },
- {
-  "id": "s2-047",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "At night with your headlights on, about how far ahead can you see with low beams and with high beams?",
-  "choices": [
-   "100 feet with low beams; 250 feet with high beams",
-   "500 feet with low beams; 1,000 feet with high beams",
-   "150 feet with low beams; 250 feet with high beams",
-   "250 feet with low beams; 350-500 feet with high beams"
-  ],
-  "answer": 3,
-  "explanation": "With low beams you can see ahead about 250 feet and with high beams about 350-500 feet. You must adjust your speed so you can stop within the range of your headlights.",
-  "page": "2-26"
- },
- {
-  "id": "s2-048",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "To avoid blinding other drivers at night, you should dim your headlights when you are within what distance of an oncoming vehicle or a vehicle you are following?",
-  "choices": [
-   "100 feet",
-   "500 feet",
-   "1,000 feet",
-   "250 feet"
-  ],
-  "answer": 1,
-  "explanation": "The manual instructs you to dim your lights within 500 feet of an oncoming vehicle and when following another vehicle within 500 feet.",
-  "page": "2-27"
- },
- {
-  "id": "s2-049",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "What is the best advice the manual gives for driving in fog?",
-  "choices": [
-   "Don't drive; pull off the road into a rest area or truck stop until visibility is better",
-   "Use your high beams so you can see farther",
-   "Follow the taillights of the vehicle ahead closely so you always know where the roadway is",
-   "Speed up to get through the fog quickly"
-  ],
-  "answer": 0,
-  "explanation": "The best advice for driving in fog is don't. It is preferable to pull off the road into a rest area or truck stop until visibility is better.",
-  "page": "2-27"
- },
- {
-  "id": "s2-050",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "If you must drive in fog, which headlights should you use for best visibility?",
-  "choices": [
-   "High-beam headlights only",
-   "Parking lights only",
-   "Low-beam headlights and fog lights, even in daytime",
-   "No lights, so you don't reflect glare off the fog"
-  ],
-  "answer": 2,
-  "explanation": "The manual says to use low-beam headlights and fog lights for best visibility in fog, even in daytime, and to turn on your 4-way flashers so vehicles behind can notice you sooner.",
-  "page": "2-27"
- },
- {
-  "id": "s2-051",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "What is the minimum tread depth required in every major groove on front tires, and on other tires?",
-  "choices": [
-   "2/32 inch on front tires; 1/32 inch on other tires",
-   "4/32 inch on front tires; 2/32 inch on other tires",
-   "8/32 inch on front tires; 4/32 inch on other tires",
-   "4/32 inch on all tires"
-  ],
-  "answer": 1,
-  "explanation": "You must have at least 4/32 inch tread depth in every major groove on front tires and at least 2/32 inch on other tires. More would be better, especially in winter conditions.",
-  "page": "2-28"
- },
- {
-  "id": "s2-052",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "When checking for ice on the road, which of the following indicates ice has formed on the road?",
-  "choices": [
-   "Heavy spray coming from other vehicles' tires",
-   "Steam rising from the pavement",
-   "Increased traction when braking",
-   "A lack of spray from other vehicles"
-  ],
-  "answer": 3,
-  "explanation": "A lack of spray from other vehicles indicates ice has formed on the road. Ice on your mirrors and wiper blades also means the road most likely will be icy as well.",
-  "page": "2-28"
- },
- {
-  "id": "s2-053",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "When driving on slippery surfaces, why should you avoid using the engine brake or speed retarder?",
-  "choices": [
-   "They can cause the driving wheels to skid",
-   "They wear out the transmission in cold weather",
-   "They overheat the brake drums",
-   "They increase fuel consumption"
-  ],
-  "answer": 0,
-  "explanation": "The manual warns not to use the engine brake or speed retarder on slippery surfaces because they can cause the driving wheels to skid.",
-  "page": "2-28"
- },
- {
-  "id": "s2-054",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "When driving in very hot weather, how often should you inspect your tires?",
-  "choices": [
-   "Every 30 minutes or every 25 miles",
-   "Once at the start of the trip only",
-   "Every two hours or every 100 miles",
-   "Every 8 hours or every 500 miles"
-  ],
-  "answer": 2,
-  "explanation": "In very hot weather, inspect the tires every two hours or every 100 miles. Air pressure increases with temperature, and you should not let air out or the pressure will be too low when the tires cool off.",
-  "page": "2-29"
- },
- {
-  "id": "s2-055",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "When is it safe to remove the radiator cap on a pressurized cooling system?",
-  "choices": [
-   "As soon as you shut off the engine",
-   "Any time the coolant level is low",
-   "Whenever the temperature gauge reads in the normal range and the engine has idled for at least a minute",
-   "Not until the system has cooled; steam and boiling water can spray under pressure and cause severe burns"
-  ],
-  "answer": 3,
-  "explanation": "Never remove the radiator cap or any part of the pressurized system until the system has cooled. If you can touch the radiator cap with your bare hand, it is probably cool enough to open.",
-  "page": "2-29"
- },
- {
-  "id": "s2-056",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "If there is no white stop line painted before a railroad crossing, vehicles that are required to stop must stop within what distance from the nearest rail?",
-  "choices": [
-   "No closer than 15 feet and no more than 50 feet",
-   "No closer than 5 feet and no more than 20 feet",
-   "No closer than 25 feet and no more than 75 feet",
-   "No closer than 50 feet and no more than 100 feet"
-  ],
-  "answer": 0,
-  "explanation": "Vehicles required to stop must stop no closer than 15 feet or more than 50 feet from the nearest rail of the nearest track when there is no white stop line painted on the pavement.",
-  "page": "2-30"
- },
- {
-  "id": "s2-057",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "How long does it take a typical tractor-trailer unit to clear a double railroad track?",
-  "choices": [
-   "About 5 seconds",
-   "About 10 seconds",
-   "More than 15 seconds",
-   "More than 30 seconds"
-  ],
-  "answer": 2,
-  "explanation": "It takes a typical tractor-trailer unit at least 14 seconds to clear a single track and more than 15 seconds to clear a double track. Be sure you can get all the way across before you start.",
-  "page": "2-31"
- },
- {
-  "id": "s2-058",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "What does the manual say about shifting gears while crossing railroad tracks?",
-  "choices": [
-   "Shift to a lower gear on the tracks for more power",
-   "Do not shift gears while crossing railroad tracks",
-   "Shift only if the crossing has gates",
-   "Shift to neutral and coast across"
-  ],
-  "answer": 1,
-  "explanation": "The manual states plainly: do not shift gears while crossing railroad tracks. Shifting could cause you to stall on the tracks.",
-  "page": "2-31"
- },
- {
-  "id": "s2-059",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "If your vehicle gets stuck on railroad tracks, what should you do first?",
-  "choices": [
-   "Try to rock the vehicle free by quickly shifting between forward and reverse gears while keeping the drive wheels from spinning on the rails",
-   "Stay in the cab and call your dispatcher",
-   "Raise the hood to signal for help",
-   "Get out of the vehicle and away from the tracks, then check the signposts or signal housing for emergency notification information and call 911"
-  ],
-  "answer": 3,
-  "explanation": "If you get stuck on the tracks for any reason, get out of the vehicle and away from the tracks. Check signposts or signal housing at the crossing for emergency notification information and call 911, giving the location and DOT number if posted.",
-  "page": "2-31"
- },
- {
-  "id": "s2-060",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "On a long, steep downgrade, what should be the principal way of controlling your speed?",
-  "choices": [
-   "The braking effect of the engine",
-   "Steady, hard pressure on the service brakes",
-   "The parking brake",
-   "Riding the brakes lightly the entire way down"
-  ],
-  "answer": 0,
-  "explanation": "You must use the braking effect of the engine as the principal way of controlling your speed on downgrades. The engine's braking effect is greatest near the governed rpms with the transmission in the lower gears.",
-  "page": "2-32"
- },
- {
-  "id": "s2-061",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "When should you shift the transmission into a low gear for a long, steep downgrade?",
-  "choices": [
-   "After your speed has built up on the grade",
-   "Before starting down the grade",
-   "Only when the brakes begin to fade",
-   "Halfway down the grade"
-  ],
-  "answer": 1,
-  "explanation": "Shift to a low gear before starting down the grade. If you try to downshift after speed has built up, you may not be able to shift into a lower gear or even get back into any gear, losing all engine braking effect.",
-  "page": "2-32"
- },
- {
-  "id": "s2-062",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "Using proper braking technique on a downgrade, once you are in the proper low gear you should apply the brakes just hard enough to feel a definite slowdown, then release them when your speed is reduced to approximately:",
-  "choices": [
-   "10 mph below your safe speed",
-   "Half of your safe speed",
-   "5 mph below your safe speed",
-   "Your posted speed limit"
-  ],
-  "answer": 2,
-  "explanation": "Apply the brakes until your speed is reduced to about 5 mph below your safe speed, then release. The brake application should last about three seconds, and you repeat the process when speed rises back to your safe speed.",
-  "page": "2-32"
- },
- {
-  "id": "s2-063",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "How do escape ramps on steep mountain downgrades stop runaway vehicles?",
-  "choices": [
-   "They use a long bed of loose, soft material, sometimes in combination with an upgrade",
-   "They use a series of speed bumps and barriers",
-   "They use water-filled crash barrels",
-   "They use a heavy net stretched across the roadway that slows the vehicle as it stretches"
-  ],
-  "answer": 0,
-  "explanation": "Escape ramps use a long bed of loose, soft material to slow a runaway vehicle, sometimes in combination with an upgrade. They are made to stop vehicles safely without injuring drivers and passengers.",
-  "page": "2-33"
- },
- {
-  "id": "s2-064",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "If you must leave the road in an emergency, you should avoid braking until your speed has dropped to about:",
-  "choices": [
-   "45 mph",
-   "20 mph",
-   "35 mph",
-   "5 mph"
-  ],
-  "answer": 1,
-  "explanation": "If possible, avoid using the brakes until your speed has dropped to about 20 mph, then brake very gently to avoid skidding on a loose surface. Keep one set of wheels on the pavement if possible.",
-  "page": "2-33"
- },
- {
-  "id": "s2-065",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "When using the stab braking method, after you release the brakes, how long can it take for the wheels to start rolling again?",
-  "choices": [
-   "Up to five seconds",
-   "Wheels start rolling instantly",
-   "Up to ten seconds",
-   "Up to one second"
-  ],
-  "answer": 3,
-  "explanation": "It can take up to one second for the wheels to start rolling after you release the brakes. If you re-apply the brakes before the wheels start rolling, the vehicle won't straighten out.",
-  "page": "2-34"
- },
- {
-  "id": "s2-066",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "If you lose hydraulic brake pressure, which of the following can help you slow or stop the vehicle?",
-  "choices": [
-   "Downshifting to a lower gear",
-   "Pumping the brake pedal to build pressure",
-   "Using the parking brake while holding the release",
-   "All of the above"
-  ],
-  "answer": 3,
-  "explanation": "When hydraulic pressure is lost, the manual says to downshift, pump the brakes to generate pressure, and use the parking brake (holding the release so you can control pressure), while also finding an escape route.",
-  "page": "2-34"
- },
- {
-  "id": "s2-067",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "While driving, the steering suddenly feels \"heavy.\" What is this most likely a sign of?",
-  "choices": [
-   "One of the front tires has failed",
-   "The power steering fluid is overfilled",
-   "A rear tire has gone flat",
-   "The trailer brakes are dragging"
-  ],
-  "answer": 0,
-  "explanation": "If the steering feels heavy, it is probably a sign that one of the front tires has failed. Failure of a rear tire may instead cause the vehicle to vibrate, thump, or fishtail.",
-  "page": "2-35"
- },
- {
-  "id": "s2-068",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "When a tire fails, what should you do about braking?",
-  "choices": [
-   "Brake hard immediately to stop as quickly as possible before the failed tire can pull you off the road",
-   "Use stab braking until you stop",
-   "Stay off the brake until the vehicle has slowed down, then brake very gently, pull off the road, and stop",
-   "Apply the parking brake right away"
-  ],
-  "answer": 2,
-  "explanation": "Braking when a tire has failed could cause loss of control. Unless you're about to run into something, stay off the brake until the vehicle has slowed down, then brake very gently, pull off the road, and stop.",
-  "page": "2-35"
- },
- {
-  "id": "s2-069",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "The Department of Transportation requires antilock braking systems (ABS) on truck tractors with air brakes built on or after what date?",
-  "choices": [
-   "March 1, 1995",
-   "March 1, 1997",
-   "March 1, 1999",
-   "March 1, 2001"
-  ],
-  "answer": 1,
-  "explanation": "ABS is required on truck tractors with air brakes built on or after March 1, 1997. Other air brake vehicles were required to have it if built on or after March 1, 1998, and hydraulically braked trucks and buses with a GVWR of 10,000 lbs or more on or after March 1, 1999.",
-  "page": "2-35"
- },
- {
-  "id": "s2-070",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "How should you brake when driving a vehicle equipped with ABS?",
-  "choices": [
-   "Pump the brake pedal rapidly",
-   "Press the pedal harder than normal so the ABS engages sooner and shortens your overall stopping distance",
-   "Brake as you always have, using only the braking force necessary to stop safely and stay in control",
-   "Use only the parking brake for normal stops"
-  ],
-  "answer": 2,
-  "explanation": "When you drive a vehicle with ABS, you should brake as you always have. ABS only comes into play when a wheel would otherwise have locked up because of over braking, and it won't necessarily shorten stopping distance.",
-  "page": "2-36"
- },
- {
-  "id": "s2-071",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "What is by far the most common type of skid?",
-  "choices": [
-   "A front-wheel skid caused by worn steering tires or too much weight on the front axle",
-   "One in which the rear wheels lose traction through excessive braking or acceleration",
-   "A trailer skid caused by strong crosswinds",
-   "A skid caused by under-inflated steering tires"
-  ],
-  "answer": 1,
-  "explanation": "By far the most common skid is one in which the rear wheels lose traction through excessive braking or acceleration. Skids caused by acceleration usually happen on ice or snow.",
-  "page": "2-37"
- },
- {
-  "id": "s2-072",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "To correct a drive-wheel braking skid, what should you do first?",
-  "choices": [
-   "Accelerate to regain traction",
-   "Apply the brakes harder",
-   "Steer sharply toward the shoulder",
-   "Stop braking so the rear wheels can roll again"
-  ],
-  "answer": 3,
-  "explanation": "To correct a drive-wheel braking skid, stop braking. This lets the rear wheels roll again and keeps them from sliding. Then counter-steer as the vehicle turns back on course.",
-  "page": "2-37"
- },
- {
-  "id": "s2-073",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "What are the three basic steps to take at any accident scene?",
-  "choices": [
-   "Call your employer, take photos, exchange insurance information",
-   "Move the injured, direct traffic, find witnesses",
-   "Protect the area, notify authorities, care for the injured",
-   "Set flares, tow the vehicles, file a report"
-  ],
-  "answer": 2,
-  "explanation": "The basic steps to be taken at any accident are to protect the area, notify authorities, and care for the injured. Protecting the area keeps another accident from happening in the same spot.",
-  "page": "2-38"
- },
- {
-  "id": "s2-074",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "When caring for the injured at an accident scene, how should you stop heavy bleeding?",
-  "choices": [
-   "Elevate the person's head",
-   "Give the person water to drink",
-   "By applying direct pressure to the wound",
-   "Move the person into a seated position"
-  ],
-  "answer": 2,
-  "explanation": "Stop heavy bleeding by applying direct pressure to the wound, and keep the injured person warm. Do not move a severely injured person unless the danger of fire or passing traffic makes it necessary.",
-  "page": "2-38"
- },
- {
-  "id": "s2-075",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "If you have an engine fire, what should you do?",
-  "choices": [
-   "Turn off the engine as soon as you can and don't open the hood if you can avoid it",
-   "Open the hood immediately to find the source of the fire before it can spread further",
-   "Keep the engine running so the fan can blow out the flames",
-   "Drive to the nearest service station for help"
-  ],
-  "answer": 0,
-  "explanation": "With an engine fire, turn off the engine as soon as you can and avoid opening the hood. Shoot foam through the louvers, radiator, or from the vehicle's underside. Never pull into a service station.",
-  "page": "2-38"
- },
- {
-  "id": "s2-076",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "Why should you NOT use water on an electrical fire?",
-  "choices": [
-   "Water evaporates too quickly to cool the wiring, so the fire simply reignites as soon as the spray stops",
-   "Water will freeze on the wiring",
-   "Water is only effective on gasoline fires",
-   "Water can cause shock; electrical fires require non-conducting agents like carbon dioxide or dry chemicals"
-  ],
-  "answer": 3,
-  "explanation": "Water on an electrical fire can cause shock, and water on a gasoline fire will spread the flames. Electrical fires must be extinguished with non-conducting agents such as carbon dioxide or dry chemicals, like a B:C type extinguisher.",
-  "page": "2-39"
- },
- {
-  "id": "s2-077",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "The liver can only process one-third an ounce of alcohol per hour. What is the only thing that will sober you up?",
-  "choices": [
-   "Drinking black coffee",
-   "Taking a cold shower",
-   "Time",
-   "Eating a large meal"
-  ],
-  "answer": 2,
-  "explanation": "The liver processes alcohol at a fixed rate of about one-third an ounce per hour, so only time will sober you up - not black coffee or a cold shower.",
-  "page": "2-40"
- },
- {
-  "id": "s2-078",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "Which factors determine a person's Blood Alcohol Concentration (BAC)?",
-  "choices": [
-   "The amount of alcohol you drink, how fast you drink, and your weight",
-   "Only the type of alcoholic beverage consumed",
-   "Your age, height, and eye color",
-   "The temperature of the drink, the time of day, and where it was consumed"
-  ],
-  "answer": 0,
-  "explanation": "BAC is determined by the amount of alcohol you drink (more alcohol means higher BAC), how fast you drink (faster drinking means higher BAC), and your weight (a smaller person doesn't have to drink as much to reach the same BAC).",
-  "page": "2-41"
- },
- {
-  "id": "s2-079",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "When can you drive a vehicle that carries hazardous materials requiring placards?",
-  "choices": [
-   "Whenever your employer gives you written permission before the trip begins",
-   "Only if your driver license has the hazardous materials endorsement",
-   "Any time the trip is shorter than 100 miles",
-   "Only during daylight hours"
-  ],
-  "answer": 1,
-  "explanation": "If a vehicle requires placards, you cannot drive it unless your driver license has the hazardous materials endorsement. Driving a vehicle that needs placards without the endorsement is a crime.",
-  "page": "2-43"
- },
- {
-  "id": "s2-080",
-  "section": 2,
-  "sectionName": "Driving Safely",
-  "question": "How many placards must a placarded vehicle have, and where are they placed?",
-  "choices": [
-   "Two placards, one on each side",
-   "One placard on the rear only",
-   "Six placards: one on all four corners plus the roof and the undercarriage",
-   "At least four identical placards, on the front, rear, and both sides"
-  ],
-  "answer": 3,
-  "explanation": "A placarded vehicle must have at least four identical placards, put on the front, rear, and both sides so they are readable from all four directions. Placards must be at least 10 3/4 inches square, turned upright on a point in a diamond shape.",
-  "page": "2-42"
+  "explanation": "PilotWeb provides online access to current NOTAM information, and NOTAMs are also available in printed form by subscription from the Superintendent of Documents. Various websites, such as www.fltplan.com and AOPA's NOTAM page, offer local airport NOTAMs and TFR updates after a free registration.",
+  "page": "13"
  },
  {
   "id": "s3-001",
   "section": 3,
-  "sectionName": "Transporting Cargo Safely",
-  "question": "After beginning a trip, you must inspect the cargo and its securing devices again within the first:",
+  "sectionName": "Aviation Weather Sources",
+  "question": "When can a SPECI weather report be issued?",
   "choices": [
-   "25 miles",
-   "50 miles",
-   "100 miles",
-   "150 miles"
+   "Only at the top of each hour",
+   "At any time between routine METAR reports",
+   "Only when the previous METAR is more than six hours old",
+   "Only during daylight observing hours"
   ],
   "answer": 1,
-  "explanation": "The manual states you must inspect the cargo and its securing devices again within the first 50 miles after beginning a trip and make any needed adjustments.",
-  "page": "3-1"
+  "explanation": "A SPECI is a special METAR that can be issued at any time between the regularly scheduled routine reports. It updates the METAR for rapidly changing weather conditions, aircraft mishaps, or other critical information.",
+  "page": "15"
  },
  {
   "id": "s3-002",
   "section": 3,
-  "sectionName": "Transporting Cargo Safely",
-  "question": "During a trip, you must re-inspect your cargo and securing devices after you have driven for:",
+  "sectionName": "Aviation Weather Sources",
+  "question": "ICAO station identifiers for weather reporting stations in Alaska always begin with which letters?",
   "choices": [
-   "2 hours or 100 miles",
-   "4 hours or 200 miles",
-   "3 hours or 150 miles",
-   "5 hours or 250 miles"
+   "PH",
+   "KA",
+   "PA",
+   "AK"
   ],
   "answer": 2,
-  "explanation": "You must inspect the cargo again after you have driven for 3 hours or 150 miles, and also after every break you take during driving.",
-  "page": "3-1"
+  "explanation": "In the 48 contiguous states a three-letter identifier is preceded by the letter K, but Alaska identifiers always begin with PA and Hawaii identifiers always begin with PH. The first two letters outside the contiguous states indicate the region, country, or state.",
+  "page": "16"
  },
  {
   "id": "s3-003",
   "section": 3,
-  "sectionName": "Transporting Cargo Safely",
-  "question": "Gross Vehicle Weight Rating (GVWR) is defined as:",
+  "sectionName": "Aviation Weather Sources",
+  "question": "How should the date and time group '161753Z' in a METAR be read?",
   "choices": [
-   "The value specified by the manufacturer as the loaded weight of a single vehicle",
-   "The total weight of a powered unit plus its towed trailers",
-   "The weight transmitted to the ground by one axle",
-   "The maximum safe weight a tire can carry at a specified pressure"
+   "The 16th day of the month at 1753 UTC",
+   "The 16th day of the month at 1753 local station time",
+   "June 17th at 5:30 p.m. UTC",
+   "The 16th hour of the day at 17 minutes 53 seconds"
   ],
   "answer": 0,
-  "explanation": "The manual defines GVWR as the value specified by the manufacturer as the loaded weight of a single vehicle.",
-  "page": "3-1"
+  "explanation": "The first two digits of the six-digit group are the date and the last four are the time of the report. The Z appended to the group means the time is coordinated universal time (Zulu), not local time.",
+  "page": "16"
  },
  {
   "id": "s3-004",
   "section": 3,
-  "sectionName": "Transporting Cargo Safely",
-  "question": "Gross Combination Weight Rating (GCWR) can be determined by:",
+  "sectionName": "Aviation Weather Sources",
+  "question": "What does the modifier 'COR' indicate when it appears in a METAR?",
   "choices": [
-   "The total weight transmitted to the ground by one axle or one set of axles under the loaded vehicle",
-   "The rating stamped on the side of each tire",
-   "The manufacturer's suspension system capacity rating",
-   "The sum of the GVWRs or GVWs of the power unit and towed unit(s) that produces the highest value"
+   "The report came from an automated station without an observer",
+   "The station's reporting equipment needs corrective maintenance",
+   "The observation was confirmed by a second weather observer",
+   "The report corrects an error in an earlier transmitted report"
   ],
   "answer": 3,
-  "explanation": "GCWR is the value specified by the manufacturer of the power unit, or the sum of the GVWRs or GVWs of the power unit and towed unit(s) that produces the highest value.",
-  "page": "3-1"
+  "explanation": "The modifier COR identifies a corrected report sent out to replace an earlier report that contained an error. A report from an automated source uses the modifier AUTO instead.",
+  "page": "16"
  },
  {
   "id": "s3-005",
   "section": 3,
-  "sectionName": "Transporting Cargo Safely",
-  "question": "Axle weight is:",
+  "sectionName": "Aviation Weather Sources",
+  "question": "What conditions does the METAR wind group '14021G26KT' describe?",
   "choices": [
-   "The weight rating of the suspension system",
-   "The weight transmitted to the ground by one axle or one set of axles",
-   "The manufacturer's rated capacity of a coupling device",
-   "The loaded weight of a single vehicle"
+   "Wind from 210 degrees true at 14 knots, gusting to 26 knots",
+   "Wind from 140 degrees true at 21 knots, gusting to 26 knots",
+   "Wind from 140 degrees true at 26 knots, gusting to 21 knots",
+   "Wind variable between 140 and 210 degrees at 26 knots"
   ],
   "answer": 1,
-  "explanation": "The manual defines axle weight as the weight transmitted to the ground by one axle or one set of axles.",
-  "page": "3-1"
+  "explanation": "The first three digits give the direction the true wind is blowing from in tens of degrees, and the next two digits give the speed in knots. The letter G follows the wind speed when gusting, and the number after it is the peak gust recorded.",
+  "page": "16"
  },
  {
   "id": "s3-006",
   "section": 3,
-  "sectionName": "Transporting Cargo Safely",
-  "question": "Tire load is the maximum safe weight a tire can carry at a specified pressure. Where is this rating stated?",
+  "sectionName": "Aviation Weather Sources",
+  "question": "How should the METAR entry 'R17L/1400FT' be read?",
   "choices": [
-   "On the side of each tire",
-   "On the FMVSS certification label",
-   "On the vehicle registration card",
-   "Inside the driver's door frame"
+   "The visual range on runway 17 left is 1,400 feet",
+   "The visual range on runway 14 left is 1,700 feet",
+   "Runway 17 left has 1,400 feet of usable landing distance",
+   "The visual range on runway 17 left is 1,400 meters"
   ],
   "answer": 0,
-  "explanation": "Tire load is the maximum safe weight a tire can carry at a specified pressure, and this rating is stated on the side of each tire.",
-  "page": "3-1"
+  "explanation": "Runway visual range (RVR) is the distance a pilot can see down the runway from a moving aircraft. It is coded with an R, the runway number, a slant, and the visual range in feet, so R17L/1400FT means a visual range of 1,400 feet on runway 17 left.",
+  "page": "16"
  },
  {
   "id": "s3-007",
   "section": 3,
-  "sectionName": "Transporting Cargo Safely",
-  "question": "A bridge formula, often used by states to set maximum axle weights, permits:",
+  "sectionName": "Aviation Weather Sources",
+  "question": "In METAR weather coding, the notation 'VC' means a weather phenomenon is occurring at what distance from the airport?",
   "choices": [
-   "More maximum axle weight for axles that are closer together",
-   "The same maximum axle weight regardless of axle spacing",
-   "Less maximum axle weight for axles that are closer together",
-   "Unlimited axle weight if the total gross weight is legal"
+   "Within one mile of the field",
+   "Between one and five miles",
+   "Between five and ten miles",
+   "Between ten and twenty miles"
   ],
   "answer": 2,
-  "explanation": "A bridge formula permits less maximum axle weight for axles that are closer together, to prevent overloading bridges and roadways.",
-  "page": "3-1"
+  "explanation": "VC is the proximity qualifier, indicating a specific weather phenomenon is in the vicinity of the airport, which means five to ten miles from the field.",
+  "page": "16"
  },
  {
   "id": "s3-008",
   "section": 3,
-  "sectionName": "Transporting Cargo Safely",
-  "question": "Overloading a truck can have bad effects on:",
+  "sectionName": "Aviation Weather Sources",
+  "question": "In the METAR weather group '+TSRA', what does the '+' symbol indicate?",
   "choices": [
-   "Steering",
-   "Braking",
-   "Speed control",
-   "All of the above"
+   "The phenomenon is increasing in intensity",
+   "The precipitation intensity is heavy",
+   "Additional weather groups follow this one",
+   "The phenomenon is in the vicinity of the airport"
   ],
-  "answer": 3,
-  "explanation": "The manual states overloading can have bad effects on steering, braking, and speed control, including increased stopping distance and possible brake failure.",
-  "page": "3-2"
+  "answer": 1,
+  "explanation": "The intensity qualifier ahead of a weather phenomenon is a minus sign for light, no symbol for moderate, and a plus sign for heavy. So +TSRA reports a thunderstorm with heavy rain.",
+  "page": "16"
  },
  {
   "id": "s3-009",
   "section": 3,
-  "sectionName": "Transporting Cargo Safely",
-  "question": "A vehicle with a high center of gravity (cargo piled up high or heavy cargo on top) is:",
+  "sectionName": "Aviation Weather Sources",
+  "question": "In the METAR sky condition 'BKN008', at what height is the broken cloud layer?",
   "choices": [
-   "More likely to tip over, especially in curves or when swerving",
-   "Easier to steer on downgrades",
-   "Less likely to have its load shift",
-   "Only a concern when the road surface is slippery or badly rutted"
+   "8,000 feet AGL",
+   "80 feet AGL",
+   "800 feet MSL",
+   "800 feet AGL"
   ],
-  "answer": 0,
-  "explanation": "A high center of gravity means you are more likely to tip over, and it is most dangerous in curves or if you have to swerve to avoid a hazard.",
-  "page": "3-2"
+  "answer": 3,
+  "explanation": "Cloud base heights in the sky condition group are reported as a three-digit number in hundreds of feet above ground level, so 008 means a base at 800 feet AGL.",
+  "page": "17"
  },
  {
   "id": "s3-010",
   "section": 3,
-  "sectionName": "Transporting Cargo Safely",
-  "question": "Too little weight on the driving axles can cause:",
+  "sectionName": "Aviation Weather Sources",
+  "question": "Automated weather stations do not detect or report clouds above what height?",
   "choices": [
-   "Hard steering and damage to the steering axle",
-   "Poor traction, so the drive wheels may spin easily",
-   "The brakes to grab suddenly",
-   "The trailer to jackknife on dry pavement"
+   "10,000 feet",
+   "12,000 feet",
+   "15,000 feet",
+   "18,000 feet"
   ],
   "answer": 1,
-  "explanation": "Too little weight on the driving axles causes poor traction; the drive wheels may spin easily, and in bad weather the truck may not be able to keep going.",
-  "page": "3-2"
+  "explanation": "An automated station cannot detect or report clouds above 12,000 feet, so a clear sky condition from an automated source only covers the sky below that height.",
+  "page": "17"
  },
  {
   "id": "s3-011",
   "section": 3,
-  "sectionName": "Transporting Cargo Safely",
-  "question": "Federal regulations require that the aggregate working load limit of any cargo securement system be at least:",
+  "sectionName": "Aviation Weather Sources",
+  "question": "In a METAR sky condition report, the amount of sky coverage is measured in what units?",
   "choices": [
-   "Equal to the full weight of the cargo it secures",
-   "Twice the weight of the cargo it secures",
-   "One-quarter the weight of the cargo it secures",
-   "One-half the weight of the cargo it secures"
+   "Eighths of the sky from horizon to horizon",
+   "Tenths of the sky directly overhead",
+   "Percent of the visible sky",
+   "Quarters of the sky by compass sector"
   ],
-  "answer": 3,
-  "explanation": "The aggregate working load limit of any securement system must be at least one-half times the weight of the article or group of articles being secured.",
-  "page": "3-2"
+  "answer": 0,
+  "explanation": "Sky coverage contractions such as broken or overcast are based on how many eighths of the sky, from horizon to horizon, are covered by clouds or obscuring phenomena.",
+  "page": "17"
  },
  {
   "id": "s3-012",
   "section": 3,
-  "sectionName": "Transporting Cargo Safely",
-  "question": "Cargo should have at least one tie-down for each ten feet of cargo. How many tie-downs are needed for a 20-foot load?",
+  "sectionName": "Aviation Weather Sources",
+  "question": "How does a METAR indicate an air temperature below 0 degrees Celsius?",
   "choices": [
-   "1",
-   "4",
-   "2",
-   "3"
+   "The value is preceded by a minus sign",
+   "The value is preceded by the letter M",
+   "The value is followed by the letter B",
+   "The value is converted to degrees Fahrenheit"
   ],
-  "answer": 2,
-  "explanation": "With at least one tie-down required for each ten feet of cargo, a 20-foot load needs at least two tie-downs.",
-  "page": "3-3"
+  "answer": 1,
+  "explanation": "Temperature and dew point in a METAR are always given in degrees Celsius, and a value below 0 degrees C is preceded by the letter M to indicate minus.",
+  "page": "17"
  },
  {
   "id": "s3-013",
   "section": 3,
-  "sectionName": "Transporting Cargo Safely",
-  "question": "No matter how small the cargo, it should have at least how many tie-downs?",
+  "sectionName": "Aviation Weather Sources",
+  "question": "What value does the METAR group 'A2970' report?",
   "choices": [
-   "One",
-   "Two",
-   "Three",
-   "Four"
+   "A field elevation of 2,970 feet MSL",
+   "An altimeter setting of 29.70 millibars",
+   "An altimeter setting of 29.70 inches of mercury",
+   "A pressure altitude of 2,970 feet"
   ],
-  "answer": 1,
-  "explanation": "The manual states that no matter how small the cargo, it should have at least two tie-downs.",
-  "page": "3-3"
+  "answer": 2,
+  "explanation": "The altimeter setting is a four-digit group preceded by the letter A and is reported in inches of mercury, so A2970 means 29.70 inches of mercury. Rapidly rising or falling pressure may also appear in the remarks as PRESRR or PRESFR.",
+  "page": "17"
  },
  {
   "id": "s3-014",
   "section": 3,
-  "sectionName": "Transporting Cargo Safely",
-  "question": "What is the purpose of front-end header boards (\"headache racks\")?",
+  "sectionName": "Aviation Weather Sources",
+  "question": "A terminal aerodrome forecast (TAF) describes expected weather for what area?",
   "choices": [
-   "To protect you from your cargo in case of a crash or emergency stop",
-   "To improve the aerodynamics of the tractor",
-   "To keep the cargo dry in bad weather",
-   "To mark the vehicle as an oversized load when hauling extra-long freight"
+   "A five statute mile radius around an airport",
+   "A ten statute mile radius around an airport",
+   "The entire air traffic control sector",
+   "A 3,000 square mile region around an airport"
   ],
   "answer": 0,
-  "explanation": "Front-end header boards protect the driver from the cargo in case of a crash or emergency stop by blocking the forward movement of the cargo.",
-  "page": "3-3"
+  "explanation": "A TAF is established for the five statute mile radius around an airport, usually a larger airport, and it uses the same descriptors and abbreviations as a METAR.",
+  "page": "18"
  },
  {
   "id": "s3-015",
   "section": 3,
-  "sectionName": "Transporting Cargo Safely",
-  "question": "What are the two basic reasons for covering cargo?",
+  "sectionName": "Aviation Weather Sources",
+  "question": "How often are scheduled TAFs issued?",
   "choices": [
-   "To hide the cargo from thieves and to cut down wind drag at highway speeds",
-   "To meet insurance requirements and reduce noise",
-   "To keep the cargo balanced and prevent overloading",
-   "To protect people from spilled cargo and to protect the cargo from weather"
+   "Four times a day, at 0000Z, 0600Z, 1200Z, and 1800Z",
+   "Four times a day, at 0300Z, 0900Z, 1500Z, and 2100Z",
+   "Twice a day, at 0600Z and 1800Z",
+   "Once a day, at 1200Z"
   ],
-  "answer": 3,
-  "explanation": "The manual gives two basic reasons for covering cargo: to protect people from spilled cargo and to protect the cargo from weather.",
-  "page": "3-3"
+  "answer": 0,
+  "explanation": "Scheduled TAFs are issued four times per day at 0000Z, 0600Z, 1200Z, and 1800Z, and each one is valid for a 24 or 30 hour period.",
+  "page": "18"
  },
  {
   "id": "s3-016",
   "section": 3,
-  "sectionName": "Transporting Cargo Safely",
-  "question": "You cannot inspect a sealed load, but you should check that:",
+  "sectionName": "Aviation Weather Sources",
+  "question": "In a TAF, what does a forecast visibility coded as 'P6SM' mean?",
   "choices": [
-   "The shipper has paid all freight charges",
-   "The load is refrigerated properly",
-   "You don't exceed gross weight and axle weight limits",
-   "The seal number matches the bill of lading"
+   "Visibility of exactly six statute miles",
+   "Visibility greater than six statute miles",
+   "Visibility of less than six statute miles",
+   "Visibility of six nautical miles or more"
   ],
-  "answer": 2,
-  "explanation": "You cannot inspect sealed loads, but you should check that you don't exceed gross weight and axle weight limits.",
-  "page": "3-3"
+  "answer": 1,
+  "explanation": "TAF visibility is forecast in statute miles, in whole numbers or fractions. When the forecast visibility is greater than six miles, it is coded as P6SM.",
+  "page": "19"
  },
  {
   "id": "s3-017",
   "section": 3,
-  "sectionName": "Transporting Cargo Safely",
-  "question": "Why do dry bulk tanks require special care?",
+  "sectionName": "Aviation Weather Sources",
+  "question": "In a TAF change group, 'TEMPO' describes weather fluctuations expected to last how long?",
   "choices": [
-   "They have a high center of gravity, and the load can shift",
-   "They are always overweight on the steering axle",
-   "The cargo can freeze in cold weather",
-   "They require two tie-downs for every ten feet of tank"
+   "Less than one hour",
+   "More than one hour but less than two",
+   "Between two and four hours",
+   "Until the next scheduled TAF is issued"
   ],
   "answer": 0,
-  "explanation": "Dry bulk tanks require special care because they have a high center of gravity and the load can shift, so drive slowly and carefully around curves and sharp turns.",
-  "page": "3-3"
+  "explanation": "TEMPO is used for temporary fluctuations of weather expected to last less than one hour. FM, by contrast, marks a rapid and significant change, usually happening within an hour.",
+  "page": "19"
  },
  {
   "id": "s3-018",
   "section": 3,
-  "sectionName": "Transporting Cargo Safely",
-  "question": "When hauling livestock with less than a full load, you should:",
+  "sectionName": "Aviation Weather Sources",
+  "question": "A convective SIGMET is issued for a severe thunderstorm when surface winds exceed what speed?",
   "choices": [
-   "Drive faster to shorten the trip",
-   "Leave extra space so the animals can lie down",
-   "Add water ballast to the trailer",
-   "Use false bulkheads to keep the livestock bunched together"
-  ],
-  "answer": 3,
-  "explanation": "With less than a full load, use false bulkheads to keep livestock bunched together; even when bunched, livestock can lean on curves and make rollover more likely.",
-  "page": "3-3"
- },
- {
-  "id": "s3-019",
-  "section": 3,
-  "sectionName": "Transporting Cargo Safely",
-  "question": "Whether or not you load and secure the cargo yourself, which of the following are you responsible for as the driver?",
-  "choices": [
-   "Only the items that you personally loaded and secured yourself before beginning the trip",
-   "Nothing until you leave the shipper's property with the load",
-   "Only the total weight of the load, which the shipper must certify",
-   "Inspecting the cargo and knowing it is properly secured and does not obscure your view"
-  ],
-  "answer": 3,
-  "explanation": "Drivers are responsible for inspecting the cargo, recognizing overloads and poorly balanced weight, and knowing the cargo is properly secured, does not obscure the view, and does not restrict access to emergency equipment.",
-  "page": "3-1"
- },
- {
-  "id": "s3-020",
-  "section": 3,
-  "sectionName": "Transporting Cargo Safely",
-  "question": "What is the difference between blocking and bracing?",
-  "choices": [
-   "Blocking keeps cargo cool, while bracing keeps it dry in bad weather",
-   "Blocking is used only on open flatbed trailers, while bracing is used only inside closed vans and refrigerated trailers",
-   "Blocking fits snugly against cargo on the deck, while bracing runs from the upper part of the cargo to the floor or walls",
-   "Blocking secures the trailer to the tractor, while bracing secures the trailer to its landing gear"
+   "30 knots",
+   "40 knots",
+   "50 knots",
+   "65 knots"
   ],
   "answer": 2,
-  "explanation": "Blocking is shaped to fit snugly against cargo and secured to the cargo deck to prevent sliding; bracing goes from the upper part of the cargo to the floor and/or walls of the cargo compartment.",
-  "page": "3-2"
- },
- {
-  "id": "s3-021",
-  "section": 3,
-  "sectionName": "Transporting Cargo Safely",
-  "question": "Too much weight on the steering axle can cause:",
-  "choices": [
-   "Better traction on the drive wheels in bad weather",
-   "Hard steering and damage to the steering axle and tires",
-   "A lower center of gravity and safer overall handling",
-   "The trailer brakes to apply before the tractor brakes"
-  ],
-  "answer": 1,
-  "explanation": "Too much weight on the steering axle can cause hard steering and can damage the steering axle and tires.",
-  "page": "3-2"
- },
- {
-  "id": "s3-022",
-  "section": 3,
-  "sectionName": "Transporting Cargo Safely",
-  "question": "Why should you check your cargo covers in the mirrors from time to time while driving?",
-  "choices": [
-   "A flapping cover can tear loose, uncovering the cargo and possibly blocking your view or someone else's",
-   "To confirm that the cargo has not shifted more than a few inches under the cover since your last stop",
-   "Because uncovered cargo always requires a police escort to continue the trip",
-   "Because covers must stay wet in order to grip the load properly in strong wind"
-  ],
-  "answer": 0,
-  "explanation": "The manual says to look at cargo covers in the mirrors from time to time while driving; a flapping cover can tear loose, uncovering the cargo, and possibly block your view or someone else's.",
-  "page": "3-3"
- },
- {
-  "id": "s3-023",
-  "section": 3,
-  "sectionName": "Transporting Cargo Safely",
-  "question": "Why does hanging meat in a refrigerated truck require particular caution?",
-  "choices": [
-   "The refrigeration unit adds so much weight that it always overloads the steering axle of the tractor",
-   "Frozen loads shift the braking balance toward the trailer wheels on long mountain downgrades",
-   "The meat must be delivered within four hours, encouraging drivers to hurry on the highway",
-   "It is an unstable load with a high center of gravity, especially on sharp curves like on ramps and off ramps"
-  ],
-  "answer": 3,
-  "explanation": "Hanging meat (suspended beef, pork, lamb) can be a very unstable load with a high center of gravity; particular caution is needed on sharp curves such as off ramps and on ramps, and you should go slowly.",
-  "page": "3-3"
- },
- {
-  "id": "s3-024",
-  "section": 3,
-  "sectionName": "Transporting Cargo Safely",
-  "question": "Which of the following is true about oversized loads?",
-  "choices": [
-   "They may be driven at any hour of the day as long as the truck stays in the right-most lane of the highway",
-   "They only need flags and warning signs when driven at night or in bad weather",
-   "They require special transit permits, may be limited to certain times, and may need escort or pilot vehicles",
-   "They are exempt from axle weight limits if the trailer has extra axles installed"
-  ],
-  "answer": 2,
-  "explanation": "Over-length, over-width, and overweight loads require special transit permits, driving is usually limited to certain times, and such loads may require special equipment, a police escort, or pilot vehicles.",
-  "page": "3-3"
- },
- {
-  "id": "s3-025",
-  "section": 3,
-  "sectionName": "Transporting Cargo Safely",
-  "question": "How must containerized loads be secured when carried on a flatbed trailer?",
-  "choices": [
-   "They do not need securing because their weight holds them in place on the trailer deck",
-   "Properly secured just like any other cargo, even if the container has its own tie-down devices or locks",
-   "Only with the container's own built-in locks, since adding tie-downs could damage the container frame",
-   "With a single chain at the front, since containers cannot slide sideways on a flatbed"
-  ],
-  "answer": 1,
-  "explanation": "Some containers have their own tie-down devices or locks that attach to a special frame, but containers loaded onto flatbed trailers must be properly secured just like any other cargo.",
-  "page": "3-3"
+  "explanation": "Convective SIGMETs are issued for severe thunderstorms with surface winds greater than 50 knots, hail at the surface of three-quarters of an inch or more in diameter, or tornadoes. They also cover embedded thunderstorms, lines of thunderstorms, and storms with heavy or greater precipitation affecting 40 percent or more of an area of at least 3,000 square miles.",
+  "page": "19"
  },
  {
   "id": "s4-001",
   "section": 4,
-  "sectionName": "Transporting Passengers Safely",
-  "question": "Bus drivers must have a commercial driver license if they drive a vehicle designed to seat:",
+  "sectionName": "Weather and Performance",
+  "question": "What does the term density altitude describe?",
   "choices": [
-   "10 or more persons",
-   "More than 20 persons",
-   "16 or more persons, including the driver",
-   "24 or more persons, not counting the driver"
+   "The altitude in the standard atmosphere matching a particular air density",
+   "The altitude shown on an altimeter when it is set to 29.92 inches of mercury",
+   "The true vertical distance between the aircraft and the terrain below it",
+   "The height of the aircraft above mean sea level corrected for wind speed"
   ],
-  "answer": 2,
-  "explanation": "The manual states bus drivers must have a CDL if they drive a vehicle designed to seat 16 or more persons, including the driver.",
-  "page": "4-1"
+  "answer": 0,
+  "explanation": "Density altitude is the altitude in the standard atmosphere that corresponds to a particular value of air density. It is the proper term for correlating aerodynamic performance in a nonstandard atmosphere: thin air means a high density altitude, dense air means a low density altitude.",
+  "page": "21"
  },
  {
   "id": "s4-002",
   "section": 4,
-  "sectionName": "Transporting Passengers Safely",
-  "question": "To get the passenger endorsement, you must pass a knowledge test on which sections of the manual?",
+  "sectionName": "Weather and Performance",
+  "question": "How does a high density altitude affect the performance of a small unmanned aircraft?",
   "choices": [
-   "Sections 2 and 4",
-   "Sections 1 and 3",
-   "Sections 4 and 9",
-   "Sections 3 and 5"
+   "Performance improves because the thinner air produces less drag on the airframe",
+   "Performance decreases because the air is thinner",
+   "Performance is unchanged as long as the aircraft stays below 400 feet",
+   "Performance improves in a climb but decreases in level flight"
   ],
-  "answer": 0,
-  "explanation": "To get the passenger endorsement you must pass a knowledge test on Sections 2 and 4 (plus Section 5 if the bus has air brakes).",
-  "page": "4-1"
+  "answer": 1,
+  "explanation": "Density altitude has a direct effect on aircraft performance. High density altitude means thin air, and as air density decreases, performance decreases. Denser air (a lower density altitude) improves performance.",
+  "page": "21"
  },
  {
   "id": "s4-003",
   "section": 4,
-  "sectionName": "Transporting Passengers Safely",
-  "question": "You should sign the previous driver's inspection report only if:",
+  "sectionName": "Weather and Performance",
+  "question": "Which combination of conditions results in a high density altitude?",
   "choices": [
-   "You personally performed the previous trip and wrote the inspection report yourself",
-   "The bus is going out of service for repairs",
-   "Your supervisor tells you to sign it",
-   "Defects reported earlier have been certified as repaired or as not needing repair"
+   "Low elevation, high atmospheric pressure, and low humidity",
+   "High atmospheric pressure, low temperature, and dry air",
+   "High elevation, high temperature, and high humidity",
+   "Low elevation, low temperature, and low humidity"
   ],
-  "answer": 3,
-  "explanation": "You should sign the previous driver's report only if defects reported earlier have been certified as repaired or not needed to be repaired; your signature certifies the defects have been fixed.",
-  "page": "4-1"
+  "answer": 2,
+  "explanation": "High elevations, low atmospheric pressure, high temperatures, high humidity, or any combination of these produce a high density altitude and thus degraded performance. Lower elevations, high pressure, low temperatures, and low humidity indicate a low density altitude.",
+  "page": "21"
  },
  {
   "id": "s4-004",
   "section": 4,
-  "sectionName": "Transporting Passengers Safely",
-  "question": "During the vehicle inspection of a bus, what must you confirm about the front wheels?",
+  "sectionName": "Weather and Performance",
+  "question": "At a constant pressure, what happens to air density as the temperature rises?",
   "choices": [
-   "They have radial tires",
-   "They do not have recapped or regrooved tires",
-   "They use tube-type tires",
-   "They are fitted with snow tires"
+   "Density decreases, since it varies inversely with temperature",
+   "Density increases in direct proportion to the temperature change",
+   "Density stays the same, because only pressure changes affect it",
+   "Density increases until the air is saturated, then it decreases"
   ],
-  "answer": 1,
-  "explanation": "During the vehicle inspection you must check that the front wheels do not have recapped or regrooved tires.",
-  "page": "4-1"
+  "answer": 0,
+  "explanation": "Increasing the temperature of a substance decreases its density, so air density varies inversely with temperature when pressure is held constant. In the atmosphere both temperature and pressure fall with altitude, but the rapid pressure drop dominates, so density decreases as you climb.",
+  "page": "21"
  },
  {
   "id": "s4-005",
   "section": 4,
-  "sectionName": "Transporting Passengers Safely",
-  "question": "A bus must have spare electrical fuses unless it is equipped with:",
+  "sectionName": "Weather and Performance",
+  "question": "How does water vapor in the air affect density altitude?",
   "choices": [
-   "Circuit breakers",
-   "An emergency buzzer",
-   "A backup battery",
-   "LED lighting"
+   "Moist air is denser than dry air, so more moisture lowers the density altitude",
+   "Water vapor has no measurable effect on air density at any temperature",
+   "Moisture increases density near the surface but decreases it at altitude",
+   "Moist air is less dense than dry air, so more moisture raises the density altitude"
   ],
-  "answer": 0,
-  "explanation": "The bus must have spare electrical fuses, unless it is equipped with circuit breakers, along with the fire extinguisher and emergency reflectors required by law.",
-  "page": "4-1"
+  "answer": 3,
+  "explanation": "Water vapor is lighter than air, so moist air is lighter than dry air. As the water content of the air increases, the air becomes less dense, which raises the density altitude and reduces performance. Humidity alone is not usually an essential factor in density altitude calculations, but it does contribute.",
+  "page": "22"
  },
  {
   "id": "s4-006",
   "section": 4,
-  "sectionName": "Transporting Passengers Safely",
-  "question": "If your bus has a red emergency door light, when must you turn it on?",
+  "sectionName": "Weather and Performance",
+  "question": "What are the standard sea level pressure and temperature in the International Standard Atmosphere?",
   "choices": [
-   "Only when passengers are standing",
-   "Only when the emergency door is open",
-   "At night or any other time you use your outside lights",
-   "Whenever the bus is parked"
+   "29.92 inches of mercury and 0 degrees Celsius",
+   "29.92 inches of mercury and 15 degrees Celsius",
+   "1,013.2 inches of mercury and 15 degrees Celsius",
+   "30.92 inches of mercury and 59 degrees Celsius"
   ],
-  "answer": 2,
-  "explanation": "If there is a red emergency door light, it must work, and you must turn it on at night or any other time you use your outside lights.",
-  "page": "4-1"
+  "answer": 1,
+  "explanation": "Standard sea level conditions are 29.92 inches of mercury and 59 degrees Fahrenheit (15 degrees Celsius). In millibars, standard sea level pressure is 1,013.2 mb, with 1 inch of mercury equal to about 34 mb; typical readings range from 950.0 to 1,040.0 mb.",
+  "page": "22"
  },
  {
   "id": "s4-007",
   "section": 4,
-  "sectionName": "Transporting Passengers Safely",
-  "question": "Regarding emergency roof hatches, the manual says you:",
+  "sectionName": "Weather and Performance",
+  "question": "A weather station at 5,000 feet elevation measures a barometric pressure of 24.92 inches of mercury. What sea level pressure does it report?",
   "choices": [
-   "Must keep them locked shut at all times while driving",
-   "May lock some in a partly open position for fresh air, but should not leave them open as a regular practice",
-   "Should leave them fully open whenever passengers are on board so fresh air keeps riders alert and comfortable",
-   "May remove them if the bus has air conditioning"
+   "24.92 inches of mercury, because barometric readings are always reported unadjusted",
+   "19.92 inches of mercury, after subtracting about 1 inch for each 1,000 feet",
+   "29.92 inches of mercury, after adding about 1 inch for each 1,000 feet",
+   "34.92 inches of mercury, after adding about 2 inches for each 1,000 feet"
   ],
-  "answer": 1,
-  "explanation": "You may lock some emergency roof hatches in a partly open position for fresh air, but should not leave them open as a regular practice, and must remember the bus's higher clearance.",
-  "page": "4-1"
+  "answer": 2,
+  "explanation": "Every station converts its local barometric reading to a sea level pressure by adding approximately 1 inch of mercury for every 1,000 feet of elevation, giving all records and reports a common standard. A station at 5,000 feet reading 24.92 inches therefore reports 29.92 inches.",
+  "page": "23"
  },
  {
   "id": "s4-008",
   "section": 4,
-  "sectionName": "Transporting Passengers Safely",
-  "question": "A bus must never carry more than what amount of solid Class 6 poisons?",
+  "sectionName": "Weather and Performance",
+  "question": "What determines the intensity of the turbulence created by ground obstructions such as buildings or bluffs?",
   "choices": [
-   "500 pounds",
-   "250 pounds",
-   "50 pounds",
-   "100 pounds"
+   "The size of the obstacle and the primary velocity of the wind",
+   "The air temperature and the relative humidity around the obstacle",
+   "The time of day and the direction of the prevailing wind",
+   "The altitude of the aircraft and the local density altitude"
   ],
-  "answer": 3,
-  "explanation": "Buses must never carry more than 100 pounds of solid Class 6 poisons.",
-  "page": "4-2"
+  "answer": 0,
+  "explanation": "Obstructions on the ground, from hangars to mountains, bluffs, and canyons, break up the wind flow and create gusts that change rapidly in direction and speed. The intensity of that turbulence depends on the size of the obstacle and the primary velocity of the wind, and it can seriously hazard any aircraft.",
+  "page": "23"
  },
  {
   "id": "s4-009",
   "section": 4,
-  "sectionName": "Transporting Passengers Safely",
-  "question": "What is the maximum total amount of allowed hazardous materials a bus may carry?",
+  "sectionName": "Weather and Performance",
+  "question": "Why is the leeward (downwind) side of a mountain hazardous when the wind is strong?",
   "choices": [
-   "500 pounds total, and no more than 100 pounds of any one class",
-   "1,000 pounds total, and no more than 250 pounds of any one class",
-   "100 pounds total, and no more than 50 pounds of any one class",
-   "There is no limit as long as materials are properly labeled"
+   "Rising currents on that side can carry an aircraft well above its planned altitude",
+   "Air flowing down that side turns turbulent and can push an aircraft into the slope",
+   "The air on that side is unusually calm, which hides the strong winds blowing above the peak",
+   "Temperatures on that side climb quickly and create a sudden rise in density altitude"
   ],
-  "answer": 0,
-  "explanation": "Buses must never carry more than 500 pounds total of allowed hazardous materials, and no more than 100 pounds of any one class.",
-  "page": "4-2"
+  "answer": 1,
+  "explanation": "Wind flows smoothly up the windward side of a mountain, and the rising currents help carry an aircraft over the peak. On the leeward side the air follows the contour of the terrain downward and becomes increasingly turbulent, tending to push an aircraft into the mountainside. The stronger the wind, the greater the downward pressure and turbulence.",
+  "page": "23"
  },
  {
   "id": "s4-010",
   "section": 4,
-  "sectionName": "Transporting Passengers Safely",
-  "question": "Hazard labels that shippers must place on containers of hazardous materials are:",
+  "sectionName": "Weather and Performance",
+  "question": "Low-level wind shear is commonly associated with which weather conditions?",
   "choices": [
-   "Nine different square, green labels",
-   "Nine different round, orange labels",
-   "Nine different four-inch, diamond-shaped labels",
-   "Four different six-inch, triangular labels"
+   "High pressure systems, clear skies, light surface winds, and stable air aloft",
+   "Morning fog, heavy dew, thin overcast layers, and high relative humidity",
+   "Passing frontal systems, thunderstorms, temperature inversions, and strong upper level winds",
+   "Steady sea breezes, afternoon heating, scattered fair weather clouds, and haze"
   ],
   "answer": 2,
-  "explanation": "There are nine different four-inch, diamond-shaped hazard labels, and drivers should watch for these diamond-shaped labels on cargo or baggage.",
-  "page": "4-2"
+  "explanation": "Wind shear is a sudden, drastic change in wind speed or direction over a very small area. Low-level wind shear is commonly associated with passing frontal systems, thunderstorms, temperature inversions, and strong upper level winds greater than 25 knots, and it is especially hazardous because the aircraft is close to the ground.",
+  "page": "23"
  },
  {
   "id": "s4-011",
   "section": 4,
-  "sectionName": "Transporting Passengers Safely",
-  "question": "What is the standee line?",
+  "sectionName": "Weather and Performance",
+  "question": "During flight, a headwind suddenly shifts to a tailwind. What is the effect on the aircraft?",
   "choices": [
-   "A rope that separates the driver from the passengers",
-   "The line of passengers waiting to board at a stop",
-   "A painted line on the outside of the bus showing its overall length to other drivers",
-   "A two-inch line on the floor (or other means) showing riders where they cannot stand"
+   "Airspeed and performance both increase",
+   "Airspeed increases while performance decreases",
+   "Airspeed decreases while performance increases",
+   "Airspeed and performance both decrease"
   ],
   "answer": 3,
-  "explanation": "Buses designed to allow standing must have a two-inch line on the floor, or some other means of showing riders where they cannot stand; all standing riders must stay behind it.",
-  "page": "4-2"
+  "explanation": "Wind shear can rapidly change aircraft performance and disrupt the normal flight attitude. A headwind changing to a tailwind causes a decrease in airspeed and performance, while a tailwind quickly changing to a headwind causes an increase in both. Either way the pilot must react immediately to keep control.",
+  "page": "24"
  },
  {
   "id": "s4-012",
   "section": 4,
-  "sectionName": "Transporting Passengers Safely",
-  "question": "No rider may stand forward of:",
+  "sectionName": "Weather and Performance",
+  "question": "How strong can the downdrafts in a typical microburst become?",
   "choices": [
-   "The front axle of the bus",
-   "The rear of the driver's seat",
-   "The first row of passenger seats",
-   "The front door stairwell"
+   "Up to 1,000 feet per minute",
+   "Up to 6,000 feet per minute",
+   "Up to 2,500 feet per minute",
+   "Up to 15,000 feet per minute"
   ],
   "answer": 1,
-  "explanation": "The manual states that no rider may stand forward of the rear of the driver's seat.",
-  "page": "4-2"
+  "explanation": "A microburst, the most severe type of low-level wind shear, can produce downdrafts of up to 6,000 feet per minute and headwind losses of 30 to 90 knots. A typical microburst is 1 to 2 miles across, about 1,000 feet deep, and lasts roughly 5 to 15 minutes; often a ring of blowing dust is the only visible clue.",
+  "page": "24"
  },
  {
   "id": "s4-013",
   "section": 4,
-  "sectionName": "Transporting Passengers Safely",
-  "question": "If you must discharge a drunk or disruptive rider, where is it safest to do so?",
+  "sectionName": "Weather and Performance",
+  "question": "What sequence of wind changes does a small unmanned aircraft encounter when it flies through a microburst?",
   "choices": [
-   "Immediately, wherever the bus can pull over",
-   "At the nearest freeway exit ramp",
-   "At the next scheduled stop or a well-lighted area where there are other people",
-   "You must never discharge a disruptive rider anywhere other than their ticketed stop"
+   "A rapidly increasing tailwind, then an updraft, then a steady headwind",
+   "A downdraft, then a crosswind from either side, then a strong updraft",
+   "An increasing headwind, then downdrafts, then a rapidly increasing tailwind",
+   "A steady updraft, then a period of calm air, then a slowly building headwind"
   ],
   "answer": 2,
-  "explanation": "Don't discharge disruptive riders where it would be unsafe for them; it may be safer at the next scheduled stop or a well-lighted area where there are other people.",
-  "page": "4-3"
+  "explanation": "In an inadvertent microburst encounter, the aircraft first meets a performance-increasing headwind, then performance-decreasing downdrafts, then a rapidly increasing tailwind. That sequence can cause terrain impact or flight dangerously close to the ground, and on approach it can force the aircraft down short of the landing area.",
+  "page": "24"
  },
  {
   "id": "s4-014",
   "section": 4,
-  "sectionName": "Transporting Passengers Safely",
-  "question": "Where do bus accidents most often happen?",
+  "sectionName": "Weather and Performance",
+  "question": "Which kind of air produces the greatest atmospheric instability?",
   "choices": [
-   "At intersections",
-   "On rural highways",
-   "In parking lots",
-   "On steep downgrades"
+   "Warm, moist air",
+   "Cool, dry air",
+   "Warm, dry air",
+   "Cool, moist air"
   ],
   "answer": 0,
-  "explanation": "The manual states bus accidents often happen at intersections, so use caution even if a signal or stop sign controls other traffic.",
-  "page": "4-3"
+  "explanation": "The combination of moisture and temperature determines stability. Cool, dry air is very stable and resists vertical movement, giving generally clear weather. The greatest instability occurs in warm, moist air, as in tropical regions in summer, where thunderstorms appear almost daily. Instability leads to turbulence, extensive vertical clouds, and severe weather.",
+  "page": "24"
  },
  {
   "id": "s4-015",
   "section": 4,
-  "sectionName": "Transporting Passengers Safely",
-  "question": "If your bus leans toward the outside on a banked curve, it means:",
+  "sectionName": "Weather and Performance",
+  "question": "What defines a temperature inversion?",
   "choices": [
-   "The suspension needs adjustment",
-   "You are driving too fast",
-   "The curve's design speed is too low for cars",
-   "Your tires are underinflated"
+   "Air temperature decreases faster than normal as altitude increases",
+   "Air temperature increases as altitude increases",
+   "Atmospheric pressure increases as altitude increases",
+   "The surface temperature drops until it equals the dew point"
   ],
   "answer": 1,
-  "explanation": "The manual states that if your bus leans toward the outside on a banked curve, you are driving too fast; reduce speed for curves.",
-  "page": "4-3"
+  "explanation": "Normally air cools as it rises, but in an inversion the temperature increases with altitude up to the top of the inversion layer. Inversion layers are commonly shallow layers of smooth, stable air close to the ground, and the warm air on top acts as a lid that traps weather and pollutants below; with high humidity, clouds, fog, haze, or smoke can reduce visibility in the layer.",
+  "page": "24"
  },
  {
   "id": "s4-016",
   "section": 4,
-  "sectionName": "Transporting Passengers Safely",
-  "question": "At a railroad crossing where a stop is required, you should stop your bus:",
+  "sectionName": "Weather and Performance",
+  "question": "When do surface-based temperature inversions typically form?",
   "choices": [
-   "Between 10 and 40 feet before the crossing",
-   "Between 25 and 75 feet before the crossing",
-   "Between 50 and 100 feet before the crossing",
-   "Between 15 and 50 feet before the crossing"
+   "On hot, humid afternoons when convective activity is strongest",
+   "During windy, overcast days when the lower air layers mix continuously",
+   "Immediately after a cold front passes and pressure begins rising",
+   "On clear, cool nights when the ground cools the air just above it"
   ],
   "answer": 3,
-  "explanation": "Stop your bus between 15 and 50 feet before railroad crossings, then listen and look in both directions for trains.",
-  "page": "4-3"
+  "explanation": "Surface-based inversions occur on clear, cool nights: the ground cools, and the air within a few hundred feet of the surface becomes cooler than the air above it. Frontal inversions form when warm air spreads over a layer of cooler air, or cooler air is forced under warmer air.",
+  "page": "24"
  },
  {
   "id": "s4-017",
   "section": 4,
-  "sectionName": "Transporting Passengers Safely",
-  "question": "At a drawbridge that does not have a signal light or traffic control attendant, you must stop at least how far before the draw of the bridge?",
+  "sectionName": "Weather and Performance",
+  "question": "What weather is likely when air reaches saturation while the temperature and dew point are close together?",
   "choices": [
-   "15 feet",
-   "25 feet",
-   "100 feet",
-   "50 feet"
+   "Gusty surface winds and rings of blowing dust",
+   "Fog, low clouds, and precipitation",
+   "Clear skies with strong thermal activity",
+   "High, thin clouds and improving visibility"
   ],
-  "answer": 3,
-  "explanation": "Stop at drawbridges that do not have a signal light or traffic control attendant, at least 50 feet before the draw, and make sure the draw is completely closed before crossing.",
-  "page": "4-3"
+  "answer": 1,
+  "explanation": "The dew point is the temperature at which air can hold no more moisture; when the air cools to it, moisture condenses out as fog, dew, frost, clouds, rain, or snow. If saturation is reached while temperature and dew point are close together, fog, low clouds, and precipitation are highly likely. Air can saturate by moving over a cold surface, by mixing of cold and warm air, by nighttime cooling, or by being lifted.",
+  "page": "25"
  },
  {
   "id": "s4-018",
   "section": 4,
-  "sectionName": "Transporting Passengers Safely",
-  "question": "What does a brake-door interlock system on an urban mass transit coach do?",
+  "sectionName": "Weather and Performance",
+  "question": "Why must frost be removed from a small unmanned aircraft before flight?",
   "choices": [
-   "It applies the brakes and holds the throttle in idle position when the rear door is open",
-   "It locks all doors whenever the parking brake is set",
-   "It replaces the parking brake when the bus is stopped",
-   "It prevents the rear door from being opened at any time while the engine is still running"
+   "It disrupts airflow over the wing and can sharply reduce lift",
+   "It adds enough weight to push the aircraft over its takeoff limit",
+   "It can crack propeller blades once they reach full rotation speed",
+   "It interferes with the compass and degrades navigation accuracy"
   ],
   "answer": 0,
-  "explanation": "The interlock applies the brakes and holds the throttle in idle position when the rear door is open, and releases when the door closes. It must not be used in place of the parking brake.",
-  "page": "4-4"
+  "explanation": "Frost forms when surface temperatures drop below both the dew point and freezing. Unlike dew, frost is a definite flight safety hazard: it disrupts the flow of air over the wing, can drastically reduce lift, and increases drag, which together can prevent a successful takeoff. The aircraft must be thoroughly cleaned and free of frost before flight.",
+  "page": "25"
  },
  {
   "id": "s4-019",
   "section": 4,
-  "sectionName": "Transporting Passengers Safely",
-  "question": "When arriving at the destination or an intermediate stop, what should you announce to riders?",
+  "sectionName": "Weather and Performance",
+  "question": "What do standing lenticular altocumulus clouds indicate to a pilot?",
   "choices": [
-   "The location, reason for stopping, next departure time, and bus number",
-   "Only the current local time and the expected weather conditions at the stop",
-   "The names of the riders who must get off at this particular stop",
-   "Nothing; announcements are only made at the final destination"
+   "Calm, stable air, since the clouds show almost no movement",
+   "An approaching warm front with steady, widespread precipitation",
+   "Very strong turbulence, even though the clouds look smooth and polished",
+   "Rapidly building thunderstorms forming along a squall line"
   ],
-  "answer": 0,
-  "explanation": "When arriving at the destination or intermediate stops, announce the location, reason for stopping, next departure time, and bus number, and remind riders to take carry-ons with them.",
-  "page": "4-2"
+  "answer": 2,
+  "explanation": "Standing lenticular altocumulus clouds form on the crests of waves created by barriers in the wind flow. Although the clouds show little movement and have smooth, polished edges, the wind blowing through them can be very strong. Their presence is a good indication of very strong turbulence, and the area should be avoided.",
+  "page": "25"
  },
  {
   "id": "s4-020",
   "section": 4,
-  "sectionName": "Transporting Passengers Safely",
-  "question": "Why should charter bus drivers not allow riders on the bus until departure time?",
+  "sectionName": "Weather and Performance",
+  "question": "Which weather characteristics are typical of a stable air mass?",
   "choices": [
-   "So the air conditioning does not run too long",
-   "Because insurance does not start until departure",
-   "Because early boarding violates federal rules",
-   "To help prevent theft or vandalism of the bus"
+   "Cumuliform clouds, showery precipitation, and rough air",
+   "Stratiform clouds, continuous precipitation, and smooth air",
+   "Cumuliform clouds, continuous precipitation, and good visibility",
+   "Stratiform clouds, showery precipitation, and turbulent air"
   ],
-  "answer": 3,
-  "explanation": "Charter bus drivers should not allow riders on the bus until departure time; this helps prevent theft or vandalism of the bus.",
-  "page": "4-2"
+  "answer": 1,
+  "explanation": "Stable air brings stratiform clouds and fog, continuous precipitation, smooth air, and fair to poor visibility in haze and smoke. Unstable air brings the opposite: cumuliform clouds, showery precipitation, rough air, and good visibility except in blowing obstructions.",
+  "page": "26"
  },
  {
   "id": "s4-021",
   "section": 4,
-  "sectionName": "Transporting Passengers Safely",
-  "question": "At which of the following places must you slow down and check carefully, but not necessarily stop, with a bus?",
+  "sectionName": "Weather and Performance",
+  "question": "In meteorology, what is a front?",
   "choices": [
-   "Every railroad crossing, whether or not it is marked exempt",
-   "A drawbridge that does not have a signal light or a traffic control attendant on duty at the bridge",
-   "A crossing marked as exempt or abandoned, or one where a policeman or flagman directs traffic",
-   "Any crossing where you cannot see at least 500 feet down the tracks"
+   "The leading edge of the downdraft spreading out beneath a thunderstorm",
+   "A stationary band of fog that forms along a coastline overnight",
+   "The center of a low pressure system where surface winds converge",
+   "The zone between two air masses that have different properties"
   ],
-  "answer": 2,
-  "explanation": "You do not have to stop, but must slow down and carefully check for other vehicles at streetcar crossings, where a policeman or flagman directs traffic, when the signal is green, and at crossings marked exempt or abandoned.",
-  "page": "4-3"
+  "answer": 3,
+  "explanation": "As air masses move out of their source regions they meet air masses with different properties, and the zone between them is a frontal zone or front. Across a front, temperature, humidity, and wind often change rapidly over short distances.",
+  "page": "26"
  },
  {
   "id": "s4-022",
   "section": 4,
-  "sectionName": "Transporting Passengers Safely",
-  "question": "If your bus has a manual transmission, what must you never do at a railroad crossing?",
+  "sectionName": "Weather and Performance",
+  "question": "When planning flight near mountains, what wind speed across the mountain barrier dictates caution?",
   "choices": [
-   "Use your four-way flashers while you are stopped at the crossing",
-   "Change gears while any part of the bus is crossing the tracks",
-   "Open the forward door to improve your ability to see or hear a train",
-   "Turn off the radio and other noisy equipment before you cross"
+   "In excess of 25 knots",
+   "In excess of 40 knots",
+   "In excess of 15 knots",
+   "In excess of 60 knots"
   ],
   "answer": 1,
-  "explanation": "If your bus has a manual transmission, never change gears while crossing the tracks.",
-  "page": "4-3"
+  "explanation": "Wind at mountain top level in excess of 25 knots suggests some turbulence, and wind in excess of 40 knots across a mountain barrier dictates caution. Standing lenticular or rotor clouds suggest a mountain wave: expect turbulence many miles to the lee of the mountains and relatively smooth flight on the windward side.",
+  "page": "26"
  },
  {
   "id": "s4-023",
   "section": 4,
-  "sectionName": "Transporting Passengers Safely",
-  "question": "What does the manual say about fueling your bus?",
+  "sectionName": "Weather and Performance",
+  "question": "Which two conditions must both be present for structural icing to form on an aircraft in flight?",
   "choices": [
-   "Avoid fueling with riders on board unless absolutely necessary, and never refuel in a closed building with riders aboard",
-   "Refuel only at company terminals, where all riders are required to step off the bus and wait inside the station building",
-   "Always keep the engine running during fueling so the air brakes stay fully charged",
-   "Fueling is allowed anywhere as long as all of the bus windows are kept fully open"
+   "Relative humidity above 80 percent, and an outside air temperature below 10 °C",
+   "Falling barometric pressure, and a dew point within a few degrees of the air temperature",
+   "Flight through visible water such as rain or cloud droplets, and surfaces at 0 °C or colder",
+   "Freezing temperatures at the surface, and winds across the route above 25 knots"
   ],
-  "answer": 0,
-  "explanation": "Avoid fueling your bus with riders on board unless absolutely necessary, and never refuel in a closed building with riders on board.",
-  "page": "4-3"
+  "answer": 2,
+  "explanation": "Structural icing in flight requires two conditions: the aircraft must be flying through visible water such as rain or cloud droplets, and the temperature where the moisture strikes the aircraft must be 0 °C or colder. Aerodynamic cooling can chill an airfoil to 0 °C even when the ambient air is a few degrees warmer.",
+  "page": "26"
  },
  {
   "id": "s4-024",
   "section": 4,
-  "sectionName": "Transporting Passengers Safely",
-  "question": "If you work for an interstate carrier, what must your after-trip inspection report include?",
+  "sectionName": "Weather and Performance",
+  "question": "What is the key feature of the cumulus stage of a thunderstorm?",
   "choices": [
-   "Only the total mileage that was driven during the shift and the amount of fuel that was purchased at each stop along the route",
-   "The names of all riders carried and the stops where they boarded the bus",
-   "A list of every traffic signal and railroad crossing on the route driven",
-   "Each bus driven, any defect affecting safety or that could cause a breakdown, or a statement that there were no defects"
+   "An updraft extending from very near the surface to the cloud top",
+   "A cold downdraft that produces strong, gusty winds at the surface",
+   "Steady precipitation falling from the base of the cloud",
+   "Frequent lightning strikes and the first appearance of hail"
+  ],
+  "answer": 0,
+  "explanation": "Every thunderstorm begins as a cumulus cloud, and the key feature of the cumulus stage is an updraft reaching from near the surface to the cloud top. The cloud can grow at more than 3,000 feet per minute, so operating a small UA near rapidly building cumulus clouds is inadvisable; the updraft also carries liquid water above the freezing level, creating an icing hazard.",
+  "page": "26"
+ },
+ {
+  "id": "s4-025",
+  "section": 4,
+  "sectionName": "Weather and Performance",
+  "question": "What signals that a thunderstorm cell has entered the mature stage?",
+  "choices": [
+   "The cloud top stops rising and spreads into a flat anvil shape",
+   "Precipitation begins to fall from the base of the cloud",
+   "Surface winds calm down while the barometric pressure falls sharply",
+   "Lightning first becomes visible in the upper part of the cloud"
+  ],
+  "answer": 1,
+  "explanation": "Precipitation beginning to fall from the cloud base signals that a downdraft has developed and the cell has entered the mature stage. Downdraft speeds may exceed 2,500 feet per minute while updrafts may exceed 6,000 feet per minute, and the down-rushing air spreads out as a plow wind whose leading edge is the first gust. All thunderstorm hazards reach their greatest intensity during the mature stage.",
+  "page": "27"
+ },
+ {
+  "id": "s4-026",
+  "section": 4,
+  "sectionName": "Weather and Performance",
+  "question": "What characterizes the dissipating stage of a thunderstorm cell?",
+  "choices": [
+   "Updrafts strengthen while the cloud continues building upward",
+   "Updrafts and downdrafts reach a balance that keeps the cell steady",
+   "Downdrafts dominate and the storm dies rapidly",
+   "Surface winds reach their peak while heavy hail begins to fall"
+  ],
+  "answer": 2,
+  "explanation": "Downdrafts characterize the dissipating stage, and the storm dies rapidly. The stage is complete when the rain has ended and the downdrafts have abated; once every cell has finished dissipating, only harmless cloud remnants remain. A thunderstorm may be a cluster of cells in different stages, and the transitions between stages are too subtle to detect visually.",
+  "page": "27"
+ },
+ {
+  "id": "s4-027",
+  "section": 4,
+  "sectionName": "Weather and Performance",
+  "question": "For aviation purposes, what is a ceiling?",
+  "choices": [
+   "The highest altitude at which any cloud layer is reported by a weather station",
+   "The lowest cloud layer reported as scattered or few at the reporting station",
+   "The greatest altitude at which an aircraft can maintain level flight on a given day",
+   "The lowest broken or overcast cloud layer, or the vertical visibility into an obscuration"
   ],
   "answer": 3,
-  "explanation": "Interstate carrier drivers must complete a written inspection report for each bus driven, specifying each bus and listing any defect that would affect safety or result in a breakdown; if there are no defects, the report should say so.",
-  "page": "4-3"
+  "explanation": "A ceiling is the lowest layer of clouds reported as broken or overcast, or the vertical visibility into an obscuration such as fog or haze. Broken means five-eighths to seven-eighths of the sky is covered; overcast means the entire sky is covered. Current ceilings are reported in the METAR and by automated weather stations.",
+  "page": "28"
+ },
+ {
+  "id": "s4-028",
+  "section": 4,
+  "sectionName": "Weather and Performance",
+  "question": "How is visibility defined in aviation weather reporting?",
+  "choices": [
+   "The farthest horizontal distance at which prominent objects can be seen by eye",
+   "The farthest slant range at which runway lights can be identified through binoculars",
+   "The vertical distance between the surface and the lowest reported cloud layer",
+   "The average distance a pilot can see in every direction during daylight hours"
+  ],
+  "answer": 0,
+  "explanation": "Visibility is the greatest horizontal distance at which prominent objects can be seen with the naked eye. It is closely related to cloud cover and reported ceilings, appears in the METAR and other aviation weather reports and automated systems, and forecast visibility is available during a preflight weather briefing.",
+  "page": "28"
  },
  {
   "id": "s5-001",
   "section": 5,
-  "sectionName": "Air Brakes",
-  "question": "The air compressor governor stops the compressor from pumping air when tank pressure rises to the \"cut-out\" level, which is around:",
+  "sectionName": "Loading",
+  "question": "A small unmanned aircraft is loaded to its manufacturer's maximum gross takeoff weight. Under which conditions might the remote PIC still need to reduce the load before flight?",
   "choices": [
-   "100 psi",
-   "150 psi",
-   "125 psi",
-   "60 psi"
+   "High elevations, high air temperatures, and high humidity",
+   "Low elevations, low air temperatures, and low humidity",
+   "High barometric pressure, cool air, and calm surface winds",
+   "Low humidity, dense air, and an unobstructed launch area"
   ],
-  "answer": 2,
-  "explanation": "When air tank pressure rises to the cut-out level of around 125 psi, the governor stops the compressor from pumping air.",
-  "page": "5-1"
+  "answer": 0,
+  "explanation": "An aircraft may not always take off safely at its maximum gross weight under all conditions. High elevations, high air temperatures, and high humidity create high density altitudes that degrade takeoff and climb performance, and they may require reducing weight before flight. Launch area length, surface, slope, wind, and obstacles can force the same reduction.",
+  "page": "29"
  },
  {
   "id": "s5-002",
   "section": 5,
-  "sectionName": "Air Brakes",
-  "question": "At about what pressure does the governor allow the air compressor to \"cut in\" and start pumping air again?",
+  "sectionName": "Loading",
+  "question": "How does fuel burn typically affect an aircraft as a flight progresses?",
   "choices": [
-   "100 psi",
-   "125 psi",
-   "85 psi",
-   "60 psi"
+   "The aircraft gets lighter and performance improves, but balance can be adversely affected",
+   "The aircraft gets lighter, and both performance and balance steadily improve as tanks empty",
+   "Performance degrades as fuel burns because the lighter aircraft generates less lift",
+   "Weight loss from fuel burn has no measurable effect on performance or balance"
   ],
   "answer": 0,
-  "explanation": "When tank pressure falls to the cut-in pressure of around 100 psi, the governor allows the compressor to start pumping again.",
-  "page": "5-1"
+  "explanation": "Fuel burn is the most common in-flight weight change. As fuel is used the aircraft becomes lighter and performance improves, but the shift in weight distribution can hurt balance. In small UA operations the same kind of change happens when expendable items, such as a jettisonable load, are used.",
+  "page": "29"
  },
  {
   "id": "s5-003",
   "section": 5,
-  "sectionName": "Air Brakes",
-  "question": "In an emergency stop, you can fully apply the brakes only if:",
+  "sectionName": "Loading",
+  "question": "Which statement about a small unmanned aircraft's center of gravity (CG) is true?",
   "choices": [
-   "You are driving a lightly loaded vehicle on dry pavement at speeds below 40 mph",
-   "You always drive a straight truck or combination with working ABS on all axles",
-   "Only the tractor has ABS",
-   "Your speed is below 40 mph"
+   "It shifts as variable load items are moved or expended",
+   "It is a fixed point marked on the aircraft by the manufacturer",
+   "It stays in one place as long as the total weight is unchanged",
+   "It always coincides with the center of pressure in level flight"
   ],
-  "answer": 1,
-  "explanation": "The one exception to normal emergency braking procedure is when you always drive a straight truck or combination with working ABS on all axles; then, in an emergency stop, you can fully apply the brakes.",
-  "page": "5-8"
+  "answer": 0,
+  "explanation": "The CG is not a fixed point marked on the aircraft. Its location depends on how the aircraft's weight is distributed, so shifting or expending variable load items can move it. The remote PIC should determine how the CG will shift and what effect that shift has on the aircraft.",
+  "page": "29"
  },
  {
   "id": "s5-004",
   "section": 5,
-  "sectionName": "Air Brakes",
-  "question": "When should you NOT use the parking brakes?",
+  "sectionName": "Loading",
+  "question": "After loading, a remote PIC finds the aircraft's CG falls outside the allowable limits. What must be done?",
   "choices": [
-   "When parked on a level surface",
-   "When leaving the vehicle unattended for less than about fifteen minutes",
-   "When parked overnight",
-   "When the brakes are very hot, or very wet in freezing temperatures"
+   "Relocate or shed some weight before attempting flight",
+   "Restrict the flight to bank angles of less than 30 degrees",
+   "Proceed with the flight if total weight is still under the maximum",
+   "Fly a brief low-altitude test hop to confirm safe handling"
   ],
-  "answer": 3,
-  "explanation": "Don't use the parking brakes if the brakes are very hot (from just having come down a steep grade) or very wet in freezing temperatures; hot brakes can be damaged and wet brakes can freeze so the vehicle cannot move. Use wheel chocks on a level surface instead.",
-  "page": "5-9"
+  "answer": 0,
+  "explanation": "If the CG is not within the allowable limits after loading, or will not stay within them for safe flight, weight must be relocated or shed before flight is attempted. Adverse balance affects flight characteristics much like excess weight does, so flying anyway is not an option.",
+  "page": "29"
  },
  {
   "id": "s5-005",
   "section": 5,
-  "sectionName": "Air Brakes",
-  "question": "Air brakes are really three different braking systems. They are the:",
+  "sectionName": "Loading",
+  "question": "When an aircraft's center of gravity is located forward of its center of pressure, what is the natural tendency of the aircraft?",
   "choices": [
-   "Service brake, parking brake, and emergency brake systems",
-   "Drum brake, disc brake, and wedge brake systems",
-   "Primary, secondary, and trailer brake systems",
-   "Foot brake, hand brake, and engine brake systems"
+   "To pitch nose down",
+   "To pitch nose up",
+   "To roll toward the heavier wing",
+   "To yaw away from the relative wind"
   ],
   "answer": 0,
-  "explanation": "Air brakes consist of the service brake system, the parking brake system, and the emergency brake system, which uses parts of the other two to stop the vehicle in a brake system failure.",
-  "page": "5-1"
+  "explanation": "Weight acts at the CG and lift acts at the center of pressure (CP). With the CG forward of the CP the aircraft tends to pitch nose down; with the CP forward of the CG a nose-up pitching moment is created. Designers fix the aft CG limit forward of the CP to retain flight equilibrium.",
+  "page": "29"
  },
  {
   "id": "s5-006",
   "section": 5,
-  "sectionName": "Air Brakes",
-  "question": "Why must air tanks be drained?",
+  "sectionName": "Loading",
+  "question": "In stabilized level flight with no vertical acceleration, how do lift and weight compare?",
   "choices": [
-   "To keep the safety valve from opening",
-   "To reduce the air pressure to the cut-in level",
-   "Water and compressor oil collect in the tank and the water can freeze and cause brake failure",
-   "To keep the governor from cutting out too soon and overworking the air compressor on long grades"
+   "Lift equals weight, and the aircraft is in equilibrium",
+   "Lift slightly exceeds weight in order to hold altitude",
+   "Lift is slightly less than weight, with thrust making up the difference",
+   "Lift and weight vary independently and only briefly match"
   ],
-  "answer": 2,
-  "explanation": "Compressed air usually contains some water and compressor oil, which collect in the bottom of the air tank; the water can freeze in cold weather and cause brake failure.",
-  "page": "5-1"
+  "answer": 0,
+  "explanation": "In stabilized level flight the lift force equals the weight force, putting the aircraft in equilibrium so it neither accelerates upward nor downward. If lift becomes less than weight, vertical speed decreases; if lift exceeds weight, vertical speed increases.",
+  "page": "30"
  },
  {
   "id": "s5-007",
   "section": 5,
-  "sectionName": "Air Brakes",
-  "question": "If your vehicle has manually operated air tank drain valves, when should you drain the air tanks?",
+  "sectionName": "Loading",
+  "question": "Which best describes stability in an aircraft?",
   "choices": [
-   "Once a week",
-   "Only during cold weather",
-   "Before every trip",
-   "At the end of each day of driving"
+   "The inherent quality to correct for disturbances and return to the original flight path",
+   "The quality that lets the aircraft be maneuvered easily and withstand maneuvering stress",
+   "The quality of the aircraft's response to the pilot's control inputs while maneuvering",
+   "The margin between the stalling speed and the maximum structural cruising speed"
   ],
-  "answer": 3,
-  "explanation": "Manually operated drain valves must be used to drain the tanks yourself at the end of each day of driving.",
-  "page": "5-1"
+  "answer": 0,
+  "explanation": "Stability is the inherent quality of an aircraft to correct for conditions that disturb its equilibrium and to return to or continue on its original flight path. It is primarily a design characteristic. Ease of maneuvering describes maneuverability, and response to pilot inputs describes controllability.",
+  "page": "30"
  },
  {
   "id": "s5-008",
   "section": 5,
-  "sectionName": "Air Brakes",
-  "question": "What is the purpose of an alcohol evaporator in an air brake system?",
+  "sectionName": "Loading",
+  "question": "Which term describes an aircraft's capability to respond to the pilot's control inputs, regardless of its stability characteristics?",
   "choices": [
-   "To lubricate the air compressor",
-   "To reduce the risk of ice in air brake valves and other parts during cold weather",
-   "To remove water and compressor oil from the air tanks automatically each day the vehicle runs",
-   "To increase air pressure in cold weather"
+   "Controllability",
+   "Maneuverability",
+   "Stability",
+   "Equilibrium"
   ],
-  "answer": 1,
-  "explanation": "The alcohol evaporator puts alcohol into the air system, which helps reduce the risk of ice in air brake valves and other parts during cold weather.",
-  "page": "5-2"
+  "answer": 0,
+  "explanation": "Controllability is the capability of an aircraft to respond to the pilot's control, especially regarding flight path and attitude, and it applies regardless of the aircraft's stability characteristics. Maneuverability is instead the design quality that lets the aircraft be maneuvered easily and withstand the stresses of maneuvers.",
+  "page": "30"
  },
  {
   "id": "s5-009",
   "section": 5,
-  "sectionName": "Air Brakes",
-  "question": "The safety relief valve in the air brake system is usually set to open at:",
+  "sectionName": "Loading",
+  "question": "A load factor of 3 Gs means the total load on the aircraft's structure is equal to what?",
   "choices": [
-   "125 psi",
-   "100 psi",
-   "150 psi",
-   "175 psi"
+   "Three times the aircraft's weight",
+   "One-third of the aircraft's weight",
+   "Three times the maximum lift the wings can generate",
+   "Three times the aircraft's maximum certificated load"
   ],
-  "answer": 2,
-  "explanation": "The safety valve protects the tank and the rest of the system from too much pressure and is usually set to open at 150 psi.",
-  "page": "5-2"
+  "answer": 0,
+  "explanation": "Load factor is the proportion between lift and weight, measured in Gs. A load factor of 3 means the total load on the aircraft's structure is three times its weight, and any force that deflects the aircraft's flight from a straight line produces this kind of stress on the structure.",
+  "page": "30"
  },
  {
   "id": "s5-010",
   "section": 5,
-  "sectionName": "Air Brakes",
-  "question": "With the \"stab braking\" emergency method, you should apply the brakes all the way and then:",
+  "sectionName": "Loading",
+  "question": "Besides the risk of imposing a dangerous overload on the structure, why is knowledge of load factors essential for pilots?",
   "choices": [
-   "Release the brakes when the wheels lock up, and re-apply fully as soon as the wheels start rolling again",
-   "Hold the brakes fully applied until the vehicle stops",
-   "Release the brakes every three seconds regardless of wheel lockup until the vehicle comes to a full stop",
-   "Pump the brakes lightly and steer sharply around the obstacle"
+   "An increased load factor raises the stalling speed, so stalls can occur at seemingly safe airspeeds",
+   "An increased load factor lowers the stalling speed, hiding an approaching stall until touchdown",
+   "Load factors reduce engine power output in direct proportion to the Gs on the airframe",
+   "Load factors reverse the control response whenever they exceed the aircraft's structural limit"
   ],
   "answer": 0,
-  "explanation": "With stab braking, you apply the brakes all the way, release when the wheels lock up, and re-apply fully as soon as the wheels start rolling. It can take up to one second for the wheels to start rolling after you release the brakes.",
-  "page": "5-8"
+  "explanation": "Load factors matter for two reasons: a pilot can impose a dangerous overload on the aircraft's structure, and an increased load factor increases the stalling speed, making stalls possible at flight speeds that seem safe.",
+  "page": "30"
  },
  {
   "id": "s5-011",
   "section": 5,
-  "sectionName": "Air Brakes",
-  "question": "The brake pedal in an air brake system is also called the:",
+  "sectionName": "Loading",
+  "question": "During a coordinated, constant-altitude turn, the load factor is the result of which two forces?",
   "choices": [
-   "Modulating valve or relay valve",
-   "Foot valve or treadle valve",
-   "Governor or limiting valve",
-   "Application valve or supply valve"
+   "Centrifugal force and weight",
+   "Centrifugal force and drag",
+   "Lift and thrust",
+   "Thrust and weight"
   ],
-  "answer": 1,
-  "explanation": "The brake pedal is also called the foot valve or treadle valve; pushing it down harder applies more air pressure.",
-  "page": "5-2"
+  "answer": 0,
+  "explanation": "At a constant altitude, the load factor in a coordinated turn in any aircraft is the result of two forces: centrifugal force and weight. The wing must produce enough lift to match the resulting load factor if altitude is to be maintained.",
+  "page": "31"
  },
  {
   "id": "s5-012",
   "section": 5,
-  "sectionName": "Air Brakes",
-  "question": "Using the proper braking technique on a long and/or steep downgrade, once in the proper low gear, you should apply the brakes just hard enough to feel a definite slowdown and release them when your speed has been reduced to:",
+  "sectionName": "Loading",
+  "question": "At a constant bank angle and altitude, what happens to the rate of turn as airspeed increases?",
   "choices": [
-   "Half of your \"safe\" speed",
-   "Approximately 10 mph below your \"safe\" speed",
-   "The posted speed limit",
-   "Approximately 5 mph below your \"safe\" speed"
+   "It decreases",
+   "It increases",
+   "It stays the same",
+   "It depends on aircraft weight, not airspeed"
   ],
-  "answer": 3,
-  "explanation": "Apply the brakes just hard enough to feel a definite slowdown, and when your speed has been reduced to approximately five mph below your \"safe\" speed, release the brakes (the application should last about three seconds). Repeat when speed increases back to your safe speed.",
-  "page": "5-9"
+  "answer": 0,
+  "explanation": "For any given bank angle, the rate of turn varies with airspeed: the higher the speed, the slower the rate of turn. This compensates for the added centrifugal force, which is why the load factor stays the same for a given bank angle regardless of speed.",
+  "page": "31"
  },
  {
   "id": "s5-013",
   "section": 5,
-  "sectionName": "Air Brakes",
-  "question": "What is the most common type of foundation brake found at each wheel?",
+  "sectionName": "Loading",
+  "question": "What is the load factor on any aircraft in a coordinated, level turn at a 60-degree bank?",
   "choices": [
-   "S-cam drum brake",
-   "Wedge brake",
-   "Disc brake",
-   "Power screw brake"
+   "2 Gs",
+   "1.5 Gs",
+   "3 Gs",
+   "4 Gs"
   ],
   "answer": 0,
-  "explanation": "Foundation brakes are used at each wheel, and the most common type is the s-cam drum brake. Wedge brakes and disc brakes are less common.",
-  "page": "5-2"
+  "explanation": "In a coordinated level turn, the load factor at a 60-degree bank is 2 Gs for any aircraft. Load factor rises at a terrific rate once the bank exceeds 45 to 50 degrees, and the wing must produce lift equal to the load factor to hold altitude.",
+  "page": "31"
  },
  {
   "id": "s5-014",
   "section": 5,
-  "sectionName": "Air Brakes",
-  "question": "What does the supply pressure gauge tell you?",
+  "sectionName": "Loading",
+  "question": "What load factor does a coordinated, level turn at an 80-degree bank produce?",
   "choices": [
-   "How much air pressure you are applying to the brakes",
-   "The rate of air leakage in the system",
-   "How much pressure is in the air tanks",
-   "When the slack adjusters need adjustment"
+   "5.76 Gs",
+   "2 Gs",
+   "3.76 Gs",
+   "7.76 Gs"
   ],
-  "answer": 2,
-  "explanation": "All vehicles with air brakes have a supply pressure gauge connected to the air tank, which tells you how much pressure is in the air tanks.",
-  "page": "5-2"
+  "answer": 0,
+  "explanation": "The load factor in an 80-degree banked level turn is 5.76 Gs, and at slightly more than 80 degrees it exceeds 6 Gs, the limit load factor of an acrobatic aircraft. A 90-degree banked, constant-altitude turn is not mathematically possible.",
+  "page": "31"
  },
  {
   "id": "s5-015",
   "section": 5,
-  "sectionName": "Air Brakes",
-  "question": "If you need to increase application pressure to hold the same speed, it means:",
+  "sectionName": "Loading",
+  "question": "An aircraft with a normal unaccelerated stalling speed of 50 knots is subjected to a load factor of 4 Gs. At what speed can it now be stalled?",
   "choices": [
-   "The governor has cut out",
-   "The brakes are fading; you should slow down and use a lower gear",
-   "The compressor is pumping too much air",
-   "The spring brakes are beginning to drag as the air pressure drops"
+   "100 knots",
+   "70 knots",
+   "150 knots",
+   "200 knots"
   ],
-  "answer": 1,
-  "explanation": "Increasing application pressure to hold the same speed means the brakes are fading, and you should slow down and use a lower gear.",
-  "page": "5-2"
+  "answer": 0,
+  "explanation": "Stalling speed increases in proportion to the square root of the load factor, so at 4 Gs a 50-knot unaccelerated stalling speed becomes 100 knots. If the same aircraft could withstand 9 Gs, it could be stalled at 150 knots. Any aircraft, within the limits of its structure, may be stalled at any airspeed.",
+  "page": "31"
  },
  {
   "id": "s5-016",
   "section": 5,
-  "sectionName": "Air Brakes",
-  "question": "A visible low air pressure warning signal must come on before the air pressure in the tanks falls below:",
+  "sectionName": "Loading",
+  "question": "An aircraft with a normal unaccelerated stalling speed of 45 knots is banked beyond 72 degrees in a steep turn. What airspeed is needed to prevent a stall?",
   "choices": [
-   "45 psi",
-   "100 psi",
-   "20 psi",
-   "60 psi"
+   "Greater than 75 knots",
+   "Greater than 45 knots",
+   "Greater than 60 knots",
+   "Greater than 90 knots"
   ],
-  "answer": 3,
-  "explanation": "A warning signal you can see must come on before the air pressure in the tanks falls below 60 psi (or one half the compressor governor cutout pressure on older vehicles).",
-  "page": "5-3"
+  "answer": 0,
+  "explanation": "Banking greater than 72 degrees produces a load factor of 3, which significantly raises stalling speed. With a normal unaccelerated stalling speed of 45 knots, the airspeed must be kept above 75 knots to avoid inducing a stall. The same effect occurs in a quick pull-up or any maneuver producing more than 1 G.",
+  "page": "32"
  },
  {
   "id": "s5-017",
   "section": 5,
-  "sectionName": "Air Brakes",
-  "question": "With the \"controlled braking\" emergency method, you should:",
+  "sectionName": "Loading",
+  "question": "What is the direct result of operating an aircraft with its center of gravity outside the approved limits?",
   "choices": [
-   "Apply the brakes as hard as you can without locking the wheels, keeping steering wheel movements very small",
-   "Apply the brakes all the way until the wheels lock, then release the pedal and let the vehicle roll to a stop",
-   "Pump the brakes rapidly while steering around the obstacle",
-   "Apply the parking brake and the foot brake together"
+   "Difficulty controlling the aircraft",
+   "Compromised structural integrity",
+   "Reduced fuel efficiency at cruise",
+   "Higher engine operating temperatures"
   ],
   "answer": 0,
-  "explanation": "With controlled braking, you apply the brakes as hard as you can without locking the wheels and keep steering wheel movements very small. If the wheels lock or you need a larger steering adjustment, release the brakes and re-apply as soon as you can.",
-  "page": "5-8"
+  "explanation": "Operation with the CG outside the approved limits results in control difficulty. Compromised structural integrity and degraded performance are the consequences of a different violation, operating above the maximum weight limitation. Weight and balance data must be frequently reevaluated.",
+  "page": "32"
  },
  {
   "id": "s5-018",
   "section": 5,
-  "sectionName": "Air Brakes",
-  "question": "On large buses, it is common for the low pressure warning devices to signal at:",
+  "sectionName": "Loading",
+  "question": "Which combination of performance changes should a pilot expect from an overloaded aircraft?",
   "choices": [
-   "20-45 psi",
-   "50-60 psi",
-   "80-85 psi",
-   "100-125 psi"
-  ],
-  "answer": 2,
-  "explanation": "On large buses it is common for the low pressure warning devices to signal at 80-85 psi.",
-  "page": "5-3"
- },
- {
-  "id": "s5-019",
-  "section": 5,
-  "sectionName": "Air Brakes",
-  "question": "How does the air brake system turn on the brake lights to warn drivers behind you?",
-  "choices": [
-   "With a mechanical linkage connected to the brake pedal",
-   "With a sensor on the slack adjusters",
-   "With a hydraulic pressure switch",
-   "With an electric switch that works by air pressure"
-  ],
-  "answer": 3,
-  "explanation": "The air brake system turns on the brake lights with an electric switch that works by air pressure when you put on the air brakes.",
-  "page": "5-3"
- },
- {
-  "id": "s5-020",
-  "section": 5,
-  "sectionName": "Air Brakes",
-  "question": "On older vehicles with a front brake limiting valve, putting the control in the \"slippery\" position:",
-  "choices": [
-   "Doubles the air pressure to the front brakes",
-   "Cuts the normal air pressure to the front brakes by half",
-   "Shuts off the front brakes completely",
-   "Applies the front spring brakes"
-  ],
-  "answer": 1,
-  "explanation": "In the \"slippery\" position, the limiting valve cuts the normal air pressure to the front brakes by half. This actually reduces stopping power, so the control should be kept in the \"normal\" position.",
-  "page": "5-3"
- },
- {
-  "id": "s5-021",
-  "section": 5,
-  "sectionName": "Air Brakes",
-  "question": "Tractor and straight truck spring brakes will come fully on when air pressure drops to a range of:",
-  "choices": [
-   "60 to 80 psi",
-   "5 to 15 psi",
-   "20 to 45 psi (typically 20 to 30 psi)",
-   "50 to 60 psi, depending on the manufacturer"
-  ],
-  "answer": 2,
-  "explanation": "Tractor and straight truck spring brakes come fully on when air pressure drops to a range of 20 to 45 psi (typically 20 to 30 psi). Don't wait for this - stop safely as soon as the low air warning comes on.",
-  "page": "5-3"
- },
- {
-  "id": "s5-022",
-  "section": 5,
-  "sectionName": "Air Brakes",
-  "question": "On newer vehicles with air brakes, the parking brake control is a:",
-  "choices": [
-   "Diamond-shaped, yellow, push-pull knob",
-   "Round, blue, push-pull knob",
-   "Red, octagon-shaped lever",
-   "Square, green, twist knob"
+   "Higher takeoff speed, reduced rate of climb, and higher stalling speed",
+   "Lower takeoff speed, reduced rate of climb, and lower stalling speed",
+   "Higher takeoff speed, increased rate of climb, and longer range",
+   "Lower stalling speed, shorter landing roll, and reduced cruising speed"
   ],
   "answer": 0,
-  "explanation": "In newer vehicles you put on the parking brakes using a diamond-shaped, yellow, push-pull control knob. Pull it out to apply the parking (spring) brakes and push it in to release them.",
-  "page": "5-3"
- },
- {
-  "id": "s5-023",
-  "section": 5,
-  "sectionName": "Air Brakes",
-  "question": "Why should you never push the brake pedal down when the spring brakes are on?",
-  "choices": [
-   "It will drain the air tanks completely",
-   "The combined forces of the springs and air pressure could damage the brakes",
-   "It will release the spring brakes and the vehicle may roll",
-   "It will cause the safety valve to open"
-  ],
-  "answer": 1,
-  "explanation": "If you push the brake pedal down while the spring brakes are on, the brakes could be damaged by the combined forces of the springs and the air pressure. Not all systems are designed to prevent this.",
-  "page": "5-3"
- },
- {
-  "id": "s5-024",
-  "section": 5,
-  "sectionName": "Air Brakes",
-  "question": "What is a modulating control valve used for?",
-  "choices": [
-   "To release the front brake limiting valve when driving on dry pavement at highway speeds",
-   "To drain the air tanks automatically",
-   "To control the governor cut-in pressure",
-   "To apply the spring brakes gradually, so you can control them if the service brakes fail"
-  ],
-  "answer": 3,
-  "explanation": "A modulating valve is a spring-loaded dash control handle used to apply the spring brakes gradually; the more you move the lever, the harder the spring brakes come on. It lets you control the spring brakes if the service brakes fail.",
-  "page": "5-3"
- },
- {
-  "id": "s5-025",
-  "section": 5,
-  "sectionName": "Air Brakes",
-  "question": "On vehicles with dual parking control valves, such as buses, the separate air tank can be used to:",
-  "choices": [
-   "Release the spring brakes a few times so you can move the vehicle in an emergency",
-   "Refill the primary air system while driving",
-   "Operate the trailer service brakes if the main service line ever fails while driving",
-   "Keep the low pressure warning from coming on"
-  ],
-  "answer": 0,
-  "explanation": "When main air pressure is lost, the separate air tank can release the spring brakes so you can move the vehicle in an emergency. There is only enough air to do this a few times, so plan carefully.",
-  "page": "5-4"
- },
- {
-  "id": "s5-026",
-  "section": 5,
-  "sectionName": "Air Brakes",
-  "question": "Truck tractors with air brakes are required to be equipped with antilock brakes (ABS) if they were built on or after:",
-  "choices": [
-   "March 1, 1994",
-   "March 1, 1998",
-   "March 1, 1997",
-   "July 1, 2014"
-  ],
-  "answer": 2,
-  "explanation": "Truck tractors with air brakes built on or after March 1, 1997 are required to have ABS. Other air brake vehicles (trucks, buses, trailers, and converter dollies) built on or after March 1, 1998 are also required to have it.",
-  "page": "5-4"
- },
- {
-  "id": "s5-027",
-  "section": 5,
-  "sectionName": "Air Brakes",
-  "question": "Where is the ABS malfunction lamp located on a trailer?",
-  "choices": [
-   "On the instrument panel in the cab",
-   "On the right side, at the rear corner",
-   "Under the trailer near the ECU",
-   "On the left side, either on the front or rear corner"
-  ],
-  "answer": 3,
-  "explanation": "Trailers have yellow ABS malfunction lamps on the left side, either on the front or rear corner.",
-  "page": "5-4"
- },
- {
-  "id": "s5-028",
-  "section": 5,
-  "sectionName": "Air Brakes",
-  "question": "Which statement about ABS is true?",
-  "choices": [
-   "ABS increases your normal braking capability by adding extra clamping force whenever you brake hard",
-   "ABS is an addition to your normal brakes and only activates when wheels are about to lock up",
-   "ABS always shortens your stopping distance",
-   "ABS replaces your normal service brakes"
-  ],
-  "answer": 1,
-  "explanation": "ABS is an addition to your normal brakes; it does not decrease or increase your normal braking capability and only activates when wheels are about to lock up. It does not necessarily shorten stopping distance, but helps you keep control during hard braking.",
-  "page": "5-4"
- },
- {
-  "id": "s5-029",
-  "section": 5,
-  "sectionName": "Air Brakes",
-  "question": "What is a dual air brake system?",
-  "choices": [
-   "Two separate air brake systems that use a single set of brake controls",
-   "One air system with two brake pedals",
-   "A system with both hydraulic and air brakes",
-   "Two air compressors feeding a single air tank through separate supply lines"
-  ],
-  "answer": 0,
-  "explanation": "A dual air brake system has two separate air brake systems, each with its own air tanks, hoses, and lines, which use a single set of brake controls. One system typically operates the rear axle brakes and the other the front axle brakes.",
-  "page": "5-5"
- },
- {
-  "id": "s5-030",
-  "section": 5,
-  "sectionName": "Air Brakes",
-  "question": "Before driving a vehicle with a dual air system, you should allow time for the air compressor to build up a minimum of what pressure in both the primary and secondary systems?",
-  "choices": [
-   "60 psi",
-   "85 psi",
-   "100 psi",
-   "125 psi"
-  ],
-  "answer": 2,
-  "explanation": "Before driving a vehicle with a dual air system, allow time for the air compressor to build up a minimum of 100 psi in both the primary and secondary systems.",
-  "page": "5-5"
- },
- {
-  "id": "s5-031",
-  "section": 5,
-  "sectionName": "Air Brakes",
-  "question": "When checking a manual slack adjuster on an s-cam brake, it probably needs adjustment if it moves more than about:",
-  "choices": [
-   "One quarter inch where the push rod attaches to it",
-   "One inch where the push rod attaches to it",
-   "Two inches where the push rod attaches to it",
-   "Three inches where the push rod attaches to it"
-  ],
-  "answer": 1,
-  "explanation": "Park on level ground, chock the wheels, release the parking brakes, and pull hard on each slack adjuster; if it moves more than about one inch where the push rod attaches, it probably needs adjustment.",
-  "page": "5-6"
- },
- {
-  "id": "s5-032",
-  "section": 5,
-  "sectionName": "Air Brakes",
-  "question": "What is the most common problem found in roadside inspections?",
-  "choices": [
-   "Worn air compressor drive belts",
-   "Cracked brake drums",
-   "Leaking air hoses",
-   "Brakes out of adjustment"
-  ],
-  "answer": 3,
-  "explanation": "Out-of-adjustment brakes are the most common problem found in roadside inspections. Vehicles with too much brake slack can be very hard to stop.",
-  "page": "5-6"
- },
- {
-  "id": "s5-033",
-  "section": 5,
-  "sectionName": "Air Brakes",
-  "question": "During the walk-around inspection, brake drums (or discs) must not have cracks longer than:",
-  "choices": [
-   "One half the width of the friction area",
-   "One quarter the width of the friction area",
-   "One inch",
-   "The full width of the friction area"
-  ],
-  "answer": 0,
-  "explanation": "Brake drums (or discs) must not have cracks longer than one half the width of the friction area.",
-  "page": "5-6"
- },
- {
-  "id": "s5-034",
-  "section": 5,
-  "sectionName": "Air Brakes",
-  "question": "During the applied leakage test (engine off, foot brake fully applied and held for one minute), the air loss rate is too much for a single vehicle if pressure drops more than:",
-  "choices": [
-   "1 psi in one minute",
-   "2 psi in one minute",
-   "3 psi in one minute",
-   "4 psi in one minute"
-  ],
-  "answer": 2,
-  "explanation": "With the brake fully applied for one minute, the air pressure should not drop more than three psi in one minute for single vehicles (four psi for combination vehicles). If it does, check for air leaks and fix before driving.",
-  "page": "5-7"
- },
- {
-  "id": "s5-035",
-  "section": 5,
-  "sectionName": "Air Brakes",
-  "question": "In the air leakage rate test with a fully-charged system, engine off, and parking brake released (brakes not applied), the loss rate for a combination vehicle should be less than:",
-  "choices": [
-   "One psi in one minute",
-   "Two psi in one minute",
-   "Four psi in one minute",
-   "Three psi in one minute"
-  ],
-  "answer": 3,
-  "explanation": "With a fully-charged air system (typically 125 psi), engine off and parking brake released, the loss rate should be less than two psi in one minute for single vehicles and less than three psi in one minute for combination vehicles.",
-  "page": "5-7"
- },
- {
-  "id": "s5-036",
-  "section": 5,
-  "sectionName": "Air Brakes",
-  "question": "When checking the rate of air pressure buildup in a dual air system with the engine at operating rpms, the pressure should build from:",
-  "choices": [
-   "50 to 90 psi within 3 minutes",
-   "85 to 100 psi within 45 seconds",
-   "100 to 125 psi within 45 seconds",
-   "60 to 85 psi within 2 minutes"
-  ],
-  "answer": 1,
-  "explanation": "In dual air systems, with the engine at operating rpms, pressure should build from 85 to 100 psi within 45 seconds. In pre-1975 single air systems, the typical requirement is 50 to 90 psi within 3 minutes at 600-900 rpm idle.",
-  "page": "5-7"
- },
- {
-  "id": "s5-037",
-  "section": 5,
-  "sectionName": "Air Brakes",
-  "question": "During the spring brake check, the parking brake valve should close (pop out) when air pressure falls to the manufacturer's specification of:",
-  "choices": [
-   "20 - 45 psi",
-   "60 - 80 psi",
-   "85 - 100 psi",
-   "120 - 140 psi"
-  ],
-  "answer": 0,
-  "explanation": "As you fan off the air pressure, the parking brake valve (and tractor protection valve on a tractor-trailer) should pop out when air pressure falls to the manufacturer's specification of 20 - 45 psi, causing the spring brakes to come on.",
-  "page": "5-7"
- },
- {
-  "id": "s5-038",
-  "section": 5,
-  "sectionName": "Air Brakes",
-  "question": "How do you test the parking brake during the final air brake check?",
-  "choices": [
-   "Fan off the air pressure until the parking brake knob pops out and the brakes apply on their own",
-   "Apply the foot brake and hold it for one minute",
-   "Put the parking brake on and gently pull against it in a low gear to see that it holds",
-   "Drive at five mph and apply the parking brake firmly"
-  ],
-  "answer": 2,
-  "explanation": "To test the parking brake, stop the vehicle, put the parking brake on, and gently pull against it in a low gear to test that it will hold.",
-  "page": "5-7"
- },
- {
-  "id": "s5-039",
-  "section": 5,
-  "sectionName": "Air Brakes",
-  "question": "How do you test the service brakes during the final air brake check?",
-  "choices": [
-   "Pump the brake pedal rapidly with the engine off",
-   "Hold the brake pedal down firmly while accelerating in the lowest gear to confirm the brakes can hold back the engine",
-   "Fan the brakes until the low pressure warning comes on",
-   "Wait for normal air pressure, release the parking brake, move forward slowly (about 5 mph), and apply the brakes firmly"
-  ],
-  "answer": 3,
-  "explanation": "Wait for normal air pressure, release the parking brake, move the vehicle forward slowly at about five mph, and apply the brakes firmly with the brake pedal. Note any pulling to one side, unusual feel, or delayed stopping action.",
-  "page": "5-7"
- },
- {
-  "id": "s5-040",
-  "section": 5,
-  "sectionName": "Air Brakes",
-  "question": "With air brakes, how much distance does brake lag add at 55 mph on dry pavement?",
-  "choices": [
-   "About 10 feet",
-   "About 32 feet",
-   "About 100 feet",
-   "About 450 feet"
-  ],
-  "answer": 1,
-  "explanation": "It takes one half second or more for air to flow through the lines to the brakes, and the air brake lag distance at 55 mph on dry pavement adds about 32 feet. The total stopping distance at 55 mph is over 450 feet.",
-  "page": "5-8"
+  "explanation": "Excess weight hurts performance in almost every respect: higher takeoff speed, longer takeoff run, reduced rate and angle of climb, lower maximum altitude, shorter range, reduced cruising speed, reduced maneuverability, higher stalling speed, higher approach and landing speed, and longer landing roll. If improperly loaded, the first sign of poor performance usually appears during takeoff.",
+  "page": "33"
  },
  {
   "id": "s6-001",
   "section": 6,
-  "sectionName": "Combination Vehicles",
-  "question": "Compared to empty rigs, fully loaded rigs are how many times more likely to roll over in a crash?",
+  "sectionName": "Emergency Procedures",
+  "question": "How does the FAA characterize a typical in-flight emergency involving a small unmanned aircraft?",
   "choices": [
-   "2 times more likely",
-   "5 times more likely",
-   "10 times more likely",
-   "3.5 times more likely"
+   "An unexpected and unforeseen event that can have serious consequences for an unprepared remote pilot",
+   "A mechanical failure that develops gradually and leaves the remote pilot ample time to plan a response",
+   "A planned contingency that every crew is required to rehearse on site before the aircraft is launched",
+   "A weather-related event that careful preflight planning is expected to eliminate entirely"
   ],
-  "answer": 2,
-  "explanation": "The manual states that fully loaded rigs are ten times more likely to roll over in a crash than empty rigs, because piled-up cargo raises the center of gravity.",
-  "page": "6-1"
+  "answer": 0,
+  "explanation": "An in-flight emergency is usually unexpected and unforeseen, and its consequences fall hardest on a remote pilot who has not prepared. That is why the rules grant deviation authority during an emergency and why crews are briefed on emergency procedures before flight.",
+  "page": "35"
  },
  {
   "id": "s6-002",
   "section": 6,
-  "sectionName": "Combination Vehicles",
-  "question": "More than half of truck driver deaths in crashes are the result of what?",
+  "sectionName": "Emergency Procedures",
+  "question": "During an in-flight emergency, how much of 14 CFR part 107 is the remote pilot permitted to deviate from?",
   "choices": [
-   "Truck rollovers",
-   "Rear-end collisions",
-   "Railroad crossing accidents",
-   "Brake failures"
+   "Any part of the rule, to the extent needed to respond to the emergency",
+   "Only the operating limitations on altitude and groundspeed",
+   "Only provisions that do not affect the safety of people on the ground",
+   "No part of it; the aircraft must instead be landed as soon as practical"
   ],
   "answer": 0,
-  "explanation": "According to the manual, more than half of truck driver deaths in crashes are the result of truck rollovers.",
-  "page": "6-1"
+  "explanation": "In an emergency the remote pilot may deviate from any part of 14 CFR part 107 in order to respond to it. The authority is not limited to particular rules; the pilot may take any action needed to keep the aircraft from becoming a hazard to people or property.",
+  "page": "35"
  },
  {
   "id": "s6-003",
   "section": 6,
-  "sectionName": "Combination Vehicles",
-  "question": "Triple trailer combinations have a rearward amplification of 3.5. This means the last trailer of triples can roll over how much more easily than a five-axle tractor?",
+  "sectionName": "Emergency Procedures",
+  "question": "A remote pilot deviates from part 107 while handling an in-flight emergency. When must that deviation be reported?",
   "choices": [
-   "1.5 times as easily",
-   "2 times as easily",
-   "10 times as easily",
-   "3.5 times as easily"
+   "Only if the FAA asks for a report",
+   "Immediately after landing, to the nearest air traffic control facility",
+   "Within 10 days of the flight, in every case",
+   "Within 30 days, but only if the deviation resulted in damage"
   ],
-  "answer": 3,
-  "explanation": "The manual states that triples have a rearward amplification of 3.5, meaning you can roll the last trailer of triples 3.5 times as easily as a five-axle tractor.",
-  "page": "6-1"
+  "answer": 0,
+  "explanation": "There is no automatic reporting requirement for an emergency deviation. The remote pilot reports the deviation only when the FAA, also called the Administrator, requests it. Absent that request, no report is due at all.",
+  "page": "35"
  },
  {
   "id": "s6-004",
   "section": 6,
-  "sectionName": "Combination Vehicles",
-  "question": "When pulling trailers, how much following distance should you keep behind other vehicles?",
+  "sectionName": "Emergency Procedures",
+  "question": "When part 107 refers to \"the Administrator,\" which organization does it mean?",
   "choices": [
-   "2 seconds for every 20 feet of vehicle length",
-   "At least 1 second for each 10 feet of vehicle length, plus 1 more second if going over 40 mph",
-   "At least 5 seconds at all speeds",
-   "1 second for each 20 feet of vehicle length, plus 2 extra seconds at night or in any bad weather"
+   "The Federal Aviation Administration",
+   "The National Transportation Safety Board",
+   "The Department of Transportation's Office of Inspector General",
+   "The International Civil Aviation Organization"
   ],
-  "answer": 1,
-  "explanation": "The manual says to follow at least 1 second for each 10 feet of your vehicle length, plus another second if you are going over 40 mph.",
-  "page": "6-1"
+  "answer": 0,
+  "explanation": "\"The Administrator\" is another name for the FAA. This matters for emergency deviations: the pilot reports a deviation only when asked by the FAA, and regulatory text expresses that as a request from the Administrator.",
+  "page": "35"
  },
  {
   "id": "s6-005",
   "section": 6,
-  "sectionName": "Combination Vehicles",
-  "question": "Which statement about stopping large combination vehicles is true?",
+  "sectionName": "Emergency Procedures",
+  "question": "A preflight inspection turns up an irregularity with the small unmanned aircraft. What must happen before the aircraft is flown?",
   "choices": [
-   "They take longer to stop when empty than when fully loaded",
-   "They always stop faster when empty",
-   "Load has no effect on stopping distance",
-   "They stop fastest when bobtailing"
+   "The irregularity must be corrected",
+   "The irregularity must be logged and then watched over the next several flights",
+   "A visual observer must be assigned to monitor the affected component in flight",
+   "The manufacturer must be notified and must approve the flight in writing"
   ],
   "answer": 0,
-  "explanation": "When lightly loaded, the very stiff suspension springs and strong brakes give poor traction, making it easy to lock up the wheels, so empty combination vehicles take longer to stop than fully loaded ones.",
-  "page": "6-1"
+  "explanation": "Any irregularity found during the preflight inspection must be corrected before the small unmanned aircraft is operated. Flying with a known defect is not an option, whether or not someone monitors it, because the remote pilot must ensure the aircraft is in a safe operating condition before every flight.",
+  "page": "35"
  },
  {
   "id": "s6-006",
   "section": 6,
-  "sectionName": "Combination Vehicles",
-  "question": "What is the earliest and best way to recognize that your trailer has started to skid?",
+  "sectionName": "Emergency Procedures",
+  "question": "The manufacturer of a small unmanned aircraft provides no preflight inspection items. What should the remote pilot do?",
   "choices": [
-   "Feeling the tractor pull to one side",
-   "Hearing the trailer tires squeal",
-   "Seeing the trailer in your mirrors",
-   "Feeling vibration in the brake pedal"
+   "Develop a checklist detailed enough that the aircraft will be operated in a safe condition",
+   "Use the preflight inspection checklist published for the most similar model from another manufacturer",
+   "Request that the FAA issue an inspection checklist for that model before operating it",
+   "Perform a general walk-around only, since no formal inspection items apply to that model"
   ],
-  "answer": 2,
-  "explanation": "The manual states that the earliest and best way to recognize a trailer skid is by seeing it in your mirrors; check the mirrors any time you brake hard.",
-  "page": "6-2"
+  "answer": 0,
+  "explanation": "Some manufacturers supply preflight inspection items and some do not. When none exist, the remote pilot should create a checklist of their own with enough information to ensure the aircraft is operated in a safe condition. The inspection itself is required before every flight either way.",
+  "page": "35"
  },
  {
   "id": "s6-007",
   "section": 6,
-  "sectionName": "Combination Vehicles",
-  "question": "What is the correct way to stop a trailer skid?",
+  "sectionName": "Emergency Procedures",
+  "question": "A small unmanned aircraft develops a battery fire in flight. Which response does the FAA give as an example of permissible emergency action?",
   "choices": [
-   "Apply the trailer hand brake to straighten out the rig",
-   "Release the brakes to get traction back",
-   "Press the brake pedal harder to slow down faster",
-   "Steer sharply in the opposite direction of the skid"
+   "Climbing above 400 feet AGL to maneuver to a safe landing area",
+   "Holding at or below 400 feet AGL, because the altitude limit still applies in an emergency",
+   "Descending straight down immediately, regardless of what is beneath the aircraft",
+   "Jettisoning the battery over an open area before attempting to land"
   ],
-  "answer": 1,
-  "explanation": "You should release the brakes so the trailer wheels regain traction; once they grip the road again, the trailer will follow the tractor and straighten out. Using the trailer hand brake is wrong because the trailer brakes caused the skid in the first place.",
-  "page": "6-3"
+  "answer": 0,
+  "explanation": "A battery fire is the FAA's example of an in-flight emergency: the remote pilot may climb the aircraft above 400 feet AGL if that is what it takes to reach a safe landing area, because the pilot may take any action needed to avoid a hazard to people or property. A report is required only if the FAA asks for one.",
+  "page": "35"
  },
  {
   "id": "s6-008",
   "section": 6,
-  "sectionName": "Combination Vehicles",
-  "question": "When a combination vehicle with more than one trailer goes around a corner, which wheels off-track the most?",
+  "sectionName": "Emergency Procedures",
+  "question": "When additional crewmembers support a small UA flight, who must be briefed on the operation and its planned emergency procedures?",
   "choices": [
-   "The tractor's front wheels",
-   "The tractor's rear wheels",
-   "The rear wheels of the first trailer",
-   "The rear wheels of the last trailer"
-  ],
-  "answer": 3,
-  "explanation": "The manual states that if there is more than one trailer, the rear wheels of the last trailer will off-track the most.",
-  "page": "6-3"
- },
- {
-  "id": "s6-009",
-  "section": 6,
-  "sectionName": "Combination Vehicles",
-  "question": "When backing a trailer, how should you initially turn the steering wheel?",
-  "choices": [
-   "In the direction opposite of where you want the trailer to go",
-   "In the same direction you want the trailer to go",
-   "Keep the wheel perfectly straight at all times",
-   "Turn it fully to the left regardless of direction"
+   "All crewmembers, including visual observers and anyone manipulating the flight controls",
+   "Only crewmembers who hold a remote pilot certificate of their own",
+   "Only the visual observers, because they work away from the control station displays",
+   "Only the person manipulating the flight controls, since other crewmembers are not directly involved"
   ],
   "answer": 0,
-  "explanation": "Unlike backing a car, straight truck, or bus, when backing a trailer you turn the steering wheel in the opposite direction; once the trailer starts to turn, you turn the wheel the other way to follow it.",
-  "page": "6-3"
- },
- {
-  "id": "s6-010",
-  "section": 6,
-  "sectionName": "Combination Vehicles",
-  "question": "When should the trailer hand valve (trolley valve or Johnson bar) be used?",
-  "choices": [
-   "To slow down on long downgrades",
-   "In place of the foot brake in city traffic",
-   "Only to test the trailer brakes",
-   "To hold the rig while parked overnight"
-  ],
-  "answer": 2,
-  "explanation": "The trailer hand valve should be used only to test the trailer brakes. Using it while driving risks making the trailer skid, and the foot brake is much less likely to cause a skid or jackknife.",
-  "page": "6-4"
- },
- {
-  "id": "s6-011",
-  "section": 6,
-  "sectionName": "Combination Vehicles",
-  "question": "Why should you never use the trailer hand valve for parking?",
-  "choices": [
-   "It causes the tractor protection valve to open",
-   "All the air might leak out, unlocking the brakes on trailers without spring brakes",
-   "It wears out the service line couplers",
-   "It slowly drains the tractor air tanks overnight and leaves you without brakes by morning"
-  ],
-  "answer": 1,
-  "explanation": "The manual warns that all the air might leak out, unlocking the brakes in trailers that don't have spring brakes. Always use the parking brakes, and use wheel chocks if the trailer has no spring brakes.",
-  "page": "6-4"
- },
- {
-  "id": "s6-012",
-  "section": 6,
-  "sectionName": "Combination Vehicles",
-  "question": "Which control sends air to all of the brakes on the vehicle, including the trailer(s)?",
-  "choices": [
-   "The trailer hand valve",
-   "The trailer air supply knob",
-   "The emergency line shut-off valve",
-   "The foot brake"
-  ],
-  "answer": 3,
-  "explanation": "The foot brake sends air to all of the brakes on the vehicle, including the trailer(s), and there is much less danger of causing a skid or jackknife when using just the foot brake.",
-  "page": "6-4"
- },
- {
-  "id": "s6-013",
-  "section": 6,
-  "sectionName": "Combination Vehicles",
-  "question": "What is the purpose of the tractor protection valve?",
-  "choices": [
-   "To keep air in the tractor brake system should the trailer break away or develop a bad leak",
-   "To apply the trailer service brakes more quickly",
-   "To keep the fifth wheel jaws locked around the kingpin",
-   "To prevent water and dirt from entering the glad hands and service line when they are connected"
-  ],
-  "answer": 0,
-  "explanation": "The tractor protection valve keeps air in the tractor or truck brake system should the trailer break away or develop a bad leak. It is controlled by the trailer air supply control valve in the cab.",
-  "page": "6-5"
- },
- {
-  "id": "s6-014",
-  "section": 6,
-  "sectionName": "Combination Vehicles",
-  "question": "The tractor protection valve will close automatically when air pressure drops into what range?",
-  "choices": [
-   "60 to 80 psi",
-   "50 to 75 psi",
-   "20 to 45 psi",
-   "5 to 15 psi"
-  ],
-  "answer": 2,
-  "explanation": "The tractor protection valve closes automatically when air pressure is low, in the range of 20 to 45 psi. When it closes, it stops air from leaving the tractor and lets air out of the trailer emergency line, applying the trailer emergency brakes.",
-  "page": "6-5"
- },
- {
-  "id": "s6-015",
-  "section": 6,
-  "sectionName": "Combination Vehicles",
-  "question": "On newer vehicles, what does the trailer air supply control look like, and what does pushing it in do?",
-  "choices": [
-   "A blue round knob; pushing it in applies the trailer emergency brakes",
-   "A red eight-sided knob; pushing it in supplies the trailer with air",
-   "A yellow diamond-shaped knob; pushing it in releases the tractor parking brake",
-   "A green lever; pushing it in closes the tractor protection valve"
-  ],
-  "answer": 1,
-  "explanation": "The trailer air supply control on newer vehicles is a red eight-sided knob. You push it in to supply the trailer with air, and pull it out to shut the air off and put on the trailer emergency brakes.",
-  "page": "6-5"
- },
- {
-  "id": "s6-016",
-  "section": 6,
-  "sectionName": "Combination Vehicles",
-  "question": "Which statement correctly describes the service air line?",
-  "choices": [
-   "It supplies air to the trailer air tanks",
-   "It applies the trailer emergency brakes automatically when pressure is lost anywhere in the rig",
-   "It is normally coded with the color red",
-   "It carries air controlled by the foot brake or trailer hand valve and connects to relay valves"
-  ],
-  "answer": 3,
-  "explanation": "The service line (also called the control or signal line) carries air controlled by the foot brake or the trailer hand valve, and its pressure changes with how hard you press. It is connected to relay valves, which allow the trailer brakes to be applied more quickly.",
-  "page": "6-5"
- },
- {
-  "id": "s6-017",
-  "section": 6,
-  "sectionName": "Combination Vehicles",
-  "question": "What are the two purposes of the emergency air line (supply line)?",
-  "choices": [
-   "It supplies air to the trailer air tanks and controls the emergency brakes on combination vehicles",
-   "It signals the trailer relay valves to open and applies the trailer service brakes during normal stops",
-   "It powers the landing gear and charges the tractor air tanks",
-   "It operates the trailer hand valve and the foot brake"
-  ],
-  "answer": 0,
-  "explanation": "The emergency line has two purposes: it supplies air to the trailer air tanks, and it controls the emergency brakes on combination vehicles.",
-  "page": "6-5"
- },
- {
-  "id": "s6-018",
-  "section": 6,
-  "sectionName": "Combination Vehicles",
-  "question": "What happens when the emergency air line loses pressure, such as when a trailer breaks loose and tears the hose apart?",
-  "choices": [
-   "The trailer brakes release completely",
-   "Air is rerouted through the service line",
-   "The trailer emergency brakes come on and the tractor protection valve closes",
-   "The trailer air tanks automatically refill through the service line connection"
-  ],
-  "answer": 2,
-  "explanation": "Loss of air pressure in the emergency line causes the trailer emergency brakes to come on, and it also causes the tractor protection valve to close (the air supply knob pops out).",
-  "page": "6-5"
- },
- {
-  "id": "s6-019",
-  "section": 6,
-  "sectionName": "Combination Vehicles",
-  "question": "What colors are commonly used to identify the two trailer air lines?",
-  "choices": [
-   "Red for service, blue for emergency",
-   "Blue for service, red for emergency (supply)",
-   "Yellow for service, green for emergency",
-   "Black for both, with white metal tags"
-  ],
-  "answer": 1,
-  "explanation": "Blue is used for the service lines and red for the emergency (supply) lines to keep them from getting mixed up. Sometimes metal tags stamped \"service\" and \"emergency\" are attached instead.",
-  "page": "6-5"
- },
- {
-  "id": "s6-020",
-  "section": 6,
-  "sectionName": "Combination Vehicles",
-  "question": "What is the correct way to connect glad hands?",
-  "choices": [
-   "Snap them straight together with the couplers aligned face to face, then pull back firmly on both air lines to make sure they have locked",
-   "Screw them together clockwise until tight",
-   "Connect them at a 45 degree angle and push down",
-   "Clean the couplers and seals, press the two seals together with the couplers at a 90 degree angle, then turn to join and lock them"
-  ],
-  "answer": 3,
-  "explanation": "The manual says to clean the couplers and rubber seals before connecting, press the two seals together with the couplers at a 90 degree angle to each other, and a turn of the glad hand attached to the hose will join and lock the couplers.",
-  "page": "6-5"
- },
- {
-  "id": "s6-021",
-  "section": 6,
-  "sectionName": "Combination Vehicles",
-  "question": "If you cross the air lines when hooking up to an older trailer without spring brakes, what could happen?",
-  "choices": [
-   "You could drive away, but you would have no trailer brakes",
-   "The tractor brakes would lock up immediately",
-   "The trailer emergency brakes would stay applied and the trailer could not move",
-   "The engine would not start until the lines are corrected"
-  ],
-  "answer": 0,
-  "explanation": "On older trailers without spring brakes, if the trailer air tank has leaked down there are no emergency brakes and the wheels turn freely, so with crossed lines you could drive away but would have no trailer brakes, which is very dangerous. Always test the trailer brakes before driving.",
-  "page": "6-6"
- },
- {
-  "id": "s6-022",
-  "section": 6,
-  "sectionName": "Combination Vehicles",
-  "question": "When towing multiple trailers, which shut-off valves (cut-out cocks) must be closed?",
-  "choices": [
-   "All shut-off valves on every trailer",
-   "The valves at the front of the first trailer",
-   "Only the valves at the back of the last trailer",
-   "None; all valves must always remain open"
-  ],
-  "answer": 2,
-  "explanation": "You must check that all shut-off valves are in the open position except the ones at the back of the last trailer, which must be closed. This ensures air reaches all the brakes.",
-  "page": "6-6"
- },
- {
-  "id": "s6-023",
-  "section": 6,
-  "sectionName": "Combination Vehicles",
-  "question": "Which trailers and converter dollies are NOT required to have spring brakes?",
-  "choices": [
-   "Those built after March 1, 1998",
-   "Converter dollies and trailers built before 1975",
-   "Any trailer equipped with ABS",
-   "Trailers with more than two axles"
-  ],
-  "answer": 1,
-  "explanation": "Converter dollies and trailers built before 1975 are not required to have spring brakes. Those without spring brakes have emergency brakes that work from air stored in the trailer air tank and have no parking brake.",
-  "page": "6-6"
- },
- {
-  "id": "s6-024",
-  "section": 6,
-  "sectionName": "Combination Vehicles",
-  "question": "Why must you use wheel chocks when parking a trailer that does not have spring brakes?",
-  "choices": [
-   "Because the landing gear cannot hold the trailer's weight",
-   "Because the service line stays pressurized while parked",
-   "Because the fifth wheel and trailer manufacturers require chocks on every parked trailer regardless of its brake equipment",
-   "Because the emergency brakes hold only as long as there is air in the trailer air tank, and the air will eventually leak away"
-  ],
-  "answer": 3,
-  "explanation": "On trailers without spring brakes, the emergency brakes hold only as long as there is air pressure in the trailer air tank. Eventually the air will leak away and there will be no brakes, so wheel chocks are very important for safety.",
-  "page": "6-6"
- },
- {
-  "id": "s6-025",
-  "section": 6,
-  "sectionName": "Combination Vehicles",
-  "question": "All trailers and converter dollies built on or after what date are required to have ABS?",
-  "choices": [
-   "March 1, 1998",
-   "January 1, 1975",
-   "July 1, 2014",
-   "March 1, 2005"
-  ],
-  "answer": 0,
-  "explanation": "All trailers and converter dollies built on or after March 1, 1998, are required to have ABS. Trailers with ABS have yellow malfunction lamps on the left side, on the front or rear corner.",
-  "page": "6-7"
- },
- {
-  "id": "s6-026",
-  "section": 6,
-  "sectionName": "Combination Vehicles",
-  "question": "Before coupling, the fifth wheel should be in what position?",
-  "choices": [
-   "Tilted up toward the front of the tractor with the jaws closed",
-   "Level, with the safety unlocking handle in the release position",
-   "Tilted down toward the rear of the tractor with the jaws open",
-   "Slid all the way forward with the locking pins removed"
-  ],
-  "answer": 2,
-  "explanation": "The proper coupling position is with the fifth wheel tilted down toward the rear of the tractor, jaws open, and the safety unlocking handle in the automatic lock position. A sliding fifth wheel must also be locked.",
-  "page": "6-7"
- },
- {
-  "id": "s6-027",
-  "section": 6,
-  "sectionName": "Combination Vehicles",
-  "question": "When positioning the tractor to couple, why should you never back under the trailer at an angle?",
-  "choices": [
-   "It could damage the tractor's drive shaft",
-   "You might push the trailer sideways and break the landing gear",
-   "The kingpin would lock too tightly in the jaws",
-   "It could cross the air lines automatically"
-  ],
-  "answer": 1,
-  "explanation": "The manual says to put the tractor directly in front of the trailer and never back under it at an angle, because you might push the trailer sideways and break the landing gear.",
-  "page": "6-8"
- },
- {
-  "id": "s6-028",
-  "section": 6,
-  "sectionName": "Combination Vehicles",
-  "question": "Before backing under, the trailer should be at what height relative to the tractor?",
-  "choices": [
-   "High enough that the tractor slides completely under it without touching the trailer nose",
-   "Exactly level with the top of the tractor frame",
-   "As low as the landing gear will allow",
-   "Low enough that it is raised slightly by the tractor when the tractor is backed under it"
-  ],
-  "answer": 3,
-  "explanation": "The trailer should be low enough that it is raised slightly by the tractor when the tractor is backed under it. If the trailer is too low, the tractor may strike and damage the trailer nose; if too high, it may not couple correctly.",
-  "page": "6-8"
- },
- {
-  "id": "s6-029",
-  "section": 6,
-  "sectionName": "Combination Vehicles",
-  "question": "During coupling, after connecting the air lines and supplying air to the trailer, what should you do just before backing under the trailer?",
-  "choices": [
-   "Lock the trailer brakes by pulling out the air supply knob",
-   "Raise the landing gear all the way up",
-   "Connect the electrical cord and safety catch",
-   "Remove the trailer wheel chocks"
-  ],
-  "answer": 0,
-  "explanation": "In the coupling sequence, Step 9 is to lock the trailer brakes by pulling out the air supply knob (or moving the tractor protection valve control from normal to emergency) before Step 10, backing under the trailer in the lowest reverse gear.",
-  "page": "6-8"
- },
- {
-  "id": "s6-030",
-  "section": 6,
-  "sectionName": "Combination Vehicles",
-  "question": "After backing under the trailer, how do you check that the connection is secure?",
-  "choices": [
-   "Back up hard against the kingpin and listen for a click",
-   "Rock the trailer from side to side with the landing gear still down and watch whether the kingpin shifts inside the locking jaws",
-   "Raise the landing gear slightly off the ground and pull the tractor gently forward while the trailer brakes are still locked",
-   "Drive forward at normal speed and watch the mirrors"
-  ],
-  "answer": 2,
-  "explanation": "Step 11 of coupling says to raise the trailer landing gear slightly off the ground and pull the tractor gently forward while the trailer brakes are still locked, to check that the trailer is locked onto the tractor.",
-  "page": "6-8"
- },
- {
-  "id": "s6-031",
-  "section": 6,
-  "sectionName": "Combination Vehicles",
-  "question": "When inspecting the coupling, how much space should there be between the upper and lower fifth wheel?",
-  "choices": [
-   "About half an inch",
-   "None; if there is space, something is wrong",
-   "Up to one inch when the trailer is empty",
-   "Enough to slide a hand through for greasing"
-  ],
-  "answer": 1,
-  "explanation": "There should be no space between the upper and lower fifth wheel. If there is space, something is wrong; the kingpin may be on top of the closed fifth wheel jaws, and the trailer could come loose very easily.",
-  "page": "6-8"
- },
- {
-  "id": "s6-032",
-  "section": 6,
-  "sectionName": "Combination Vehicles",
-  "question": "When you look into the back of the fifth wheel during the coupling inspection, the jaws should be closed around what part of the kingpin?",
-  "choices": [
-   "The head of the kingpin",
-   "The base plate of the kingpin",
-   "The top flange of the kingpin",
-   "The shank of the kingpin"
-  ],
-  "answer": 3,
-  "explanation": "You must make sure the fifth wheel jaws have closed around the shank of the kingpin, not the head. Also check that the locking lever is in the lock position and the safety latch is in place over it.",
-  "page": "6-9"
- },
- {
-  "id": "s6-033",
-  "section": 6,
-  "sectionName": "Combination Vehicles",
-  "question": "Before driving after coupling, how far should you raise the landing gear?",
-  "choices": [
-   "All the way up; never drive with it only part way up",
-   "Just until it lifts off the pavement",
-   "Halfway up to allow for quick uncoupling",
-   "Only high enough to clear speed bumps"
-  ],
-  "answer": 0,
-  "explanation": "Raise the landing gear all the way up. Never drive with the landing gear only part way up, as it may catch on railroad tracks or other things. Then secure the crank handle safely.",
-  "page": "6-9"
- },
- {
-  "id": "s6-034",
-  "section": 6,
-  "sectionName": "Combination Vehicles",
-  "question": "When uncoupling, after unlocking the fifth wheel you should pull the tractor only partially clear of the trailer and stop with the tractor frame under the trailer. Why?",
-  "choices": [
-   "To keep the air lines from stretching too far",
-   "So the trailer brakes stay charged with air",
-   "To prevent the trailer from falling to the ground if the landing gear collapses or sinks",
-   "So the kingpin stays aligned with the locking jaws and ready for the next coupling attempt"
-  ],
-  "answer": 2,
-  "explanation": "Stopping with the tractor frame under the trailer prevents the trailer from falling to the ground if the landing gear should collapse or sink. Only after inspecting the trailer supports do you pull the tractor fully clear.",
-  "page": "6-9"
- },
- {
-  "id": "s6-035",
-  "section": 6,
-  "sectionName": "Combination Vehicles",
-  "question": "How do you check that air flows to all trailers in a combination?",
-  "choices": [
-   "Watch the dashboard air gauge while idling for five minutes",
-   "Push in the trailer air supply knob, go to the rear of the rig, open the emergency line shut-off valve at the rear of the last trailer, and listen for air escaping",
-   "Apply the foot brake and count the seconds until the trailer brakes release",
-   "Disconnect the service line glad hand at each trailer in turn and check for steady pressure at the tractor gauge while a helper holds the brake pedal down"
-  ],
-  "answer": 1,
-  "explanation": "After air pressure reaches normal, push in the red trailer air supply knob and use the trailer handbrake to charge the service line, then open the emergency line shut-off valve at the rear of the last trailer. Hearing air escape shows the entire system is charged; you must have air all the way to the back for all the brakes to work.",
-  "page": "6-11"
- },
- {
-  "id": "s7-001",
-  "section": 7,
-  "sectionName": "Doubles and Triples",
-  "question": "Because of the \"crack-the-whip\" effect, which trailer in a combination is most likely to turn over?",
-  "choices": [
-   "The first trailer behind the tractor",
-   "The last trailer in the combination",
-   "The middle trailer in a set of triples",
-   "All trailers are equally likely to turn over"
-  ],
-  "answer": 1,
-  "explanation": "Doubles and triples are more likely to turn over than other combination vehicles because of the crack-the-whip effect, and the last trailer in a combination is the most likely to turn over. You must steer gently when pulling trailers.",
-  "page": "7-1"
- },
- {
-  "id": "s7-002",
-  "section": 7,
-  "sectionName": "Doubles and Triples",
-  "question": "For the safest handling on the road, where should the more heavily loaded semitrailer be placed?",
-  "choices": [
-   "In first position, directly behind the tractor",
-   "In the rear position",
-   "In the middle position",
-   "It makes no difference where it is placed"
-  ],
-  "answer": 0,
-  "explanation": "The manual states that for the safest handling on the road, the more heavily loaded semitrailer should be in first position behind the tractor, with the lighter trailer in the rear.",
-  "page": "7-1"
- },
- {
-  "id": "s7-003",
-  "section": 7,
-  "sectionName": "Doubles and Triples",
-  "question": "How can you tell that a converter dolly is equipped with antilock brakes?",
-  "choices": [
-   "It has a red lamp on the right side of the dolly",
-   "It has an ABS decal on the tow bar",
-   "It has a yellow lamp on the left side of the dolly",
-   "It has a build date stamped before March 1, 1998"
-  ],
-  "answer": 2,
-  "explanation": "Converter dollies built on or after March 1, 1998, are required to have antilock brakes, and these dollies will have a yellow lamp on the left side of the dolly.",
-  "page": "7-1"
- },
- {
-  "id": "s7-004",
-  "section": 7,
-  "sectionName": "Doubles and Triples",
-  "question": "What is a converter gear (converter dolly)?",
-  "choices": [
-   "A gearbox that lets a tractor pull heavier loads",
-   "A sliding device that adjusts the tractor's fifth wheel position forward and back so axle weight can be shifted between the steer and drive axles",
-   "A hydraulic lift used to raise trailer landing gear",
-   "A coupling device of one or two axles and a fifth wheel used to couple a semitrailer to the rear of a tractor-trailer combination"
-  ],
-  "answer": 3,
-  "explanation": "The manual defines a converter gear on a dolly as a coupling device of one or two axles and a fifth wheel by which a semitrailer can be coupled to the rear of a tractor-trailer combination, forming a double bottom rig.",
-  "page": "7-2"
- },
- {
-  "id": "s7-005",
-  "section": 7,
-  "sectionName": "Doubles and Triples",
-  "question": "Before backing the converter dolly under the rear trailer, the trailer height must be:",
-  "choices": [
-   "Exactly level with the top of the fifth wheel",
-   "Slightly lower than the center of the fifth wheel",
-   "Slightly higher than the center of the fifth wheel",
-   "As low as the landing gear will allow"
-  ],
-  "answer": 1,
-  "explanation": "The trailer height must be slightly lower than the center of the fifth wheel, so the trailer is raised slightly when the dolly is pushed under it.",
-  "page": "7-2"
- },
- {
-  "id": "s7-006",
-  "section": 7,
-  "sectionName": "Doubles and Triples",
-  "question": "If the second trailer does not have spring brakes, how can you set its emergency brakes before coupling?",
-  "choices": [
-   "Drive the tractor close, connect the emergency line, charge the trailer air tank, and disconnect the emergency line",
-   "Connect the service line and press the brake pedal several times",
-   "Open the trailer air tank petcock and let the air drain out",
-   "Back the converter dolly under the trailer and pull firmly against the kingpin so the locking jaws hold the trailer still"
-  ],
-  "answer": 0,
-  "explanation": "Connecting the emergency line, charging the trailer air tank, and then disconnecting the emergency line will set the trailer emergency brakes if the slack adjusters are correctly adjusted. Chock the wheels if you have any doubt about the brakes.",
-  "page": "7-1"
- },
- {
-  "id": "s7-007",
-  "section": 7,
-  "sectionName": "Doubles and Triples",
-  "question": "Why should you never unlock the pintle hook while the dolly is still under the rear trailer?",
-  "choices": [
-   "The rear trailer's brakes will automatically release",
-   "The kingpin locking jaws could be damaged",
-   "The dolly tow bar may fly up, possibly causing injury and making it very difficult to re-couple",
-   "Air pressure will immediately drain from the entire brake system, setting every brake on the rig"
-  ],
-  "answer": 2,
-  "explanation": "If the pintle hook is unlocked with the dolly still under the rear trailer, the dolly tow bar may fly up, possibly causing injury, and making it very difficult to re-couple.",
-  "page": "7-3"
- },
- {
-  "id": "s7-008",
-  "section": 7,
-  "sectionName": "Doubles and Triples",
-  "question": "During an inspection of a set of doubles, the shut-off valves in the service and emergency lines should be:",
-  "choices": [
-   "Open at the rear of all trailers",
-   "Closed at the rear of all trailers",
-   "Closed at the rear of the front trailer and open at the rear of the last trailer",
-   "Open at the rear of the front trailer and closed at the rear of the last trailer"
-  ],
-  "answer": 3,
-  "explanation": "The manual states the shut-off valves at the rear of front trailers must be OPEN and the valves at the rear of the last trailer must be CLOSED.",
-  "page": "7-3"
- },
- {
-  "id": "s7-009",
-  "section": 7,
-  "sectionName": "Doubles and Triples",
-  "question": "During a walk-around inspection, the converter dolly air tank drain valve should be:",
-  "choices": [
-   "Open",
-   "Closed",
-   "Halfway open",
-   "Removed for cleaning"
-  ],
-  "answer": 1,
-  "explanation": "The manual states the converter dolly air tank drain valve should be CLOSED during inspection.",
-  "page": "7-4"
- },
- {
-  "id": "s7-010",
-  "section": 7,
-  "sectionName": "Doubles and Triples",
-  "question": "When checking that air flows to all trailers, what shows you that the entire system is charged?",
-  "choices": [
-   "You hear air escaping when you open the emergency line shut-off valve at the rear of the last trailer",
-   "The air pressure gauge in the cab reads zero",
-   "The trailer air supply knob pops out",
-   "The service brakes apply automatically at every wheel position as soon as the last glad hand is connected"
-  ],
-  "answer": 0,
-  "explanation": "After charging the system, you go to the rear of the rig and open the emergency line shut-off valve at the rear of the last trailer. Hearing air escaping shows the entire system is charged.",
-  "page": "7-4"
- },
- {
-  "id": "s7-011",
-  "section": 7,
-  "sectionName": "Doubles and Triples",
-  "question": "When testing the tractor protection valve, the trailer air supply control should pop out when air pressure falls into what range (as usually specified by the manufacturer)?",
-  "choices": [
-   "60 to 80 psi",
-   "100 to 120 psi",
-   "20 to 45 psi",
-   "5 to 10 psi"
-  ],
-  "answer": 2,
-  "explanation": "The trailer air supply control should pop out (or go from \"normal\" to \"emergency\" position) when the air pressure falls into the range specified by the manufacturer, usually within 20 to 45 psi.",
-  "page": "7-4"
- },
- {
-  "id": "s7-012",
-  "section": 7,
-  "sectionName": "Doubles and Triples",
-  "question": "When making a visual check of the coupling between the dolly and the rear trailer, what should you look for?",
-  "choices": [
-   "A small gap between the upper and lower fifth wheel",
-   "The locking jaws fully closed on the head of the kingpin rather than closed around its shank",
-   "The landing gear fully lowered to the ground",
-   "No space between the upper and lower fifth wheel, and locking jaws closed on the kingpin"
-  ],
-  "answer": 3,
-  "explanation": "The visual check of coupling should confirm there is no space between the upper and lower fifth wheel and that the locking jaws are closed on the kingpin.",
-  "page": "7-2"
- },
- {
-  "id": "s7-013",
-  "section": 7,
-  "sectionName": "Doubles and Triples",
-  "question": "To prevent trailers from rolling over when pulling doubles or triples, you should:",
-  "choices": [
-   "Steer gently and go slowly around corners, ramps, and curves",
-   "Take curves at the same speed as a single trailer combination",
-   "Brake hard while turning to keep speed down",
-   "Keep the lighter trailer directly behind the tractor"
-  ],
-  "answer": 0,
-  "explanation": "To prevent trailers from rolling over you must steer gently and go slowly around corners, on ramps, off ramps, and curves. A safe speed for a straight truck or single trailer combination may be too fast for doubles or triples.",
-  "page": "7-1"
- },
- {
-  "id": "s7-014",
-  "section": 7,
-  "sectionName": "Doubles and Triples",
-  "question": "Why must you be especially careful driving doubles and triples in bad weather, slippery conditions, or mountain driving?",
-  "choices": [
-   "The trailers block your mirrors more than other vehicles",
-   "You have greater length and more dead axles to pull, so there is more chance for skids and loss of traction",
-   "Antilock brakes do not work in bad weather",
-   "The converter dolly brakes lock automatically on slippery roads, dragging the rear trailer until traction returns"
-  ],
-  "answer": 1,
-  "explanation": "With doubles and triples you have greater length and more dead axles to pull with your drive axles than other drivers, so there is more chance for skids and loss of traction in adverse conditions.",
-  "page": "7-1"
- },
- {
-  "id": "s7-015",
-  "section": 7,
-  "sectionName": "Doubles and Triples",
-  "question": "When parking a doubles or triples rig, you should make sure that:",
-  "choices": [
-   "You park close to a wall so the rear trailer is protected",
-   "You park on a slight downgrade for an easier start",
-   "You do not get in a spot you cannot pull straight through",
-   "You always back into the parking spot"
-  ],
-  "answer": 2,
-  "explanation": "The manual says to make sure you do not get in a spot you cannot pull straight through, and to be aware of how parking lots are arranged to avoid a long and difficult escape.",
-  "page": "7-1"
- },
- {
-  "id": "s7-016",
-  "section": 7,
-  "sectionName": "Doubles and Triples",
-  "question": "How do you test the trailer emergency brakes?",
-  "choices": [
-   "Apply the foot brake hard while driving at low speed",
-   "Open the emergency line shut-off valve at the rear of the last trailer while parked, and watch whether the air pressure gauge in the cab falls as the system bleeds down",
-   "Pump the brake pedal with the engine off until the low air warning comes on",
-   "Charge the trailer air brake system, check that the trailer rolls freely, then pull out the trailer air supply control and pull gently on the trailer with the tractor"
-  ],
-  "answer": 3,
-  "explanation": "To test the trailer emergency brakes, charge the trailer air brake system and check that the trailer rolls freely, then stop, pull out the trailer air supply control (or place it in the emergency position), and pull gently on the trailer with the tractor to check that the emergency brakes are on.",
-  "page": "7-4"
- },
- {
-  "id": "s7-017",
-  "section": 7,
-  "sectionName": "Doubles and Triples",
-  "question": "How should trailer service brakes be tested, and how should they be controlled in normal operation?",
-  "choices": [
-   "Tested with the hand valve (trolley valve), but controlled in normal operation with the foot pedal",
-   "Tested with the foot pedal, but controlled in normal operation with the hand valve",
-   "Both tested and controlled only with the hand valve",
-   "Tested by pulling out the trailer air supply knob while moving"
-  ],
-  "answer": 0,
-  "explanation": "The trailer brakes should be tested with the hand valve, but controlled in normal operation with the foot pedal, which applies air to the service brakes at all wheels.",
-  "page": "7-4"
- },
- {
-  "id": "s7-018",
-  "section": 7,
-  "sectionName": "Doubles and Triples",
-  "question": "When inspecting the lower fifth wheel, the locking jaws should be:",
-  "choices": [
-   "Around the head of the kingpin",
-   "Around the shank of the kingpin, not the head",
-   "Resting against the glide plate",
-   "In the fully open position"
-  ],
-  "answer": 1,
-  "explanation": "During the coupling system inspection, the locking jaws must be around the shank of the kingpin, not the head.",
-  "page": "7-3"
- },
- {
-  "id": "s7-019",
-  "section": 7,
-  "sectionName": "Doubles and Triples",
-  "question": "How do you uncouple a triple-trailer rig?",
-  "choices": [
-   "Uncouple the first trailer from the tractor before touching the dollies",
-   "Unhitch both dollies at the same time, then pull the tractor clear",
-   "Uncouple the third trailer by pulling the dolly out and unhitching it, then uncouple the rest as you would a double-bottom rig",
-   "Lower all landing gear on both trailers and the dolly, then pull the entire rig apart in one careful straight-line move"
-  ],
-  "answer": 2,
-  "explanation": "The manual says to uncouple the third trailer by pulling the dolly out, then unhitching the dolly using the method for uncoupling doubles, and then uncouple the remainder of the rig as you would any double-bottom rig.",
-  "page": "7-3"
- },
- {
-  "id": "s7-020",
-  "section": 7,
-  "sectionName": "Doubles and Triples",
-  "question": "After backing the converter dolly under the rear trailer, why do you raise the landing gear slightly off the ground before testing the coupling?",
-  "choices": [
-   "To make it easier to connect the air hoses",
-   "To lower the trailer onto the fifth wheel",
-   "To let the trailer brakes release",
-   "To prevent damage if the trailer moves"
-  ],
-  "answer": 3,
-  "explanation": "The coupling steps say to raise the landing gear slightly off the ground to prevent damage if the trailer moves, before testing the coupling by pulling against the pin of the second semitrailer.",
-  "page": "7-2"
- },
- {
-  "id": "s7-021",
-  "section": 7,
-  "sectionName": "Doubles and Triples",
-  "question": "Why do doubles and triples need extra space on the road?",
-  "choices": [
-   "Their trailers are wider than a standard single trailer, so they take up parts of two lanes at highway speed",
-   "Their dollies swing outside the traffic lane whenever the rig moves faster than about 30 miles per hour",
-   "They are longer and cannot be turned or stopped suddenly, so they need larger gaps and more following distance",
-   "The law requires other vehicles to stay at least 500 feet away from them at all times on the highway"
-  ],
-  "answer": 2,
-  "explanation": "Doubles and triples take up more space: they are longer and cannot be turned or stopped suddenly, so you must allow more following distance and make sure you have large enough gaps before entering or crossing traffic.",
-  "page": "7-1"
- },
- {
-  "id": "s7-022",
-  "section": 7,
-  "sectionName": "Doubles and Triples",
-  "question": "When parking a doubles or triples rig, what should you look for?",
-  "choices": [
-   "A spot on soft ground so the trailer wheels cannot roll while you are away from the rig",
-   "A spot you can pull straight through, so you do not get stuck needing a long and difficult escape",
-   "A spot where the rig must be backed in, because backing out later is easier with two trailers",
-   "The closest space to the building entrance, whatever amount of backing it takes to get into the space"
-  ],
-  "answer": 1,
-  "explanation": "Make sure you do not get into a spot you cannot pull straight through; be aware of how parking lots are arranged to avoid a long and difficult escape.",
-  "page": "7-1"
- },
- {
-  "id": "s7-023",
-  "section": 7,
-  "sectionName": "Doubles and Triples",
-  "question": "Converter dollies built on or after March 1, 1998 are required to have:",
-  "choices": [
-   "Antilock brakes (shown by a yellow lamp on the left side)",
-   "Spring brakes on both dolly axles (shown by a red decal on the tongue)",
-   "A sliding fifth wheel with locking pins",
-   "Hydraulic surge brakes on the tow bar"
-  ],
-  "answer": 0,
-  "explanation": "Converter dollies built on or after March 1, 1998 are required to have antilock brakes; these dollies have a yellow lamp on the left side.",
-  "page": "7-1"
- },
- {
-  "id": "s7-024",
-  "section": 7,
-  "sectionName": "Doubles and Triples",
-  "question": "Before uncoupling the rear trailer of a set of doubles, how should you park the rig?",
-  "choices": [
-   "With the rear trailer angled slightly left",
-   "On a slight downgrade with wheels turned",
-   "With the dolly already clear of the trailer",
-   "In a straight line on firm, level ground"
-  ],
-  "answer": 3,
-  "explanation": "To uncouple the rear trailer, park the rig in a straight line on firm level ground, then apply the parking brakes so the rig will not move.",
-  "page": "7-2"
- },
- {
-  "id": "s7-025",
-  "section": 7,
-  "sectionName": "Doubles and Triples",
-  "question": "What can happen if the tractor protection valve does not work properly?",
-  "choices": [
-   "The trailer service brakes will drag and overheat on every long downhill grade, even when the brake pedal has been fully released by the driver",
-   "The service brakes will apply only on the tractor's steering axle",
-   "An air hose or trailer brake leak could drain all the air from the tractor, bringing the emergency brakes on with possible loss of control",
-   "The dolly's air tank will overfill and lift the safety valve"
-  ],
-  "answer": 2,
-  "explanation": "If the tractor protection valve does not work properly, an air hose or trailer brake leak could drain all the air from the tractor, causing the emergency brakes to come on with possible loss of control.",
-  "page": "7-4"
+  "explanation": "Every crewmember used on a flight must be briefed on the operation and the planned emergency procedures. That briefing covers any visual observers and any non-certificated person who is allowed to manipulate the flight controls, not just certificate holders.",
+  "page": "35"
  },
  {
   "id": "s8-001",
   "section": 8,
-  "sectionName": "Tank Vehicles",
-  "question": "A tank endorsement is required when hauling a liquid or liquid gas in a tank or tanks with what rated capacities (for a vehicle needing a Class A or B CDL)?",
+  "sectionName": "Radio Communications",
+  "question": "Remote pilots are not expected to transmit on aviation frequencies, so why should they still learn aviation radio language?",
   "choices": [
-   "An individual rated capacity of more than 500 gallons and an aggregate of 2,000 gallons or more",
-   "Any tank permanently attached to the vehicle, regardless of size",
-   "An individual rated capacity of more than 119 gallons and an aggregate rated capacity of 1,000 gallons or more",
-   "An individual rated capacity of more than 1,000 gallons only"
+   "A radio lets them follow nearby traffic and build situational awareness",
+   "They must read back every ATC clearance that applies to their operating area",
+   "They are required to relay traffic advisories to manned aircraft in the pattern",
+   "They must log all radio traffic they overhear during each flight"
   ],
-  "answer": 2,
-  "explanation": "A tank endorsement is required if your vehicle needs a Class A or B CDL and you haul a liquid or liquid gas in a tank or tanks having an individual rated capacity of more than 119 gallons and an aggregate rated capacity of 1,000 gallons or more.",
-  "page": "8-8"
+  "answer": 0,
+  "explanation": "Small UA pilots are not expected to communicate over radio frequencies, but understanding the conversations they hear lets them use a radio as an aid to situational awareness while operating in the National Airspace System.",
+  "page": "39"
  },
  {
   "id": "s8-002",
   "section": 8,
-  "sectionName": "Tank Vehicles",
-  "question": "On all tank vehicles, what is the most important item to check for during an inspection?",
+  "sectionName": "Radio Communications",
+  "question": "What has ICAO adopted for pilots to use when identifying their aircraft to ATC?",
   "choices": [
-   "Leaks",
-   "Tire tread depth",
-   "The fire extinguisher charge",
-   "The vapor recovery kit"
+   "A phonetic alphabet with a spoken word standing for each letter",
+   "Plain English letter names spoken slowly and repeated twice",
+   "A numeric identification code assigned by the FAA to each airframe",
+   "Morse code tones keyed briefly over the voice frequency"
   ],
   "answer": 0,
-  "explanation": "The manual states that on all tank vehicles, the most important item to check for is leaks. Check under and around the vehicle for signs of any leaking.",
-  "page": "8-8"
+  "explanation": "ICAO has adopted a phonetic alphabet for radio communications, and pilots should use it to identify their aircraft when communicating with ATC. That is why the study guide's example aircraft identifies itself on the radio as \"Cessna 123 Bravo Foxtrot.\"",
+  "page": "39"
  },
  {
   "id": "s8-003",
   "section": 8,
-  "sectionName": "Tank Vehicles",
-  "question": "What can happen if you carry liquids or gases in a leaking tank?",
+  "sectionName": "Radio Communications",
+  "question": "Which reference helps a pilot learn standard radio terminology?",
   "choices": [
-   "You will only receive a written warning",
-   "It is a crime; you will be cited, prevented from driving further, and may be liable for the clean-up of any spill",
-   "You may continue driving to the nearest repair facility as long as you slow down and keep off limited access highways",
-   "Nothing, as long as the leak is small"
+   "The Pilot/Controller Glossary in the AIM",
+   "The legend pages printed on every sectional chart",
+   "The airport listings in the Chart Supplement U.S.",
+   "The definitions section of 14 CFR part 107"
   ],
-  "answer": 1,
-  "explanation": "Carrying liquids or gases in a leaking tank is a crime. You will be cited and prevented from driving further, and you may also be liable for the clean-up of any spill.",
-  "page": "8-8"
+  "answer": 0,
+  "explanation": "Reviewing the Pilot/Controller Glossary contained in the Aeronautical Information Manual helps a pilot understand standard radio terminology, and the AIM also contains many examples of radio communications.",
+  "page": "39"
  },
  {
   "id": "s8-004",
   "section": 8,
-  "sectionName": "Tank Vehicles",
-  "question": "Because of a tank vehicle's high center of gravity, how should you take highway curves and on ramp/off ramp curves?",
+  "sectionName": "Radio Communications",
+  "question": "Even while monitoring the CTAF, why must a remote pilot keep visually scanning for aircraft near a non-towered airport?",
   "choices": [
-   "At the posted speed limit",
-   "Slightly above the posted speed to maintain momentum",
-   "At the posted speed, but only in dry weather",
-   "Well below the posted speeds"
+   "Radio calls there are good practice for manned pilots but not required by regulation",
+   "The CTAF carries only recorded weather during daytime operating hours",
+   "Position reports on the CTAF are limited to aircraft flying instrument approaches",
+   "Manned aircraft switch to an air-to-air frequency once inside the traffic pattern"
   ],
-  "answer": 3,
-  "explanation": "High center of gravity makes the vehicle top-heavy and easy to roll over, and tests have shown that tankers can turn over at the speed limits posted for curves. Take curves well below the posted speeds.",
-  "page": "8-8"
+  "answer": 0,
+  "explanation": "Radio broadcasts in the vicinity of a non-towered airport are good operating procedure for manned aircraft, but by regulation they are not mandatory. A remote pilot must therefore always look for other aircraft in the area and treat the radio as an extra layer of situational awareness, not a substitute for scanning.",
+  "page": "41"
  },
  {
   "id": "s8-005",
   "section": 8,
-  "sectionName": "Tank Vehicles",
-  "question": "What causes liquid surge in a tank vehicle?",
+  "sectionName": "Radio Communications",
+  "question": "At an airport without an operating control tower, what are the three ways pilots can communicate their intentions and obtain traffic information?",
   "choices": [
-   "Movement of the liquid in partially filled tanks",
-   "Overfilling the tank past its rated capacity",
-   "Air pressure building up inside a sealed tank",
-   "Driving with the manhole covers open"
+   "Communicating with an FSS, with a UNICOM operator, or by self-announcing",
+   "Calling approach control, monitoring the ATIS, or using light gun signals",
+   "Contacting the overlying center, phoning the airport manager, or squawking 1200",
+   "Monitoring the ATIS, contacting clearance delivery, or calling flight watch"
   ],
   "answer": 0,
-  "explanation": "Liquid surge results from movement of the liquid in partially filled tanks, and this movement can have bad effects on handling.",
-  "page": "8-8"
+  "explanation": "At an airport with no operating tower, pilots have three ways to communicate intentions and get airport and traffic information: communicating with a flight service station, communicating with a UNICOM operator, or making a self-announce broadcast.",
+  "page": "40"
  },
  {
   "id": "s8-006",
   "section": 8,
-  "sectionName": "Tank Vehicles",
-  "question": "You are stopped on ice in a liquid tanker with a partially filled tank. What can liquid surge do?",
+  "sectionName": "Radio Communications",
+  "question": "How are the features of an automated UNICOM system typically selected?",
   "choices": [
-   "Cause the engine to stall",
-   "Lock the trailer brakes",
-   "Shove the stopped truck out into an intersection",
-   "Tip the tank backward onto the rear axles"
+   "By microphone clicks on the UNICOM frequency",
+   "By keying a four-digit code on the transponder",
+   "By tuning a separate secondary frequency for each feature",
+   "By speaking the airport identifier followed by a feature name"
   ],
-  "answer": 2,
-  "explanation": "When the liquid wave hits the end of the tank, it tends to push the truck in the direction the wave is moving. On a slippery surface such as ice, the wave can shove a stopped truck out into an intersection.",
-  "page": "8-8"
+  "answer": 0,
+  "explanation": "Many airports provide automated weather, radio check capability, and airport advisory information through an automated UNICOM system. Its features are typically selectable by microphone clicks on the UNICOM frequency, and availability is published in the Airport/Facility Directory and on approach charts.",
+  "page": "40"
  },
  {
   "id": "s8-007",
   "section": 8,
-  "sectionName": "Tank Vehicles",
-  "question": "When loading and unloading a tank divided into several smaller tanks by bulkheads, the driver must pay special attention to:",
+  "sectionName": "Radio Communications",
+  "question": "What is a Common Traffic Advisory Frequency (CTAF) designated for?",
   "choices": [
-   "The color coding of each compartment",
-   "Weight distribution, so there is not too much weight on the front or rear of the vehicle",
-   "Keeping every compartment completely full so the liquid has no room to surge while in motion",
-   "Loading the rear compartments first"
+   "Airport advisory practices at an airport without an operating control tower",
+   "Takeoff and landing clearances issued by a controller at a remote facility",
+   "Continuous recorded weather broadcasts at airports with part-time towers",
+   "Coordinating IFR clearance delivery with the overlying air route center"
   ],
-  "answer": 1,
-  "explanation": "When loading and unloading the smaller tanks created by bulkheads, the driver must pay attention to weight distribution and not put too much weight on the front or rear of the vehicle.",
-  "page": "8-8"
+  "answer": 0,
+  "explanation": "A CTAF is a frequency designated for carrying out airport advisory practices while operating to or from an airport that has no operating control tower. Selecting the correct common frequency is the key to communications at such an airport.",
+  "page": "40"
  },
  {
   "id": "s8-008",
   "section": 8,
-  "sectionName": "Tank Vehicles",
-  "question": "How are baffles different from bulkheads?",
+  "sectionName": "Radio Communications",
+  "question": "Which kinds of frequencies can serve as an airport's CTAF?",
   "choices": [
-   "Baffles are solid dividers, while bulkheads have holes in them",
-   "Baffles divide the tank into completely separate compartments that can each be loaded with a different liquid product",
-   "Baffles are only found in food-grade tankers",
-   "Baffles are bulkheads with holes that let the liquid flow through, helping control forward and backward surge"
+   "A UNICOM, MULTICOM, FSS, or tower frequency",
+   "Only a UNICOM frequency assigned by the FCC",
+   "Only a MULTICOM or guard frequency",
+   "An ATIS, AWOS, or approach control frequency"
   ],
-  "answer": 3,
-  "explanation": "Baffled liquid tanks have bulkheads in them with holes that let the liquid flow through. The baffles help control the forward and backward liquid surge, while solid bulkheads divide the tank into smaller separate tanks.",
-  "page": "8-8"
+  "answer": 0,
+  "explanation": "The CTAF may be a UNICOM, MULTICOM, FSS, or tower frequency, and it is identified in the appropriate aeronautical publications so pilots can find the correct one for each airport.",
+  "page": "40"
  },
  {
   "id": "s8-009",
   "section": 8,
-  "sectionName": "Tank Vehicles",
-  "question": "Even in a baffled tank, which type of liquid surge can still occur and cause a rollover?",
+  "sectionName": "Radio Communications",
+  "question": "Which frequency is used at a non-towered airport that has no FSS or UNICOM?",
   "choices": [
-   "Side-to-side surge",
-   "Forward surge only",
-   "Backward surge only",
-   "Vertical surge"
+   "The MULTICOM frequency of 122.9",
+   "The UNICOM frequency of 122.8",
+   "The flight service frequency of 122.2",
+   "The emergency frequency of 121.5"
   ],
   "answer": 0,
-  "explanation": "Baffles help control the forward and backward liquid surge, but side-to-side surge can still occur, and this can cause a rollover.",
-  "page": "8-8"
+  "explanation": "When a non-towered airport has no flight service station and no UNICOM, the MULTICOM frequency of 122.9 is used for traffic advisory broadcasts.",
+  "page": "40"
  },
  {
   "id": "s8-010",
   "section": 8,
-  "sectionName": "Tank Vehicles",
-  "question": "Why are un-baffled (smooth bore) tanks usually used to transport food products such as milk?",
+  "sectionName": "Radio Communications",
+  "question": "Most non-towered airports use a UNICOM frequency of 122.8, but where should a remote pilot verify the correct frequency for a specific airport?",
   "choices": [
-   "Food liquids do not surge like other liquids",
-   "Smooth bore tanks are lighter than baffled tanks",
-   "Sanitation regulations forbid the use of baffles because of the difficulty in cleaning the inside of the tank",
-   "Baffles would contaminate the food with metal shavings and are too costly to install in food-grade tanks"
+   "On the sectional chart or in the FAA Chart Supplements publication",
+   "In the Pilot/Controller Glossary section of the AIM",
+   "By radio check with the nearest operating control tower",
+   "In the subpart of 14 CFR part 107 covering airport operations"
   ],
-  "answer": 2,
-  "explanation": "Un-baffled tanks are usually those that transport food products such as milk because sanitation regulations forbid the use of baffles due to the difficulty in cleaning the inside of the tank. Forward-and-back surge is very strong in these tanks.",
-  "page": "8-8"
+  "answer": 0,
+  "explanation": "Although the UNICOM frequency is usually 122.8, it can vary where many non-towered airports are close together, so the correct frequency should always be checked next to the airport symbol on the sectional chart or in the FAA's Chart Supplements publication.",
+  "page": "40"
  },
  {
   "id": "s8-011",
   "section": 8,
-  "sectionName": "Tank Vehicles",
-  "question": "What is \"outage\"?",
+  "sectionName": "Radio Communications",
+  "question": "At what distance from a non-towered airport does an inbound manned aircraft normally make its first broadcast in the blind?",
   "choices": [
-   "The amount of liquid lost through leaks during transit",
-   "Room left in a cargo tank for the liquid to expand as it warms",
-   "The time a tanker spends out of service for cleaning",
-   "The difference between a tank's rated and actual capacity"
+   "10 miles from the airport",
+   "5 miles from the airport",
+   "15 miles from the airport",
+   "20 miles from the airport"
   ],
-  "answer": 1,
-  "explanation": "You must never load a cargo tank totally full because liquids expand as they warm. The room you leave for the expanding liquid is called outage, and different liquids require different amounts of outage.",
-  "page": "8-8"
+  "answer": 0,
+  "explanation": "Standard operating practice is for an inbound pilot to broadcast in the blind when 10 miles from the airport. That initial call also states the aircraft's position north, south, east, or west of the field, for example \"10 miles south inbound for landing.\"",
+  "page": "40"
  },
  {
   "id": "s8-012",
   "section": 8,
-  "sectionName": "Tank Vehicles",
-  "question": "The amount of liquid to load into a tank depends on which of the following?",
+  "sectionName": "Radio Communications",
+  "question": "Why does a pilot state the airport name at both the beginning and the end of a self-announce broadcast?",
   "choices": [
-   "The amount the liquid will expand in transit",
-   "The weight of the liquid",
-   "Legal weight limits",
-   "All of the above"
+   "So others on the frequency can confirm which airport the call refers to",
+   "To satisfy an FCC station identification requirement for each transmission",
+   "To give the UNICOM operator time to prepare a reply with wind and runway",
+   "To signal that the transmission is complete and the frequency is free"
   ],
-  "answer": 3,
-  "explanation": "The manual lists three things that determine how much liquid to load: the amount the liquid will expand in transit, the weight of the liquid, and legal weight limits. A full tank of dense liquid such as some acids may exceed legal weight limits.",
-  "page": "8-8"
+  "answer": 0,
+  "explanation": "A broadcasting aircraft uses the name of the airport of intended landing at the beginning and again at the end of the broadcast. Stating the name twice lets others sharing the frequency confirm where that aircraft is going, since several airports may share one frequency.",
+  "page": "41"
  },
  {
   "id": "s8-013",
   "section": 8,
-  "sectionName": "Tank Vehicles",
-  "question": "To help control surge when coming to a stop in a tank vehicle, you should:",
+  "sectionName": "Radio Communications",
+  "question": "An aircraft that lands straight-in at a non-towered airport without flying the rectangular traffic pattern is usually doing what?",
   "choices": [
-   "Keep a steady pressure on the brakes and not release too soon",
-   "Pump the brakes rapidly to settle the liquid",
-   "Release the brakes just before stopping to let the liquid settle",
-   "Downshift and use only engine braking"
+   "Executing an instrument approach",
+   "Practicing a short-field landing technique",
+   "Complying with a local noise abatement procedure",
+   "Following instructions from the UNICOM operator"
   ],
   "answer": 0,
-  "explanation": "To control surge, keep a steady pressure on the brakes and do not release too soon when coming to a stop. Also brake far in advance of a stop and increase your following distance.",
-  "page": "8-8"
+  "explanation": "Instead of the standard 45 degree entry to the downwind leg, an aircraft may land straight-in without entering the rectangular traffic pattern. Aircraft executing an instrument approach usually use this method, announcing it with a call such as \"one mile north of the airport, GPS runway 18, full stop landing.\"",
+  "page": "41"
  },
  {
   "id": "s8-014",
   "section": 8,
-  "sectionName": "Tank Vehicles",
-  "question": "How does an empty tank vehicle's stopping distance compare with a full one's?",
+  "sectionName": "Radio Communications",
+  "question": "When should a remote pilot transmit over an active aviation frequency?",
   "choices": [
-   "Empty tankers always stop in half the distance",
-   "Empty tank vehicles may take longer to stop than full ones",
-   "Stopping distance is the same whether empty or full",
-   "Empty tankers can only be stopped with the parking brake"
-  ],
-  "answer": 1,
-  "explanation": "The manual states that empty tank vehicles may take longer to stop than full ones, and also reminds drivers that wet roads double the normal stopping distance.",
-  "page": "8-8"
- },
- {
-  "id": "s8-015",
-  "section": 8,
-  "sectionName": "Tank Vehicles",
-  "question": "Which of the following must you never do when operating a tank vehicle?",
-  "choices": [
-   "Slow down before curves and accelerate slightly through them",
-   "Increase your following distance",
-   "Drive with open valves or manhole covers",
-   "Use controlled or stab braking in an emergency stop"
-  ],
-  "answer": 2,
-  "explanation": "The manual states you must never drive a tank vehicle with open valves or manhole covers. The other choices are all correct safe-driving practices for tank vehicles.",
-  "page": "8-8"
- },
- {
-  "id": "s8-016",
-  "section": 8,
-  "sectionName": "Tank Vehicles",
-  "question": "When inspecting a tank vehicle's manhole covers and vents, you should make sure:",
-  "choices": [
-   "The covers are left slightly open so pressure cannot build up inside the tank while driving",
-   "The covers have gaskets and close correctly, and the vents are clear so they work correctly",
-   "The vents are sealed shut with tape so no vapor can escape while the tank is fully loaded",
-   "The covers have been removed and stored in the cab so inspectors can see inside the tank"
-  ],
-  "answer": 1,
-  "explanation": "Check manhole covers and vents: make sure the covers have gaskets and close correctly, and keep the vents clear so they work correctly. Never drive a tank vehicle with open manhole covers.",
-  "page": "8-8"
- },
- {
-  "id": "s8-017",
-  "section": 8,
-  "sectionName": "Tank Vehicles",
-  "question": "Which special purpose equipment must you make sure works, if your tank vehicle has it?",
-  "choices": [
-   "Vapor recovery kits, grounding and bonding cables, emergency shut-off systems, and built-in fire extinguisher",
-   "Cargo heaters, liftgates, automatic tarping systems, and a full backup camera system covering the rear of the tank",
-   "Refrigeration units, tire chains, and an on-board scale for weighing the cargo",
-   "A portable generator, spare hoses of every diameter, and a hand spotlight"
+   "Only when there is an emergency situation",
+   "Before every launch and recovery near an airport",
+   "Whenever a manned aircraft reports entering the traffic pattern",
+   "At regular intervals for as long as the small UA is airborne"
   ],
   "answer": 0,
-  "explanation": "If your vehicle has special purpose equipment such as vapor recovery kits, grounding and bonding cables, emergency shut-off systems, or a built-in fire extinguisher, make sure it works.",
-  "page": "8-8"
- },
- {
-  "id": "s8-018",
-  "section": 8,
-  "sectionName": "Tank Vehicles",
-  "question": "Before loading, unloading, or moving a tank vehicle, what must you check about the intake, discharge, and cut-off valves?",
-  "choices": [
-   "That they are all removed for cleaning",
-   "That they are all fully open at all times",
-   "That they are painted the correct color",
-   "That they are in the correct position"
-  ],
-  "answer": 3,
-  "explanation": "Check the intake, discharge, and cut-off valves, and make sure the valves are in the correct position before loading, unloading, or moving the vehicle.",
-  "page": "8-8"
- },
- {
-  "id": "s8-019",
-  "section": 8,
-  "sectionName": "Tank Vehicles",
-  "question": "If you must make a quick stop in a tank vehicle to avoid a crash, you should:",
-  "choices": [
-   "Apply the parking brake first to anchor the trailer, then steer around the hazard",
-   "Swerve around the hazard first and brake only once the vehicle is again traveling in a completely straight line",
-   "Use controlled or stab braking, remembering that steering quickly while braking may roll the vehicle over",
-   "Downshift two gears and let engine braking bring the vehicle to a complete stop"
-  ],
-  "answer": 2,
-  "explanation": "If you must make a quick stop to avoid a crash, use controlled or stab braking, and remember that if you steer quickly while braking, your vehicle may roll over.",
-  "page": "8-8"
- },
- {
-  "id": "s8-020",
-  "section": 8,
-  "sectionName": "Tank Vehicles",
-  "question": "How do wet roads affect the stopping distance of a tank vehicle?",
-  "choices": [
-   "They add about ten percent to the distance",
-   "They double the normal stopping distance",
-   "They have no effect if the tank is baffled",
-   "They halve the distance because tires cool"
-  ],
-  "answer": 1,
-  "explanation": "Keep in mind how much space you need to stop your vehicle; wet roads double the normal stopping distance.",
-  "page": "8-8"
- },
- {
-  "id": "s8-021",
-  "section": 8,
-  "sectionName": "Tank Vehicles",
-  "question": "What can happen if you over steer, over accelerate, or over brake a tank trailer?",
-  "choices": [
-   "The vehicle may skid, and a drive or trailer wheel skid can cause a jackknife",
-   "The baffles inside the tank will collapse and block the discharge valves",
-   "The outage space will disappear and the liquid will expand out of the vents",
-   "The tank vents will freeze closed and pressure will build inside the tank"
-  ],
-  "answer": 0,
-  "explanation": "Don't over steer, over accelerate, or over brake, or your vehicle may skid; on tank trailers, if your drive wheels or trailer wheels begin to skid, your vehicle may jackknife.",
-  "page": "8-8"
- },
- {
-  "id": "s8-022",
-  "section": 8,
-  "sectionName": "Tank Vehicles",
-  "question": "Why may you often only partially fill a tank with heavy liquids such as some acids?",
-  "choices": [
-   "Heavy liquids corrode the tank shell if loaded too full",
-   "Partial loads make forward and backward surge weaker",
-   "Dense liquids cannot be pumped out of a full tank",
-   "A full tank of dense liquid may exceed legal weight limits"
-  ],
-  "answer": 3,
-  "explanation": "A full tank of dense liquid, such as some acids, may exceed legal weight limits, so you may often only partially fill tanks with heavy liquids.",
-  "page": "8-8"
- },
- {
-  "id": "s8-023",
-  "section": 8,
-  "sectionName": "Tank Vehicles",
-  "question": "How should you take a curve in a tank vehicle?",
-  "choices": [
-   "Accelerate before the curve and coast through it in neutral",
-   "Brake hard through the entire curve to keep the liquid still",
-   "Slow down before the curve, then accelerate slightly through it",
-   "Hold exactly the posted speed, which is rated for all vehicles"
-  ],
-  "answer": 2,
-  "explanation": "Slow down before curves, then accelerate slightly through the curve; the posted speed for a curve may be too fast for a tank vehicle.",
-  "page": "8-8"
- },
- {
-  "id": "s8-024",
-  "section": 8,
-  "sectionName": "Tank Vehicles",
-  "question": "Does the liquid or gas in your tank have to be a hazardous material for the tank endorsement to be required?",
-  "choices": [
-   "Yes; only hazardous materials in bulk require the endorsement",
-   "No; the endorsement is based on the tank capacities, not on what the tank carries",
-   "Yes, unless the tank is permanently attached to the chassis",
-   "No, but the endorsement for non-hazardous loads is only required on interstate trips"
-  ],
-  "answer": 1,
-  "explanation": "The liquid or gas does not have to be a hazardous material; the endorsement depends on hauling liquid or liquid gas in tanks of more than 119 gallons individual and 1,000 gallons or more aggregate rated capacity.",
-  "page": "8-8"
- },
- {
-  "id": "s8-025",
-  "section": 8,
-  "sectionName": "Tank Vehicles",
-  "question": "A Class C vehicle requires a tank endorsement when it:",
-  "choices": [
-   "Transports hazardous materials in liquid or gas form in tanks over 119 gallons individual and 1,000 gallons aggregate rated capacity",
-   "Carries any liquid at all in a portable container larger than a standard 55 gallon drum that has been strapped and secured to the truck bed",
-   "Tows a trailer with a small fuel tank for refueling farm equipment on private property",
-   "Hauls drinking water to job sites in a plastic tank strapped inside the cargo area of the truck"
-  ],
-  "answer": 0,
-  "explanation": "A tank endorsement is also required for Class C vehicles used to transport hazardous materials in liquid or gas form in tanks with an individual rated capacity of more than 119 gallons and an aggregate rated capacity of 1,000 gallons or more.",
-  "page": "8-8"
+  "explanation": "It is good practice for a remote pilot near any airport to carry a radio and monitor the appropriate frequencies, but the remote pilot should refrain from transmitting over any active aviation frequency unless there is an emergency situation.",
+  "page": "41"
  },
  {
   "id": "s9-001",
   "section": 9,
-  "sectionName": "Hazardous Materials",
-  "question": "Before you drive any size vehicle used to transport hazardous materials as defined in 49 CFR 383.5, you must have:",
+  "sectionName": "Determining Performance",
+  "question": "When pressure is held constant, how does air density respond to changes in temperature?",
   "choices": [
-   "A Class A CDL only",
-   "A special federal permit for each trip",
-   "A CDL with a hazardous materials endorsement",
-   "Only a valid regular driver license"
+   "It varies inversely with temperature",
+   "It varies directly with temperature",
+   "It is unaffected by temperature changes",
+   "It varies with the square of the temperature"
   ],
-  "answer": 2,
-  "explanation": "The manual states you must have a CDL with a hazardous materials endorsement, earned by passing a written test, before driving any size vehicle that transports hazardous materials.",
-  "page": "9-1"
+  "answer": 0,
+  "explanation": "At a constant pressure, heating air makes it less dense and cooling air makes it more dense, so density and temperature move in opposite directions. That inverse relationship is why a hot day raises density altitude and cuts into aircraft performance.",
+  "page": "43"
  },
  {
   "id": "s9-002",
   "section": 9,
-  "sectionName": "Hazardous Materials",
-  "question": "Which of the following is a responsibility of the shipper of hazardous materials?",
+  "sectionName": "Determining Performance",
+  "question": "Temperature and pressure both fall as altitude increases, and they push air density in opposite directions. What is the net result a pilot should expect?",
   "choices": [
-   "Placarding the vehicle at loading time and sealing the cargo doors after",
-   "Packaging, marking, and labeling the materials and supplying placards",
-   "Taking the shipment to its destination",
-   "Refusing leaking packages at the dock"
+   "Density decreases, because the pressure drop has the dominating effect",
+   "Density increases, because the temperature drop has the dominating effect",
+   "Density stays the same, because the two effects cancel each other out",
+   "Density increases, because cold air always outweighs pressure changes"
   ],
-  "answer": 1,
-  "explanation": "The shipper must package, mark, and label the materials; prepare shipping papers; provide emergency response information; and supply placards. Transporting and placarding the vehicle are driver/carrier duties.",
-  "page": "9-2"
+  "answer": 0,
+  "explanation": "Falling temperature would raise density while falling pressure would lower it, but the fairly rapid pressure drop with altitude usually dominates. Pilots should therefore expect air density to decrease as altitude increases.",
+  "page": "43"
  },
  {
   "id": "s9-003",
   "section": 9,
-  "sectionName": "Hazardous Materials",
-  "question": "Which task belongs to the carrier in hazardous materials transportation?",
+  "sectionName": "Determining Performance",
+  "question": "How does moist air compare with perfectly dry air?",
   "choices": [
-   "Reporting accidents and incidents involving hazardous materials to the proper government agency",
-   "Determining the product's identification number and packing group",
-   "Supplying placards for the shipment",
-   "Certifying on the shipping paper that the shipment was prepared according to the rules"
+   "It is less dense, because water vapor is lighter than air",
+   "It is more dense, because water vapor adds weight to the air",
+   "It has the same density whenever the temperatures match",
+   "It is less dense only when the temperature is below freezing"
   ],
   "answer": 0,
-  "explanation": "The carrier takes the shipment to its destination, refuses improper shipments, and reports accidents and incidents involving hazardous materials to the proper government agency. The other items are shipper responsibilities.",
-  "page": "9-2"
+  "explanation": "Water vapor weighs less than dry air, so adding moisture makes the air lighter, not heavier. Air is at its least dense when it holds the maximum amount of water vapor it can for the conditions.",
+  "page": "43"
  },
  {
   "id": "s9-004",
   "section": 9,
-  "sectionName": "Hazardous Materials",
-  "question": "As the driver, one of your responsibilities when transporting hazardous materials is to:",
+  "sectionName": "Determining Performance",
+  "question": "As the water vapor content of the air increases, what happens to density altitude and aircraft performance?",
   "choices": [
-   "Determine the material's hazard class and packing group",
-   "Prepare and sign the shipper's certification",
-   "Supply the hazard warning labels for packages",
-   "Refuse leaking packages and shipments"
+   "Density altitude increases and performance decreases",
+   "Density altitude decreases and performance increases",
+   "Density altitude increases and performance increases",
+   "Density altitude decreases and performance decreases"
   ],
-  "answer": 3,
-  "explanation": "The driver makes sure the shipper has properly identified, marked, and labeled the materials; refuses leaking packages and shipments; placards the vehicle when required; and safely transports the shipment without delay.",
-  "page": "9-2"
+  "answer": 0,
+  "explanation": "More water vapor makes the air less dense, which raises density altitude. Higher density altitude means the aircraft performs as if it were flying at a higher altitude, so performance suffers.",
+  "page": "43"
  },
  {
   "id": "s9-005",
   "section": 9,
-  "sectionName": "Hazardous Materials",
-  "question": "Who certifies on the shipping paper that the shipment has been prepared according to the rules?",
+  "sectionName": "Determining Performance",
+  "question": "What does relative humidity measure?",
   "choices": [
-   "The driver, because the driver is the last person to handle the load before it travels",
-   "The shipper (unless you are pulling cargo tanks supplied by you or your employer)",
-   "The carrier's dispatcher",
-   "The consignee"
+   "The water vapor in the air as a percentage of the most it can hold",
+   "The weight of water vapor as a percentage of the air's total weight",
+   "The percentage of flight time an aircraft spends in visible moisture",
+   "The difference between the outside temperature and the dewpoint"
   ],
-  "answer": 1,
-  "explanation": "The shipper certifies on the shipping paper that the shipment was prepared according to the rules; the exception is when the driver is pulling cargo tanks supplied by the driver or the employer.",
-  "page": "9-2"
+  "answer": 0,
+  "explanation": "Relative humidity expresses the amount of water vapor in the atmosphere as a percentage of the maximum the air can hold, and that maximum changes with temperature: warm air can hold more water vapor than cold air. Perfectly dry air is at 0 percent and saturated air is at 100 percent.",
+  "page": "43"
  },
  {
   "id": "s9-006",
   "section": 9,
-  "sectionName": "Hazardous Materials",
-  "question": "How many different hazard classes are there for hazardous materials?",
+  "sectionName": "Determining Performance",
+  "question": "What role does humidity by itself play in calculating density altitude and aircraft performance?",
   "choices": [
-   "Six",
-   "Seven",
-   "Nine",
-   "Twelve"
+   "It contributes, but alone it is usually not an important factor",
+   "It is the dominant factor and matters more than air temperature",
+   "It plays no part at all in density altitude or performance",
+   "It only matters once the relative humidity reaches 100 percent"
   ],
-  "answer": 2,
-  "explanation": "The manual states that a material's hazard class reflects its risks and that there are nine different hazard classes.",
-  "page": "9-3"
+  "answer": 0,
+  "explanation": "Humidity does reduce air density and so contributes to density altitude, but on its own it is usually not considered an important factor in the calculation. Temperature and pressure carry more weight; humidity is a contributing factor rather than a driving one.",
+  "page": "43"
  },
  {
   "id": "s9-007",
   "section": 9,
-  "sectionName": "Hazardous Materials",
-  "question": "Gasoline is an example of which hazard class?",
+  "sectionName": "Determining Performance",
+  "question": "What should a remote pilot keep in mind about the operational performance data that small UA manufacturers publish?",
   "choices": [
-   "Class 2 (Gases)",
-   "Class 4 (Flammable Solids)",
-   "Class 5 (Oxidizers)",
-   "Class 3 (Flammable Liquids)"
+   "It is not standardized from one manufacturer to another",
+   "It must follow a format that the FAA standardizes",
+   "It covers only takeoff and landing distances",
+   "It is interchangeable between any models of similar weight"
   ],
-  "answer": 3,
-  "explanation": "In the hazard class table, Class 3 is Flammable Liquids, and gasoline is the listed example.",
-  "page": "9-3"
+  "answer": 0,
+  "explanation": "Manufacturers may publish data on takeoff, climb, range, endurance, descent, and landing, but the information is not standardized between manufacturers. Understanding what the data means for a specific aircraft is essential for making practical, safe use of its capabilities and limitations.",
+  "page": "43"
  },
  {
   "id": "s9-008",
   "section": 9,
-  "sectionName": "Hazardous Materials",
-  "question": "Division 2.3 covers which type of hazardous material?",
+  "sectionName": "Determining Performance",
+  "question": "If the manufacturer has not published performance data for a small UA, what is an advisable starting point?",
   "choices": [
-   "Flammable gases",
-   "Poisonous/toxic gases",
-   "Non-flammable gases",
-   "Dangerous when wet materials"
-  ],
-  "answer": 1,
-  "explanation": "Division 2.3 is Poisonous/Toxic Gases (example: fluorine, compressed). Division 2.1 is flammable gases and 2.2 is non-flammable gases.",
-  "page": "9-3"
- },
- {
-  "id": "s9-009",
-  "section": 9,
-  "sectionName": "Hazardous Materials",
-  "question": "Battery fluid is an example of which hazard class?",
-  "choices": [
-   "Class 8 (Corrosives)",
-   "Class 6 (Poison)",
-   "Class 9 (Miscellaneous Hazardous Materials)",
-   "Class 5 (Oxidizers)"
+   "Performance data determined and shared by other users of the same model",
+   "Performance data published for a different model by the same manufacturer",
+   "Conservative estimates taken from the FAA's own performance tables",
+   "The default performance limits programmed into the control station"
   ],
   "answer": 0,
-  "explanation": "Class 8 is Corrosives, and battery fluid is the example given in the hazard class table.",
-  "page": "9-3"
- },
- {
-  "id": "s9-010",
-  "section": 9,
-  "sectionName": "Hazardous Materials",
-  "question": "Division 4.3 materials, such as sodium, are classified as:",
-  "choices": [
-   "Spontaneously combustible",
-   "Flammable solids",
-   "Dangerous when wet",
-   "Organic peroxides"
-  ],
-  "answer": 2,
-  "explanation": "Division 4.3 is Dangerous When Wet, with sodium as the listed example. Division 4.1 is flammable solids and 4.2 is spontaneously combustible.",
-  "page": "9-3"
- },
- {
-  "id": "s9-011",
-  "section": 9,
-  "sectionName": "Hazardous Materials",
-  "question": "Uranium is an example of which hazard class?",
-  "choices": [
-   "Class 6 (Poison)",
-   "Class 8 (Corrosives)",
-   "Class 9 (Miscellaneous)",
-   "Class 7 (Radioactive)"
-  ],
-  "answer": 3,
-  "explanation": "Class 7 is Radioactive material, and uranium is the example listed in the hazard class table.",
-  "page": "9-3"
- },
- {
-  "id": "s9-012",
-  "section": 9,
-  "sectionName": "Hazardous Materials",
-  "question": "While you are driving, hazardous materials shipping papers must be kept:",
-  "choices": [
-   "In the glove compartment",
-   "In clear view within immediate reach while the seat belt is fastened, or in a pouch on the driver's door",
-   "In the sleeper berth",
-   "Anywhere in the cab, as long as they stay inside the vehicle and can be produced at an inspection when asked"
-  ],
-  "answer": 1,
-  "explanation": "The rules require drivers to keep hazardous materials shipping papers in clear view within immediate reach while the seat belt is fastened, or in a pouch on the driver's door.",
-  "page": "9-3"
- },
- {
-  "id": "s9-013",
-  "section": 9,
-  "sectionName": "Hazardous Materials",
-  "question": "When you are out of the vehicle, hazardous materials shipping papers must be left:",
-  "choices": [
-   "On the driver's seat or in the driver's door pouch",
-   "In a locked toolbox on the trailer",
-   "With the consignee",
-   "Under the windshield wiper"
-  ],
-  "answer": 0,
-  "explanation": "When out of the vehicle, shipping papers must be left in the driver's door pouch or on the driver's seat so they can be found quickly.",
-  "page": "9-3"
- },
- {
-  "id": "s9-014",
-  "section": 9,
-  "sectionName": "Hazardous Materials",
-  "question": "Hazardous materials identification numbers are:",
-  "choices": [
-   "Two-digit codes assigned by the carrier",
-   "Six-digit codes found only on placards",
-   "Four-digit codes preceded by the letters \"UN\" or \"NA\" that first responders use to identify the material",
-   "Codes that identify only one chemical each, assigned so that no two hazardous materials ever share a number"
-  ],
-  "answer": 2,
-  "explanation": "Identification numbers are four-digit codes preceded by \"UN\" or \"NA\" that first responders use to identify hazardous materials. One identification number may identify more than one chemical, and the ERG lists the chemicals and their numbers.",
-  "page": "9-4"
- },
- {
-  "id": "s9-015",
-  "section": 9,
-  "sectionName": "Hazardous Materials",
-  "question": "A placarded vehicle must have at least how many identical placards, and where are they placed?",
-  "choices": [
-   "Four; on the front, rear, and both sides of the vehicle",
-   "Two; on the front and rear only",
-   "Three; on the rear and both sides",
-   "Six; on all sides, the roof, and the underside"
-  ],
-  "answer": 0,
-  "explanation": "A placarded vehicle must have at least four identical placards, placed on the front, rear, and both sides so they are readable from all four directions.",
-  "page": "9-4"
- },
- {
-  "id": "s9-016",
-  "section": 9,
-  "sectionName": "Hazardous Materials",
-  "question": "Placards must be what size and shape?",
-  "choices": [
-   "At least 8 inches along each side, in an upright rectangular shape",
-   "At least 12 inches, circular",
-   "At least 10 3/4 inches square, square-on-point (diamond shaped)",
-   "At least 6 inches square, triangular"
-  ],
-  "answer": 2,
-  "explanation": "Placards are at least 10 3/4 inches square, turned square-on-point in a diamond shape.",
-  "page": "9-4"
- },
- {
-  "id": "s9-017",
-  "section": 9,
-  "sectionName": "Hazardous Materials",
-  "question": "If Column 3 of the Hazardous Materials Table shows the entry \"Forbidden\" for a material, you should:",
-  "choices": [
-   "Transport it only with a police escort",
-   "Transport it only in bulk packaging",
-   "Transport it only if placarded on all four sides",
-   "Never transport it"
-  ],
-  "answer": 3,
-  "explanation": "The manual is explicit: never transport a \"Forbidden\" material.",
-  "page": "9-5"
- },
- {
-  "id": "s9-018",
-  "section": 9,
-  "sectionName": "Hazardous Materials",
-  "question": "The letters \"RQ\" on a shipping paper and package mean:",
-  "choices": [
-   "The material requires refrigeration",
-   "The material is in a reportable quantity, and any spill of that amount must be reported",
-   "The material is restricted to a designated route",
-   "The package has passed a required quality check and is certified for transport by any carrier"
-  ],
-  "answer": 1,
-  "explanation": "When a hazardous substance is transported in a reportable quantity or greater in one package, the shipper displays the letters RQ, and you or your employer must report any spill of these materials that occurs in a reportable quantity.",
-  "page": "9-6"
- },
- {
-  "id": "s9-019",
-  "section": 9,
-  "sectionName": "Hazardous Materials",
-  "question": "If the words INHALATION HAZARD appear on the shipping paper or package, you must:",
-  "choices": [
-   "Display POISON INHALATION HAZARD or POISON GAS placards in addition to other required placards, even for small amounts",
-   "Display those placards only if carrying 1,001 pounds or more",
-   "Display only the material's hazard class placard",
-   "Display a DANGEROUS placard instead of the material's hazard class placard whenever inhalation hazards are aboard"
-  ],
-  "answer": 0,
-  "explanation": "The rules require the POISON INHALATION HAZARD or POISON GAS placard in addition to any other placards required by the product's hazard class, even for small amounts; the 1,000-pound exception does not apply.",
-  "page": "9-6"
- },
- {
-  "id": "s9-020",
-  "section": 9,
-  "sectionName": "Hazardous Materials",
-  "question": "When a shipping paper describes both hazardous and non-hazardous products, the hazardous materials must be:",
-  "choices": [
-   "Listed on a separate page that is kept clipped to the bill of lading in a pouch inside the trailer",
-   "Written only in capital letters",
-   "Entered first, highlighted in a contrasting color, or identified by an \"X\" in a column captioned \"HM\"",
-   "Listed last so they are easy to find"
-  ],
-  "answer": 2,
-  "explanation": "Hazardous materials must be entered first, or highlighted in a contrasting color, or identified by an \"X\" (or \"RQ\" when applicable) placed before the shipping description in the \"HM\" column.",
-  "page": "9-6"
- },
- {
-  "id": "s9-021",
-  "section": 9,
-  "sectionName": "Hazardous Materials",
-  "question": "The basic description of a hazardous material on a shipping paper must show, in order:",
-  "choices": [
-   "Hazard class, packing group, shipping name, identification number",
-   "Identification number, proper shipping name, hazard class or division, and packing group",
-   "Proper shipping name, identification number, packing group, hazard class",
-   "Packing group, identification number, hazard class, shipping name"
-  ],
-  "answer": 1,
-  "explanation": "The basic description includes the identification number, proper shipping name, hazard class or division, and the packing group (if any), in that order.",
-  "page": "9-7"
- },
- {
-  "id": "s9-022",
-  "section": 9,
-  "sectionName": "Hazardous Materials",
-  "question": "The emergency response telephone number listed on the shipping papers is the responsibility of:",
-  "choices": [
-   "The driver",
-   "The carrier",
-   "The National Response Center",
-   "The shipper"
-  ],
-  "answer": 3,
-  "explanation": "The manual states the emergency response telephone number is the responsibility of the shipper; it can be used by emergency responders to get information about the hazardous materials in a spill or fire.",
-  "page": "9-7"
- },
- {
-  "id": "s9-023",
-  "section": 9,
-  "sectionName": "Hazardous Materials",
-  "question": "The Emergency Response Guidebook (ERG) is indexed by:",
-  "choices": [
-   "Proper shipping name and hazardous materials identification number",
-   "Carrier name and trailer number as they appear on the shipping paper",
-   "Packing group and reportable quantity",
-   "Shipper's certification number"
-  ],
-  "answer": 0,
-  "explanation": "The ERG is indexed by proper shipping name and hazardous materials identification number, which is why those items on the shipping paper must be correct.",
-  "page": "9-15"
- },
- {
-  "id": "s9-024",
-  "section": 9,
-  "sectionName": "Hazardous Materials",
-  "question": "When transporting hazardous wastes, you must:",
-  "choices": [
-   "Carry a copy of your employer's insurance policy",
-   "Fax the manifest to the EPA before departure",
-   "Sign by hand and carry a Uniform Hazardous Waste Manifest",
-   "Get a new CDL endorsement for each load"
-  ],
-  "answer": 2,
-  "explanation": "Drivers transporting hazardous wastes must sign the Uniform Hazardous Waste Manifest by hand and carry it, treating it as a shipping paper. Each carrier transporting the shipment must sign it by hand.",
-  "page": "9-8"
- },
- {
-  "id": "s9-025",
-  "section": 9,
-  "sectionName": "Hazardous Materials",
-  "question": "You may move an improperly placarded vehicle only:",
-  "choices": [
-   "If the trip is less than 25 miles",
-   "During an emergency, in order to protect life or property",
-   "If you stay off the interstate",
-   "If the shipper gives written permission"
-  ],
-  "answer": 1,
-  "explanation": "Placards must be attached before driving. The only time you may move an improperly placarded vehicle is during an emergency, in order to protect life or property.",
-  "page": "9-8"
- },
- {
-  "id": "s9-026",
-  "section": 9,
-  "sectionName": "Hazardous Materials",
-  "question": "Which of the following is a requirement for how each placard must be displayed?",
-  "choices": [
-   "Placed so the words or numbers are level and read from left to right",
-   "At least three inches away from any other markings",
-   "Easily seen from the direction it faces and kept clean and undamaged",
-   "All of the above"
-  ],
-  "answer": 3,
-  "explanation": "Each placard must be easily seen from the direction it faces, placed so words or numbers are level and read left to right, at least three inches from other markings, kept clear of attachments, and kept clean and undamaged.",
-  "page": "9-8"
- },
- {
-  "id": "s9-027",
-  "section": 9,
-  "sectionName": "Hazardous Materials",
-  "question": "To decide which placards to use, you need to know all of the following EXCEPT:",
-  "choices": [
-   "The name of the consignee receiving the shipment",
-   "The hazard class of the materials",
-   "The amount of hazardous materials shipped",
-   "The total weight of all classes of hazardous materials in your vehicle"
-  ],
-  "answer": 0,
-  "explanation": "The three things you must know to decide which placards to use are the hazard class of the materials, the amount being shipped, and the total weight of all classes of hazardous materials in the vehicle. The consignee's name is not one of them.",
-  "page": "9-9"
- },
- {
-  "id": "s9-028",
-  "section": 9,
-  "sectionName": "Hazardous Materials",
-  "question": "Materials listed in Placard Table 1 must be placarded when transporting:",
-  "choices": [
-   "1,001 pounds or more",
-   "2,205 pounds or more",
-   "Any amount",
-   "Only bulk quantities"
-  ],
-  "answer": 2,
-  "explanation": "Table 1 materials (such as 1.1 mass explosives, 2.3 poison gas, and 4.3 dangerous when wet) must be placarded whenever any amount is transported.",
-  "page": "9-9"
- },
- {
-  "id": "s9-029",
-  "section": 9,
-  "sectionName": "Hazardous Materials",
-  "question": "Except for bulk packaging, hazard classes in Placard Table 2 need placards only when the total amount transported is:",
-  "choices": [
-   "1,001 pounds or more, including the package",
-   "500 pounds or more, excluding the package",
-   "2,205 pounds or more, including the package",
-   "100 pounds or more of any single class"
-  ],
-  "answer": 0,
-  "explanation": "Table 2 hazard classes need placards only if the total amount transported is 1,001 pounds or more including the package; you add the amounts from all shipping papers for all Table 2 products on board.",
-  "page": "9-9"
- },
- {
-  "id": "s9-030",
-  "section": 9,
-  "sectionName": "Hazardous Materials",
-  "question": "You may use a DANGEROUS placard instead of separate placards for each Table 2 hazard class when you have 1,001 pounds or more of two or more Table 2 classes and:",
-  "choices": [
-   "The total load is under 5,000 pounds",
-   "You have not loaded 2,205 pounds or more of any Table 2 hazard class material at any one place",
-   "All the materials came from the same shipper and are being delivered to a single destination point",
-   "The trip is entirely within one state"
-  ],
-  "answer": 1,
-  "explanation": "The DANGEROUS placard option applies when you have 1,001 pounds or more of two or more Table 2 classes requiring different placards, and you have not loaded 2,205 pounds or more of any Table 2 class at any one place; otherwise you must use the specific placard for that material.",
-  "page": "9-9"
- },
- {
-  "id": "s9-031",
-  "section": 9,
-  "sectionName": "Hazardous Materials",
-  "question": "A bulk package, and a vehicle transporting a bulk package, must be placarded:",
-  "choices": [
-   "Only when completely full",
-   "Only when carrying 1,001 pounds or more of the hazardous material",
-   "Only when crossing state lines",
-   "Even if it only contains the residue of a hazardous material"
-  ],
-  "answer": 3,
-  "explanation": "Bulk packaging is a single container with a capacity of 119 gallons or more, and it must be placarded even if it only holds the residue of a hazardous material.",
-  "page": "9-10"
- },
- {
-  "id": "s9-032",
-  "section": 9,
-  "sectionName": "Hazardous Materials",
-  "question": "When loading or unloading, you must never smoke around which hazard classes?",
-  "choices": [
-   "Class 6 (Poisons), Class 7 (Radioactive), and Class 9 (Miscellaneous) only, since the other classes give off no ignitable vapors",
-   "Class 8 (Corrosives) only, because corrosive vapors are the only ones a cigarette can ignite",
-   "Class 1 (Explosives), Class 2.1 (Flammable Gas), Class 3 (Flammable Liquids), Class 4 (Flammable Solids), and Class 5 (Oxidizers)",
-   "Class 7 (Radioactive) only, since radiation is the hazard most sensitive to heat sources"
-  ],
-  "answer": 2,
-  "explanation": "The manual says to keep fire away and never smoke around Class 1 (Explosives), Class 2.1 (Flammable Gas), Class 3 (Flammable Liquids), Class 4 (Flammable Solids), and Class 5 (Oxidizers).",
-  "page": "9-10"
- },
- {
-  "id": "s9-033",
-  "section": 9,
-  "sectionName": "Hazardous Materials",
-  "question": "Before loading or unloading any Class 1 (Explosives) materials, you must:",
-  "choices": [
-   "Turn your engine off, then check the cargo space",
-   "Leave the engine running to power cargo heaters",
-   "Line the floor with stainless steel",
-   "Open all trailer vents"
-  ],
-  "answer": 0,
-  "explanation": "Turn the engine off before loading or unloading explosives, then check the cargo space, disable cargo heaters, and make sure there are no sharp points. A floor liner for Division 1.1, 1.2, or 1.3 must be non-metallic or non-ferrous metal, not steel.",
-  "page": "9-11"
- },
- {
-  "id": "s9-034",
-  "section": 9,
-  "sectionName": "Hazardous Materials",
-  "question": "When loading Class 8 (Corrosive) materials, nitric acid must:",
-  "choices": [
-   "Be loaded only on the top tier of the load",
-   "Be loaded next to flammable solids",
-   "Be double-stacked to save space",
-   "Not be loaded above any other product"
-  ],
-  "answer": 3,
-  "explanation": "The rules state you must not load nitric acid above any other product.",
-  "page": "9-11"
- },
- {
-  "id": "s9-035",
-  "section": 9,
-  "sectionName": "Hazardous Materials",
-  "question": "A package labeled POISON or POISON INHALATION HAZARD must never be loaded:",
-  "choices": [
-   "In a closed cargo space",
-   "In the driver's cab or sleeper, or with food material for human or animal consumption",
-   "On the same vehicle as any Class 9 miscellaneous materials, no matter how they are packaged",
-   "In a trailer with more than two axles"
-  ],
-  "answer": 1,
-  "explanation": "Never load a package labeled POISON or POISON INHALATION HAZARD in the driver's cab or sleeper or with food material for human or animal consumption.",
-  "page": "9-11"
- },
- {
-  "id": "s9-036",
-  "section": 9,
-  "sectionName": "Hazardous Materials",
-  "question": "The total transport index of all Class 7 (Radioactive) packages in a single vehicle must not exceed:",
-  "choices": [
-   "50",
-   "100",
-   "25",
-   "10"
-  ],
-  "answer": 0,
-  "explanation": "The transport index tells the degree of control needed during transportation, and the total transport index of all packages in a single vehicle must not exceed 50.",
-  "page": "9-12"
- },
- {
-  "id": "s9-037",
-  "section": 9,
-  "sectionName": "Hazardous Materials",
-  "question": "The qualified person watching the loading or unloading of a cargo tank must be alert, know the hazards and emergency procedures, be authorized and able to move the tank, and be:",
-  "choices": [
-   "Within 10 feet of the tank",
-   "Within 50 feet of the tank",
-   "Within 25 feet of the tank with a clear view of it",
-   "Inside the cab with the engine running"
-  ],
-  "answer": 2,
-  "explanation": "The person watching the loading or unloading must be alert, have a clear view of the cargo tank, be within 25 feet of the tank, know the hazards and emergency procedures, and be authorized and able to move the tank.",
-  "page": "9-13"
- },
- {
-  "id": "s9-038",
-  "section": 9,
-  "sectionName": "Hazardous Materials",
-  "question": "Except briefly for vehicle operation necessities such as fueling, a vehicle carrying Division 1.1, 1.2, or 1.3 explosives must not be parked within what distance of a bridge, tunnel, building, place where people gather, or open fire?",
-  "choices": [
-   "100 feet",
-   "150 feet",
-   "200 feet",
-   "300 feet"
-  ],
-  "answer": 3,
-  "explanation": "Except for short periods needed for vehicle operation necessities, do not park with Division 1.1, 1.2, or 1.3 explosives within 300 feet of a bridge, tunnel, building, place where people gather, or open fire.",
-  "page": "9-13"
- },
- {
-  "id": "s9-039",
-  "section": 9,
-  "sectionName": "Hazardous Materials",
-  "question": "Never park a vehicle carrying Division 1.1, 1.2, or 1.3 explosives within what distance of the traveled part of the road?",
-  "choices": [
-   "3 feet",
-   "5 feet",
-   "10 feet",
-   "25 feet"
-  ],
-  "answer": 1,
-  "explanation": "Never park with Division 1.1, 1.2, or 1.3 explosives within five feet of the traveled part of the road.",
-  "page": "9-13"
- },
- {
-  "id": "s9-040",
-  "section": 9,
-  "sectionName": "Hazardous Materials",
-  "question": "The person attending a parked placarded vehicle must be in the vehicle awake (not in the sleeper berth), or:",
-  "choices": [
-   "Within 100 feet of the vehicle with it in clear view",
-   "Within 500 feet of the vehicle",
-   "Reachable by phone within 15 minutes",
-   "Anywhere on the same property"
-  ],
-  "answer": 0,
-  "explanation": "The attendant must be in the vehicle, awake, and not in the sleeper berth, or within 100 feet of the vehicle and have it within clear view, while knowing the hazards, knowing what to do in emergencies, and being able to move the vehicle.",
-  "page": "9-14"
- },
- {
-  "id": "s9-041",
-  "section": 9,
-  "sectionName": "Hazardous Materials",
-  "question": "If you break down while hauling explosives or pulling a tank used for flammable liquids or flammable gas, which stopped-vehicle signals may you use?",
-  "choices": [
-   "Flares placed 100 feet behind the vehicle",
-   "Burning fuses set at the roadside",
-   "A small signal fire kept away from the cargo",
-   "Reflective triangles or red electric lights"
-  ],
-  "answer": 3,
-  "explanation": "Use reflective triangles or red electric lights. Never use burning signals such as flares or fuses around a tank used for Class 3 or Division 2.1 (loaded or empty) or a vehicle loaded with Division 1.1, 1.2, or 1.3 explosives.",
-  "page": "9-14"
- },
- {
-  "id": "s9-042",
-  "section": 9,
-  "sectionName": "Hazardous Materials",
-  "question": "The power unit of a placarded vehicle must have a fire extinguisher with a UL rating of at least:",
-  "choices": [
-   "5 B:C",
-   "10 B:C",
-   "20 B:C",
-   "40 B:C"
-  ],
-  "answer": 1,
-  "explanation": "The power unit of placarded vehicles must have a fire extinguisher with a UL rating of 10 B:C or more.",
-  "page": "9-14"
- },
- {
-  "id": "s9-043",
-  "section": 9,
-  "sectionName": "Hazardous Materials",
-  "question": "If your vehicle is placarded, carries any amount of chlorine, or has cargo tanks used for hazardous materials (loaded or empty), you must stop how far before the nearest rail of a railroad crossing?",
-  "choices": [
-   "5 to 15 feet",
-   "10 to 40 feet",
-   "15 to 50 feet",
-   "50 to 100 feet"
-  ],
-  "answer": 2,
-  "explanation": "You must stop 15 to 50 feet before the nearest rail, proceed only when sure no train is coming and you can clear the tracks without stopping, and not shift gears while crossing.",
-  "page": "9-15"
- },
- {
-  "id": "s9-044",
-  "section": 9,
-  "sectionName": "Hazardous Materials",
-  "question": "If hazardous materials are spilling from your vehicle and there is no phone nearby, you should:",
-  "choices": [
-   "Drive slowly to the nearest truck stop to call for help",
-   "Repack the leaking containers yourself and continue the trip",
-   "Leave the vehicle unattended and walk to find help",
-   "Park the vehicle, secure the area, stay there, and send someone else for help"
-  ],
-  "answer": 3,
-  "explanation": "Never continue driving with leaking hazardous materials to find a phone or help. Park the vehicle, secure the area, stay there, and send someone else for help with written details of the emergency, your location, and the materials involved.",
-  "page": "9-16"
- },
- {
-  "id": "s9-045",
-  "section": 9,
-  "sectionName": "Hazardous Materials",
-  "question": "You or your employer must phone the National Response Center after a hazardous materials incident when:",
-  "choices": [
-   "A person is killed, an injured person requires hospitalization, or estimated property damage exceeds $50,000",
-   "Any placarded vehicle is stopped for a roadside inspection, whether or not any material was actually released",
-   "The trip is delayed more than two hours",
-   "Property damage of any amount over $500 occurs"
-  ],
-  "answer": 0,
-  "explanation": "The National Response Center must be called when, as a direct result of a hazardous materials incident, a person is killed, an injured person requires hospitalization, estimated property damage exceeds $50,000, the public is evacuated for over an hour, a major artery is closed an hour or more, or fire, breakage, spillage, or suspected radioactive or etiologic contamination occurs.",
-  "page": "9-17"
+  "explanation": "When manufacturer-published performance data is unavailable, it is advisable to look for data that other users of the same make and model have already determined and published, and to treat those figures as a starting point rather than a guarantee.",
+  "page": "43"
  },
  {
   "id": "s10-001",
   "section": 10,
-  "sectionName": "School Buses",
-  "question": "The danger zone may extend as much as how far from the front bumper of the school bus?",
+  "sectionName": "Physiological Factors",
+  "question": "Under part 107, how much time must have passed since a person's last alcoholic drink before that person may serve as a crewmember on a small UA operation?",
   "choices": [
-   "10 feet",
-   "20 feet",
-   "30 feet",
-   "50 feet"
+   "8 hours",
+   "4 hours",
+   "12 hours",
+   "24 hours"
   ],
-  "answer": 2,
-  "explanation": "The danger zone may extend as much as 30 feet from the front bumper, with the first 10 feet being the most dangerous.",
-  "page": "10-1"
+  "answer": 0,
+  "explanation": "Part 107 prohibits anyone from serving as remote PIC, person manipulating the controls, visual observer, or other crewmember after consuming any alcoholic beverage within the preceding 8 hours. The same prohibition applies to being under the influence of alcohol or using a drug that affects mental or physical capabilities.",
+  "page": "45"
  },
  {
   "id": "s10-002",
   "section": 10,
-  "sectionName": "School Buses",
-  "question": "Which portion of the danger zone in front of the bus is the most dangerous?",
+  "sectionName": "Physiological Factors",
+  "question": "At what blood alcohol concentration does part 107 bar a person from serving in any crew role on a small UA operation?",
   "choices": [
-   "The first 10 feet",
-   "The first 20 feet",
-   "The last 10 feet",
-   "The area beyond 30 feet"
+   ".04 percent or greater",
+   ".02 percent or greater",
+   ".08 percent or greater",
+   ".10 percent or greater"
   ],
   "answer": 0,
-  "explanation": "Of the danger zone extending up to 30 feet from the front bumper, the first 10 feet is the most dangerous.",
-  "page": "10-1"
+  "explanation": "A blood alcohol concentration of .04 percent or greater disqualifies a person from acting as remote PIC, manipulating the controls, or serving as a visual observer or other crewmember. Even below .04 percent, a person still may not participate until 8 hours have passed since drinking.",
+  "page": "45"
  },
  {
   "id": "s10-003",
   "section": 10,
-  "sectionName": "School Buses",
-  "question": "How far does the danger zone extend from the left and right sides of the bus and behind the rear bumper?",
+  "sectionName": "Physiological Factors",
+  "question": "What happens in the body during hyperventilation?",
   "choices": [
-   "5 feet",
-   "10 feet",
-   "15 feet",
-   "30 feet"
+   "Excess breathing strips too much carbon dioxide from the blood",
+   "Shallow breathing lets carbon dioxide build up in the bloodstream",
+   "Rapid breathing floods the bloodstream with too much oxygen",
+   "Slow breathing keeps the muscles from getting enough oxygen"
   ],
-  "answer": 1,
-  "explanation": "The danger zone extends 10 feet from the left and right sides of the bus and 10 feet behind the rear bumper. The area to the left is always considered dangerous because of passing cars.",
-  "page": "10-1"
+  "answer": 0,
+  "explanation": "Hyperventilation is an excessive rate and depth of breathing that causes an abnormal loss of carbon dioxide from the blood. Pilots facing an unexpected stressful situation may speed up their breathing without realizing it, and the resulting anxiety and faster breathing make the problem worse, potentially to the point of unconsciousness.",
+  "page": "45"
  },
  {
   "id": "s10-004",
   "section": 10,
-  "sectionName": "School Buses",
-  "question": "When properly adjusted, the outside left and right side flat mirrors should let you see how far behind the bus?",
+  "sectionName": "Physiological Factors",
+  "question": "Which of the following is a common symptom of hyperventilation?",
   "choices": [
-   "100 feet or 2 bus lengths",
-   "200 feet or 4 bus lengths",
-   "300 feet or 6 bus lengths",
-   "400 feet or 8 bus lengths"
+   "Tingling and muscle spasms",
+   "Ringing in the ears",
+   "Swelling in the hands and feet",
+   "A gradual loss of hearing"
   ],
-  "answer": 1,
-  "explanation": "The outside flat mirrors should be adjusted so you can see 200 feet or 4 bus lengths behind the bus, along the sides of the bus, and the rear tires touching the ground.",
-  "page": "10-1"
+  "answer": 0,
+  "explanation": "Common hyperventilation symptoms include tingling sensations, muscle spasms, visual impairment, a lightheaded or dizzy feeling, hot and cold sensations, and even unconsciousness. It rarely incapacitates completely, but the symptoms can alarm a pilot who does not recognize what is happening.",
+  "page": "45"
  },
  {
   "id": "s10-005",
   "section": 10,
-  "sectionName": "School Buses",
-  "question": "The blind spot directly behind the rear bumper of the bus could extend up to how far, depending on the length and width of the bus?",
+  "sectionName": "Physiological Factors",
+  "question": "A remote pilot who begins hyperventilating during a stressful situation can best recover by doing what?",
   "choices": [
-   "50 feet",
-   "150 feet",
-   "400 feet",
-   "500 feet"
+   "Slow the breathing rate or breathe into a paper bag",
+   "Breathe pure oxygen as deeply and rapidly as possible",
+   "Take quick shallow breaths until the dizziness passes",
+   "Hold the breath for at least two full minutes"
   ],
-  "answer": 2,
-  "explanation": "The blind spot behind the bus extends 50 to 150 feet and could extend up to 400 feet depending on the length and width of the bus.",
-  "page": "10-1"
+  "answer": 0,
+  "explanation": "Recovery from hyperventilation means restoring the proper carbon dioxide level in the body. Breathing normally is both the best prevention and the best cure; slowing the breathing rate, breathing into a paper bag, or talking aloud all help, and recovery is usually rapid once the breathing rate returns to normal.",
+  "page": "46"
  },
  {
   "id": "s10-006",
   "section": 10,
-  "sectionName": "School Buses",
-  "question": "Properly adjusted outside flat mirrors should allow you to see which of the following?",
+  "sectionName": "Physiological Factors",
+  "question": "Which kind of stress triggers the body's fight-or-flight response?",
   "choices": [
-   "The front bumper at ground level",
-   "The service door",
-   "The front tires touching the ground",
-   "The rear tires touching the ground"
+   "Acute stress from an immediate perceived threat",
+   "Chronic stress from ongoing financial worries",
+   "Physiological stress caused by ordinary fatigue",
+   "Physical stress from steady noise and vibration"
   ],
-  "answer": 3,
-  "explanation": "The outside flat mirrors should be adjusted so you can see the rear tires touching the ground, along the sides of the bus, and 200 feet or 4 bus lengths behind the bus.",
-  "page": "10-1"
+  "answer": 0,
+  "explanation": "Acute, short-term stress involves an immediate threat perceived as danger, whether real or imagined, and it is this type that triggers the fight-or-flight response. A healthy person can normally cope with acute stress, but if it continues unchecked it can develop into chronic stress.",
+  "page": "46"
  },
  {
   "id": "s10-007",
   "section": 10,
-  "sectionName": "School Buses",
-  "question": "Where are the outside left and right side convex mirrors located?",
+  "sectionName": "Physiological Factors",
+  "question": "How should a pilot respond to a suspected case of chronic stress?",
   "choices": [
-   "Below the outside flat mirrors",
-   "Above the windshield",
-   "On the front bumper",
-   "Inside the bus above the driver"
+   "Stop exercising airman privileges and consult a physician",
+   "Fly shorter, simpler missions until the pressure eases",
+   "Rely on training and experience to push through it in flight",
+   "Wait it out, since this level of stress clears within days"
   ],
   "answer": 0,
-  "explanation": "The convex mirrors are located below the outside flat mirrors and are used to monitor the left and right sides of the bus at a wide angle.",
-  "page": "10-2"
+  "explanation": "Chronic stress is an intolerable burden that exceeds a person's ability to cope, and performance falls off rapidly when stress reaches that level. Pilots under chronic stress are not safe, should not exercise their airman privileges, and should consult a physician.",
+  "page": "46"
  },
  {
   "id": "s10-008",
   "section": 10,
-  "sectionName": "School Buses",
-  "question": "You should position the outside convex mirrors so you can see:",
+  "sectionName": "Physiological Factors",
+  "question": "What ordinarily relieves acute fatigue after strenuous effort, excitement, or lost sleep?",
   "choices": [
-   "The entire side of the bus up to the mirror mounts",
-   "The front of the rear tires touching the ground",
-   "At least one traffic lane on either side of the bus",
-   "All of the above"
+   "Rest after the exertion and 8 hours of sound sleep",
+   "Caffeine and light exercise shortly before the flight",
+   "A course of treatment prescribed by a physician",
+   "A high-protein meal eaten just before the operation"
   ],
-  "answer": 3,
-  "explanation": "The convex mirrors should be positioned to see the entire side of the bus up to the mirror mounts, the front of the rear tires touching the ground, and at least one traffic lane on either side of the bus.",
-  "page": "10-2"
+  "answer": 0,
+  "explanation": "Acute fatigue is short term and a normal part of everyday living. Rest after the exertion plus 8 hours of sound sleep ordinarily cures it, and proper diet with adequate rest prevents it. A remote pilot suffering from acute fatigue should not operate a small UA, because no amount of training or experience overcomes fatigue in flight.",
+  "page": "46"
  },
  {
   "id": "s10-009",
   "section": 10,
-  "sectionName": "School Buses",
-  "question": "What is the main purpose of the outside left and right side crossover mirrors?",
+  "sectionName": "Physiological Factors",
+  "question": "Skill fatigue can cause a disruption of the perceptual field. How does that disruption affect a pilot?",
   "choices": [
-   "To monitor passenger activity inside the bus without turning your head away from the road ahead",
-   "To see 200 feet behind the bus",
-   "To see the danger zone area directly in front of the bus that is not visible by direct vision",
-   "To check traffic in the opposing lane only"
+   "The pilot watches the center of vision and misses the periphery",
+   "Vision blurs evenly across the entire field of view at all distances",
+   "The eyes lose the ability to focus on objects that are close by",
+   "Colors near the edge of vision appear washed out and dim"
   ],
-  "answer": 2,
-  "explanation": "The crossover mirrors are used to see the front bumper danger zone area directly in front of the bus that is not visible by direct vision, as well as the danger zone areas to the left and right sides, including the service door and front wheel area.",
-  "page": "10-2"
+  "answer": 0,
+  "explanation": "With a disrupted perceptual field, attention concentrates on movements and objects in the center of vision while those in the periphery go neglected, and control movements lose accuracy and smoothness. Skill fatigue's other main effect is timing disruption, where each part of a task is performed separately instead of as one integrated activity.",
+  "page": "47"
  },
  {
   "id": "s10-010",
   "section": 10,
-  "sectionName": "School Buses",
-  "question": "Properly adjusted crossover mirrors should allow you to see which of the following?",
+  "sectionName": "Physiological Factors",
+  "question": "How does chronic fatigue differ from acute fatigue when it comes to recovery?",
   "choices": [
-   "The rear bumper and rear tires on both sides of the bus",
-   "The area from the front of the bus to the service door",
-   "Four bus lengths behind the bus",
-   "The top of the rear window"
+   "It usually requires a physician's care rather than rest and diet",
+   "It clears faster because the body adapts to prolonged tiredness",
+   "It responds to the same rest and diet measures, only more slowly",
+   "It can be managed during flight through training and experience"
   ],
-  "answer": 1,
-  "explanation": "The crossover mirrors should be adjusted to show the entire area in front of the bus from the front bumper at ground level to where direct vision is possible, the right and left front tires touching the ground, and the area from the front of the bus to the service door.",
-  "page": "10-2"
+  "answer": 0,
+  "explanation": "Chronic fatigue extends over a long time, usually has psychological roots, and is not relieved by proper diet and adequate rest and sleep; it usually requires treatment by a physician. It can show up as weakness, tiredness, heart palpitations, breathlessness, headaches, or irritability.",
+  "page": "47"
  },
  {
   "id": "s10-011",
   "section": 10,
-  "sectionName": "School Buses",
-  "question": "The overhead inside rearview mirror mounted above the windshield is used primarily to:",
+  "sectionName": "Physiological Factors",
+  "question": "What is the first noticeable effect of dehydration?",
   "choices": [
-   "Check traffic beside the bus",
-   "Monitor passenger activity inside the bus",
-   "See the front bumper danger zone",
-   "Watch the rear tires"
+   "Fatigue",
+   "Extreme thirst",
+   "Muscle cramps",
+   "Nausea"
   ],
-  "answer": 1,
-  "explanation": "The overhead inside rearview mirror is used to monitor passenger activity inside the bus. It may provide only limited visibility behind the bus, so you must use the exterior side mirrors to monitor traffic approaching that area.",
-  "page": "10-3"
+  "answer": 0,
+  "explanation": "Fatigue shows up first, making top physical and mental performance difficult or impossible, and if fluid is not replaced it progresses to dizziness, weakness, nausea, tingling, abdominal cramps, and extreme thirst. Thirst is a late warning: most people only feel it after a 1.5 quart deficit, about 2 percent of body weight, and a small sip turns the thirst mechanism off too easily.",
+  "page": "47"
  },
  {
   "id": "s10-012",
   "section": 10,
-  "sectionName": "School Buses",
-  "question": "How should you position the overhead inside rearview mirror?",
+  "sectionName": "Physiological Factors",
+  "question": "As a general guide, how much water should a person drink every 24 hours to help prevent dehydration?",
   "choices": [
-   "So the top of the rear window is in the top of the mirror",
-   "So the front bumper fills the mirror",
-   "So you can see the rear tires touching the ground",
-   "So it shows one traffic lane on each side"
+   "Two to four quarts",
+   "One to two quarts",
+   "Four to six quarts",
+   "Six to eight quarts"
   ],
   "answer": 0,
-  "explanation": "The overhead inside mirror should be positioned so you can see the top of the rear window in the top of the mirror and all of the students, including the heads of the students right behind you.",
-  "page": "10-3"
+  "explanation": "Drinking two to four quarts of water every 24 hours is the general guide, though individuals differ; the familiar eight 8-ounce glasses a day works out to two quarts. Other habits that help are carrying a container to measure intake, staying ahead of thirst rather than waiting for it, and limiting caffeine and alcohol since both are diuretics.",
+  "page": "47"
  },
  {
   "id": "s10-013",
   "section": 10,
-  "sectionName": "School Buses",
-  "question": "If the bus is so equipped, when should you activate the alternating flashing amber warning lights when approaching a school bus stop?",
+  "sectionName": "Physiological Factors",
+  "question": "What causes heatstroke?",
   "choices": [
-   "At least 50 feet before the stop",
-   "At least 100 feet or 1-2 seconds before the stop",
-   "At least 200 feet or approximately 5-10 seconds before the stop",
-   "Only after coming to a complete stop"
+   "The body becomes unable to control its own temperature",
+   "The heart cannot keep up with the demand for blood flow",
+   "The sweat glands flush too much salt out of the body",
+   "The skin absorbs heat faster than the blood can shed it"
   ],
-  "answer": 2,
-  "explanation": "You should activate the alternating flashing amber warning lights at least 200 feet or approximately 5-10 seconds before the school bus stop, or in accordance with state law.",
-  "page": "10-3"
+  "answer": 0,
+  "explanation": "Heatstroke is any inability of the body to control its temperature. Its onset may be recognized by dehydration symptoms, but it has also been known to announce itself only with complete collapse. Prevention is drinking ample water at frequent intervals whether thirsty or not: about one quart per hour in severe heat stress, or one pint per hour in moderate conditions.",
+  "page": "48"
  },
  {
   "id": "s10-014",
   "section": 10,
-  "sectionName": "School Buses",
-  "question": "When approaching a school bus stop, when should you turn on the right turn signal indicator?",
+  "sectionName": "Physiological Factors",
+  "question": "Why are medications containing diphenhydramine, such as Benadryl, a particular concern for remote pilots?",
   "choices": [
-   "About 100-300 feet or approximately 3-5 seconds before pulling over",
-   "About 500 feet or 15 seconds before pulling over",
-   "Immediately after stopping",
-   "Only if other traffic is present"
+   "They cause drowsiness and stay in the system for an extended time",
+   "They raise blood pressure enough to imitate an acute stress response",
+   "They mask cold symptoms without treating the underlying infection",
+   "They interact with caffeine to trigger hyperventilation"
   ],
   "answer": 0,
-  "explanation": "The manual states you should turn on the right turn signal indicator about 100-300 feet or approximately 3-5 seconds before pulling over.",
-  "page": "10-3"
+  "explanation": "Antihistamines and decongestants are among the most commonly used OTC drugs, and they can cause drowsiness and cognitive deficits. Diphenhydramine in particular has a prolonged half-life, meaning it remains in the system for an extended time, which stretches out how long its side effects last.",
+  "page": "49"
  },
  {
   "id": "s10-015",
   "section": 10,
-  "sectionName": "School Buses",
-  "question": "When stopping at a designated stop, you should bring the school bus to a full stop with the front bumper at least how far from the students?",
+  "sectionName": "Physiological Factors",
+  "question": "After taking the first dose of a new medication, whether prescription or over the counter, how long should a pilot wait before flying?",
   "choices": [
-   "5 feet",
-   "10 feet",
-   "15 feet",
-   "20 feet"
+   "At least 48 hours",
+   "At least 12 hours",
+   "At least 24 hours",
+   "At least 72 hours"
   ],
-  "answer": 1,
-  "explanation": "You should stop with the front bumper at least 10 feet away from students at the designated stop. This forces the students to walk to the bus so you have a better view of their movements.",
-  "page": "10-3"
+  "answer": 0,
+  "explanation": "For any new medication, a pilot should wait at least 48 hours after the first dose before flying, long enough to find out whether it produces side effects that would make operating an aircraft unsafe. Pilots should also skip unnecessary or elective medications entirely.",
+  "page": "49"
  },
  {
   "id": "s10-016",
   "section": 10,
-  "sectionName": "School Buses",
-  "question": "During loading, when should students board the school bus?",
+  "sectionName": "Physiological Factors",
+  "question": "In the IMSAFE preflight self-assessment checklist, what does the final E stand for?",
   "choices": [
-   "As soon as the bus comes to a stop",
-   "As soon as the door opens",
-   "Whenever traffic appears clear to them",
-   "Only when signaled by the driver"
+   "Emotion",
+   "Endurance",
+   "Experience",
+   "Environment"
   ],
-  "answer": 3,
-  "explanation": "Students should wait in a designated location facing the bus as it approaches and should board the bus only when signaled by the driver.",
-  "page": "10-4"
+  "answer": 0,
+  "explanation": "IMSAFE stands for Illness, Medication, Stress, Alcohol, Fatigue, and Emotion. Pilots should run through this physical self-assessment before each and every flight to confirm they are fit to operate safely.",
+  "page": "49"
  },
  {
   "id": "s10-017",
   "section": 10,
-  "sectionName": "School Buses",
-  "question": "While loading, if you cannot account for a student outside the bus, what should you do?",
+  "sectionName": "Physiological Factors",
+  "question": "A remote pilot feels able to function normally the morning after heavy drinking but has a hangover. What does the hangover indicate?",
   "choices": [
-   "Secure the bus, take the key, and check around and underneath the bus",
-   "Honk the horn and wait one minute before leaving",
-   "Slowly pull forward to get a better view",
-   "Continue the route and report the student as absent"
+   "The pilot is still under the influence of alcohol",
+   "The alcohol has cleared and only dehydration remains",
+   "The pilot may fly as soon as the symptoms fade",
+   "Impairment remains only if the pilot still feels drunk"
   ],
   "answer": 0,
-  "explanation": "If you cannot account for a student outside the bus, you must secure the bus, take the key, and check around and underneath the bus.",
-  "page": "10-4"
+  "explanation": "During a hangover a pilot is still under the influence of alcohol, and motor and mental impairment persist even when the pilot believes he or she is functioning normally. Considerable amounts of alcohol can remain in the body for over 16 hours, so caution is needed about flying too soon after drinking.",
+  "page": "49"
  },
  {
   "id": "s10-018",
   "section": 10,
-  "sectionName": "School Buses",
-  "question": "When unloading on the route, students should exit the bus and walk at least how far away from the side of the bus?",
+  "sectionName": "Physiological Factors",
+  "question": "When visually scanning for other air traffic, how wide an area should the eyes take in at each stop?",
   "choices": [
-   "3 feet",
-   "5 feet",
-   "10 feet",
-   "15 feet"
-  ],
-  "answer": 2,
-  "explanation": "Students should exit the bus and walk at least 10 feet away from the side of the bus to a position where the driver can plainly see all students.",
-  "page": "10-4"
- },
- {
-  "id": "s10-019",
-  "section": 10,
-  "sectionName": "School Buses",
-  "question": "If you have missed a student's unloading stop, what should you do?",
-  "choices": [
-   "Back up carefully to the stop",
-   "Do not back up; be sure to follow local procedures",
-   "Let the student out immediately wherever the bus is",
-   "Make a U-turn and return to the stop"
-  ],
-  "answer": 1,
-  "explanation": "The manual states that if you have missed a student's unloading stop, do not back up, and be sure to follow local procedures.",
-  "page": "10-4"
- },
- {
-  "id": "s10-020",
-  "section": 10,
-  "sectionName": "School Buses",
-  "question": "Students who must cross the roadway after exiting should walk to a location at least how far in front of the right corner of the bumper?",
-  "choices": [
-   "3 feet",
-   "5 feet",
-   "8 feet",
-   "10 feet"
-  ],
-  "answer": 3,
-  "explanation": "Students who must cross the roadway should walk approximately 10 feet away from the side of the bus, then walk to a location at least 10 feet in front of the right corner of the bumper while remaining away from the front of the bus.",
-  "page": "10-4"
- },
- {
-  "id": "s10-021",
-  "section": 10,
-  "sectionName": "School Buses",
-  "question": "After unloading at the school, why should you walk through the bus?",
-  "choices": [
-   "To check for hiding or sleeping students and items left by students",
-   "To adjust the interior mirrors",
-   "To close the emergency exits",
-   "To sweep the aisle and clean the seats before the next scheduled trip"
+   "About 30 degrees",
+   "About 10 degrees",
+   "About 60 degrees",
+   "About 90 degrees"
   ],
   "answer": 0,
-  "explanation": "When unloading at school you should walk through the bus and check for hiding or sleeping students and items left by students.",
-  "page": "10-5"
- },
- {
-  "id": "s10-022",
-  "section": 10,
-  "sectionName": "School Buses",
-  "question": "What should students be told to do if they drop an object near the bus during loading or unloading?",
-  "choices": [
-   "Quickly pick it up before the bus moves",
-   "Ask another student to pick it up",
-   "Leave the object, move to a point of safety out of the danger zones, and get the driver's attention",
-   "Wait next to the bus, directly beside the object, until the driver opens the door and signals to them"
-  ],
-  "answer": 2,
-  "explanation": "Stopping or returning to pick up a dropped object may cause the student to disappear from the driver's sight at a very dangerous moment. Students should leave the object, move to a point of safety out of the danger zones, and attempt to get the driver's attention to retrieve the object.",
-  "page": "10-5"
- },
- {
-  "id": "s10-023",
-  "section": 10,
-  "sectionName": "School Buses",
-  "question": "As a general rule during an emergency or impending crisis, student safety and control is best maintained by:",
-  "choices": [
-   "Evacuating the bus immediately in every situation, no matter what the hazard outside the bus may be",
-   "Keeping students on the bus, if doing so does not expose them to unnecessary risk or injury",
-   "Sending students home on foot",
-   "Moving all students to the rear of the bus"
-  ],
-  "answer": 1,
-  "explanation": "As a general rule, student safety and control is best maintained by keeping students on the bus during an emergency, if doing so does not expose them to unnecessary risk or injury.",
-  "page": "10-6"
- },
- {
-  "id": "s10-024",
-  "section": 10,
-  "sectionName": "School Buses",
-  "question": "The driver must evacuate the bus when:",
-  "choices": [
-   "The bus is on fire or there is a threat of a fire",
-   "The bus is stalled on or adjacent to a railroad-highway crossing",
-   "There is an imminent danger of collision",
-   "All of the above"
-  ],
-  "answer": 3,
-  "explanation": "Mandatory evacuations include when the bus is on fire or threatened by fire, is stalled on or adjacent to a railroad-highway crossing, when the position of the bus may change and increase danger, when there is imminent danger of collision, and when a hazardous materials spill requires quick evacuation.",
-  "page": "10-6"
- },
- {
-  "id": "s10-025",
-  "section": 10,
-  "sectionName": "School Buses",
-  "question": "When evacuating the bus, a safe place for students will be at least how far off the road, and in what direction?",
-  "choices": [
-   "At least 100 feet off the road in the direction of oncoming traffic",
-   "At least 50 feet off the road behind the bus",
-   "At least 200 feet off the road away from oncoming traffic",
-   "At least 25 feet off the road on the right shoulder"
-  ],
-  "answer": 0,
-  "explanation": "A safe place will be at least 100 feet off the road in the direction of oncoming traffic. This keeps students from being hit by debris if another vehicle collides with the bus.",
-  "page": "10-6"
- },
- {
-  "id": "s10-026",
-  "section": 10,
-  "sectionName": "School Buses",
-  "question": "If there is a risk from spilled hazardous materials, you should lead students upwind of the bus at least how far?",
-  "choices": [
-   "100 feet",
-   "200 feet",
-   "300 feet",
-   "500 feet"
-  ],
-  "answer": 2,
-  "explanation": "Students should be led upwind of the bus at least 300 feet if there is a risk from spilled hazardous materials.",
-  "page": "10-6"
- },
- {
-  "id": "s10-027",
-  "section": 10,
-  "sectionName": "School Buses",
-  "question": "At a railroad-highway crossing, you should stop the bus how far from the nearest rail?",
-  "choices": [
-   "No closer than 5 feet and no farther than 25 feet",
-   "No closer than 15 feet and no farther than 50 feet",
-   "No closer than 25 feet and no farther than 75 feet",
-   "No closer than 50 feet and no farther than 100 feet"
-  ],
-  "answer": 1,
-  "explanation": "You should stop no closer than 15 feet and no farther than 50 feet from the nearest rail, where you have the best view of the tracks.",
-  "page": "10-9"
- },
- {
-  "id": "s10-028",
-  "section": 10,
-  "sectionName": "School Buses",
-  "question": "What is a passive railroad-highway crossing?",
-  "choices": [
-   "A crossing that does not have any type of traffic control device",
-   "A crossing with flashing red lights and bells",
-   "A crossing with gates that lower across the road",
-   "A crossing controlled by a police officer"
-  ],
-  "answer": 0,
-  "explanation": "A passive crossing does not have any type of traffic control device. The decision to proceed rests entirely in your hands, so you must recognize the crossing, search for any train, and decide if there is sufficient clear space to cross safely.",
-  "page": "10-7"
- },
- {
-  "id": "s10-029",
-  "section": 10,
-  "sectionName": "School Buses",
-  "question": "When approaching a railroad-highway crossing, you should activate your hazard lights approximately how far before the crossing?",
-  "choices": [
-   "50 feet",
-   "100 feet",
-   "200 feet",
-   "500 feet"
-  ],
-  "answer": 2,
-  "explanation": "When approaching the crossing you should slow down, test your brakes, and activate hazard lights approximately 200 feet before the crossing so your intentions are known.",
-  "page": "10-8"
- },
- {
-  "id": "s10-030",
-  "section": 10,
-  "sectionName": "School Buses",
-  "question": "While stopped at a railroad-highway crossing, what should you do to look and listen for an approaching train?",
-  "choices": [
-   "Turn up the radio so you can hear warning bells",
-   "Keep the service door and all windows closed so outside noise does not distract you from watching the signals",
-   "Ask the students to watch for the train",
-   "Turn off all radios and noisy equipment, silence the passengers, and open the service door and driver's window"
-  ],
-  "answer": 3,
-  "explanation": "At the crossing you should turn off all radios and noisy equipment, silence the passengers, and open the service door and driver's window to look and listen for an approaching train.",
-  "page": "10-9"
- },
- {
-  "id": "s10-031",
-  "section": 10,
-  "sectionName": "School Buses",
-  "question": "At a multiple-track railroad crossing, where should you stop?",
-  "choices": [
-   "Only before the first set of tracks",
-   "Before each set of tracks",
-   "Between the sets of tracks",
-   "Only if a train is visible"
-  ],
-  "answer": 0,
-  "explanation": "At a multiple-track crossing, stop only before the first set of tracks. When you are sure no train is approaching on any track, proceed across all of the tracks until you have completely cleared them.",
-  "page": "10-9"
- },
- {
-  "id": "s10-032",
-  "section": 10,
-  "sectionName": "School Buses",
-  "question": "If the crossing gate comes down after you have started across the tracks, you should:",
-  "choices": [
-   "Stop immediately and back up",
-   "Stop on the tracks and call your dispatcher",
-   "Drive through the gate even if it means you will break it",
-   "Change gears and accelerate quickly"
-  ],
-  "answer": 2,
-  "explanation": "If the gate comes down after you have started across, drive through it even if it means you will break the gate. You should also cross in a low gear and not change gears while crossing.",
-  "page": "10-9"
- },
- {
-  "id": "s10-033",
-  "section": 10,
-  "sectionName": "School Buses",
-  "question": "If the crossing gate stays down after the train passes, what should you do?",
-  "choices": [
-   "Carefully drive around the gate",
-   "Do not drive around the gate; call your dispatcher",
-   "Wait 5 minutes, then proceed",
-   "Have a student lift the gate"
-  ],
-  "answer": 1,
-  "explanation": "If the gate stays down after the train passes, do not drive around the gate. Instead, call your dispatcher.",
-  "page": "10-8"
- },
- {
-  "id": "s10-034",
-  "section": 10,
-  "sectionName": "School Buses",
-  "question": "If your bus stalls or is trapped on railroad tracks, you should get everyone out and move them:",
-  "choices": [
-   "Directly behind the bus",
-   "Along the tracks away from the train so they can watch it pass at a safe distance",
-   "Straight ahead of the bus",
-   "Far from the bus at an angle, away from the tracks and toward the train"
-  ],
-  "answer": 3,
-  "explanation": "If the bus stalls or is trapped on the tracks, get everyone out and off the tracks immediately and move everyone far from the bus at an angle that is both away from the tracks and toward the train.",
-  "page": "10-9"
- },
- {
-  "id": "s10-035",
-  "section": 10,
-  "sectionName": "School Buses",
-  "question": "In emergency braking, how should you use the brakes on a bus equipped with ABS?",
-  "choices": [
-   "Do not pump the brakes",
-   "Pump the brakes rapidly",
-   "Apply the parking brake first",
-   "Press the brake and clutch together repeatedly"
-  ],
-  "answer": 0,
-  "explanation": "You should brake as you always have, but in emergency braking do not pump the brakes on a bus with ABS. Use only the braking force necessary to stop safely and stay in control.",
-  "page": "10-10"
+  "explanation": "An effective scan moves systematically from side to side, starting at the greatest distance an object can be seen and working inward toward the aircraft. Each stop covers roughly 30 degrees, lasts no longer than 2 to 3 seconds, and each new viewing point should overlap the previous field of view by 10 degrees.",
+  "page": "50"
  },
  {
   "id": "s11-001",
   "section": 11,
-  "sectionName": "Vehicle Inspection Test",
-  "question": "During the engine compartment check, how much play is acceptable at the center of the engine belts (power steering, water pump, alternator, air compressor)?",
+  "sectionName": "Aeronautical Decision-Making",
+  "question": "What is aeronautical decision-making (ADM)?",
   "choices": [
-   "Up to 3/4 inch",
-   "Up to 1/4 inch",
-   "Up to 1 1/2 inches",
-   "No play at all"
+   "A systematic approach to the mental process pilots use to consistently pick the best course of action for a given set of circumstances",
+   "A regulatory framework that assigns responsibility for every flight decision to the highest-ranking person at the control station during operations",
+   "A memory aid listing the mechanical inspections a pilot must complete before each takeoff and again after each landing",
+   "A certification requirement that measures how quickly a pilot reacts to equipment failures that occur during flight"
   ],
   "answer": 0,
-  "explanation": "The manual says to check the belts for snugness with up to 3/4 inch play at the center of the belt, and also for cracks or frays.",
-  "page": "11-1"
+  "explanation": "ADM is decision-making applied to the aviation environment: a systematic approach to the mental process pilots use to consistently determine the best course of action for the circumstances at hand, based on the latest information available. It is also a systematic approach to risk assessment and stress management.",
+  "page": "51"
  },
  {
   "id": "s11-002",
   "section": 11,
-  "sectionName": "Vehicle Inspection Test",
-  "question": "If a component such as the water pump or alternator is not belt driven on your test vehicle, what must you do?",
+  "sectionName": "Aeronautical Decision-Making",
+  "question": "Approximately what share of all aviation accidents is related to human factors?",
   "choices": [
-   "Skip that component entirely",
-   "Crawl under the hood to verify the gear drive",
-   "Tell the examiner which component(s) are not belt driven",
-   "Ask the examiner to check it for you"
+   "50 percent",
+   "65 percent",
+   "80 percent",
+   "95 percent"
   ],
   "answer": 2,
-  "explanation": "The manual states that if any of the listed components are not belt driven, you must tell the examiner which components are not belt driven and make sure they operate properly, are not damaged or leaking, and are mounted securely.",
-  "page": "11-1"
+  "explanation": "An estimated 80 percent of all aviation accidents are related to human factors, and the vast majority of those happen during landing (24.1 percent) and takeoff (23.4 percent). Despite advances in training, equipment, and services, the human element remains the leading source of error.",
+  "page": "51"
  },
  {
   "id": "s11-003",
   "section": 11,
-  "sectionName": "Vehicle Inspection Test",
-  "question": "When checking the engine oil level during the pre-trip inspection, the level must be:",
+  "sectionName": "Aeronautical Decision-Making",
+  "question": "Crew resource management (CRM) training for flight crews focuses on the effective use of which resources?",
   "choices": [
-   "Exactly at the refill mark",
-   "Above the refill mark",
-   "Within one quart of the full mark",
-   "Anywhere on the dipstick"
+   "Human resources, hardware, and information",
+   "Fuel reserves, spare parts, and alternate airports",
+   "Company manuals, dispatch staff, and maintenance logs",
+   "Autopilot systems, navigation databases, and radios"
   ],
-  "answer": 1,
-  "explanation": "You must indicate where the dipstick is located and see that the oil level is within the safe operating range; the level must be above the refill mark.",
-  "page": "11-1"
+  "answer": 0,
+  "explanation": "CRM training centers on using all available resources effectively: human resources, hardware, and information that supports ADM. The airline industry developed it to cut accidents caused by human factors, and it works by improving crew cooperation and decision-making.",
+  "page": "51"
  },
  {
   "id": "s11-004",
   "section": 11,
-  "sectionName": "Vehicle Inspection Test",
-  "question": "During the cab check, you should build air pressure to governor cut-out, which is roughly:",
+  "sectionName": "Aeronautical Decision-Making",
+  "question": "What is the first of the six steps for good decision-making in the ADM process?",
   "choices": [
-   "60-80 psi",
-   "90-100 psi",
-   "150-170 psi",
-   "120-140 psi"
+   "Identifying personal attitudes hazardous to safe flight",
+   "Learning how to recognize and cope with stress during flight",
+   "Developing risk assessment skills",
+   "Evaluating the effectiveness of one's ADM skills"
   ],
-  "answer": 3,
-  "explanation": "The manual instructs you to make sure the air gauge is working properly and build air pressure to governor cut-out, roughly 120-140 psi.",
-  "page": "11-1"
+  "answer": 0,
+  "explanation": "Good decision-making starts with identifying personal attitudes hazardous to safe flight. The remaining steps are learning behavior modification techniques, learning to recognize and cope with stress, developing risk assessment skills, using all resources, and evaluating the effectiveness of one's ADM skills.",
+  "page": "52"
  },
  {
   "id": "s11-005",
   "section": 11,
-  "sectionName": "Vehicle Inspection Test",
-  "question": "What is the correct 'safe start' procedure for a vehicle with a manual transmission?",
+  "sectionName": "Aeronautical Decision-Making",
+  "question": "What is the goal of risk management?",
   "choices": [
-   "Place gearshift in neutral, depress clutch, start engine, then release clutch slowly",
-   "Depress the clutch, place gearshift in first gear, then start the engine",
-   "Start the engine, then depress the clutch and shift to neutral",
-   "Place gearshift in neutral and start the engine without touching the clutch"
+   "To eliminate every possible hazard from an operation before any flight is attempted",
+   "To proactively identify safety-related hazards and mitigate the associated risks",
+   "To transfer responsibility for flight hazards to the aircraft's manufacturer",
+   "To document each hazard after the flight so future pilots can review it"
   ],
-  "answer": 0,
-  "explanation": "The safe start procedure is to place the gearshift lever in neutral (or park for automatics), depress the clutch, start the engine, then release the clutch slowly.",
-  "page": "11-1"
+  "answer": 1,
+  "explanation": "Risk management aims to proactively identify safety-related hazards and mitigate the risks they create. It is an important component of ADM: when a pilot follows good decision-making practices, the inherent risk in a flight is reduced or even eliminated.",
+  "page": "52"
  },
  {
   "id": "s11-006",
   "section": 11,
-  "sectionName": "Vehicle Inspection Test",
-  "question": "When checking coolant level with the engine not hot, you should:",
+  "sectionName": "Aeronautical Decision-Making",
+  "question": "Under the fundamental principles of risk management, when should a pilot accept a risk?",
   "choices": [
-   "Kick the radiator to listen for fluid movement",
-   "Loosen the lower radiator hose slightly and watch for steady coolant flow to confirm the system is full",
-   "Inspect the reservoir sight glass, or remove the radiator cap and check for visible coolant level",
-   "Measure the coolant temperature with a gauge"
+   "When the benefits outweigh the dangers, or costs",
+   "When the flight cannot be rescheduled for another day",
+   "When the risk was identified during preflight planning",
+   "When a more experienced pilot has accepted the same risk"
   ],
-  "answer": 2,
-  "explanation": "The manual says to inspect the reservoir sight glass, or if the engine is not hot, remove the radiator cap and check for visible coolant level.",
-  "page": "11-1"
+  "answer": 0,
+  "explanation": "One of the four fundamental risk management principles is to accept risk only when the benefits outweigh the dangers, or costs. A related principle is to accept no unnecessary risk: flying always involves some risk, but unnecessary risk brings no corresponding return.",
+  "page": "52"
  },
  {
   "id": "s11-007",
   "section": 11,
-  "sectionName": "Vehicle Inspection Test",
-  "question": "Which reflective emergency equipment must you check for during the pre-trip inspection?",
+  "sectionName": "Aeronautical Decision-Making",
+  "question": "According to risk management principles, who should make risk decisions?",
   "choices": [
-   "Two orange cones or 4 fusees",
-   "Three red reflective triangles, 6 fusees or 3 liquid burning flares",
-   "Four red reflective triangles or 2 liquid burning flares",
-   "One warning flag and 3 fusees"
+   "The person who can develop and implement risk controls",
+   "The pilot with the most total flight hours on the team",
+   "The most senior official in the operator's organization",
+   "The crewmember who first identified the hazard involved"
   ],
-  "answer": 1,
-  "explanation": "The manual requires checking for three red reflective triangles, 6 fusees or 3 liquid burning flares, along with spare electrical fuses and a properly charged and rated fire extinguisher.",
-  "page": "11-2"
+  "answer": 0,
+  "explanation": "Risk decisions belong at the appropriate level, which means they should be made by the person who is able to develop and implement the risk controls. Authority over the risk goes with the ability to actually do something about it.",
+  "page": "52"
  },
  {
   "id": "s11-008",
   "section": 11,
-  "sectionName": "Vehicle Inspection Test",
-  "question": "What colors should clearance lights and reflectors be on the vehicle?",
+  "sectionName": "Aeronautical Decision-Making",
+  "question": "During which stages of a flight should risk management be integrated into planning?",
   "choices": [
-   "Amber on rear, red elsewhere",
-   "White on rear, red elsewhere",
-   "Red on all locations",
-   "Red on rear, amber elsewhere"
+   "All stages of the flight",
+   "The preflight planning stage only",
+   "Only the stages where a hazard has already been identified",
+   "The takeoff and landing phases, where most accidents happen"
   ],
-  "answer": 3,
-  "explanation": "Clearance lights must be red on the rear and amber elsewhere, and reflectors must be red on the rear and amber elsewhere.",
-  "page": "11-2"
+  "answer": 0,
+  "explanation": "Because risk is an unavoidable part of every flight, safety requires effective risk management in all stages of the flight, not just during preflight planning. Integrating risk management into planning at all levels is one of the four fundamental principles.",
+  "page": "53"
  },
  {
   "id": "s11-009",
   "section": 11,
-  "sectionName": "Vehicle Inspection Test",
-  "question": "For the hydraulic brake check, you should pump the brake pedal three times, then hold it down for five seconds. The pedal should:",
+  "sectionName": "Aeronautical Decision-Making",
+  "question": "How is single-pilot resource management (SRM) defined?",
   "choices": [
-   "Not move (depress) during the five seconds",
-   "Slowly sink about one inch",
-   "Depress fully and return",
-   "Pulse gently as pressure equalizes"
+   "The art and science of managing all resources available to a single pilot, before and during flight, to ensure a successful outcome",
+   "The practice of giving one crewmember final authority over every decision so that responsibility is never divided during a flight operation",
+   "The technique of automating as many aircraft control tasks as possible so the pilot can concentrate on scanning for other air traffic",
+   "The process of qualifying a pilot to operate legally without a visual observer or any other support personnel at the launch site"
   ],
   "answer": 0,
-  "explanation": "After pumping the pedal three times and holding it down for five seconds, the brake pedal should not move (depress) during the five seconds.",
-  "page": "11-2"
+  "explanation": "SRM is the art and science of managing all the resources available to a single pilot, both prior to and during flight, to ensure a successful outcome. It grew out of CRM concepts and includes ADM, risk management, task management, automation management, CFIT awareness, and situational awareness.",
+  "page": "53"
  },
  {
   "id": "s11-010",
   "section": 11,
-  "sectionName": "Vehicle Inspection Test",
-  "question": "During the air brake leakage test, with the engine off and the foot brake fully applied for one minute, air pressure should not drop more than:",
+  "sectionName": "Aeronautical Decision-Making",
+  "question": "In aeronautical decision-making, what is a hazard?",
   "choices": [
-   "1 psi (single) or 2 psi (combination)",
-   "3 psi (single vehicle) or 4 psi (combination vehicle)",
-   "5 psi (single) or 6 psi (combination)",
-   "10 psi for any vehicle"
+   "The value a pilot assigns to the worst possible outcome of a flight",
+   "A real or perceived condition, event, or circumstance that a pilot encounters",
+   "Any violation of the operating regulations that occurs during a flight",
+   "A pilot's assessment of how severely a condition could affect the outcome of the flight"
   ],
   "answer": 1,
-  "explanation": "With the foot brake held for one minute, the air pressure should not drop more than three pounds in one minute for a single vehicle or four pounds in one minute for a combination vehicle.",
-  "page": "11-2"
+  "explanation": "A hazard is a real or perceived condition, event, or circumstance that a pilot encounters. When faced with one, the pilot assigns a value to its potential impact, and that assessment is the risk. Hazard is the condition itself; risk is the pilot's judgment of it.",
+  "page": "53"
  },
  {
   "id": "s11-011",
   "section": 11,
-  "sectionName": "Vehicle Inspection Test",
-  "question": "When fanning off air pressure during the air brake check, the low air warning devices (buzzer, light, flag) should activate:",
+  "sectionName": "Aeronautical Decision-Making",
+  "question": "In aeronautical decision-making, what is risk?",
   "choices": [
-   "Only after air pressure reaches zero",
-   "Before air pressure drops below 20 psi, just before the spring brakes come fully on",
-   "Before air pressure drops below 60 psi or the level specified by the manufacturer",
-   "At exactly 100 psi"
+   "The pilot's assessment of the potential impact of a single or cumulative hazard",
+   "A condition, event, or circumstance that the pilot encounters during a flight",
+   "The chance that a mechanical failure will occur on any particular flight",
+   "Any operation conducted when the weather is below the pilot's personal minimums"
   ],
-  "answer": 2,
-  "explanation": "Low air warning devices should activate before the air pressure drops below 60 psi or the level specified by the manufacturer.",
-  "page": "11-2"
+  "answer": 0,
+  "explanation": "Risk is the pilot's assessment of the single or cumulative hazards being faced: the value the pilot assigns to the potential impact of a hazard. Because it is an assessment, different pilots can see the same hazard quite differently.",
+  "page": "53"
  },
  {
   "id": "s11-012",
   "section": 11,
-  "sectionName": "Vehicle Inspection Test",
-  "question": "On a tractor-trailer combination, as you continue to fan off air pressure, the tractor protection valve and parking brake valve should close (pop out) at approximately:",
+  "sectionName": "Aeronautical Decision-Making",
+  "question": "Which list names the five hazardous attitudes that can interfere with sound decision-making?",
   "choices": [
-   "100 psi, just before the low air warning devices activate",
-   "80 psi",
-   "10 psi",
-   "40 psi (or level specified by the manufacturer)"
+   "Anti-authority, impulsivity, invulnerability, macho, and resignation",
+   "Anti-authority, complacency, invulnerability, macho, and distraction",
+   "Impulsivity, distraction, invulnerability, resignation, and stress",
+   "Complacency, impulsivity, macho, resignation, and fixation"
   ],
-  "answer": 3,
-  "explanation": "At approximately 40 psi on a tractor-trailer combination (or the level specified by the manufacturer), the tractor protection valve and parking brake valve should close (pop out).",
-  "page": "11-2"
+  "answer": 0,
+  "explanation": "Studies have identified five hazardous attitudes that interfere with the ability to make sound decisions and exercise authority properly: anti-authority, impulsivity, invulnerability, macho, and resignation. Attitude is a motivational predisposition to respond to people, situations, or events in a given way.",
+  "page": "53"
  },
  {
   "id": "s11-013",
   "section": 11,
-  "sectionName": "Vehicle Inspection Test",
-  "question": "What happens if you fail to perform all three components of the air brake check correctly?",
+  "sectionName": "Aeronautical Decision-Making",
+  "question": "What is the first step toward neutralizing a hazardous attitude?",
   "choices": [
-   "Automatic failure of the vehicle inspection test",
-   "You lose points but may continue the test",
-   "You may retry the air brake check once",
-   "The examiner performs the check for you"
+   "Recognizing the thought as hazardous",
+   "Stating the corresponding antidote aloud",
+   "Writing the thought down for a postflight review",
+   "Canceling the operation until the feeling passes"
   ],
   "answer": 0,
-  "explanation": "The manual states that failure to perform all three components of the air brake check correctly will result in an automatic failure of the vehicle inspection test.",
-  "page": "11-2"
+  "explanation": "Recognition of hazardous thoughts is the first step toward neutralizing them. After recognizing a thought as hazardous, the pilot labels it as hazardous and then states the corresponding antidote. Antidotes should be memorized so they come to mind automatically when needed.",
+  "page": "53"
  },
  {
   "id": "s11-014",
   "section": 11,
-  "sectionName": "Vehicle Inspection Test",
-  "question": "How is the service brake check performed?",
+  "sectionName": "Aeronautical Decision-Making",
+  "question": "Which antidote counters the anti-authority attitude?",
   "choices": [
-   "Pull forward at about 15 mph and brake hard, measuring the distance it takes the vehicle to reach a complete stop",
-   "Pull forward at 5 mph, apply the service brake and stop, checking that the vehicle does not pull to either side",
-   "Apply the service brake while parked and listen for air leaks",
-   "Back up at 5 mph and apply the brake"
+   "Follow the rules. They are usually right.",
+   "I'm not helpless. I can make a difference.",
+   "It could happen to me.",
+   "Taking chances is foolish."
   ],
-  "answer": 1,
-  "explanation": "You pull forward at 5 mph, apply the service brake and stop, checking that the vehicle does not pull to either side and that it stops when the brake is applied.",
-  "page": "11-3"
+  "answer": 0,
+  "explanation": "The anti-authority attitude belongs to people who resent being told what to do and treat rules and procedures as unnecessary. Its antidote is \"Follow the rules. They are usually right.\" Each of the five hazardous attitudes has its own memorized antidote.",
+  "page": "54"
  },
  {
   "id": "s11-015",
   "section": 11,
-  "sectionName": "Vehicle Inspection Test",
-  "question": "For manual slack adjustors, how far should the brake pushrod move when pulled by hand with the brakes released?",
+  "sectionName": "Aeronautical Decision-Making",
+  "question": "A remote pilot who feels the need to act immediately and does the first thing that comes to mind, without weighing the alternatives, is displaying which hazardous attitude?",
   "choices": [
-   "Not more than three inches",
-   "Not more than two inches",
-   "Not more than one inch",
-   "It should not move at all"
+   "Impulsivity",
+   "Macho",
+   "Anti-authority",
+   "Resignation"
   ],
-  "answer": 2,
-  "explanation": "For manual slack adjustors, the brake pushrod should not move more than one inch (with the brakes released) when pulled by hand.",
-  "page": "11-3"
+  "answer": 0,
+  "explanation": "Impulsivity is the attitude of people who feel they must do something, anything, immediately, so they take the first action that occurs to them instead of selecting the best alternative. Its antidote is \"Not so fast. Think first.\"",
+  "page": "54"
  },
  {
   "id": "s11-016",
   "section": 11,
-  "sectionName": "Vehicle Inspection Test",
-  "question": "When inspecting brake chambers, you should check that they are:",
+  "sectionName": "Aeronautical Decision-Making",
+  "question": "Which antidote counters the invulnerability attitude?",
   "choices": [
-   "Freshly painted and lubricated",
-   "Warm to the touch after driving",
-   "Filled with hydraulic fluid to the proper level",
-   "Not leaking, cracked, or dented, and mounted securely"
+   "It could happen to me.",
+   "I'm not helpless. I can make a difference.",
+   "Taking chances is foolish.",
+   "Follow the rules. They are usually right."
   ],
-  "answer": 3,
-  "explanation": "The manual says to see that brake chambers are not leaking, cracked, or dented and are mounted securely.",
-  "page": "11-3"
+  "answer": 0,
+  "explanation": "Invulnerability is the belief that accidents happen to other people. Pilots who feel this way are more likely to take chances and increase risk, so the antidote to memorize is \"It could happen to me.\"",
+  "page": "54"
  },
  {
   "id": "s11-017",
   "section": 11,
-  "sectionName": "Vehicle Inspection Test",
-  "question": "When inspecting the suspension mounts, you should look for:",
+  "sectionName": "Aeronautical Decision-Making",
+  "question": "Which antidote counters the macho attitude?",
   "choices": [
-   "Cracked or broken spring hangers, missing or damaged bushings, and broken, loose, or missing bolts or u-bolts",
-   "Only rust on the leaf springs",
-   "Proper grease color on every fitting and evidence that each one has been lubricated on the maintenance schedule",
-   "Tire wear patterns near the axle"
+   "Taking chances is foolish.",
+   "It could happen to me.",
+   "Not so fast. Think first.",
+   "Follow the rules. They are usually right."
   ],
   "answer": 0,
-  "explanation": "The manual says to look for cracked or broken spring hangers, missing or damaged bushings, and broken, loose, or missing bolts, u-bolts or other axle mounting parts, checked at each point where they secure to the frame and axle(s).",
-  "page": "11-3"
+  "explanation": "The macho attitude drives pilots to take risks to prove they are better than everyone else, and it is found in both men and women. Its antidote is \"Taking chances is foolish.\"",
+  "page": "54"
  },
  {
   "id": "s11-018",
   "section": 11,
-  "sectionName": "Vehicle Inspection Test",
-  "question": "What is the minimum tread depth required on steering axle tires?",
+  "sectionName": "Aeronautical Decision-Making",
+  "question": "A pilot who thinks \"What's the use?\" and believes the outcome of the flight is out of personal control is showing which hazardous attitude?",
   "choices": [
-   "1/32 inch",
-   "4/32 inch",
-   "2/32 inch",
-   "8/32 inch"
+   "Resignation",
+   "Invulnerability",
+   "Impulsivity",
+   "Anti-authority"
   ],
-  "answer": 1,
-  "explanation": "The minimum tread depth is 4/32 on steering axle tires and 2/32 on all other tires.",
-  "page": "11-4"
+  "answer": 0,
+  "explanation": "Resignation is the attitude of pilots who do not see themselves as able to make a great deal of difference in what happens to them, leaving the outcome to luck or to others. The antidote is \"I'm not helpless. I can make a difference.\"",
+  "page": "54"
  },
  {
   "id": "s11-019",
   "section": 11,
-  "sectionName": "Vehicle Inspection Test",
-  "question": "What is the minimum tread depth required on all tires other than the steering axle tires?",
+  "sectionName": "Aeronautical Decision-Making",
+  "question": "What does the IMSAFE checklist help a pilot determine?",
   "choices": [
-   "6/32 inch",
-   "4/32 inch",
-   "2/32 inch",
-   "3/32 inch"
+   "Physical and mental readiness for flying",
+   "Whether the aircraft can safely carry the planned load",
+   "Whether the weather meets the pilot's personal minimums",
+   "Whether outside pressures are driving the go/no-go decision"
   ],
-  "answer": 2,
-  "explanation": "The manual requires a minimum tread depth of 2/32 on all tires other than steering axle tires, which require 4/32.",
-  "page": "11-4"
+  "answer": 0,
+  "explanation": "IMSAFE is one of the best tools a single pilot has for mitigating risk: a self-check of physical and mental readiness covering Illness, Medication, Stress, Alcohol, Fatigue, and Emotion. Fatigue is called out as especially insidious because it may not be apparent until serious errors are already being made.",
+  "page": "55"
  },
  {
   "id": "s11-020",
   "section": 11,
-  "sectionName": "Vehicle Inspection Test",
-  "question": "How must you check tire inflation during the vehicle inspection test to receive credit?",
+  "sectionName": "Aeronautical Decision-Making",
+  "question": "What four risk categories make up the PAVE checklist?",
   "choices": [
-   "Kick each tire firmly and listen to the sound",
-   "Visually estimate the bulge at the bottom of the tire",
-   "Press on the sidewall with your thumb",
-   "Use a tire gauge to check for proper inflation"
+   "Pilot-in-command, Aircraft, enVironment, and External pressures",
+   "Planning, Airspace, Visibility, and Equipment condition",
+   "Pilot-in-command, Altitude, Visibility, and Emergencies",
+   "Preflight planning, Aircraft, enVironment, and Emergencies"
   ],
-  "answer": 3,
-  "explanation": "You must check for proper inflation by using a tire gauge; the manual notes you will not get credit if you simply kick the tires.",
-  "page": "11-4"
+  "answer": 0,
+  "explanation": "The PAVE checklist divides the risks of a flight into Pilot-in-command, Aircraft, enVironment, and External pressures, giving the pilot a simple way to examine each category before every flight. If the identified risks cannot be managed safely, the decision should be to cancel the flight.",
+  "page": "55"
  },
  {
   "id": "s11-021",
   "section": 11,
-  "sectionName": "Vehicle Inspection Test",
-  "question": "When checking lug nuts, which of these are signs of looseness?",
+  "sectionName": "Aeronautical Decision-Making",
+  "question": "What are personal minimums?",
   "choices": [
-   "Rust trails or shiny threads",
-   "Dull gray paint on the nuts",
-   "Even spacing between nuts",
-   "Grease on the hub cap"
+   "Limits unique to an individual pilot's current level of experience and proficiency",
+   "The lowest weather values that the regulations permit for any small UA operation",
+   "The manufacturer's published operating limitations for a specific aircraft model",
+   "Restrictions an employer applies uniformly to every pilot in its organization"
   ],
   "answer": 0,
-  "explanation": "All lug nuts must be present, free of cracks and distortions, and show no signs of looseness such as rust trails or shiny threads; bolt holes must not be cracked or distorted.",
-  "page": "11-4"
+  "explanation": "Personal minimums are limits a pilot sets for items in each PAVE risk category, and they are unique to that pilot's current level of experience and proficiency. Setting them is one way to control risk after the risks of a flight have been identified.",
+  "page": "55"
  },
  {
   "id": "s11-022",
   "section": 11,
-  "sectionName": "Vehicle Inspection Test",
-  "question": "When inspecting wheel rims, which condition is NOT allowed?",
+  "sectionName": "Aeronautical Decision-Making",
+  "question": "Why is managing external pressures described as the single most important key to risk management?",
   "choices": [
-   "Factory paint on the rim",
-   "Welding repairs on the rim",
-   "Balance weights on the rim",
-   "A rim matched with a properly inflated tire"
+   "External pressure is the one risk-factor category that can cause a pilot to ignore all the other risk factors",
+   "External pressure is the only risk-factor category that the regulations require a pilot to document before flight",
+   "External pressure is the easiest risk-factor category to eliminate entirely during preflight preparations",
+   "External pressure is the only risk-factor category that keeps changing while a flight is under way"
   ],
-  "answer": 1,
-  "explanation": "The manual says to check for damaged or bent rims and states that rims cannot have welding repairs.",
-  "page": "11-4"
+  "answer": 0,
+  "explanation": "External pressures, such as the desire to impress someone or plain goal-completion drive, can push a pilot to disregard every other risk factor, which is why managing them is called the single most important key to risk management. Personal standard operating procedures are one way to provide a release for these pressures.",
+  "page": "56"
  },
  {
   "id": "s11-023",
   "section": 11,
-  "sectionName": "Vehicle Inspection Test",
-  "question": "When checking the air hoses and electrical lines between the tractor and trailer, you should verify all of the following EXCEPT:",
+  "sectionName": "Aeronautical Decision-Making",
+  "question": "In the 3P model of aeronautical decision-making, what do the three Ps stand for?",
   "choices": [
-   "Lines are not cut, chafed, spliced, or worn (steel braid should not show through)",
-   "Lines are not tangled, pinched, or dragging against tractor parts",
-   "There are no audible air leaks",
-   "Lines are wrapped tightly around the catwalk for storage"
+   "Perceive, Process, Perform",
+   "Plan, Prepare, Proceed",
+   "Predict, Prevent, Prevail",
+   "Perceive, Prepare, Proceed"
   ],
-  "answer": 3,
-  "explanation": "The manual says to listen for air leaks, check that lines are not cut, chafed, spliced, or worn with steel braid showing through, and make sure they are not tangled, pinched, or dragging against tractor parts. It does not call for wrapping lines around the catwalk.",
-  "page": "11-4"
+  "answer": 0,
+  "explanation": "In the 3P model the pilot Perceives the circumstances of the flight, Processes them by evaluating their impact on flight safety, and Performs by implementing the best course of action. Adding an Evaluate step turns it into a continuous model for every aeronautical decision.",
+  "page": "57"
  },
  {
   "id": "s11-024",
   "section": 11,
-  "sectionName": "Vehicle Inspection Test",
-  "question": "When inspecting the fifth wheel locking jaws, you should look into the fifth wheel gap and check that the jaws are:",
+  "sectionName": "Aeronautical Decision-Making",
+  "question": "Within the 3P cycle, what does the CARE checklist stand for when processing hazards?",
   "choices": [
-   "Partially open to allow trailer movement",
-   "Coated with fresh paint",
-   "Fully closed around the kingpin",
-   "Fully closed around the apron"
+   "Consequences, Alternatives, Reality, External factors",
+   "Conditions, Aircraft, Risks, Environment",
+   "Consequences, Actions, Resources, Evaluation",
+   "Checklists, Alternatives, Reality, External pressures"
   ],
-  "answer": 2,
-  "explanation": "You must look into the fifth wheel gap and check that the locking jaws are fully closed around the kingpin.",
-  "page": "11-5"
+  "answer": 0,
+  "explanation": "Pilots perceive hazards with the PAVE checklist, then process them with CARE: Consequences, Alternatives, Reality, and External factors. This is the middle step of the practical 3P risk management model.",
+  "page": "58"
  },
  {
   "id": "s11-025",
   "section": 11,
-  "sectionName": "Vehicle Inspection Test",
-  "question": "When inspecting the trailer landing gear before driving, you should check that it is:",
+  "sectionName": "Aeronautical Decision-Making",
+  "question": "Which choices does the TEAM list give a pilot for performing risk management?",
   "choices": [
-   "Lowered slightly to balance the trailer",
-   "Fully raised, with no missing parts, the crank handle secure, and the support frame not damaged",
-   "Removed and stored in the tongue storage area",
-   "Halfway raised, with the crank handle removed and stored so it cannot swing loose while the rig is moving"
+   "Transfer, Eliminate, Accept, or Mitigate",
+   "Train, Evaluate, Act, or Monitor",
+   "Transfer, Eliminate, Assess, or Minimize",
+   "Test, Eliminate, Assess, or Manage"
   ],
-  "answer": 1,
-  "explanation": "The landing gear must be fully raised, have no missing parts, the crank handle must be secure, and the support frame must not be damaged; if power operated, check for air or hydraulic leaks.",
-  "page": "11-6"
+  "answer": 0,
+  "explanation": "In the Perform step of the 3P model, the pilot acts on each identified risk using the TEAM choice list: Transfer it, Eliminate it, Accept it, or Mitigate it. Most flight training activity happens in the time-critical timeframe, where this compact model is practical.",
+  "page": "58"
+ },
+ {
+  "id": "s11-026",
+  "section": 11,
+  "sectionName": "Aeronautical Decision-Making",
+  "question": "In the DECIDE model, what does the first D stand for?",
+  "choices": [
+   "Detect that a change has occurred",
+   "Determine the aircraft's exact position",
+   "Declare the nature of the problem to others",
+   "Delegate tasks to any available crewmembers"
+  ],
+  "answer": 0,
+  "explanation": "The DECIDE model's six elements are Detect that a change has occurred, Estimate the need to counter or react to it, Choose a desirable outcome, Identify actions that can achieve it, Do the necessary action, and Evaluate the effect of the action. It is a worldwide-recognized framework for organizing decisions.",
+  "page": "60"
+ },
+ {
+  "id": "s11-027",
+  "section": 11,
+  "sectionName": "Aeronautical Decision-Making",
+  "question": "What characterizes automatic, or naturalistic, decision-making?",
+  "choices": [
+   "A reflexive response anchored in training and experience, used most often when there is no time for analytical methods",
+   "A step-by-step comparison of the pros and cons of every available option before committing to any particular action in the air",
+   "A random selection among all workable options intended to remove personal bias from an emergency response decision",
+   "A checklist-driven procedure that hands the decision entirely over to the manufacturer's published emergency guidance"
+  ],
+  "answer": 0,
+  "explanation": "When pressed for time, experts first judge whether a situation feels familiar and then take the first workable option rather than comparing every alternative, relying on recognized patterns from experience. This reflexive style, anchored in training and experience, is used most often in emergencies and improves as both grow.",
+  "page": "61"
+ },
+ {
+  "id": "s11-028",
+  "section": 11,
+  "sectionName": "Aeronautical Decision-Making",
+  "question": "Why are experienced pilots particularly prone to the classic operational pitfalls?",
+  "choices": [
+   "Their desire to complete a flight as planned can distort how realistically they judge their own piloting skills",
+   "Their physical reflexes decline with age noticeably faster than their aeronautical judgment and knowledge can improve",
+   "Their reliance on newer automation tends to grow faster than their formal training on that automation",
+   "Their habit of skipping checklists develops once frequently practiced maneuvers become fully automatic"
+  ],
+  "answer": 0,
+  "explanation": "Experienced pilots, as a rule, try to complete a flight as planned. That goal orientation can work against safety and feed an unrealistic assessment of piloting skills, producing the behavioral traps known as operational pitfalls, which must be identified and eliminated.",
+  "page": "61"
+ },
+ {
+  "id": "s11-029",
+  "section": 11,
+  "sectionName": "Aeronautical Decision-Making",
+  "question": "Which five fundamental risk elements must a pilot accurately perceive and understand to maintain situational awareness?",
+  "choices": [
+   "Flight, pilot, aircraft, environment, and type of operation",
+   "Weather, terrain, airspace, traffic, and radio communications",
+   "Pilot, crew, aircraft, fuel state, and destination",
+   "Planning, takeoff, cruise, landing, and postflight"
+  ],
+  "answer": 0,
+  "explanation": "Situational awareness means accurately perceiving and understanding all the factors and conditions within the five fundamental risk elements: flight, pilot, aircraft, environment, and type of operation. A pilot with the total picture avoids fixating on one perceived significant factor; fatigue, stress, and work overload are the obstacles that cause such fixation.",
+  "page": "63"
+ },
+ {
+  "id": "s11-030",
+  "section": 11,
+  "sectionName": "Aeronautical Decision-Making",
+  "question": "What is typically the first effect of a high workload on a pilot?",
+  "choices": [
+   "Working harder while accomplishing less",
+   "Losing all awareness of input from outside sources",
+   "Making faster decisions with greater confidence",
+   "Handing off essential tasks before they become urgent"
+  ],
+  "answer": 0,
+  "explanation": "The first sign of work overload is that the pilot works harder but accomplishes less. As workload keeps rising, attention narrows to a single item, and a task-saturated pilot loses awareness of input from various sources, so decisions get made on incomplete information. The remedy is to stop, think, slow down, and prioritize.",
+  "page": "64"
+ },
+ {
+  "id": "s11-031",
+  "section": 11,
+  "sectionName": "Aeronautical Decision-Making",
+  "question": "The FAA treats Crew Resource Management for remote pilots as part of which broader subject?",
+  "choices": [
+   "Aeronautical decision-making and judgment",
+   "Airport operations and radio communication",
+   "Loading, balance, and aircraft performance",
+   "Weather theory and weather-source interpretation"
+  ],
+  "answer": 0,
+  "explanation": "Crew Resource Management is not a standalone body of rules for remote pilots. The FAA presents it as one component of aeronautical decision-making and judgment: using every available crewmember and resource well is part of making sound operational decisions.",
+  "page": "37"
  },
  {
   "id": "s12-001",
   "section": 12,
-  "sectionName": "Basic Control Skills Test",
-  "question": "During the basic control skills test, what does the examiner score as an \"encroachment\"?",
+  "sectionName": "Airport Operations",
+  "question": "How is an airport defined?",
   "choices": [
-   "Stopping the vehicle without changing direction",
-   "Taking more than two minutes to complete an exercise after the examiner signals you to begin",
-   "Touching or crossing over an exercise boundary line or cone with any portion of your vehicle",
-   "Exiting the vehicle to check its position"
+   "Any area of land or water used or intended for aircraft landing or takeoff",
+   "Any paved surface longer than 3,000 feet that is maintained for aircraft use",
+   "A facility with at least one runway and an operating control tower",
+   "Any government-owned property designated for aviation and open to the public"
   ],
-  "answer": 2,
-  "explanation": "The examiner scores the number of times you touch or cross over an exercise boundary line or cone with any portion of your vehicle. Each encroachment counts as an error.",
-  "page": "12-1"
+  "answer": 0,
+  "explanation": "An airport is any area of land or water used or intended for aircraft landing or takeoff. The definition is broad enough to take in seaplane bases, heliports, and tilt rotor facilities, along with the airport's buildings, facilities, and rights of way.",
+  "page": "65"
  },
  {
   "id": "s12-002",
   "section": 12,
-  "sectionName": "Basic Control Skills Test",
-  "question": "What is scored as a \"pull-up\" during a basic control skills exercise?",
+  "sectionName": "Airport Operations",
+  "question": "What makes an airport a towered airport?",
   "choices": [
-   "Stopping and pulling forward to clear an encroachment or to get a better position",
-   "Stopping the vehicle without changing direction",
-   "Backing up more than one vehicle length",
-   "Opening the door or leaving the cab to check the position of the vehicle in the exercise"
+   "It has an operating control tower",
+   "It is open to the general public",
+   "It has a published instrument approach procedure",
+   "It is operated by a federal government agency"
   ],
   "answer": 0,
-  "explanation": "When a driver stops and pulls forward to clear an encroachment or to get a better position, it is scored as a pull-up. Stopping without changing direction does not count as a pull-up.",
-  "page": "12-1"
+  "explanation": "Airports come in two types, towered and non-towered, and the difference is whether an operating control tower is present. Public access, approaches, and ownership are separate distinctions; civil, military/federal, and private airports can each be towered or non-towered.",
+  "page": "65"
  },
  {
   "id": "s12-003",
   "section": 12,
-  "sectionName": "Basic Control Skills Test",
-  "question": "How are pull-ups penalized on the basic control skills test?",
+  "sectionName": "Airport Operations",
+  "question": "What service is air traffic control responsible for providing at a towered airport?",
   "choices": [
-   "Every pull-up counts as an error",
-   "Any pull-up at any point during an exercise results in an automatic failure of the entire test",
-   "Pull-ups are never penalized",
-   "Initial pull-ups are not penalized, but an excessive number of pull-ups will count as errors"
+   "The safe, orderly, and expeditious flow of air traffic",
+   "Weather forecasts for departing and arriving pilots",
+   "Fuel, parking, and ground handling for transient aircraft",
+   "Maintenance inspections of aircraft based at the field"
   ],
-  "answer": 3,
-  "explanation": "The manual states you will not be penalized for initial pull-ups; however, an excessive number of pull-ups will count as errors.",
-  "page": "12-1"
+  "answer": 0,
+  "explanation": "ATC's job at a towered airport is the safe, orderly, and expeditious flow of air traffic. Towers are provided where the type of operations or the volume of traffic requires that service.",
+  "page": "65"
  },
  {
   "id": "s12-004",
   "section": 12,
-  "sectionName": "Basic Control Skills Test",
-  "question": "How many looks (outside vehicle observations) are you allowed during the Straight Line Backing exercise?",
+  "sectionName": "Airport Operations",
+  "question": "Which statement describes a private airport?",
   "choices": [
-   "None",
-   "One",
-   "Two",
-   "Three"
+   "It is designated for restricted use and not open to the general public",
+   "It is operated by the military, NASA, or another federal government agency",
+   "It is any airport that does not have an operating control tower",
+   "It is open to the general public but charges landing fees for access"
   ],
-  "answer": 1,
-  "explanation": "The maximum number of looks allowed is two for most exercises, but the Straight Line Backing exercise allows only one look.",
-  "page": "12-1"
+  "answer": 0,
+  "explanation": "A private airport is designated for private or restricted use only and is not open to the general public. Civil airports are the ones open to the public, and military/federal government airports are run by the military, NASA, or other federal agencies.",
+  "page": "65"
  },
  {
   "id": "s12-005",
   "section": 12,
-  "sectionName": "Basic Control Skills Test",
-  "question": "What is the maximum number of times you may look to check the position of your vehicle on skills test exercises other than Straight Line Backing?",
+  "sectionName": "Airport Operations",
+  "question": "Are two-way radio communications required when operating at a non-towered airport?",
   "choices": [
-   "One",
-   "Four",
-   "Two",
-   "Three"
+   "No, but monitoring other aircraft on the specified frequency is good practice",
+   "Yes, all traffic must stay in contact with the controlling facility at all times",
+   "Yes, but only aircraft equipped with transponders are required to transmit",
+   "No, radio transmissions at non-towered airports are prohibited to reduce interference"
   ],
-  "answer": 2,
-  "explanation": "The maximum number of times you may look to check the position of your vehicle is two, except for the Straight Line Backing exercise, which allows one look.",
-  "page": "12-1"
+  "answer": 0,
+  "explanation": "Two-way radio communications are not required at a non-towered airport, but it is good practice to monitor other aircraft on the specified frequency for the benefit of other traffic. The key is selecting the correct common frequency for that airport.",
+  "page": "65"
  },
  {
   "id": "s12-006",
   "section": 12,
-  "sectionName": "Basic Control Skills Test",
-  "question": "Which of the following is scored as a \"look\" during the basic control skills test?",
+  "sectionName": "Airport Operations",
+  "question": "What is the purpose of a Common Traffic Advisory Frequency (CTAF)?",
   "choices": [
-   "Opening the door",
-   "Moving from a seated position where in physical control of the vehicle",
-   "On a bus, walking to the back of the bus to get a better view",
-   "All of the above"
+   "Carrying out airport advisory practices at an airport without an operating control tower",
+   "Giving air traffic control a dedicated channel for issuing takeoff and landing clearances",
+   "Broadcasting a continuous recorded loop of local weather and airport conditions",
+   "Coordinating military training flights in the vicinity of federal government airports"
   ],
-  "answer": 3,
-  "explanation": "Each time you open the door, move from a seated position where in physical control of the vehicle, or on a bus walk to the back of the bus to get a better view, it is scored as a look.",
-  "page": "12-1"
+  "answer": 0,
+  "explanation": "A CTAF is a frequency designated for carrying out airport advisory practices when operating to or from an airport that has no operating control tower. Selecting the correct common frequency is the key to monitoring traffic at such an airport.",
+  "page": "65"
  },
  {
   "id": "s12-007",
   "section": 12,
-  "sectionName": "Basic Control Skills Test",
-  "question": "Before exiting the vehicle to check its external position during a skills exercise, what must you do?",
+  "sectionName": "Airport Operations",
+  "question": "Which frequencies may serve as an airport's CTAF?",
   "choices": [
-   "Place the vehicle in neutral and set the parking brake(s)",
-   "Turn off the engine and remove the keys",
-   "Activate the four-way flashers and honk the horn",
-   "Ask the examiner to hold the brake pedal"
+   "A UNICOM, MULTICOM, FSS, or tower frequency",
+   "Only a UNICOM frequency assigned by the FAA",
+   "An ATIS, AWOS, or approach control frequency",
+   "Only a discrete frequency reserved for that single airport"
   ],
   "answer": 0,
-  "explanation": "When stopping to look, you must place the vehicle in neutral and set the parking brake(s), then exit safely by facing the vehicle and maintaining three points of contact. Failing to safely secure the vehicle or exit safely may result in automatic failure of the test.",
-  "page": "12-1"
+  "explanation": "The CTAF may be a UNICOM, MULTICOM, FSS, or tower frequency, and it is identified in the appropriate aeronautical publications for the airport.",
+  "page": "65"
  },
  {
   "id": "s12-008",
   "section": 12,
-  "sectionName": "Basic Control Skills Test",
-  "question": "In the Straight Line Backing exercise, you may be asked to:",
+  "sectionName": "Airport Operations",
+  "question": "What is UNICOM?",
   "choices": [
-   "Back into an alley and stop within three feet of the rear",
-   "Back your vehicle in a straight line between two rows of cones without touching or crossing over the exercise boundaries",
-   "Back into a parking space on your left without crossing the boundaries, using no more than a single pull-up to correct",
-   "Drive forward between two rows of cones and stop at the end"
+   "A nongovernment radio station that can give airport information where no tower or FSS operates",
+   "A government-operated radio network that relays ATC clearances to pilots at non-towered fields",
+   "An automated recording of weather and runway information that is updated every hour",
+   "A satellite datalink service that delivers NOTAMs to aircraft while they are in flight"
   ],
-  "answer": 1,
-  "explanation": "In Straight Line Backing you may be asked to back your vehicle in a straight line between two rows of cones without touching or crossing over the exercise boundaries.",
-  "page": "12-1"
+  "answer": 0,
+  "explanation": "UNICOM is a nongovernment air/ground radio communication station. It may provide airport information at public use airports that have neither a tower nor an FSS.",
+  "page": "65"
  },
  {
   "id": "s12-009",
   "section": 12,
-  "sectionName": "Basic Control Skills Test",
-  "question": "In the Offset Back/Right exercise, how far must you back the vehicle into the opposite lane?",
+  "sectionName": "Airport Operations",
+  "question": "At what altitude is the traffic pattern at a non-towered airport entered?",
   "choices": [
-   "Until the rear of your vehicle touches the rear boundary",
-   "Until the rear wheels cross the first set of cones",
-   "Until the front of your vehicle has passed the first set of cones",
-   "Until half of your vehicle is inside the lane"
+   "Always at pattern altitude",
+   "At least 500 feet above pattern altitude",
+   "Below pattern altitude, climbing on the downwind leg",
+   "At any altitude, provided the pilot announces intentions"
   ],
-  "answer": 2,
-  "explanation": "In the offset back exercises, you must back the vehicle into the opposite lane until the front of your vehicle has passed the first set of cones, without striking boundary lines or cones.",
-  "page": "12-1"
+  "answer": 0,
+  "explanation": "Non-towered airport traffic patterns are always entered at pattern altitude. Only the way the pattern is joined varies, depending on the direction the aircraft arrives from.",
+  "page": "65"
  },
  {
   "id": "s12-010",
   "section": 12,
-  "sectionName": "Basic Control Skills Test",
-  "question": "In the parallel park exercises, how much of your vehicle must end up inside the parking space?",
+  "sectionName": "Airport Operations",
+  "question": "What is the preferred method for entering a non-towered airport's traffic pattern from the downwind side?",
   "choices": [
-   "The rear half of the vehicle",
-   "Everything except the front bumper",
-   "Enough that the vehicle is out of the traffic lane",
-   "Your entire vehicle, completely inside the space"
+   "Approach on a course 45 degrees to the downwind leg and join at midfield",
+   "Overfly the field above the pattern and descend directly onto the base leg",
+   "Enter the upwind leg at the departure end of the runway and circle the field",
+   "Join the final approach course straight in from several miles outside the pattern"
   ],
-  "answer": 3,
-  "explanation": "For both parallel park exercises, you are required to get your entire vehicle completely into the space without crossing the front, side, or rear boundaries marked by cones.",
-  "page": "12-1"
+  "answer": 0,
+  "explanation": "When arriving from the downwind side of the pattern, the preferred entry is to approach on a course 45 degrees to the downwind leg and join the pattern at midfield.",
+  "page": "65"
  },
  {
   "id": "s12-011",
   "section": 12,
-  "sectionName": "Basic Control Skills Test",
-  "question": "In the Alley Dock exercise, how close must the rear of your vehicle come to the rear of the alley?",
+  "sectionName": "Airport Operations",
+  "question": "Which publication provides the most comprehensive information about a given airport?",
   "choices": [
-   "Within three feet",
-   "Within ten feet",
-   "It must touch the rear boundary",
-   "Within one foot"
+   "The Chart Supplement U.S.",
+   "The sectional chart legend",
+   "The NOTAMs for that airport",
+   "The airport's ATIS broadcast"
   ],
   "answer": 0,
-  "explanation": "In the Alley Dock, you must back into the alley bringing the rear of your vehicle within three feet of the rear of the alley without touching boundary lines or cones, and your vehicle must be straight within the alley/lane when finished.",
-  "page": "12-2"
+  "explanation": "The Chart Supplement U.S., formerly the Airport/Facility Directory, provides the most comprehensive information on a given airport, covering airports, heliports, and seaplane bases open to the public. The Legend Sample in the front of each volume explains how to decode the entries.",
+  "page": "66"
  },
  {
   "id": "s12-012",
   "section": 12,
-  "sectionName": "Basic Control Skills Test",
-  "question": "What can happen if you do not maneuver the vehicle into its final position as described by the examiner?",
+  "sectionName": "Airport Operations",
+  "question": "How often is the Chart Supplement U.S. revised?",
   "choices": [
-   "Nothing, as long as you stayed within the boundaries",
-   "You will be penalized and could fail the basic skills test",
-   "You will be asked to repeat the exercise with no penalty",
-   "It is scored as a single pull-up"
+   "Every 56 days",
+   "Every 28 days",
+   "Every 6 months",
+   "Once each year"
   ],
-  "answer": 1,
-  "explanation": "It is important to finish each exercise exactly as the examiner has instructed. If you do not maneuver the vehicle into its final position as described, you will be penalized and could fail the basic skills test.",
-  "page": "12-1"
+  "answer": 0,
+  "explanation": "The Chart Supplement U.S. is published in seven books organized by region, and each is revised every 56 days. It is also available digitally on the FAA's website.",
+  "page": "66"
  },
  {
   "id": "s12-013",
   "section": 12,
-  "sectionName": "Basic Control Skills Test",
-  "question": "Which exercises may be used to test your basic vehicle control skills?",
+  "sectionName": "Airport Operations",
+  "question": "What kind of information is distributed through the NOTAM system?",
   "choices": [
-   "Emergency braking, high-speed lane changes, and a controlled skid recovery demonstration on a wet practice course",
-   "Parallel park, three-point turns, hill starts, and driving through a serpentine cone course",
-   "Alley dock, highway merging, roundabout navigation, and backing onto a loading ramp",
-   "Straight line backing, offset back right or left, parallel park (driver side or conventional), and alley dock"
+   "Time-critical information that is temporary or was not known in time to chart",
+   "Permanent airspace boundaries and airway structures that appear on every chart revision",
+   "Long-range weather outlooks intended for planning flights weeks in advance",
+   "Routine airport service listings such as fuel availability and operating hours"
   ],
-  "answer": 3,
-  "explanation": "The basic control skills exercises are straight line backing, offset back/right, offset back/left, parallel park (driver side), parallel park (conventional), and alley dock.",
-  "page": "12-1"
+  "answer": 0,
+  "explanation": "NOTAMs carry time-critical aeronautical information that is temporary in nature or was not known far enough in advance to publish on charts or in other publications. They include items like taxiway and runway closures, construction, and navigational aid status changes, and pilots should check them before any flight.",
+  "page": "66"
  },
  {
   "id": "s12-014",
   "section": 12,
-  "sectionName": "Basic Control Skills Test",
-  "question": "Where may your basic control skills be tested?",
+  "sectionName": "Airport Operations",
+  "question": "What is the Automated Terminal Information Service (ATIS)?",
   "choices": [
-   "Only on a closed practice course at the DMV headquarters building",
-   "Only in the parking lot where the test begins",
-   "Off-road, or somewhere on the street during the road test",
-   "On a simulator before the driving portion starts"
+   "A looped recording of local weather and other non-control information",
+   "A live controller position that reads the current weather to each aircraft on request",
+   "A datalink service that uploads flight plans directly into air traffic control computers",
+   "An emergency broadcast system that activates only when an airport closes unexpectedly"
   ],
-  "answer": 2,
-  "explanation": "Your basic control skills could be tested using one or more of the exercises off-road or somewhere on the street during the road test.",
-  "page": "12-1"
+  "answer": 0,
+  "explanation": "ATIS is a recording of the local weather conditions and other pertinent non-control information, broadcast on a local frequency in a looped format. It includes the runways in use, specific ATC procedures, and construction activity that could affect taxi planning.",
+  "page": "67"
  },
  {
   "id": "s12-015",
   "section": 12,
-  "sectionName": "Basic Control Skills Test",
-  "question": "When exiting the vehicle during a look, how must you exit?",
+  "sectionName": "Airport Operations",
+  "question": "How often is an ATIS recording normally updated?",
   "choices": [
-   "Quickly, leaving the door open so you can climb back in without losing any time",
-   "Safely, facing the vehicle and maintaining three points of contact with it at all times",
-   "Facing away from the vehicle so you can see the boundary cones while stepping down",
-   "Any way you like, as long as the engine has been switched off before you step out of the cab"
+   "Once per hour, or more often when changing local conditions warrant",
+   "Every 15 minutes around the clock, regardless of the local conditions",
+   "Twice a day, once in the morning and once in the evening",
+   "Only when the control tower opens or closes for the day"
   ],
-  "answer": 1,
-  "explanation": "When exiting the vehicle for a look, you must do so safely by facing the vehicle and maintaining three points of contact with it at all times; when exiting a bus, keep a firm grasp on the handrail.",
-  "page": "12-1"
+  "answer": 0,
+  "explanation": "ATIS is normally updated once per hour, and more often when changing local conditions warrant it. Each new recording gets the next phonetic code, so ATIS Alpha is replaced by Bravo, then Charlie, and so on down the alphabet.",
+  "page": "67"
  },
  {
   "id": "s12-016",
   "section": 12,
-  "sectionName": "Basic Control Skills Test",
-  "question": "What happens if you do not safely secure the vehicle or safely exit it during a look?",
+  "sectionName": "Airport Operations",
+  "question": "Which two aeronautical charts are used by VFR pilots?",
   "choices": [
-   "It may result in an automatic failure of the basic control skills test",
-   "You are charged one extra encroachment for the current exercise",
-   "The look simply counts as two of your allowed looks for the exercise",
-   "The examiner asks you to restart the whole exercise from the beginning"
+   "Sectional charts and VFR Terminal Area charts",
+   "Sectional charts and en route low altitude charts",
+   "World Aeronautical Charts and approach plates",
+   "VFR Terminal Area charts and airport taxi diagrams"
   ],
   "answer": 0,
-  "explanation": "If you do not safely secure the vehicle or safely exit the vehicle during a look, it may result in an automatic failure of the basic control skills test.",
-  "page": "12-1"
+  "explanation": "The two aeronautical charts used by VFR pilots are the sectional chart and the VFR Terminal Area chart. An aeronautical chart is the pilot's road map, showing airport data, navigational aids, airspace, and topography for the area of operation.",
+  "page": "67"
  },
  {
   "id": "s12-017",
   "section": 12,
-  "sectionName": "Basic Control Skills Test",
-  "question": "At the end of the Alley Dock exercise, your vehicle must be:",
+  "sectionName": "Airport Operations",
+  "question": "What scale is used on sectional aeronautical charts?",
   "choices": [
-   "Angled slightly so the examiner can read the license plate from the office",
-   "Touching the rear boundary cone to prove the full depth of the alley was used",
-   "Left in reverse gear with the trailer doors open for the loading dock crew",
-   "Straight within the alley or lane when you have completed the maneuver"
+   "1:500,000, where 1 inch represents about 6.86 nautical miles",
+   "1:250,000, where 1 inch represents about 3.43 nautical miles",
+   "1:1,000,000, where 1 inch represents about 13.7 nautical miles",
+   "1:100,000, where 1 inch represents about 1.37 nautical miles"
   ],
-  "answer": 3,
-  "explanation": "In the Alley Dock exercise you back into the alley, bringing the rear of your vehicle within three feet of the rear of the alley, and your vehicle must be straight within the alley/lane when you have completed the maneuver.",
-  "page": "12-2"
+  "answer": 0,
+  "explanation": "Sectional charts, the most common charts pilots use, have a scale of 1:500,000, on which 1 inch equals 6.86 nautical miles or approximately 8 statute miles. That scale allows detailed information to be included on the chart.",
+  "page": "67"
  },
  {
   "id": "s12-018",
   "section": 12,
-  "sectionName": "Basic Control Skills Test",
-  "question": "In the parallel park exercises, how should you approach the space?",
+  "sectionName": "Airport Operations",
+  "question": "What do parallels of latitude measure?",
   "choices": [
-   "Pull nose-first into the space, then straighten the vehicle with repeated pull-ups",
-   "Stop even with the entrance and turn sharply into the space while moving forward",
-   "Drive past the entrance with your vehicle parallel to the parking area, then back into the space",
-   "Back slowly along the outer boundary from fifty feet away, entering the parking space at a right angle"
+   "Degrees north or south of the equator",
+   "Degrees east or west of the Prime Meridian",
+   "The angle between true north and magnetic north",
+   "Angular height above the visible horizon"
   ],
-  "answer": 2,
-  "explanation": "You drive past the entrance to the parallel parking space with your vehicle parallel to the parking area, and back into the space without crossing the front, side, or rear boundaries marked by cones.",
-  "page": "12-2"
+  "answer": 0,
+  "explanation": "Parallels of latitude are circles parallel to the equator, running east and west, and they measure degrees of latitude north or south of the equator. The angular distance from the equator to a pole is one-fourth of a circle, or 90 degrees, and the 48 conterminous states lie between 25 and 49 degrees north.",
+  "page": "68"
+ },
+ {
+  "id": "s12-019",
+  "section": 12,
+  "sectionName": "Airport Operations",
+  "question": "What line serves as the zero reference for measuring longitude?",
+  "choices": [
+   "The Prime Meridian, which passes through Greenwich, England",
+   "The equator, which lies equidistant from the two poles",
+   "The agonic line, which connects points of zero variation",
+   "The International Date Line, on the opposite side of the globe"
+  ],
+  "answer": 0,
+  "explanation": "Meridians of longitude run from the North Pole to the South Pole at right angles to the equator. The Prime Meridian, passing through Greenwich, England, is the zero line, and longitude is measured from it in degrees east and west to 180 degrees.",
+  "page": "68"
+ },
+ {
+  "id": "s12-020",
+  "section": 12,
+  "sectionName": "Airport Operations",
+  "question": "What is magnetic variation?",
+  "choices": [
+   "The angle between true north and magnetic north",
+   "The compass error introduced during turns and acceleration",
+   "The annual movement of the magnetic pole across the Arctic",
+   "The difference between an aircraft's heading and its ground track"
+  ],
+  "answer": 0,
+  "explanation": "Variation is the angle between true north and magnetic north, expressed as east or west variation depending on whether magnetic north lies east or west of true north. The exact amount varies by location because the Earth is not uniformly magnetized.",
+  "page": "69"
+ },
+ {
+  "id": "s12-021",
+  "section": 12,
+  "sectionName": "Airport Operations",
+  "question": "How is magnetic variation depicted on most aeronautical charts?",
+  "choices": [
+   "As broken magenta isogonic lines connecting points of equal variation",
+   "As solid blue arrows radiating outward from the position of the magnetic pole",
+   "As shaded green bands covering the areas of strongest variation",
+   "As numbered black circles printed beside each airport symbol"
+  ],
+  "answer": 0,
+  "explanation": "Most aeronautical charts show the amount and direction of magnetic variation as broken magenta lines called isogonic lines, which connect points of equal variation. The line connecting points with no variation between true and magnetic north is the agonic line.",
+  "page": "69"
+ },
+ {
+  "id": "s12-022",
+  "section": 12,
+  "sectionName": "Airport Operations",
+  "question": "How far horizontally should skeletal structures such as antenna towers be avoided, and why?",
+  "choices": [
+   "By at least 2,000 feet, because guy wires can reach about 1,500 feet outward",
+   "By at least 500 feet, because that is the minimum distance charted for obstacles",
+   "By at least 1,000 feet, because that matches the height of the tallest towers",
+   "By at least 3 nautical miles, because tower positions on charts are approximate"
+  ],
+  "answer": 0,
+  "explanation": "Most skeletal structures are held up by guy wires that can extend about 1,500 feet horizontally, are very difficult to see even in good weather, and can be invisible at dusk or in reduced visibility, so all skeletal structures should be avoided horizontally by at least 2,000 feet. Extreme caution is warranted below 2,000 feet AGL because many such towers exceed 1,000 feet AGL, some pass 2,000 feet, and new towers may not yet appear on the current chart.",
+  "page": "70"
  },
  {
   "id": "s13-001",
   "section": 13,
-  "sectionName": "On-Road Driving Test",
-  "question": "Which of the following must you do at all times during the on-road driving test?",
+  "sectionName": "Maintenance and Preflight",
+  "question": "Which activity is included in small UAS maintenance?",
   "choices": [
-   "Wear your safety belt, obey all traffic signs, signals, and laws, and complete the test without an accident or moving violation",
-   "Keep the windows down and drive at least five miles per hour below the posted speed limit for the entire length of the test",
-   "Follow the examiner's directions even if they seem unsafe",
-   "Stay in the left-most lane whenever possible"
+   "Upgrading system software needed for flight",
+   "Renewing the aircraft's FAA registration",
+   "Completing the remote pilot's recurrent training",
+   "Requesting airspace authorizations before a flight"
   ],
   "answer": 0,
-  "explanation": "During the test you must drive in a safe and responsible manner, wear your safety belt, obey all traffic signs, signals, and laws, and complete the test without an accident or moving violation.",
-  "page": "13-1"
+  "explanation": "Small UAS maintenance covers scheduled and unscheduled overhaul, repair, inspection, modification, replacement, and system software upgrades of the aircraft and the components necessary for flight. Registration, pilot training, and authorizations are operating requirements, not maintenance.",
+  "page": "7-1",
+  "manual": "ac"
  },
  {
   "id": "s13-002",
   "section": 13,
-  "sectionName": "On-Road Driving Test",
-  "question": "If your test route does not have certain traffic situations, what may the examiner ask you to do?",
+  "sectionName": "Maintenance and Preflight",
+  "question": "Whose instructions should be followed when maintaining a small UAS, whenever possible?",
   "choices": [
-   "Skip that portion of the test entirely",
-   "Drive to a different route that has them",
-   "Simulate the traffic situation by telling the examiner what you are or would be doing in that situation",
-   "Take a short written quiz about that traffic situation instead, before the road test can be completed"
+   "The manufacturer's",
+   "An FAA-certificated mechanic's",
+   "The local Flight Standards District Office's",
+   "A part 145 repair station's"
   ],
-  "answer": 2,
-  "explanation": "If the route does not have certain traffic situations, you may be asked to simulate one by telling the examiner what you are or would be doing if you were in that traffic situation.",
-  "page": "13-1"
+  "answer": 0,
+  "explanation": "Whenever possible, the operator should maintain the small UAS and its components in accordance with the manufacturer's instructions. If the manufacturer does not provide a maintenance program, the operator may develop one.",
+  "page": "7-1",
+  "manual": "ac"
  },
  {
   "id": "s13-003",
   "section": 13,
-  "sectionName": "On-Road Driving Test",
-  "question": "According to the manual, when does unsafe coasting occur?",
+  "sectionName": "Maintenance and Preflight",
+  "question": "On what basis may a manufacturer call for scheduled maintenance or replacement of small UAS components?",
   "choices": [
-   "Any time the clutch is depressed while moving",
-   "When your vehicle is out of gear (clutch depressed or gearshift in neutral) for more than the length of your vehicle",
-   "When you decelerate without applying either the brakes or the engine brake for any distance longer than a few vehicle lengths",
-   "When you shift gears while going downhill"
+   "Time-in-service limits such as flight hours, cycles, or calendar-days",
+   "The number of different pilots who have operated the aircraft",
+   "Total miles flown since the last registration renewal",
+   "Visual condition alone, as judged by the remote PIC during each preflight check"
   ],
-  "answer": 1,
-  "explanation": "Unsafe coasting occurs when your vehicle is out of gear, with the clutch depressed or the gearshift in neutral, for more than the length of your vehicle.",
-  "page": "13-1"
+  "answer": 0,
+  "explanation": "The manufacturer may identify components that should undergo scheduled periodic maintenance or replacement based on time-in-service limits, such as flight hours, cycles, or calendar-days. Operators should adhere to that schedule to get the longest and safest service life from the aircraft.",
+  "page": "7-1",
+  "manual": "ac"
  },
  {
   "id": "s13-004",
   "section": 13,
-  "sectionName": "On-Road Driving Test",
-  "question": "When stopping behind another vehicle before a turn, where should you stop?",
+  "sectionName": "Maintenance and Preflight",
+  "question": "What should an operator do when the manufacturer provides no scheduled maintenance instructions?",
   "choices": [
-   "Close enough to read the vehicle's license plate",
-   "At least two vehicle lengths behind it",
-   "With your front bumper even with the other vehicle's rear bumper",
-   "Where you can see the rear tires of the vehicle ahead of you (safe gap)"
+   "Establish a protocol by documenting maintenance and component time in service",
+   "Rely on preflight inspections alone, since no schedule is needed for small UAS",
+   "Ground the aircraft until the manufacturer publishes an official schedule",
+   "Adopt the maintenance schedule of a comparable manned aircraft type"
   ],
-  "answer": 3,
-  "explanation": "If stopping behind another vehicle, stop where you can see the rear tires on the vehicle ahead of you, which is a safe gap. Do not let your vehicle roll, and keep the front wheels aimed straight ahead.",
-  "page": "13-1"
+  "answer": 0,
+  "explanation": "Without manufacturer instructions, the operator should establish their own scheduled maintenance protocol: document every repair, modification, overhaul, or replacement and record the component's time in service when the work is done. Over time those records let the operator build a reliable maintenance schedule.",
+  "page": "7-1",
+  "manual": "ac"
  },
  {
   "id": "s13-005",
   "section": 13,
-  "sectionName": "On-Road Driving Test",
-  "question": "While making a turn during the road test, why should you keep checking your mirror?",
+  "sectionName": "Maintenance and Preflight",
+  "question": "During preflight inspection, the remote PIC finds a component that needs repair. When may flight operations occur?",
   "choices": [
-   "To make sure the vehicle does not hit anything on the inside of the turn",
-   "To watch for the examiner's hand signals",
-   "To verify your turn signal is still flashing until the turn is fully complete",
-   "To read the speed limit signs behind you"
+   "After the issue is corrected",
+   "Immediately, if the flight remains within visual line of sight",
+   "After the discrepancy has been reported to the FAA",
+   "Within 24 hours, whether or not the repair is finished"
   ],
   "answer": 0,
-  "explanation": "During a turn you should keep both hands on the steering wheel and keep checking your mirror to make sure the vehicle does not hit anything on the inside of the turn.",
-  "page": "13-1"
+  "explanation": "Finding a component that needs servicing, repair, modification, overhaul, or replacement during preflight is unscheduled maintenance, and flight operations should not occur until the issue is corrected. The same applies when a mishap causes damage or the manufacturer requires an unscheduled software update to fix a problem.",
+  "page": "7-1",
+  "manual": "ac"
  },
  {
   "id": "s13-006",
   "section": 13,
-  "sectionName": "On-Road Driving Test",
-  "question": "After completing a turn, what should you do?",
+  "sectionName": "Maintenance and Preflight",
+  "question": "What should be done with a small UAS component that cannot be repaired back to its safe operational specification?",
   "choices": [
-   "Stop briefly to check your mirrors before proceeding",
-   "Stay in whatever lane you finished the turn in for at least a mile",
-   "Make sure your turn signal is off, get up to the speed of traffic, and move into the right-most lane when safe to do so",
-   "Accelerate quickly to clear the intersection, then check your mirrors and signals once you are back up to traffic speed"
+   "Replace it with one that is in a condition for safe operation",
+   "Placard it inoperative and continue flying the aircraft",
+   "Offset the deficiency by reducing the aircraft's payload",
+   "Log the defect and correct it at the next scheduled inspection"
   ],
-  "answer": 2,
-  "explanation": "After a turn, make sure the turn signal is off, get up to the speed of traffic, use your turn signal and move into the right-most lane when safe to do so (if not already there), and check mirrors and traffic.",
-  "page": "13-1"
+  "answer": 0,
+  "explanation": "If the operator or maintenance personnel cannot repair, modify, or overhaul a small UAS or component back to its safe operational specification, it should be replaced with one that is in a condition for safe operation. All required maintenance should be completed before each flight.",
+  "page": "7-2",
+  "manual": "ac"
  },
  {
   "id": "s13-007",
   "section": 13,
-  "sectionName": "On-Road Driving Test",
-  "question": "When you must stop at an intersection during the road test, your vehicle must:",
+  "sectionName": "Maintenance and Preflight",
+  "question": "How often must the remote PIC inspect the small UAS to ensure it is in a condition for safe operation?",
   "choices": [
-   "Stop with the front bumper over the stop line so you can see cross traffic clearly in both directions before proceeding",
-   "Come to a complete stop behind the stop line, crosswalk, or stop sign without rolling forward or backward",
-   "Slow to a crawl but keep moving if no traffic is present",
-   "Stop only if the examiner tells you to"
+   "Before each flight",
+   "Once every calendar-month",
+   "Every 100 hours of flight time",
+   "Only after maintenance has been performed"
   ],
-  "answer": 1,
-  "explanation": "You must come to a complete stop (no coasting) behind any stop signs, signals, sidewalks, or stop lines while maintaining a safe gap behind any vehicle in front of you, and your vehicle must not roll forward or backward.",
-  "page": "13-1"
+  "answer": 0,
+  "explanation": "The remote PIC must inspect the small UAS prior to each flight, checking for equipment damage or malfunction. The inspection should follow the manufacturer's inspection procedures when available, or a procedure the owner or operator has developed.",
+  "page": "7-2",
+  "manual": "ac"
  },
  {
   "id": "s13-008",
   "section": 13,
-  "sectionName": "On-Road Driving Test",
-  "question": "During the urban business portion of the test, how should you position and drive your vehicle?",
+  "sectionName": "Maintenance and Preflight",
+  "question": "How can part 43 appendix D help a small UAS operator who lacks manufacturer inspection instructions?",
   "choices": [
-   "In the left lane, slightly below the flow of traffic",
-   "In any lane, as long as you stay under the speed limit",
-   "In the center lane, matching the speed of the fastest vehicles around you so you never obstruct the flow of traffic",
-   "Centered in the right-most lane, keeping up with the flow of traffic but not exceeding the posted speed limit"
+   "As a guide for an inspection program, though it omits UAS items like datalinks",
+   "As a complete inspection checklist that needs no additions for a small UAS",
+   "As a mandatory inspection standard that every small UAS operator must follow",
+   "As a replacement for the manufacturer's maintenance program in every situation"
   ],
-  "answer": 3,
-  "explanation": "In the urban business section you should make regular traffic checks, maintain a safe following distance, keep the vehicle centered in the proper (right-most) lane, and keep up with the flow of traffic without exceeding the posted speed limit.",
-  "page": "13-2"
+  "answer": 0,
+  "explanation": "Part 43 appendix D offers a logical, systematic inspection approach that divides the aircraft into subgroups, and an operator may use it as a guide to develop an inspection program. It is optional and not comprehensive: it does not address unique UAS features such as datalinks or support equipment, so the operator must identify and add those items.",
+  "page": "7-2",
+  "manual": "ac"
  },
  {
   "id": "s13-009",
   "section": 13,
-  "sectionName": "On-Road Driving Test",
-  "question": "What is the proper sequence for making a lane change during the road test?",
+  "sectionName": "Maintenance and Preflight",
+  "question": "Which check does the FAA recommend as part of a small UAS preflight inspection?",
   "choices": [
-   "Make the necessary traffic checks first, then use proper signals, and smoothly change lanes when it is safe to do so",
-   "Signal first, then check traffic while moving into the new lane",
-   "Change lanes quickly, then signal to confirm the move",
-   "Slow down significantly below the speed of traffic, signal, and then change lanes regardless of the vehicles around you"
+   "Starting the propellers to look for imbalance or irregular operation",
+   "Weighing the fully loaded aircraft on a calibrated scale before every launch",
+   "Fully discharging and recharging the batteries between flights",
+   "Disassembling the airframe to examine the internal wiring"
   ],
   "answer": 0,
-  "explanation": "For lane changes, you should make the necessary traffic checks first, then use proper signals and smoothly change lanes when it is safe to do so.",
-  "page": "13-2"
+  "explanation": "The recommended preflight items include a visual condition check of the components, legible registration markings, secure attachment of equipment such as cameras, established control link and GPS acquisition from the manufacturer's minimum satellite count, adequate power for the aircraft and control station, and starting the propellers to inspect for imbalance or irregular operation before rechecking controls at a controlled low altitude.",
+  "page": "7-3",
+  "manual": "ac"
  },
  {
   "id": "s13-010",
   "section": 13,
-  "sectionName": "On-Road Driving Test",
-  "question": "Once you are on the exit ramp when leaving the expressway, you must:",
+  "sectionName": "Maintenance and Preflight",
+  "question": "What is a benefit of keeping maintenance and inspection records for a small UAS?",
   "choices": [
-   "Come to a complete stop before merging onto the new road, even when the ramp has an acceleration lane for joining traffic",
-   "Accelerate to clear the ramp quickly",
-   "Continue to decelerate within the lane markings and maintain adequate spacing between your vehicle and other vehicles",
-   "Shift into neutral and coast down the ramp"
-  ],
-  "answer": 2,
-  "explanation": "When exiting the expressway you make traffic checks, use proper signals, decelerate smoothly in the exit lane, and once on the ramp continue to decelerate within the lane markings while maintaining adequate spacing from other vehicles.",
-  "page": "13-2"
- },
- {
-  "id": "s13-011",
-  "section": 13,
-  "sectionName": "On-Road Driving Test",
-  "question": "During the stop/start maneuver, which of the following is required once you are stopped?",
-  "choices": [
-   "Keep the transmission in gear with your foot resting on the clutch so you are ready to move off without delay",
-   "Activate your four-way emergency flashers, apply the parking brake, and move the gear shift to neutral or park",
-   "Leave the right turn signal on for the entire stop",
-   "Keep your feet on the brake and clutch pedals"
-  ],
-  "answer": 1,
-  "explanation": "Once stopped, the vehicle must be parallel to the curb and out of traffic flow; you activate the four-way flashers, apply the parking brake, move the gear shift to neutral or park, and remove your feet from the brake and clutch pedals.",
-  "page": "13-2"
- },
- {
-  "id": "s13-012",
-  "section": 13,
-  "sectionName": "On-Road Driving Test",
-  "question": "While any part of your vehicle is in a railroad crossing, you must not:",
-  "choices": [
-   "Keep both hands on the steering wheel",
-   "Continue moving across at a steady speed without shifting gears",
-   "Check your mirrors",
-   "Stop, change gears, pass another vehicle, or change lanes"
-  ],
-  "answer": 3,
-  "explanation": "All commercial drivers must not stop, change gears, pass another vehicle, or change lanes while any part of the vehicle is in the crossing.",
-  "page": "13-2"
- },
- {
-  "id": "s13-013",
-  "section": 13,
-  "sectionName": "On-Road Driving Test",
-  "question": "When driving a bus, school bus, or placarded vehicle, where must you stop at a non-exempt railroad crossing?",
-  "choices": [
-   "Within 50 feet but not less than 15 feet from the nearest rail",
-   "Within 100 feet but not less than 50 feet from the nearest rail",
-   "Within 15 feet but not less than 5 feet from the nearest rail",
-   "Anywhere before the crossing gate"
+   "It helps establish a reliable maintenance schedule and track component service life",
+   "It exempts the operator from having to perform a preflight inspection before each flight",
+   "It qualifies the aircraft to receive an FAA airworthiness certificate",
+   "It automatically extends the manufacturer's warranty on flight components"
   ],
   "answer": 0,
-  "explanation": "Drivers of buses, school buses, or vehicles displaying placards must stop within 50 feet but not less than 15 feet from the nearest rail, then listen and look in both directions along the track for an approaching train.",
-  "page": "13-3"
+  "explanation": "Documenting repairs, modifications, overhauls, and replacements along with component time in service lets an operator establish a reliable maintenance schedule and track component service life. A hardcopy or electronic logbook covering all components, including the control station, launch and recovery equipment, C2 link, and payload, provides retrievable evidence that the aircraft is in a condition for safe flight.",
+  "page": "7-4",
+  "manual": "ac"
  },
  {
-  "id": "s13-014",
-  "section": 13,
-  "sectionName": "On-Road Driving Test",
-  "question": "Which of the following describes proper clutch usage in a manual transmission vehicle during the road test?",
+  "id": "s14-001",
+  "section": 14,
+  "sectionName": "Night, Over People, and Remote ID",
+  "question": "For small UAS operations, when does night begin and end?",
   "choices": [
-   "Ride the clutch to control your speed on downgrades so you never have to touch the service brakes at all",
-   "Coast with the clutch depressed to save fuel",
-   "Always use the clutch to shift and double-clutch when shifting, without revving or lugging the engine",
-   "Pop the clutch to accelerate quickly from a stop"
+   "It runs from the end of evening civil twilight to the beginning of morning civil twilight",
+   "It runs from the moment of sunset to the moment of sunrise at the operating location",
+   "It runs from one hour after sunset to one hour before sunrise, converted to local time",
+   "It runs from 30 minutes before sunset to 30 minutes after sunrise at the operating location"
   ],
-  "answer": 2,
-  "explanation": "For manual transmissions you must always use the clutch to shift and double-clutch when shifting, without revving or lugging the engine. Do not ride the clutch to control speed, coast with the clutch depressed, or pop the clutch.",
-  "page": "13-3"
+  "answer": 0,
+  "explanation": "Night is the time between the end of evening civil twilight and the beginning of morning civil twilight, as published in The Air Almanac and converted to local time. Sunset and sunrise themselves mark the start of the twilight periods, not the start of night.",
+  "page": "5-4",
+  "manual": "ac"
  },
  {
-  "id": "s13-015",
-  "section": 13,
-  "sectionName": "On-Road Driving Test",
-  "question": "On a multiple lane road, in which lane should you finish a left turn?",
+  "id": "s14-002",
+  "section": 14,
+  "sectionName": "Night, Over People, and Remote ID",
+  "question": "In the continental United States, evening civil twilight lasts from sunset until how long after sunset?",
   "choices": [
-   "Any available lane",
-   "The lane directly to the right of the center line",
-   "The right-most (curb) lane, once it is clear of traffic",
-   "The center lane"
+   "30 minutes",
+   "15 minutes",
+   "45 minutes",
+   "60 minutes"
   ],
-  "answer": 1,
-  "explanation": "Under lane usage scoring, you must complete a turn in the proper lane: a left turn should finish in the lane directly to the right of the center line, while a right turn should finish in the right-most (curb) lane.",
-  "page": "13-4"
+  "answer": 0,
+  "explanation": "In the continental United States, evening civil twilight is the period from sunset until 30 minutes after sunset, and morning civil twilight is the 30 minutes before sunrise. Alaska uses a different definition found in The Air Almanac.",
+  "page": "5-4",
+  "manual": "ac"
+ },
+ {
+  "id": "s14-003",
+  "section": 14,
+  "sectionName": "Night, Over People, and Remote ID",
+  "question": "A small unmanned aircraft flown during civil twilight must have anti-collision lighting visible for at least what distance?",
+  "choices": [
+   "3 statute miles",
+   "1 statute mile",
+   "5 statute miles",
+   "3 nautical miles"
+  ],
+  "answer": 0,
+  "explanation": "During civil twilight the aircraft must carry anti-collision lighting visible for at least 3 statute miles. The remote PIC may reduce the visible distance during flight only after determining the reduction is in the interest of safety.",
+  "page": "5-4",
+  "manual": "ac"
+ },
+ {
+  "id": "s14-004",
+  "section": 14,
+  "sectionName": "Night, Over People, and Remote ID",
+  "question": "A certificated remote pilot earns night operations privileges by completing recurrent training or an initial knowledge test that covers which topics?",
+  "choices": [
+   "Night physiology and night visual illusions",
+   "Airport beacon colors and light gun signals",
+   "Instrument scanning and night navigation aids",
+   "Anti-collision light maintenance and inspection"
+  ],
+  "answer": 0,
+  "explanation": "Night privileges come only after completing either a knowledge test containing questions on night physiology and night visual illusions, or recurrent training covering those same topics. Either path satisfies the training prerequisite in section 107.29.",
+  "page": "5-4",
+  "manual": "ac"
+ },
+ {
+  "id": "s14-005",
+  "section": 14,
+  "sectionName": "Night, Over People, and Remote ID",
+  "question": "May a remote pilot rely on a manufacturer's statement that the anti-collision lighting on a small UA is visible for 3 statute miles?",
+  "choices": [
+   "Yes, but the pilot remains responsible for verifying the lighting works, is visible for 3 sm, and flashes fast enough to avoid a collision",
+   "No, the pilot must personally measure the visible distance of the lighting at the operating location before every single night flight",
+   "Yes, and the manufacturer's statement fully transfers responsibility for the lighting's performance to the manufacturer",
+   "No, only an FAA inspection of the installed lighting can establish that the aircraft meets the night lighting requirement"
+  ],
+  "answer": 0,
+  "explanation": "The pilot may rely on manufacturer statements that the lighting is visible for 3 statute miles, but ultimately remains responsible for verifying the anti-collision lighting is operational, visible for 3 sm, and has a flash rate sufficient to avoid a collision at the operating location.",
+  "page": "5-4",
+  "manual": "ac"
+ },
+ {
+  "id": "s14-006",
+  "section": 14,
+  "sectionName": "Night, Over People, and Remote ID",
+  "question": "During a night operation, when may the remote PIC reduce the intensity of the aircraft's anti-collision lighting?",
+  "choices": [
+   "When the remote PIC determines the reduction is in the interest of safety",
+   "Never, since the lighting must remain at full intensity throughout any night flight",
+   "Only after the FAA has issued a Certificate of Waiver for reduced lighting",
+   "Whenever the aircraft is operating within 400 feet of the remote PIC's position"
+  ],
+  "answer": 0,
+  "explanation": "The remote PIC has discretion to reduce the intensity of the anti-collision lighting when doing so is in the interest of safety, for example when a bright strobe very close to the pilot makes it hard to judge the aircraft's location, speed, attitude, or altitude.",
+  "page": "5-5",
+  "manual": "ac"
+ },
+ {
+  "id": "s14-007",
+  "section": 14,
+  "sectionName": "Night, Over People, and Remote ID",
+  "question": "Does section 107.29 require anti-collision lighting to be illuminated during daytime small UAS operations?",
+  "choices": [
+   "No, because lighting is generally not effective at reducing collision risk in daylight, although pilots may elect to use it",
+   "Yes, anti-collision lighting must be illuminated during every flight conducted under Part 107 regardless of the time of day",
+   "Yes, but only when the daytime operation takes place inside controlled airspace or within an FAA-recognized identification area",
+   "No, and the regulation prohibits switching anti-collision lighting on during daylight to avoid distracting other pilots"
+  ],
+  "answer": 0,
+  "explanation": "Section 107.29 does not require illuminated anti-collision lighting for daytime operations because lighting generally does not mitigate collision risk in daylight. Remote pilots may still exercise their discretion and leave the lighting on during the day.",
+  "page": "5-5",
+  "manual": "ac"
+ },
+ {
+  "id": "s14-008",
+  "section": 14,
+  "sectionName": "Night, Over People, and Remote ID",
+  "question": "How do the category rules for operations over people change when the flight takes place at night?",
+  "choices": [
+   "They do not change; the same categories and restrictions apply day and night",
+   "Only Category 4 aircraft are permitted to fly over people during night hours",
+   "Each category's weight limit is reduced by half for operations after dark",
+   "Operations over people at night are prohibited unless a waiver has been issued"
+  ],
+  "answer": 0,
+  "explanation": "The categories and their restrictions for operations over people do not change at night. An aircraft eligible for any category may be flown over people at night as long as the operation also meets the night requirements of section 107.29, and manufacturers declaring Category 2 or 3 eligibility will likely need to account for the mass of an anti-collision light.",
+  "page": "8-36",
+  "manual": "ac"
+ },
+ {
+  "id": "s14-009",
+  "section": 14,
+  "sectionName": "Night, Over People, and Remote ID",
+  "question": "After September 16, 2023, which small unmanned aircraft must comply with remote identification requirements?",
+  "choices": [
+   "Most aircraft that are registered or required to be registered",
+   "Only aircraft that weigh more than 55 pounds at takeoff",
+   "Only aircraft that are flown beyond the pilot's visual line of sight",
+   "Only aircraft manufactured after that compliance date"
+  ],
+  "answer": 0,
+  "explanation": "After September 16, 2023, most small unmanned aircraft that are registered or required to be registered must comply with remote identification. Even aircraft under 0.55 pounds that escape registration must comply when flown under an operating part that requires registration, such as Part 107.",
+  "page": "5-14",
+  "manual": "ac"
+ },
+ {
+  "id": "s14-010",
+  "section": 14,
+  "sectionName": "Night, Over People, and Remote ID",
+  "question": "On how many Certificates of Aircraft Registration may a remote identification serial number be listed at any one time?",
+  "choices": [
+   "One",
+   "Two",
+   "Five",
+   "Any number, as long as every aircraft has the same owner"
+  ],
+  "answer": 0,
+  "explanation": "The serial number of a standard remote identification aircraft, or of an installed broadcast module, must be listed on the Certificate of Aircraft Registration, and it may appear on only one certificate at a time.",
+  "page": "5-14",
+  "manual": "ac"
+ },
+ {
+  "id": "s14-011",
+  "section": 14,
+  "sectionName": "Night, Over People, and Remote ID",
+  "question": "What must happen before a remote ID broadcast module that was moved from one Part 107 aircraft to another is flown on the second aircraft?",
+  "choices": [
+   "The module's serial number must be moved to the second aircraft's Certificate of Aircraft Registration",
+   "The module must be returned to its manufacturer for recalibration and a new compliance sticker",
+   "A new declaration of compliance for the second aircraft must be accepted by the FAA",
+   "The first aircraft's Certificate of Aircraft Registration must be permanently canceled"
+  ],
+  "answer": 0,
+  "explanation": "A broadcast module may be moved between aircraft operated under Part 107, but before the second aircraft flies, the module's serial number must be moved from the first aircraft's Certificate of Aircraft Registration to the second aircraft's certificate.",
+  "page": "5-14",
+  "manual": "ac"
+ },
+ {
+  "id": "s14-012",
+  "section": 14,
+  "sectionName": "Night, Over People, and Remote ID",
+  "question": "Which location information does a standard remote identification aircraft broadcast?",
+  "choices": [
+   "The latitude, longitude, and geometric altitude of both the control station and the aircraft",
+   "The aircraft's position and the takeoff location, but never the control station's position",
+   "Only the aircraft's own position, since the control station location is kept confidential",
+   "The control station's latitude and longitude only, transmitted once per minute over RF spectrum"
+  ],
+  "answer": 0,
+  "explanation": "A standard remote identification aircraft broadcasts the latitude, longitude, and geometric altitude of both the control station and the aircraft, along with the aircraft identification, its velocity, a time mark, and an emergency status code. Broadcasting the takeoff location instead of the control station is what a broadcast module does.",
+  "page": "5-14",
+  "manual": "ac"
+ },
+ {
+  "id": "s14-013",
+  "section": 14,
+  "sectionName": "Night, Over People, and Remote ID",
+  "question": "A small UA that is not a standard remote identification aircraft may be operated either with a remote ID broadcast module or in what other way?",
+  "choices": [
+   "Within an FAA-recognized identification area (FRIA)",
+   "Under a flight plan filed with ATC before each launch",
+   "At or below 200 feet AGL for the entire operation",
+   "Under a Certificate of Waiver issued for remote ID"
+  ],
+  "answer": 0,
+  "explanation": "An aircraft without standard remote identification has two options: equip it with a remote identification broadcast module, or operate it within visual line of sight inside an FAA-recognized identification area (FRIA), regardless of which operating part governs the flight.",
+  "page": "5-14",
+  "manual": "ac"
+ },
+ {
+  "id": "s14-014",
+  "section": 14,
+  "sectionName": "Night, Over People, and Remote ID",
+  "question": "What operating limitation applies specifically to a small UA that relies on a remote ID broadcast module?",
+  "choices": [
+   "It must be operated within visual line of sight",
+   "It must remain inside an FAA-recognized identification area",
+   "It may be flown only during daylight and civil twilight",
+   "It must remain within 400 feet of the control station"
+  ],
+  "answer": 0,
+  "explanation": "A small unmanned aircraft using a remote identification broadcast module must be operated within visual line of sight. The module may be integrated by the manufacturer or be a standalone unit the user secures to the aircraft before takeoff.",
+  "page": "5-15",
+  "manual": "ac"
+ },
+ {
+  "id": "s14-015",
+  "section": 14,
+  "sectionName": "Night, Over People, and Remote ID",
+  "question": "Instead of the control station's position, a remote ID broadcast module transmits the latitude, longitude, and geometric altitude of what point?",
+  "choices": [
+   "The takeoff location",
+   "The nearest public airport",
+   "The planned landing location",
+   "The pilot's registered address"
+  ],
+  "answer": 0,
+  "explanation": "A broadcast module transmits the aircraft identification and serial number, the aircraft's position and velocity, a time mark, and the latitude, longitude, and geometric altitude of the takeoff location. A standard remote ID aircraft broadcasts the control station's position instead.",
+  "page": "5-15",
+  "manual": "ac"
+ },
+ {
+  "id": "s14-016",
+  "section": 14,
+  "sectionName": "Night, Over People, and Remote ID",
+  "question": "What is the maximum weight of a small unmanned aircraft in a Category 1 operation over people?",
+  "choices": [
+   "0.55 pounds, including everything on board or attached to the aircraft",
+   "0.55 pounds, excluding batteries and any payload attached to the aircraft",
+   "4.4 pounds, including everything on board or attached to the aircraft",
+   "55 pounds, the same weight limit that applies to Part 107 generally"
+  ],
+  "answer": 0,
+  "explanation": "Category 1 is limited to a maximum weight of 0.55 pounds, counting everything on board or otherwise attached to the aircraft at takeoff and throughout the operation. Nothing is excluded from the total, so batteries and payloads count.",
+  "page": "8-1",
+  "manual": "ac"
+ },
+ {
+  "id": "s14-017",
+  "section": 14,
+  "sectionName": "Night, Over People, and Remote ID",
+  "question": "Besides the 0.55 pound (250 gram) weight limit, what design requirement must a Category 1 small unmanned aircraft meet?",
+  "choices": [
+   "It must have no exposed rotating parts that would lacerate human skin upon impact",
+   "It must have every rotating part fully enclosed in a metal guard approved by the FAA",
+   "It must be listed on an FAA-accepted declaration of compliance for Category 1",
+   "It must hold an airworthiness certificate issued by the FAA under part 21"
+  ],
+  "answer": 0,
+  "explanation": "A Category 1 aircraft must not contain any exposed rotating parts that would lacerate human skin on impact. The remote pilot is responsible for confirming both the weight and the rotating-parts condition; no declaration of compliance or airworthiness certificate is involved, and there are no applicant requirements for Category 1.",
+  "page": "8-3",
+  "manual": "ac"
+ },
+ {
+  "id": "s14-018",
+  "section": 14,
+  "sectionName": "Night, Over People, and Remote ID",
+  "question": "Over which people may a small unmanned aircraft fly without the operation qualifying under one of the four categories?",
+  "choices": [
+   "Direct participants such as the remote PIC, the person manipulating the controls, a VO, or crewmembers needed for safety",
+   "Anyone who has signed a written liability waiver acknowledging that a small unmanned aircraft may pass overhead",
+   "Anyone attending an event that the remote pilot has been hired to photograph, once the event organizer approves the flight",
+   "Anyone standing within 100 feet of the launch point who received a verbal safety briefing before the aircraft took off"
+  ],
+  "answer": 0,
+  "explanation": "Section 107.39 allows flight over people directly participating in the operation: the remote PIC, a person manipulating the controls, a visual observer, or crewmembers necessary for the safety of the operation. The remote pilot assigns and briefs these direct participants; everyone else must be under safe cover or covered by one of the four categories.",
+  "page": "8-1",
+  "manual": "ac"
+ },
+ {
+  "id": "s14-019",
+  "section": 14,
+  "sectionName": "Night, Over People, and Remote ID",
+  "question": "What qualifies as safe cover for a person beneath a small unmanned aircraft operation?",
+  "choices": [
+   "A structure or stationary vehicle that would protect the person if the aircraft struck it",
+   "Any vehicle that the person occupies, whether the vehicle is parked or moving at the time",
+   "A tree canopy or other dense natural vegetation directly above the person",
+   "An umbrella or similar handheld object the person holds overhead"
+  ],
+  "answer": 0,
+  "explanation": "Safe cover is a structure or stationary vehicle that protects a person from harm if the small unmanned aircraft impacts it. People under safe cover may be overflown without the operation meeting one of the four categories; a moving vehicle does not count.",
+  "page": "8-1",
+  "manual": "ac"
+ },
+ {
+  "id": "s14-020",
+  "section": 14,
+  "sectionName": "Night, Over People, and Remote ID",
+  "question": "What minimum stand-off distance from nonparticipating people does Part 107 impose on small UAS operations?",
+  "choices": [
+   "None; the rule sets no specific distance, though the pilot may choose to observe one",
+   "25 feet horizontally from any person who is not participating in the flight operation",
+   "100 feet horizontally and 50 feet vertically from all nonparticipating people",
+   "500 feet in all directions, matching the distance required of manned aircraft"
+  ],
+  "answer": 0,
+  "explanation": "Part 107 does not impose a specific stand-off distance from people. The remote pilot may elect a minimum distance based on the aircraft's performance, environmental and operational-area conditions, probable failures, and the pilot's own ability to maneuver the aircraft, adjusting it as conditions change.",
+  "page": "8-2",
+  "manual": "ac"
+ },
+ {
+  "id": "s14-021",
+  "section": 14,
+  "sectionName": "Night, Over People, and Remote ID",
+  "question": "Under what condition may a Category 1, 2, or 4 operation include sustained flight over an open-air assembly of people?",
+  "choices": [
+   "When the operation meets the remote identification requirements of section 89.110 or 89.115(a)",
+   "When the organizer of the assembly has given the remote pilot written permission for the flight",
+   "When the aircraft remains at least 400 feet above the highest person in the assembled crowd",
+   "When a visual observer is stationed inside the assembly to watch the aircraft at all times"
+  ],
+  "answer": 0,
+  "explanation": "Sustained flight over an open-air assembly in a Category 1, 2, or 4 operation is prohibited unless the operation meets the remote identification requirements of section 89.110 or 89.115(a). This prohibition is subject to waiver. A brief, one-time transit that is merely incidental to a point-to-point operation unrelated to the assembly is not sustained flight.",
+  "page": "8-2",
+  "manual": "ac"
+ },
+ {
+  "id": "s14-022",
+  "section": 14,
+  "sectionName": "Night, Over People, and Remote ID",
+  "question": "Which document must accompany a small unmanned aircraft that is eligible for Category 2 or Category 3 operations over people?",
+  "choices": [
+   "Current remote pilot operating instructions that apply to the operation of the aircraft",
+   "An FAA-approved Flight Manual containing the aircraft's approved operating limitations",
+   "A maintenance logbook kept in accordance with the requirements of part 43",
+   "A Certificate of Waiver specifically authorizing flight over human beings"
+  ],
+  "answer": 0,
+  "explanation": "Aircraft eligible for Category 2 or 3 must have current remote pilot operating instructions, which the FAA anticipates will help the remote pilot conduct the preflight check and confirm the aircraft is in a condition for safe operation. An FAA-approved Flight Manual is a Category 4 feature.",
+  "page": "8-35",
+  "manual": "ac"
+ },
+ {
+  "id": "s14-023",
+  "section": 14,
+  "sectionName": "Night, Over People, and Remote ID",
+  "question": "Which category of operations over people is never permitted over an open-air assembly of persons?",
+  "choices": [
+   "Category 3",
+   "Category 1",
+   "Category 2",
+   "Category 4"
+  ],
+  "answer": 0,
+  "explanation": "Category 3 operations are not allowed over an open-air assembly of persons at all. Categories 1, 2, and 4 are barred only from sustained flight over such assemblies, and that bar lifts when the operation meets section 89.110 or 89.115(a).",
+  "page": "8-2",
+  "manual": "ac"
+ },
+ {
+  "id": "s14-024",
+  "section": 14,
+  "sectionName": "Night, Over People, and Remote ID",
+  "question": "A Category 2 aircraft is flown over people inside moving vehicles at a closed-access site. What does Part 107 require regarding those vehicle occupants?",
+  "choices": [
+   "Anyone inside a moving vehicle within the site must be on notice that a small UA may fly over them",
+   "Every vehicle inside the site must come to a complete stop while the aircraft passes overhead",
+   "All vehicle occupants inside the site must be enrolled as direct participants in the flight operation",
+   "Vehicles inside the site must keep their speed below 25 miles per hour during the entire operation"
+  ],
+  "answer": 0,
+  "explanation": "For Category 1, 2, and 3 aircraft, operations over people in moving vehicles must be conducted within or over a closed- or restricted-access site, and any person inside a moving vehicle within that site must be on notice that a small unmanned aircraft may fly over them.",
+  "page": "8-2",
+  "manual": "ac"
+ },
+ {
+  "id": "s14-025",
+  "section": 14,
+  "sectionName": "Night, Over People, and Remote ID",
+  "question": "When a Category 1, 2, or 3 operation over moving vehicles is NOT conducted at a closed- or restricted-access site, what restriction applies?",
+  "choices": [
+   "The aircraft must not maintain sustained flight over any moving vehicle",
+   "The aircraft must stay at least 100 feet above the surface of the roadway",
+   "The aircraft may cross only divided highways with a posted speed limit",
+   "The operation is prohibited entirely without a Certificate of Waiver"
+  ],
+  "answer": 0,
+  "explanation": "Outside a closed- or restricted-access site, a Category 1, 2, or 3 aircraft may transit over moving vehicles but must not maintain sustained flight over any moving vehicle. Category 4 aircraft instead follow the operating limitations in their FAA-approved Flight Manual.",
+  "page": "8-3",
+  "manual": "ac"
+ },
+ {
+  "id": "s14-026",
+  "section": 14,
+  "sectionName": "Night, Over People, and Remote ID",
+  "question": "How does a remote pilot confirm that a small unmanned aircraft is eligible for Category 2 operations over people?",
+  "choices": [
+   "Check online that its declaration of compliance is valid and inspect the aircraft for an affixed Category 2 label",
+   "Weigh the aircraft to confirm it is under 0.55 pounds and inspect it for exposed rotating parts on the airframe",
+   "Review the aircraft's part 21 airworthiness certificate and the limitations in its FAA-approved Flight Manual",
+   "Verify the aircraft's serial number appears on its Certificate of Aircraft Registration and in the FAA registry"
+  ],
+  "answer": 0,
+  "explanation": "The remote pilot must ensure the aircraft is listed on an FAA-accepted declaration of compliance as eligible for Category 2 and is labeled accordingly. That means checking online at uasdoc.faa.gov that the DOC is valid and visually inspecting the aircraft for the affixed Category 2 label. These duties are in addition to the normal preflight responsibilities of section 107.49.",
+  "page": "8-4",
+  "manual": "ac"
+ },
+ {
+  "id": "s14-027",
+  "section": 14,
+  "sectionName": "Night, Over People, and Remote ID",
+  "question": "Outside a closed- or restricted-access site, a Category 3 aircraft may not sustain flight over any person unless that person meets what condition?",
+  "choices": [
+   "The person is directly participating in the operation, or is under a covered structure or inside a stationary vehicle that offers reasonable protection",
+   "The person is standing inside a marked safety zone that the remote pilot announced over a loudspeaker before the aircraft took off for the operation",
+   "The person is aware of the flight and has verbally consented to the aircraft passing overhead for the full duration of the planned operation",
+   "The person remains more than 50 feet from the aircraft's planned flightpath as measured by the remote pilot at the start of the operation"
+  ],
+  "answer": 0,
+  "explanation": "Outside a closed- or restricted-access site, a Category 3 operation may not sustain flight over anyone except a direct participant or a person located under a covered structure or inside a stationary vehicle that can provide reasonable protection from a falling small unmanned aircraft.",
+  "page": "8-5",
+  "manual": "ac"
+ },
+ {
+  "id": "s14-028",
+  "section": 14,
+  "sectionName": "Night, Over People, and Remote ID",
+  "question": "Which of the following would the FAA most likely treat as an open-air assembly of persons?",
+  "choices": [
+   "Spectators gathered at a concert venue or sporting event",
+   "A family walking out of a shopping center to its parked car",
+   "Individuals riding bicycles spread out along a bike path",
+   "A few people playing casual sports in an open area with no spectators"
+  ],
+  "answer": 0,
+  "explanation": "Open-air assembly is judged case by case based on the density of nonparticipating people and the size of the area. Likely examples include sporting events, concerts, parades, protests, political rallies, community festivals, and parks or beaches during certain events. Individuals or small groups, such as a family leaving a shopping center or people biking along a path, are less likely to qualify.",
+  "page": "8-5",
+  "manual": "ac"
+ },
+ {
+  "id": "s14-029",
+  "section": 14,
+  "sectionName": "Night, Over People, and Remote ID",
+  "question": "Which maneuver counts as sustained flight over a person who is not involved in the operation?",
+  "choices": [
+   "Circling above the person so the aircraft stays over some part of them",
+   "Crossing over the person a single time while transiting to a distant worksite",
+   "Flying a straight line that passes close to the person but never above them",
+   "Hovering in place roughly 100 feet to one side of where the person stands"
+  ],
+  "answer": 0,
+  "explanation": "Sustained flight includes hovering above a person's head, flying back and forth over a person, or circling above the person so the aircraft remains over some part of them. The intent of the rule is to allow only momentary exposure, so the pilot should adjust the flightpath to minimize time over people or discontinue the operation.",
+  "page": "8-6",
+  "manual": "ac"
+ },
+ {
+  "id": "s14-030",
+  "section": 14,
+  "sectionName": "Night, Over People, and Remote ID",
+  "question": "What must a small unmanned aircraft hold to be eligible for Category 4 operations over people?",
+  "choices": [
+   "An airworthiness certificate issued by the FAA under part 21",
+   "A declaration of compliance accepted and listed by the FAA",
+   "A gross takeoff weight of no more than 0.55 pounds",
+   "A remote identification broadcast module secured before takeoff"
+  ],
+  "answer": 0,
+  "explanation": "Category 4 aircraft must have an FAA-issued airworthiness certificate under part 21 and be operated within the limitations of the FAA-approved Flight Manual or as otherwise specified by the Administrator. A declaration of compliance is the eligibility path for Categories 2 and 3, not Category 4.",
+  "page": "8-6",
+  "manual": "ac"
  }
 ];

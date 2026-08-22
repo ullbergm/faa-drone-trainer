@@ -4,10 +4,9 @@
  * js/app.js, so the app boots into a realistic mid-study state instead of an
  * empty one. It is never part of the app or the deploy.
  *
- * The scenario is a first Class A attempt twelve days out: General Knowledge,
- * Air Brakes and Combination Vehicles selected, general knowledge well drilled,
- * air brakes lagging behind. Everything is seeded, so a re-run reproduces the
- * same images.
+ * The scenario is a first Part 107 attempt twelve days out: regulations and
+ * airspace well drilled, weather lagging behind, the post-2016 rules half
+ * covered. Everything is seeded, so a re-run reproduces the same images.
  */
 (() => {
   // generate.sh injects this after the data scripts, so the config is loaded.
@@ -36,9 +35,11 @@
   const PROFILE = {
     1: { seen: 0.95, stab: [18, 50] },
     2: { seen: 0.9, stab: [12, 42] },
-    3: { seen: 0.8, stab: [8, 30] },
-    5: { seen: 0.55, stab: [2, 8] },
-    6: { seen: 0.75, stab: [5, 18] },
+    3: { seen: 0.75, stab: [5, 18] },
+    4: { seen: 0.55, stab: [2, 8] },
+    11: { seen: 0.8, stab: [8, 30] },
+    12: { seen: 0.7, stab: [5, 20] },
+    14: { seen: 0.6, stab: [3, 12] },
   };
 
   const cards = {};
@@ -82,15 +83,15 @@
     cards,
     settings: {
       newPerDay: 15,
-      sections: [1, 2, 3, 5, 6],
+      sections: [],
       examDate: dayKey(exam.getTime()),
       theme: new URLSearchParams(location.search).get('theme') === 'dark' ? 'dark' : 'light',
     },
     daily,
     exams: [
-      { date: now - 9 * DAY, type: 'General Knowledge', total: 50, correct: 38, passed: false },
-      { date: now - 5 * DAY, type: 'Air Brakes', total: 25, correct: 21, passed: true },
-      { date: now - 2 * DAY, type: 'General Knowledge', total: 50, correct: 44, passed: true },
+      { date: now - 9 * DAY, type: 'Part 107 Initial Knowledge Test', total: 60, correct: 39, passed: false },
+      { date: now - 5 * DAY, type: 'Part 107 Recurrent Knowledge Check', total: 45, correct: 35, passed: true },
+      { date: now - 2 * DAY, type: 'Part 107 Initial Knowledge Test', total: 60, correct: 47, passed: true },
     ],
     log: [],
   }));

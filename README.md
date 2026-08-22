@@ -1,26 +1,29 @@
-# NC CDL Trainer
+# FAA Drone Trainer
 
-[![CI](https://github.com/ullbergm/nc-cdl-test-training/actions/workflows/ci.yml/badge.svg)](https://github.com/ullbergm/nc-cdl-test-training/actions/workflows/ci.yml)
-[![Latest release](https://img.shields.io/github/v/release/ullbergm/nc-cdl-test-training)](https://github.com/ullbergm/nc-cdl-test-training/releases)
-[![License: MIT](https://img.shields.io/github/license/ullbergm/nc-cdl-test-training)](LICENSE)
-[![Live site](https://img.shields.io/website?url=https%3A%2F%2Fnc-cdl.ullberg.io&label=nc-cdl.ullberg.io)](https://nc-cdl.ullberg.io)
+[![CI](https://github.com/ullbergm/faa-drone-test-training/actions/workflows/ci.yml/badge.svg)](https://github.com/ullbergm/faa-drone-test-training/actions/workflows/ci.yml)
+[![Latest release](https://img.shields.io/github/v/release/ullbergm/faa-drone-test-training)](https://github.com/ullbergm/faa-drone-test-training/releases)
+[![License: MIT](https://img.shields.io/github/license/ullbergm/faa-drone-test-training)](LICENSE)
+[![Live site](https://img.shields.io/website?url=https%3A%2F%2Ffaa-drone.ullberg.io&label=faa-drone.ullberg.io)](https://faa-drone.ullberg.io)
 
-[![Questions](https://img.shields.io/badge/questions-422-blue)](data/questions.js)
+[![Questions](https://img.shields.io/badge/questions-279-blue)](data/questions.js)
 [![Dependencies](https://img.shields.io/badge/dependencies-none-blue)](package.json)
 [![PWA](https://img.shields.io/badge/PWA-offline%20ready-blue)](manifest.webmanifest)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-blue)](CONTRIBUTING.md)
 [![Conventional Commits](https://img.shields.io/badge/conventional%20commits-1.0.0-blue)](https://www.conventionalcommits.org/en/v1.0.0/)
 
-Practice questions with spaced repetition for the North Carolina commercial driver
-license knowledge tests. The bank has 422 multiple-choice questions covering all 13
-sections of the [NC Commercial Driver Manual](https://www.ncdot.gov/dmv/license-id/driver-licenses/new-drivers/Documents/commercial-driver-manual.pdf),
-and every question cites the manual page it was drawn from, as a link that opens the
-PDF at that page.
+Practice questions with spaced repetition for the FAA Part 107 remote pilot
+knowledge test and the recurrent training knowledge check. The bank has 279
+multiple-choice questions written from the
+[Remote Pilot Study Guide (FAA-G-8082-22)](https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/remote_pilot_study_guide.pdf)
+and [AC 107-2A](https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_107-2A.pdf),
+which covers the rules added after the study guide was published: night
+operations, operations over people, and remote identification. Every question
+cites the page it was drawn from, as a link that opens the PDF at that page.
 
-Live at [nc-cdl.ullberg.io](https://nc-cdl.ullberg.io), or run it yourself. There is
-no build step, no dependencies, and no server. Just open `index.html` in a browser.
-All progress is stored locally in the browser and never sent anywhere. Settings has
-export and import for backups or for moving between devices.
+Live at [faa-drone.ullberg.io](https://faa-drone.ullberg.io), or run it yourself.
+There is no build step, no dependencies, and no server. Just open `index.html` in
+a browser. All progress is stored locally in the browser and never sent anywhere.
+Settings has export and import for backups or for moving between devices.
 
 <p align="center">
   <img src="docs/screenshots/home.png" width="500" alt="Home screen with due review, new card, and miss counts, an exam countdown banner, and a projected score for each test">
@@ -41,10 +44,10 @@ export and import for backups or for moving between devices.
 - **Misses**: re-drills every question whose last answer was wrong, without touching
   the review schedule. Answering one correctly removes it from the pool.
 - **Exam**: mock knowledge tests in the real format. No feedback until the end, and
-  80% to pass. The list mirrors the actual NC test structure (General Knowledge, Air
-  Brakes, Combination Vehicles, and the endorsement tests) and shows only the tests
-  selected in Settings. Missed exam questions feed the Misses pool.
-- **Browse**: the whole bank by manual section, with each card's schedule and accuracy.
+  70% to pass. The list mirrors the real assessments (the 60-question initial
+  knowledge test and the 45-question recurrent knowledge check) and shows only the
+  tests selected in Settings. Missed exam questions feed the Misses pool.
+- **Browse**: the whole bank by section, with each card's schedule and accuracy.
 - **Stats**: exam readiness, mastery counts, day streak, 7-day due forecast,
   per-section accuracy, and exam history.
 
@@ -55,10 +58,14 @@ the question again, as long as you have not yet continued or graded. The buttons
 show badges for their shortcut keys on devices with a mouse and keyboard; on
 touch screens the badges stay hidden.
 
-In Settings, under "Tests I'm studying for", check only the tests you are taking
-next, for example General Knowledge, Air Brakes, and Combination Vehicles for a
-first Class A attempt. Everything else stays out of the queue until you check it,
-and progress on unchecked sections is kept.
+In Settings, under "Tests I'm studying for", check only what you are preparing
+for next: the initial test if you are new, or the recurrent knowledge check if
+your certificate is coming up on 24 calendar months. Everything else stays out
+of the queue until you check it, and progress on unchecked sections is kept.
+
+Part 108, the FAA's proposed rule for flying beyond visual line of sight, is
+still a proposed rule with no test behind it. A section for it is planned for
+when the FAA finalizes the rule and publishes testable material.
 
 ## Scheduling
 
@@ -116,7 +123,7 @@ FSRS predicts for the moment of the test, or it is not and the guess still lands
 one time in four. A question you have never seen is a straight guess. The real
 test draws its questions from a much larger pool, so the projected score is the
 pool average, and the spread around it accounts for both the draw and the recall
-itself. The chance of passing is the probability that the draw clears 80%.
+itself. The chance of passing is the probability that the draw clears 70%.
 
 Two counts explain a low projection. Unseen questions are the ones the queue has
 not reached yet. Rusty ones have been studied but are predicted to fall below the
@@ -136,10 +143,10 @@ js/fsrs.js               FSRS-6 scheduler
 js/readiness.js          projected score and pass odds per test
 js/storage.js            localStorage persistence, export/import
 js/app.js                UI and session logic
-data/questions.js        question bank (422 questions, tagged by section and manual page)
-data/manual-pages.js     manual page labels to PDF page numbers, for the citation links
+data/questions.js        question bank (279 questions, tagged by section and source page)
+data/manual-pages.js     printed page labels to PDF page numbers, for the citation links
 data/exam-config.js      what exam this is: tests, pass mark, manual links, exam-specific prose
-tools/                   regenerates that map from a local copy of the manual PDF, and the icons
+tools/                   regenerates that map from local copies of the FAA PDFs, and the icons
 sw.js                    service worker (offline cache, only active on the hosted site)
 manifest.webmanifest     PWA manifest, lets the app be installed to a home screen
 icons/                   app icons (icon.svg is the source, PNGs rendered from it)
@@ -161,7 +168,7 @@ on the next load.
 
 ## Building a trainer for another exam
 
-The engine under `js/` knows nothing about the CDL, and the test suites derive
+The engine under `js/` knows nothing about Part 107, and the test suites derive
 their assertions from the config and the bank, so a trainer for a different
 manual-based exam is a matter of replacing data and identity files. Create a
 new repository from this one and touch:
@@ -172,8 +179,8 @@ new repository from this one and touch:
 - `data/exam-config.js`: the tests and exams, pass mark, manual links, storage
   keys, and every piece of prose that names the exam
 - `data/manual-pages.js`: regenerate with `node tools/gen-manual-pages.js`; the
-  footer-label parsing in that script is written for the CDL manual, so adjust
-  it to the new manual's page numbering
+  footer-label parsing in that script is written for the FAA PDFs this trainer
+  cites, so adjust it to the new manual's page numbering
 - `css/style.css`: the token blocks at the top set all colors and the
   progress-bar texture; the rules below them are exam-neutral
 - `index.html`: title, meta description, canonical URL, brand text, favicon,
@@ -225,23 +232,29 @@ keep real study progress.
 
 ## Accuracy
 
-The questions were authored from the manual's text, section by section. Accuracy is
-not guaranteed. Each question carries the manual page it came from (like `5-3`) and
-links to that page in the PDF, so verify anything important against the source. The actual DMV exam questions are not
-publicly available, and no claim is made that these questions match or resemble
-them. This is a study aid for the manual's content, not a copy of the test. If a
+The questions were authored from the FAA's own text, section by section. Accuracy
+is not guaranteed. Each question carries the page it came from (a study guide page
+like `17`, or an AC 107-2A label like `5-14`) and links to that page in the PDF,
+so verify anything important against the source. The actual FAA test questions are
+not publicly available, and no claim is made that these questions match or resemble
+them. This is a study aid for the source material, not a copy of the test. If a
 question reads wrong, check the cited page and edit `data/questions.js`, which is a
 plain JSON array.
 
-The manual PDF is copyright AAMVA and is not included in this repository. Download
-it from NCDMV at the link above.
+Two differences from the real test are deliberate. The real test shows three
+choices per question; this trainer shows four, which is slightly harder. And the
+real test includes questions that read a sectional chart or another figure from
+the FAA testing supplement (CT-8080-2), which a text-only trainer cannot render;
+practice chart reading separately before test day.
 
-The citation links point into that hosted PDF with a `#page=` fragment, which counts
-physical pages rather than the section-relative labels printed in the footers, so
-`data/manual-pages.js` maps between the two. The map is built from the July 2014
-revision; if NCDMV publishes a new one, download it and re-run
-`node tools/gen-manual-pages.js` (needs `pdftotext`) so the links keep landing on the
-right pages.
+Both source documents are US government works and free to download from the FAA
+at the links above; they are still not included in this repository. The citation
+links point into the hosted PDFs with a `#page=` fragment, which counts physical
+pages rather than the labels printed on them, so `data/manual-pages.js` maps
+between the two. The map is built from the August 2016 study guide and the
+February 2021 AC 107-2A; if the FAA publishes a revision, download it and re-run
+`node tools/gen-manual-pages.js` (needs `pdftotext`) so the links keep landing on
+the right pages.
 
 ## License
 
