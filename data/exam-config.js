@@ -13,6 +13,12 @@ const EXAM_CONFIG = {
   repo: 'https://github.com/ullbergm/faa-drone-test-training',
   passMark: 0.7, // the FAA passes the UAG knowledge test at 70% (42 of 60)
 
+  // Section numbers are exam topics, not chapters of one book: a section can
+  // hold questions citing either FAA publication, and `manual` says only
+  // where the citation points. Sections read as "§ N" in the UI.
+  flatSections: true,
+  sectionWord: '§',
+
   // Manuals the questions cite. A question picks one with its `manual` field
   // and uses `default` when it has none. The study guide is the FAA's own
   // prep text for the test but dates from 2016; AC 107-2A carries the rules
