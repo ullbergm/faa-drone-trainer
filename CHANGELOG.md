@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.0.0](https://github.com/ullbergm/faa-drone-test-training/compare/v1.0.0...v2.0.0) (2026-08-22)
+
+
+### Features
+
+* adopt the shared trainer engine ([fc36039](https://github.com/ullbergm/faa-drone-test-training/commit/fc36039096fac73cbc099d84d54bbe1a45af8c5c))
+
+
+### Miscellaneous Chores
+
+* align every trainer on version 2.0.0 ([d2f2541](https://github.com/ullbergm/faa-drone-test-training/commit/d2f25413b9de5c7c2bd44245120617761ea6e3b7))
+
 ## 1.0.0 (2026-08-22)
 
 
