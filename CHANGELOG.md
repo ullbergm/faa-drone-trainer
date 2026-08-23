@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.1.1](https://github.com/ullbergm/faa-drone-trainer/compare/v2.1.0...v2.1.1) (2026-08-23)
+
+
+### Bug Fixes
+
+* **engine:** name the platform emoji fonts for emoji track markers ([cec0cc0](https://github.com/ullbergm/faa-drone-trainer/commit/cec0cc00f896f4c98a57f1285556c5b6d2bcd5e9))
+* sync trainer-engine v2.1.1 ([cec0cc0](https://github.com/ullbergm/faa-drone-trainer/commit/cec0cc00f896f4c98a57f1285556c5b6d2bcd5e9))
+
 ## [2.1.0](https://github.com/ullbergm/faa-drone-trainer/compare/v2.0.1...v2.1.0) (2026-08-23)
 
 
