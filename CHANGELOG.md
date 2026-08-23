@@ -1,5 +1,18 @@
 # Changelog
 
+## [2.1.0](https://github.com/ullbergm/faa-drone-trainer/compare/v2.0.1...v2.1.0) (2026-08-23)
+
+
+### Features
+
+* **engine:** add track-marker tokens for themed progress bars ([ba3f577](https://github.com/ullbergm/faa-drone-trainer/commit/ba3f57746431ff4087ccb1e8a6cc2a5584e7b88b))
+* fly a quadcopter marker along the progress bar ([83fa27a](https://github.com/ullbergm/faa-drone-trainer/commit/83fa27ac0246c0bd16abd3ff9a82bd6d4d94091a))
+
+
+### Bug Fixes
+
+* sync trainer-engine v2.1.0 ([ba3f577](https://github.com/ullbergm/faa-drone-trainer/commit/ba3f57746431ff4087ccb1e8a6cc2a5584e7b88b))
+
 ## [2.0.1](https://github.com/ullbergm/faa-drone-trainer/compare/v2.0.0...v2.0.1) (2026-08-22)
 
 
