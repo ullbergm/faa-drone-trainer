@@ -1,5 +1,22 @@
 # Changelog
 
+## [2.2.0](https://github.com/ullbergm/faa-drone-trainer/compare/v2.1.1...v2.2.0) (2026-08-24)
+
+
+### Features
+
+* **engine:** catch near-duplicate question stems in bank validation ([297fa56](https://github.com/ullbergm/faa-drone-trainer/commit/297fa5644f53986650a26083360045e4440c0369))
+* **engine:** double the progress track height to 20px ([297fa56](https://github.com/ullbergm/faa-drone-trainer/commit/297fa5644f53986650a26083360045e4440c0369))
+* **engine:** show an optional illustration with a question ([297fa56](https://github.com/ullbergm/faa-drone-trainer/commit/297fa5644f53986650a26083360045e4440c0369))
+* **engine:** support true/false questions ([297fa56](https://github.com/ullbergm/faa-drone-trainer/commit/297fa5644f53986650a26083360045e4440c0369))
+* upsize the quadcopter marker to 18px ([582be60](https://github.com/ullbergm/faa-drone-trainer/commit/582be60bcb0ba1097e3e2e9c21646bc72027264e))
+
+
+### Bug Fixes
+
+* **engine:** tolerate leaving About before the changelog fetch settles ([297fa56](https://github.com/ullbergm/faa-drone-trainer/commit/297fa5644f53986650a26083360045e4440c0369))
+* sync trainer-engine v2.2.0 ([297fa56](https://github.com/ullbergm/faa-drone-trainer/commit/297fa5644f53986650a26083360045e4440c0369))
+
 ## [2.1.1](https://github.com/ullbergm/faa-drone-trainer/compare/v2.1.0...v2.1.1) (2026-08-23)
 
 
