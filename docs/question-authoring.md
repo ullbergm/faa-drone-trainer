@@ -9,6 +9,8 @@ Knowing where each field surfaces explains most of the rules below:
 - The app shuffles the choices every time a question is shown, so the
   position of the correct answer in the data does not matter. The length and
   wording of the choices show every time, so patterns there matter a lot.
+  A two-choice question (true/false) is the exception: it renders in written
+  order, since shuffling "False" above "True" helps nobody.
 - Choices phrased like "All of the above" are detected (any choice starting
   with all/none/any/both "of the above" or "of these") and kept below the
   choices they refer to, whatever the shuffle does.
@@ -40,7 +42,10 @@ Knowing where each field surfaces explains most of the rules below:
 - `id`: `s` + section number + `-` + a three-digit counter, unique in the bank.
 - `section`: positive integer; every entry in a section uses the same
   `sectionName`.
-- `choices`: exactly four, all distinct.
+- `choices`: exactly four, all distinct. A bank that wants true/false
+  questions opts in by setting `allowedChoiceCounts` (e.g. `[2, 4]`) in
+  `data/exam-config.js`; the validator then accepts `["True", "False"]`
+  entries alongside the four-choice ones.
 - `answer`: 0-based index into `choices`.
 - `page`: the label printed on the manual page the fact came from. Add
   `pdfPage` when the same label is printed on more than one PDF page, and a
