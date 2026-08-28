@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.3.0](https://github.com/ullbergm/faa-drone-trainer/compare/v2.2.0...v2.3.0) (2026-08-28)
+
+
+### Features
+
+* **engine:** let a config name the tests a fresh install starts on ([7ca60ca](https://github.com/ullbergm/faa-drone-trainer/commit/7ca60ca4eec1a88f7a0306247f8830d47504ca87))
+
+
+### Bug Fixes
+
+* sync trainer-engine v2.3.0 ([7ca60ca](https://github.com/ullbergm/faa-drone-trainer/commit/7ca60ca4eec1a88f7a0306247f8830d47504ca87))
+
 ## [2.2.0](https://github.com/ullbergm/faa-drone-trainer/compare/v2.1.1...v2.2.0) (2026-08-24)
 
 
