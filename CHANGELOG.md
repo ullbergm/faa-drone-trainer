@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.3.1](https://github.com/ullbergm/faa-drone-trainer/compare/v2.3.0...v2.3.1) (2026-09-27)
+
+
+### Bug Fixes
+
+* **engine:** let Dependabot bumps merge on their own once CI passes ([8842e4d](https://github.com/ullbergm/faa-drone-trainer/commit/8842e4dcf6ac09c63a084be4ec6f09dc4409d75f))
+* sync trainer-engine v2.3.1 ([8842e4d](https://github.com/ullbergm/faa-drone-trainer/commit/8842e4dcf6ac09c63a084be4ec6f09dc4409d75f))
+
 ## [2.3.0](https://github.com/ullbergm/faa-drone-trainer/compare/v2.2.0...v2.3.0) (2026-08-28)
 
 
